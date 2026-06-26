@@ -1,0 +1,15 @@
+{
+  "name": "Shrinktionary",
+  "short_name": "Shrinktionary",
+  "description": "A plain-English mental health dictionary, medically reviewed by a board certified psychiatrist. Part of The Shrink Network.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF3B3F",
+  "icons": [
+    { "src": "/favicon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

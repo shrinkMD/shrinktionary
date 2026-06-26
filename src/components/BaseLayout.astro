@@ -103,6 +103,7 @@ const robots = noindex
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#FF3B3F" />
 
     <meta property="og:type" content={ogType} />
@@ -114,6 +115,7 @@ const robots = noindex
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Shrinktionary, a plain-English mental health dictionary" />
     {ogType === "article" && published ? <meta property="article:published_time" content={published} /> : null}
     {ogType === "article" && modified ? <meta property="article:modified_time" content={modified} /> : null}
     {ogType === "article" ? <meta property="article:author" content="Shariq Refai, MD, MBA, FAPA" /> : null}
