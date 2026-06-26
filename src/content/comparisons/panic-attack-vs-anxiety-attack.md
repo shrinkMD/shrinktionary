@@ -19,11 +19,11 @@ table:
   - dimension: "Trigger"
     values: ["May have no clear trigger", "Usually tied to a worry or stressor"]
 related_terms:
-  - panic-attack
-  - anxiety
   - panic-disorder
-  - fight-or-flight
+  - anxiety
+  - agoraphobia
   - hyperventilation
+  - fight-or-flight
 network_links:
   - site: anxietyresource
     url: "https://anxietyresource.org/"

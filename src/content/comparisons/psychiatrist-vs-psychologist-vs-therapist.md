@@ -18,6 +18,10 @@ table:
     values: ["MD, DO", "PhD, PsyD", "LCSW, LMFT, LPC, LMHC"]
 related_terms:
   - cbt
+  - psychodynamic-therapy
+  - levels-of-care
+  - antidepressant
+  - therapeutic-alliance
   - differential-diagnosis
 network_links:
   - site: shrinkmd

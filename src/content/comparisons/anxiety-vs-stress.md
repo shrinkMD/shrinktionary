@@ -17,9 +17,11 @@ table:
   - dimension: "When it's clinical"
     values: ["When persistent, out of proportion, and impairing", "Stress itself isn't a disorder, though it can contribute to one"]
 related_terms:
-  - anxiety
+  - stress
   - generalized-anxiety-disorder
+  - fight-or-flight
   - cortisol
+  - burnout
   - rumination
 network_links:
   - site: anxietyresource

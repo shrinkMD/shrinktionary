@@ -18,10 +18,9 @@ table:
   - dimension: "Effect"
     values: ["Creates anxiety", "Relieves anxiety briefly, then strengthens the cycle"]
 related_terms:
-  - intrusive-thought
-  - compulsion
   - ocd
   - exposure-and-response-prevention
+  - rumination
   - anxiety
 network_links:
   - site: anxietyresource

@@ -19,9 +19,9 @@ table:
   - dimension: "Lifts?"
     values: ["Eases with time or comfort", "Doesn't lift on its own the same way"]
 related_terms:
-  - depression
   - major-depressive-disorder
   - anhedonia
+  - hopelessness
   - persistent-depressive-disorder
 network_links:
   - site: depressionresource

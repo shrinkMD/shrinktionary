@@ -20,11 +20,10 @@ table:
   - dimension: "Format"
     values: ["Usually individual sessions", "Often individual sessions plus a skills group"]
 related_terms:
-  - cbt
-  - dbt
+  - cognitive-restructuring
   - exposure-therapy
   - emotional-regulation
-  - cognitive-restructuring
+  - acceptance-and-commitment-therapy
 network_links:
   - site: shrinkopedia
     url: "https://shrinkopedia.com/"

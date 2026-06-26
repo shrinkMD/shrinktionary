@@ -20,9 +20,9 @@ table:
   - dimension: "Hallmark"
     values: ["Exhaustion, cynicism, feeling ineffective", "Low mood, loss of interest, impaired function"]
 related_terms:
-  - burnout
-  - depression
   - anhedonia
+  - fatigue
+  - stress
   - major-depressive-disorder
 network_links:
   - site: depressionresource

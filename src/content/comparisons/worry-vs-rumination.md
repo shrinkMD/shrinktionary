@@ -19,11 +19,12 @@ table:
   - dimension: "Shared trait"
     values: ["Repetitive, hard to stop, doesn't resolve", "Repetitive, hard to stop, doesn't resolve"]
 related_terms:
-  - rumination
   - overthinking
   - anxiety
-  - depression
+  - generalized-anxiety-disorder
   - catastrophizing
+  - intrusive-thought
+  - depression
 network_links:
   - site: shrinq
     url: "https://shrinq.com/"

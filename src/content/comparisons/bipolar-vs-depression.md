@@ -18,11 +18,12 @@ table:
   - dimension: "Why it gets missed"
     values: ["People seek help during the lows and forget the highs", "Usually recognized as low mood"]
 related_terms:
-  - bipolar-disorder
-  - depression
-  - major-depressive-disorder
-  - differential-diagnosis
+  - mania
+  - hypomania
   - mood-stabilizer
+  - major-depressive-disorder
+  - cyclothymia
+  - differential-diagnosis
 network_links:
   - site: depressionresource
     url: "https://depressionresource.org/"

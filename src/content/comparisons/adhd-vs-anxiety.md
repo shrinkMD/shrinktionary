@@ -18,9 +18,10 @@ table:
   - dimension: "Typical first-line treatment"
     values: ["Stimulants or non-stimulants, plus skills and structure", "Therapy such as CBT, sometimes SSRIs"]
 related_terms:
-  - adhd
-  - anxiety
+  - generalized-anxiety-disorder
   - executive-function
+  - panic-attack
+  - irritability
   - working-memory
   - comorbidity
 network_links:
