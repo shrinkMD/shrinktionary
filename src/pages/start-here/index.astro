@@ -1,6 +1,14 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../../components/BaseLayout.astro";
 import SearchBox from "../../components/SearchBox.astro";
+
+const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
+const terms = await getCollection("terms");
+const countFor = (slug: string) => terms.filter((t) => t.data.category === slug).length;
+const popular = ["anxiety", "depression", "panic-attack", "ssri", "cbt", "ptsd", "ocd", "adhd"]
+  .map((s) => terms.find((t) => t.data.slug === s))
+  .filter(Boolean);
 
 const cards = [
   { title: "I have a symptom", sub: "Start from what you feel, not what it's called.", href: "/categories/symptoms/" },
@@ -11,35 +19,85 @@ const cards = [
   { title: "I need professional care", sub: "Start with shrinkMD.", href: "https://shrinkmd.com/start-care/", external: true },
 ];
 
+const steps = [
+  { n: "1", t: "Search or browse", d: "Type a word into search, browse the A-to-Z list, or pick a category. Every entry opens with a plain-English definition you can read in seconds." },
+  { n: "2", t: "Read the context", d: "Each entry explains what the term actually is, what it can feel like, and what it isn't, so you understand it instead of just recognizing it." },
+  { n: "3", t: "Walk the connections", d: "Follow the related terms and the Term Web to the next word you'd want, from a symptom to a diagnosis to a treatment." },
+];
+
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Start Here", path: "/start-here/" },
 ];
 ---
 <BaseLayout
-  title="Start Here | Shrinktionary"
+  title="Start Here | Find the mental health word you're looking for | Shrinktionary"
   description="There's more than one way into the language of mental health. Pick the path that matches where you're starting: a symptom, a diagnosis, a medication, or a therapy term."
   canonicalPath="/start-here/"
   breadcrumbs={breadcrumbs}
+  keywords={["mental health terms","where to start","mental health dictionary","look up a mental health word"]}
 >
-  <section class="bg-sky">
+  <section class="bg-gradient-to-b from-sky to-white">
     <div class="mx-auto max-w-content px-5 py-16">
-      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink">Find the word you're trying to understand.</h1>
-      <p class="max-w-prose text-lg text-[#1F2937] mt-4">There's more than one way in. Pick the path that matches where you're starting.</p>
-      <div class="max-w-xl mt-8"><SearchBox id="start-search" placeholder="Search terms" /></div>
+      <p class="text-watermelon-bright font-semibold uppercase tracking-widest text-xs">Start here</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">Find the word you're trying to understand.</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">There's more than one way in. You might have a symptom, a diagnosis, a medication name, or a term from a workbook. Pick the path that matches where you're starting, or just search.</p>
+      <div class="max-w-xl mt-8"><SearchBox id="start-search" placeholder="Search the dictionary" /></div>
     </div>
   </section>
 
   <div class="mx-auto max-w-content px-5 py-14">
+    <h2 class="font-display text-2xl font-semibold text-ink mb-6">Pick your path</h2>
     <div class="grid sm:grid-cols-2 gap-5">
       {cards.map((c) => (
         <a href={c.href} target={c.external ? "_blank" : undefined} rel={c.external ? "noopener noreferrer" : undefined}
            class="block rounded-lg bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-6">
-          <h2 class="font-display text-xl font-semibold text-ink">{c.title}</h2>
+          <h3 class="font-display text-xl font-semibold text-ink">{c.title}</h3>
           <p class="text-[#4B5563] mt-2">{c.sub}</p>
-          <span class="inline-block mt-4 text-sm font-medium text-watermelon">Go →</span>
+          <span class="inline-block mt-4 text-sm font-medium text-watermelon">Go &rarr;</span>
         </a>
       ))}
+    </div>
+  </div>
+
+  <section class="bg-neutral">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">How to use Shrinktionary</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {steps.map((s) => (
+          <div class="rounded-lg bg-white border border-[#e2e2e2] p-6">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-watermelon text-white font-semibold">{s.n}</span>
+            <h3 class="font-display text-lg font-semibold text-ink mt-4">{s.t}</h3>
+            <p class="text-[#4B5563] mt-2 text-[15px]">{s.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-16">
+    <h2 class="font-display text-2xl font-semibold text-ink mb-6">Browse by category</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {categories.map((c) => (
+        <a href={`/categories/${c.data.slug}/`} class="block rounded-md bg-neutral hover:bg-sky border border-transparent hover:border-watermelon transition p-5">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-display text-lg font-semibold text-ink">{c.data.name}</h3>
+            <span class="text-sm text-carbon">{countFor(c.data.slug)} {countFor(c.data.slug) === 1 ? "term" : "terms"}</span>
+          </div>
+          <p class="text-[15px] text-[#4B5563]">{c.data.description}</p>
+        </a>
+      ))}
+    </div>
+
+    <h2 class="font-display text-2xl font-semibold text-ink mb-5 mt-14">Popular terms</h2>
+    <div class="flex flex-wrap gap-2">
+      {popular.map((t) => (
+        <a href={`/terms/${t.data.slug}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{t.data.term}</a>
+      ))}
+    </div>
+
+    <div class="mt-12 rounded-lg bg-sky/60 border border-neutral p-6 max-w-prose">
+      <p class="text-[#1F2937]">Shrinktionary explains words. It's education, not medical advice, and it doesn't replace a clinician. If you're trying to figure out what's happening with your own mental health, talk to a licensed professional. If you're in crisis, call or text <a href="tel:988" class="text-watermelon font-semibold underline underline-offset-2">988</a>.</p>
     </div>
   </div>
 </BaseLayout>

@@ -68,16 +68,34 @@ const breadcrumbs = [
 
   <div class="mx-auto max-w-content px-5 py-12">
     {terms.length > 0 ? (
-      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {terms.map((t) => (
-          <li>
-            <a href={`/terms/${t.data.slug}/`} class="block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5 h-full">
-              <h2 class="font-display text-lg font-semibold text-ink mb-1">{t.data.term}</h2>
-              <p class="text-[15px] text-[#4B5563] line-clamp-3">{t.data.short_definition}</p>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div>
+        <h2 class="font-display text-2xl font-semibold text-ink mb-6">All {c.name.toLowerCase()} terms</h2>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {terms.map((t) => (
+            <li>
+              <a href={`/terms/${t.data.slug}/`} class="block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5 h-full">
+                <h3 class="font-display text-lg font-semibold text-ink mb-1">{t.data.term}</h3>
+                <p class="text-[15px] text-[#4B5563] line-clamp-3">{t.data.short_definition}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="font-display text-2xl font-semibold text-ink mt-14 mb-5">Explore another category</h2>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {allCategories.filter((x) => x.data.slug !== c.slug).map((x) => (
+            <li>
+              <a href={`/categories/${x.data.slug}/`} class="block rounded-md bg-neutral hover:bg-sky border border-transparent hover:border-watermelon transition p-5 h-full">
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-display text-lg font-semibold text-ink">{x.data.name}</h3>
+                  <span class="text-sm text-carbon">{countFor(x.data.slug)} {countFor(x.data.slug) === 1 ? "term" : "terms"}</span>
+                </div>
+                <p class="text-[15px] text-[#4B5563]">{x.data.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     ) : (
       <div>
         <div class="rounded-xl bg-sky/60 border border-neutral p-6 md:p-8">

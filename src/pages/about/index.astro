@@ -23,19 +23,50 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout
-  title="About Shrinktionary | Shrinktionary"
-  description="Shrinktionary is a mental health dictionary written and reviewed by a board certified psychiatrist, explaining the words people actually encounter. Part of The Shrink Network."
+  title="About Shrinktionary | A psychiatrist-reviewed mental health dictionary"
+  description="Shrinktionary is a plain-English mental health dictionary written and medically reviewed by Shariq Refai, MD, MBA, FAPA, a board certified psychiatrist. Part of The Shrink Network. Education, not medical advice."
   canonicalPath="/about/"
   jsonld={[personSchema]}
   breadcrumbs={breadcrumbs}
+  keywords={["about Shrinktionary","mental health dictionary","Shariq Refai","The Shrink Network"]}
 >
-  <article class="mx-auto max-w-prose px-5 py-14">
-    <h1 class="font-display text-4xl font-semibold text-ink">About Shrinktionary</h1>
-    <div class="prose-body mt-6 max-w-none">
-      <p>I started Shrinktionary because patients arrive in my office holding a word and asking "what does this actually mean?" Sometimes it's a diagnosis they were given. Sometimes it's a medication a friend mentioned. Sometimes it's a term from a workbook, a therapist, or a video they watched at two in the morning. They want the real definition, the plain English version, and the context for why it matters.</p>
-      <p>Shrinktionary is that. It's a mental health dictionary, written and reviewed by a board certified psychiatrist, that explains the words people actually encounter. Every entry is reviewed for accuracy. Every entry cites sources. Every entry is part of a connected language graph called the Term Web, so one word leads naturally to the next.</p>
-      <p>It's part of The Shrink Network, a family of independent mental health properties that work together. Shrinktionary is the language layer. Shrinkopedia is the encyclopedia. AnxietyResource and DepressionResource go deep on specific conditions. PsychiatryRx covers medications. shrinQ helps you see your own patterns. shrinkMD is where clinical care happens. None of these properties run advertising. None of them earn referral revenue. The point is good information, freely available.</p>
+  <section class="bg-gradient-to-b from-sky to-white">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <p class="text-watermelon-bright font-semibold uppercase tracking-widest text-xs">About</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">About Shrinktionary</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">A plain-English mental health dictionary, written and medically reviewed by a board certified psychiatrist, built so the words make sense the next time you meet them.</p>
     </div>
-    <a href="/editorial-standards/" class="inline-block mt-8 text-[15px] font-medium text-watermelon">Read our editorial standards →</a>
+  </section>
+
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <div class="prose-body max-w-none">
+      <h2>Why I built it</h2>
+      <p>I started Shrinktionary because patients arrive in my office holding a word and asking "what does this actually mean?" Sometimes it's a diagnosis they were given in a ten-minute visit. Sometimes it's a medication a friend mentioned. Sometimes it's a term from a workbook, a therapist, or a video they watched at two in the morning. They want the real definition, the plain English version, and the context for why it matters. Most of the time, nobody had the time to give them that.</p>
+      <p>The internet didn't help as much as it should. Search a mental health word and you get marketing pages, thin summaries, and a lot of confident writing that isn't quite right. I wanted a single place where a person could look up a word and trust the answer, because a psychiatrist stood behind it.</p>
+
+      <h2>What Shrinktionary is</h2>
+      <p>Shrinktionary is a mental health dictionary. Each entry explains one word in plain English, then gives you the clinical context behind it, what the term isn't, and the related concepts you'd want to know next. It covers the things people actually run into: symptoms, diagnoses, medications, therapy terms, the vocabulary of psychiatry and psychology, the brain and body side of mental health, the everyday words that carry hidden clinical meaning, and the research terms you'll see in evidence reviews.</p>
+      <p>It's written for an adult who isn't a clinician. The plain English comes first. The technical version comes second, and it's labeled. The goal is understanding, not jargon.</p>
+
+      <h2>How each entry is made</h2>
+      <p>Every entry follows the same standard. It's researched from sources I trust: the DSM-5-TR, the National Institute of Mental Health, the FDA, MedlinePlus, the Mayo Clinic, the American Psychiatric Association, and peer-reviewed literature. It's written in plain language. Then it's medically reviewed by me, Shariq Refai, MD, MBA, FAPA, a board certified psychiatrist, before it's published. Review confirms the entry is accurate, current, and clinically appropriate. The reviewer, the sources, and the review date sit on every entry, and when the evidence moves, the entry gets updated and the date moves forward. You can read the full process on our <a href="/editorial-standards/">editorial standards</a> page.</p>
+
+      <h2>The Term Web</h2>
+      <p>Words don't exist alone. A symptom connects to a diagnosis. A diagnosis connects to a treatment. A treatment connects to medications, and on to the questions you'd ask a prescriber. Shrinktionary maps those connections in the <a href="/term-web/">Term Web</a>, so one word leads naturally to the next. It's the part that turns a pile of definitions into something you can actually walk through.</p>
+
+      <h2>Where it fits in The Shrink Network</h2>
+      <p>Shrinktionary is the language layer of The Shrink Network, a family of independent mental health properties that work together. Shrinktionary explains the words. Shrinkopedia is the encyclopedia. AnxietyResource and DepressionResource go deep on specific conditions. PsychiatryRx covers medications. AnxietyResearch translates the evidence. shrinQ helps you see your own patterns. shrinkMD is where clinical care happens. Each property has its own role, and the links between them are intentional.</p>
+
+      <h2>How we stay independent</h2>
+      <p>None of these properties run advertising. None of them earn referral revenue. Shrinktionary doesn't take payment for placement and doesn't accept funding from pharmaceutical companies. Decisions about what to include are editorial, made on the evidence. The point is good information, freely available. You can read the details on our <a href="/disclosures/">disclosures</a> page.</p>
+
+      <h2>What it isn't</h2>
+      <p>Shrinktionary explains words. It doesn't diagnose, it doesn't treat, and it doesn't replace a clinician. Reading it, including any entry reviewed by a psychiatrist, doesn't create a doctor-patient relationship. If you're trying to figure out what's happening with your own mental health, the right next step is a conversation with a licensed professional who can evaluate your situation. If you're in crisis, call or text 988 in the United States.</p>
+    </div>
+
+    <div class="flex flex-wrap gap-4 mt-10">
+      <a href="/start-here/" class="inline-flex items-center rounded-md bg-watermelon text-white font-medium px-6 py-3 hover:opacity-90">Find the word you're looking for</a>
+      <a href="/editorial-standards/" class="text-[15px] font-medium text-watermelon">Read our editorial standards &rarr;</a>
+    </div>
   </article>
 </BaseLayout>
