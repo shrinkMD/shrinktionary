@@ -1,0 +1,10 @@
+{
+  "slug": "avolition",
+  "when_it_matters": "It matters when a lasting, significant drop in the ability to start or finish everyday activities causes self-care and responsibilities to slip. Avolition can point to depression, a psychotic disorder, or another condition, and identifying the cause is what guides the right treatment.",
+  "confused_with": [
+    {"label": "Low motivation", "slug": "motivation"},
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Flat affect", "slug": "flat-affect"},
+    {"label": "Alogia", "slug": "alogia"}
+  ]
+}

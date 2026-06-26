@@ -1,0 +1,11 @@
+{
+  "slug": "hyperarousal",
+  "when_it_matters": "It matters when a person stays keyed up and on guard in situations that are actually safe, with the state lasting beyond the aftermath of a stressful event. As a core PTSD symptom, persistent hyperarousal that disrupts sleep, concentration, or mood is a sign that a professional evaluation is appropriate.",
+  "confused_with": [
+    {"label": "Hypervigilance", "slug": "hypervigilance"},
+    {"label": "Fight or flight", "slug": "fight-or-flight"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Just being an alert, high-energy person"}
+  ]
+}

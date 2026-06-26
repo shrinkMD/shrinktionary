@@ -1,0 +1,11 @@
+{
+  "slug": "languishing",
+  "when_it_matters": "It matters because the flat, stuck feeling is easy to dismiss when nothing is dramatically wrong, yet persistent languishing can wear on well-being and sometimes shade toward depression. It is a state of low well-being, not a character flaw.",
+  "confused_with": [
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Burnout", "slug": "burnout"},
+    {"label": "Boredom"},
+    {"label": "Laziness", "slug": "motivation"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "default-mode-network",
+  "when_it_matters": "It matters because research links an overactive default mode network to rumination, the repetitive negative thinking common in depression and anxiety. That connection helps explain why practices like mindfulness, which train attention away from looping inner narration, are studied for mood. Persistent rumination that interferes with life is worth raising with a clinician.",
+  "confused_with": [
+    {"label": "Rumination", "slug": "rumination"},
+    {"label": "Overthinking", "slug": "overthinking"},
+    {"label": "Metacognition", "slug": "metacognition"},
+    {"label": "Just daydreaming"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "avoidant-restrictive-food-intake-disorder",
+  "when_it_matters": "It matters when limited eating is no longer a passing phase and starts causing weight loss, poor growth in a child, nutritional problems, reliance on supplements, or real strain at meals and in daily life. Because the restriction isn't about body image, ARFID is easy to overlook, and an evaluation by a qualified clinician is the right step when eating gets this narrow.",
+  "confused_with": [
+    {"label": "Anorexia nervosa", "slug": "anorexia-nervosa"},
+    {"label": "Ordinary picky eating"},
+    {"label": "Avoidance", "slug": "avoidance"},
+    {"label": "Autism spectrum disorder", "slug": "autism-spectrum-disorder"}
+  ]
+}

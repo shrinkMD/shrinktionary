@@ -1,0 +1,11 @@
+{
+  "slug": "inner-child",
+  "when_it_matters": "It matters when current situations spark feelings that seem older or bigger than the event, because that mismatch can point to childhood patterns worth understanding. The concept is a metaphor and a therapy tool, not a literal part of the mind.",
+  "confused_with": [
+    {"label": "A separate personality"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Self-compassion", "slug": "self-compassion"},
+    {"label": "Regression"},
+    {"label": "Blaming your parents"}
+  ]
+}

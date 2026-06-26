@@ -12,8 +12,8 @@ const definedTermSetSchema = {
   "@context": "https://schema.org",
   "@type": "DefinedTermSet",
   "@id": "https://shrinktionary.com/terms/",
-  name: "Shrinktionary",
-  description: "A plain-English mental health dictionary of symptoms, conditions, medications, and therapy terms, medically reviewed by a board certified psychiatrist.",
+  name: "Shrinktionary Mental Health Glossary",
+  description: "A plain-English glossary of mental health and psychiatry: symptoms, conditions, medications, and therapy terms, medically reviewed by a board certified psychiatrist.",
   url: "https://shrinktionary.com/terms/",
   inLanguage: "en-US",
   hasDefinedTerm: terms.map((t) => ({
@@ -26,23 +26,24 @@ const definedTermSetSchema = {
 };
 const breadcrumbs = [
   { name: "Home", path: "/" },
-  { name: "Terms", path: "/terms/" },
+  { name: "Glossary", path: "/terms/" },
 ];
 ---
 <BaseLayout
-  title="Mental health terms, A to Z | Shrinktionary Dictionary"
-  description="Browse every term in the Shrinktionary mental health dictionary, A to Z. Plain-English definitions of symptoms, conditions, medications, and therapy concepts, medically reviewed by a board certified psychiatrist."
+  title="Mental Health Glossary, A to Z | Shrinktionary"
+  description="A plain-English glossary of mental health and psychiatry terms, A to Z. Definitions of symptoms, conditions, medications, and therapy words, reviewed by a psychiatrist."
   canonicalPath="/terms/"
   breadcrumbs={breadcrumbs}
   jsonld={[definedTermSetSchema]}
-  keywords={["mental health dictionary","mental health terms","psychiatry glossary","mental health definitions"]}
+  keywords={["mental health glossary","glossary of psychiatry","mental health terminology","psychiatry terms","mental health dictionary","mental health definitions","important mental health words"]}
 >
   <section class="bg-sky">
     <div class="mx-auto max-w-content px-5 py-14">
-      <p class="caption text-[#4B5563] uppercase tracking-widest text-xs">Dictionary</p>
-      <h1 class="font-display text-4xl font-semibold text-ink mt-2">Mental health terms, A to Z</h1>
-      <p class="max-w-prose text-[#1F2937] mt-3">Every term, A to Z. Filter by category or search.</p>
-      <div class="max-w-xl mt-6"><SearchBox id="terms-search" placeholder="Search terms" /></div>
+      <p class="caption text-[#4B5563] uppercase tracking-widest text-xs">Glossary</p>
+      <h1 class="font-display text-4xl font-semibold text-ink mt-2">Mental health glossary</h1>
+      <p class="max-w-prose text-[#1F2937] mt-3">A plain-English glossary of mental health and psychiatry: {terms.length} terms covering symptoms, conditions, medications, therapy concepts, and the everyday words people get stuck on. Every entry is medically reviewed by a board certified psychiatrist.</p>
+      <p class="max-w-prose text-[#1F2937] mt-3">These are the words you'll meet in an appointment, on a form, or in something you read about your own mental health. Look one up below, or browse <a href="/categories/" class="text-watermelon underline underline-offset-2 hover:text-ink">by category</a> or <a href="/clusters/" class="text-watermelon underline underline-offset-2 hover:text-ink">by language cluster</a> to learn the words in context.</p>
+      <div class="max-w-xl mt-6"><SearchBox id="terms-search" placeholder="Search the glossary" /></div>
     </div>
   </section>
 
@@ -71,22 +72,4 @@ const breadcrumbs = [
 
   <script>
     const buttons = document.querySelectorAll("[data-cat]");
-    const items = document.querySelectorAll("[data-term-list] li");
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const cat = btn.getAttribute("data-cat");
-        buttons.forEach((b) => {
-          const active = b === btn;
-          b.setAttribute("aria-pressed", String(active));
-          b.classList.toggle("bg-watermelon", active);
-          b.classList.toggle("text-white", active);
-          b.classList.toggle("border-watermelon", active);
-        });
-        items.forEach((li) => {
-          const show = cat === "all" || li.getAttribute("data-category") === cat;
-          (li as HTMLElement).style.display = show ? "" : "none";
-        });
-      });
-    });
-  </script>
-</BaseLayout>
+    con

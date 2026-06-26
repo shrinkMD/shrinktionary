@@ -1,0 +1,10 @@
+{
+  "slug": "disruptive-mood-dysregulation-disorder",
+  "when_it_matters": "It matters when a child's temper outbursts are severe and frequent and the mood between them stays angry or irritable most of the day, lasting about a year across more than one setting. That chronic pattern is what separates DMDD from ordinary tantrums and helps clinicians avoid mislabeling it as bipolar disorder.",
+  "confused_with": [
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Oppositional defiant disorder", "slug": "oppositional-defiant-disorder"},
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Irritability", "slug": "irritability"}
+  ]
+}

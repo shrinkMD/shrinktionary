@@ -1,0 +1,8 @@
+{
+  "slug": "narcolepsy",
+  "faqs": [
+    {"q": "What is narcolepsy?", "a": "Narcolepsy is a chronic neurological disorder that disrupts the brain's control of sleeping and waking. It causes severe daytime sleepiness and sudden urges to sleep, even in the middle of activities. It's a real physical condition, not laziness or a lack of rest."},
+    {"q": "What is cataplexy?", "a": "Cataplexy is sudden, brief muscle weakness triggered by strong emotion, such as laughing or being surprised. It can make the knees buckle or the face go slack. It's a feature of type 1 narcolepsy and is linked to low levels of a brain chemical called hypocretin."},
+    {"q": "Can sleeping more cure narcolepsy?", "a": "No. People with narcolepsy can sleep a full night and still be overpoweringly sleepy by midday. There's no cure, but a combination of scheduled naps, sleep habits, and medications prescribed by a sleep specialist can substantially improve daytime alertness."}
+  ]
+}

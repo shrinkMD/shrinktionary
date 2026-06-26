@@ -3,7 +3,7 @@ title: "Bipolar and mood language"
 slug: bipolar-and-mood-language
 problem: "The words for mood that swings in both directions: the highs of mania and hypomania, the lows of depression, and the terms that tell them apart."
 intro: "Mood disorders that include highs have their own vocabulary, and getting these words right changes the whole picture, because the treatment differs from depression alone."
-terms: [bipolar-disorder, mania, hypomania, cyclothymia, mood-stabilizer, lithium, grandiosity, racing-thoughts, depression, schizoaffective-disorder]
+terms: [bipolar-disorder, mania, hypomania, cyclothymia, mood-stabilizer, lithium, grandiosity, racing-thoughts, depression, schizoaffective-disorder, disruptive-mood-dysregulation-disorder]
 network_links:
   - { site: depressionresource, url: "https://depressionresource.org/", label: "Depression education at DepressionResource" }
   - { site: psychiatryrx, url: "https://psychiatryrx.org/", label: "Medication guides on PsychiatryRx" }

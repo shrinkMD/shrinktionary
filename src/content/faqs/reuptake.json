@@ -1,0 +1,8 @@
+{
+  "slug": "reuptake",
+  "faqs": [
+    {"q": "What is reuptake?", "a": "Reuptake is a normal recycling step in how brain cells communicate. After a neurotransmitter like serotonin carries its signal across the gap between two neurons, the cell that released it pulls a portion back inside to be reused. That pulling-back is reuptake."},
+    {"q": "How do SSRIs affect reuptake?", "a": "A selective serotonin reuptake inhibitor, or SSRI, blocks the transporter protein that reabsorbs serotonin. With reuptake slowed, more serotonin stays in the synapse and remains available to keep signaling. An SNRI does the same for both serotonin and norepinephrine."},
+    {"q": "Why do reuptake inhibitors take weeks to work?", "a": "Because the brain adapts gradually. The benefit appears to come not just from the immediate chemical change but from slower adjustments the brain makes in response. These medications should be started and stopped only with a prescriber's guidance."}
+  ]
+}

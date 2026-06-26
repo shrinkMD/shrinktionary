@@ -1,0 +1,10 @@
+{
+  "slug": "reuptake",
+  "when_it_matters": "It matters because reuptake is the mechanism behind some of the most widely prescribed mental health medications. Understanding it helps make sense of how SSRIs and SNRIs work, why they take weeks rather than hours to help, and why stopping them abruptly can cause problems. Decisions about these medications always belong with a prescribing clinician.",
+  "confused_with": [
+    {"label": "Neurotransmitter", "slug": "neurotransmitter"},
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "The chemical imbalance idea of depression"}
+  ]
+}

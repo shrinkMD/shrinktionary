@@ -1,1 +1,9 @@
 https://www.shrinktionary.com/* https://shrinktionary.com/:splat 301
+
+# Glossary keyword aliases -> canonical A-Z glossary
+/glossary /terms/ 301
+/glossary/ /terms/ 301
+/mental-health-glossary /terms/ 301
+/mental-health-glossary/ /terms/ 301
+/psychiatry-glossary /terms/ 301
+/psychiatry-glossary/ /terms/ 301

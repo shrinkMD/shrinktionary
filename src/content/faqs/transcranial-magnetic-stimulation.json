@@ -1,0 +1,8 @@
+{
+  "slug": "transcranial-magnetic-stimulation",
+  "faqs": [
+    {"q": "What is transcranial magnetic stimulation?", "a": "TMS is a noninvasive brain stimulation treatment. A coil rests against the scalp and delivers brief magnetic pulses that pass painlessly through the skull and gently nudge the activity of nerve cells underneath. It's cleared by the FDA for depression that hasn't responded well to medication, among other uses."},
+    {"q": "Is TMS the same as ECT?", "a": "No. They're different treatments. ECT uses electrical current to trigger a brief, controlled seizure under general anesthesia, while TMS uses magnetic pulses, doesn't cause a seizure on purpose, needs no anesthesia, and doesn't affect memory the way ECT can."},
+    {"q": "What are the side effects of TMS?", "a": "The most common side effects are mild, such as scalp discomfort or headache near the treatment site. People stay awake and can usually drive home afterward. A rare but serious risk is a seizure, which is why providers screen for risk factors before starting."}
+  ]
+}

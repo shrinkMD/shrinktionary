@@ -1,0 +1,10 @@
+{
+  "slug": "emotional-dysregulation",
+  "when_it_matters": "It matters because it's often the part of a condition that causes the most day-to-day trouble in relationships, work, and self-image. Naming it points toward concrete help, since skills-based therapies can teach people to notice, slow, and steer strong emotions, and the right support depends on what's driving it.",
+  "confused_with": [
+    {"label": "Emotional regulation", "slug": "emotional-regulation"},
+    {"label": "Window of tolerance", "slug": "window-of-tolerance"},
+    {"label": "Irritability", "slug": "irritability"},
+    {"label": "Distress tolerance", "slug": "distress-tolerance"}
+  ]
+}

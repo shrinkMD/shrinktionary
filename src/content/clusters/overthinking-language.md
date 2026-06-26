@@ -3,7 +3,7 @@ title: "Overthinking language"
 slug: overthinking-language
 problem: "The words for the loops: repetitive thinking that feels like problem-solving but doesn't resolve. If your mind won't switch off, this is the vocabulary."
 intro: "Overthinking has more than one name in clinical language, and the differences matter. These words separate the loops that face the future from the ones that face the past."
-terms: [rumination, overthinking, intrusive-thought, catastrophizing, cognitive-distortion, cognitive-restructuring, hypervigilance, compulsion]
+terms: [rumination, overthinking, intrusive-thought, catastrophizing, cognitive-distortion, cognitive-restructuring, hypervigilance, compulsion, perfectionism, default-mode-network]
 network_links:
   - { site: shrinq, url: "https://shrinq.com/", label: "Spot your thinking patterns with shrinQ" }
   - { site: unstuck, url: "https://beunstuck.app/", label: "Work through moments with Unstuck" }

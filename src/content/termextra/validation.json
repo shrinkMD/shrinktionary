@@ -1,0 +1,10 @@
+{
+  "slug": "validation",
+  "when_it_matters": "It matters because feeling understood is one of the most reliable ways to calm distress and keep a hard conversation from breaking down. In relationships it builds trust, and in therapy it's part of what makes change possible, since people can usually work with an emotion more easily once it's been acknowledged.",
+  "confused_with": [
+    {"label": "Boundaries", "slug": "boundaries"},
+    {"label": "Self-compassion", "slug": "self-compassion"},
+    {"label": "People-pleasing", "slug": "people-pleasing"},
+    {"label": "Emotional labor", "slug": "emotional-labor"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "pressured-speech",
+  "when_it_matters": "It matters when fast, hard-to-interrupt talking shows up as part of a broader change, such as needing little sleep, feeling unusually energized, or having thoughts that race. That pattern can signal a manic or hypomanic episode, which is treatable and benefits from prompt attention.",
+  "confused_with": [
+    {"label": "Mania", "slug": "mania"},
+    {"label": "Hypomania", "slug": "hypomania"},
+    {"label": "Racing thoughts", "slug": "racing-thoughts"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Just being a fast talker"}
+  ]
+}

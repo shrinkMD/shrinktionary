@@ -1,0 +1,10 @@
+{
+  "slug": "catatonia",
+  "when_it_matters": "It matters because catatonia needs prompt professional evaluation and can sometimes accompany a serious medical condition. Sudden unresponsiveness, stopping movement or speech, holding unusual postures, or stopping eating and drinking all warrant urgent care, and quick recognition tends to lead to better outcomes.",
+  "confused_with": [
+    {"label": "Psychomotor agitation", "slug": "psychomotor-agitation"},
+    {"label": "Flat affect", "slug": "flat-affect"},
+    {"label": "Stupor or delirium", "slug": "delirium"},
+    {"label": "Severe depression", "slug": "depression"}
+  ]
+}

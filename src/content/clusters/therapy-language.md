@@ -3,7 +3,7 @@ title: "Therapy language"
 slug: therapy-language
 problem: "The words for the kinds of therapy and the techniques inside them, so you know what a clinician means when they name an approach."
 intro: "Therapy comes in many forms, and the names blur together fast. These are the words for the main approaches and the techniques that power them."
-terms: [cbt, dbt, exposure-therapy, exposure-and-response-prevention, behavioral-activation, cognitive-restructuring, acceptance-and-commitment-therapy, emdr, interpersonal-therapy, motivational-interviewing, psychodynamic-therapy, group-therapy, psychoeducation, therapeutic-alliance, transference, schema-therapy]
+terms: [cbt, dbt, exposure-therapy, exposure-and-response-prevention, behavioral-activation, cognitive-restructuring, acceptance-and-commitment-therapy, emdr, interpersonal-therapy, motivational-interviewing, psychodynamic-therapy, group-therapy, psychoeducation, therapeutic-alliance, transference, schema-therapy, radical-acceptance, distress-tolerance, grounding-techniques, validation]
 network_links:
   - { site: shrinkopedia, url: "https://shrinkopedia.com/", label: "Encyclopedia depth on Shrinkopedia" }
   - { site: shrinkmd, url: "https://shrinkmd.com/", label: "Therapy at shrinkMD" }

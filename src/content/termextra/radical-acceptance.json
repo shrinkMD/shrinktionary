@@ -1,0 +1,11 @@
+{
+  "slug": "radical-acceptance",
+  "when_it_matters": "It matters most in the face of loss, chronic illness, or situations that can't be undone, where fighting an unchangeable reality keeps a person stuck and adds suffering to pain. Accepting what's real frees up energy to put toward the parts of life that can still be influenced.",
+  "confused_with": [
+    {"label": "Distress tolerance", "slug": "distress-tolerance"},
+    {"label": "DBT", "slug": "dbt"},
+    {"label": "Self-compassion", "slug": "self-compassion"},
+    {"label": "Coping", "slug": "coping"},
+    {"label": "Giving up or approving of what happened"}
+  ]
+}

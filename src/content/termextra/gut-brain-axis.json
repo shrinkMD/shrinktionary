@@ -1,0 +1,10 @@
+{
+  "slug": "gut-brain-axis",
+  "when_it_matters": "It matters when stress shows up in the body and digestive symptoms travel alongside anxiety or low mood. The connection is physical and real, so stomach symptoms during stress deserve to be taken seriously rather than waved off. It doesn't replace established care, but it supports a fuller picture, and tangled gut and mood problems deserve a clinician's attention.",
+  "confused_with": [
+    {"label": "Vagus nerve", "slug": "vagus-nerve"},
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "Stress", "slug": "stress"},
+    {"label": "The idea that probiotics cure mental illness"}
+  ]
+}

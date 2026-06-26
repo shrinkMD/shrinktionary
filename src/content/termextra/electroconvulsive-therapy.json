@@ -1,0 +1,10 @@
+{
+  "slug": "electroconvulsive-therapy",
+  "when_it_matters": "It matters when illness is severe, dangerous, or treatment-resistant and a fast response is needed because of risk to safety. ECT can work when other treatments haven't, and it can work quickly, but it carries real risks and side effects, so the choice is made carefully with a psychiatrist who explains the benefits, risks, and alternatives.",
+  "confused_with": [
+    {"label": "Transcranial magnetic stimulation", "slug": "transcranial-magnetic-stimulation"},
+    {"label": "Treatment-resistant depression", "slug": "treatment-resistant-depression"},
+    {"label": "Catatonia", "slug": "catatonia"},
+    {"label": "The frightening version shown in old films"}
+  ]
+}

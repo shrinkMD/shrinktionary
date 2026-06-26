@@ -1,0 +1,10 @@
+{
+  "slug": "anxious-attachment",
+  "when_it_matters": "It matters when a fear of being left and a need for reassurance keep causing real distress in relationships, or when the worry is intense enough to affect daily life. Understanding the pattern can take the self-blame out of a recurring dynamic and make it easier to ask for what's needed.",
+  "confused_with": [
+    {"label": "Avoidant attachment", "slug": "avoidant-attachment"},
+    {"label": "Secure attachment", "slug": "secure-attachment"},
+    {"label": "Codependency", "slug": "codependency"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"}
+  ]
+}

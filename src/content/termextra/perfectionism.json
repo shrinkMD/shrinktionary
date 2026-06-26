@@ -1,0 +1,10 @@
+{
+  "slug": "perfectionism",
+  "when_it_matters": "It matters when perfectionism starts to cost real time, sleep, or peace of mind, when it stops projects before they begin, or when it comes wrapped in constant anxiety or low mood. A high bar on its own isn't a problem; the cost is what makes it worth attention.",
+  "confused_with": [
+    {"label": "High standards or conscientiousness", "slug": "self-compassion"},
+    {"label": "Obsessive-compulsive disorder", "slug": "ocd"},
+    {"label": "Self-sabotage", "slug": "self-sabotage"},
+    {"label": "Burnout", "slug": "burnout"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "intergenerational-trauma",
+  "when_it_matters": "It matters when patterns of fear, mistrust, silence, or difficulty with closeness don't quite match a person's own life story and seem to have been carried from earlier generations. Seeing a struggle as inherited rather than a personal defect can reduce self-blame and open the door to change in therapy.",
+  "confused_with": [
+    {"label": "Complex PTSD", "slug": "complex-ptsd"},
+    {"label": "Attachment", "slug": "attachment"},
+    {"label": "Inner child", "slug": "inner-child"},
+    {"label": "PTSD", "slug": "ptsd"}
+  ]
+}

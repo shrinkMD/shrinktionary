@@ -1,0 +1,11 @@
+{
+  "slug": "trauma-bonding",
+  "when_it_matters": "It matters when a repeating cycle of harm and warmth keeps someone attached to a relationship that is hurting them, because the bond can make leaving feel impossible. The cycle, not ordinary conflict, is what defines it.",
+  "confused_with": [
+    {"label": "Love for a flawed partner"},
+    {"label": "Codependency", "slug": "codependency"},
+    {"label": "Love bombing", "slug": "love-bombing"},
+    {"label": "Anxious attachment", "slug": "anxious-attachment"},
+    {"label": "Ordinary relationship conflict"}
+  ]
+}

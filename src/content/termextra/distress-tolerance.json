@@ -1,0 +1,11 @@
+{
+  "slug": "distress-tolerance",
+  "when_it_matters": "It matters in moments of peak emotional pain, when the pull toward self-harm, substance use, or impulsive decisions is strongest. Having a set of skills to survive those moments can be the difference between getting through safely and making the situation worse.",
+  "confused_with": [
+    {"label": "Radical acceptance", "slug": "radical-acceptance"},
+    {"label": "Grounding techniques", "slug": "grounding-techniques"},
+    {"label": "Emotional regulation", "slug": "emotional-regulation"},
+    {"label": "DBT", "slug": "dbt"},
+    {"label": "Coping", "slug": "coping"}
+  ]
+}

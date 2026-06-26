@@ -1,0 +1,10 @@
+{
+  "slug": "avoidant-attachment",
+  "when_it_matters": "It matters when discomfort with closeness keeps causing distance or conflict in relationships a person wants to keep, or when the pull-away is a reflex rather than a real need. Recognizing the pattern can open the door to tolerating closeness in small, manageable steps.",
+  "confused_with": [
+    {"label": "Anxious attachment", "slug": "anxious-attachment"},
+    {"label": "Secure attachment", "slug": "secure-attachment"},
+    {"label": "Emotional numbness", "slug": "emotional-numbness"},
+    {"label": "Just being independent"}
+  ]
+}

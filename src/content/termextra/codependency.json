@@ -1,0 +1,11 @@
+{
+  "slug": "codependency",
+  "when_it_matters": "It matters when self-worth depends on being needed and caretaking crowds out a person's own needs, because the pattern can lead to exhaustion and resentment. The loss of a separate self, not generosity itself, is the issue.",
+  "confused_with": [
+    {"label": "Being caring or generous"},
+    {"label": "People pleasing", "slug": "people-pleasing"},
+    {"label": "Anxious attachment", "slug": "anxious-attachment"},
+    {"label": "Healthy interdependence", "slug": "boundaries"},
+    {"label": "Caregiver fatigue", "slug": "burnout"}
+  ]
+}

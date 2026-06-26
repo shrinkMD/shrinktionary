@@ -1,0 +1,11 @@
+{
+  "slug": "high-functioning-anxiety",
+  "when_it_matters": "It matters when persistent worry keeps driving the behavior and quietly taxes sleep, focus, or relationships, even though everything looks fine from the outside. Looking capable does not mean the anxiety is mild.",
+  "confused_with": [
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Perfectionism", "slug": "perfectionism"},
+    {"label": "Being a hard worker"},
+    {"label": "Burnout", "slug": "burnout"},
+    {"label": "Type A personality"}
+  ]
+}

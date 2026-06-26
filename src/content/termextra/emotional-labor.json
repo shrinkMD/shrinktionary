@@ -1,0 +1,10 @@
+{
+  "slug": "emotional-labor",
+  "when_it_matters": "It matters when the load feels constant, unfair, and never quite seen, especially if it comes with exhaustion, resentment, or a sense of losing yourself in everyone else's needs. Some emotional labor is normal; a chronically one-sided load is worth a closer look.",
+  "confused_with": [
+    {"label": "Burnout", "slug": "burnout"},
+    {"label": "People-pleasing", "slug": "people-pleasing"},
+    {"label": "Boundaries", "slug": "boundaries"},
+    {"label": "Just being caring"}
+  ]
+}

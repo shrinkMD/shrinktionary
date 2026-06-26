@@ -1,0 +1,8 @@
+{
+  "slug": "default-mode-network",
+  "faqs": [
+    {"q": "What is the default mode network?", "a": "The default mode network, or DMN, is a group of brain regions that activate together when a person isn't focused on the outside world, such as during rest, daydreaming, and self-reflection. It's a normal feature of the brain that supports reflection, memory, and imagining the future."},
+    {"q": "How is the default mode network related to rumination?", "a": "Research connects an overactive default mode network to rumination, the looping, repetitive negative thinking common in depression and anxiety. When the network stays active and hard to switch off, inward thought can curdle into repetitive worry."},
+    {"q": "Is the default mode network bad?", "a": "No. It's a normal, useful system that helps with reflection and planning. The goal isn't to silence it but to keep it balanced with the brain's task-focused networks. It only becomes a problem when inward focus turns rigid and repetitive."}
+  ]
+}

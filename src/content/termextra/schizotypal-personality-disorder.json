@@ -1,0 +1,10 @@
+{
+  "slug": "schizotypal-personality-disorder",
+  "when_it_matters": "It matters when long-standing social discomfort comes with odd beliefs or perceptions and eccentric behavior that stop short of full psychosis. That mix places it between ordinary personality variation and the psychotic disorders, which is why clinicians weigh it carefully against schizophrenia.",
+  "confused_with": [
+    {"label": "Schizophrenia", "slug": "schizophrenia"},
+    {"label": "Schizoid personality disorder", "slug": "schizoid-personality-disorder"},
+    {"label": "Delusional disorder", "slug": "delusional-disorder"},
+    {"label": "Paranoia", "slug": "paranoia"}
+  ]
+}

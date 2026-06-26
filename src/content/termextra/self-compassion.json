@@ -1,0 +1,10 @@
+{
+  "slug": "self-compassion",
+  "when_it_matters": "It matters when the inner critic is loud enough to fuel real distress, when self-kindness feels impossible, or when harsh self-judgment comes wrapped in low mood, anxiety, or hopelessness. Building self-compassion is often a personal practice, but a persistent harsh inner voice is worth support.",
+  "confused_with": [
+    {"label": "Self-esteem", "slug": "self-esteem"},
+    {"label": "Self-care", "slug": "self-care"},
+    {"label": "Radical acceptance", "slug": "radical-acceptance"},
+    {"label": "Self-pity or making excuses"}
+  ]
+}

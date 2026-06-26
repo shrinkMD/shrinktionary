@@ -1,0 +1,10 @@
+{
+  "slug": "flat-affect",
+  "when_it_matters": "It matters when a noticeable, lasting drop in emotional expression comes with low mood, withdrawal, reduced speech, or trouble functioning. Flat affect can point to depression, a psychotic disorder, a neurological condition, or a medication effect, and sorting out the cause matters because the treatments differ.",
+  "confused_with": [
+    {"label": "Emotional blunting", "slug": "emotional-blunting"},
+    {"label": "Emotional numbness", "slug": "emotional-numbness"},
+    {"label": "Avolition", "slug": "avolition"},
+    {"label": "Alogia", "slug": "alogia"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "love-bombing",
+  "when_it_matters": "It matters when intense early affection is used to override someone's pace and boundaries and later turns into control, because that cycle can be hard to leave and unsafe. The purpose behind the attention, not the intensity alone, is what counts.",
+  "confused_with": [
+    {"label": "Healthy new-relationship excitement"},
+    {"label": "Generosity"},
+    {"label": "Gaslighting", "slug": "gaslighting"},
+    {"label": "Trauma bonding", "slug": "trauma-bonding"},
+    {"label": "Anxious attachment", "slug": "anxious-attachment"}
+  ]
+}

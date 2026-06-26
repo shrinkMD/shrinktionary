@@ -3,7 +3,7 @@ title: "Crisis language"
 slug: crisis-language
 problem: "The words that signal when something is urgent: thoughts of suicide or self-harm, severe agitation, and a break from reality. If any of these are present, help today matters."
 intro: "Some words point to situations that need attention now, not later. This cluster gathers them so they're easy to recognize. If you're in crisis, call or text 988 in the United States, or call 911."
-terms: [suicidal-ideation, self-harm, hopelessness, worthlessness, agitation, mania, hallucination, delusion, paranoia]
+terms: [suicidal-ideation, self-harm, hopelessness, worthlessness, agitation, mania, hallucination, delusion, paranoia, catatonia, delirium, psychomotor-agitation]
 network_links:
   - { site: depressionresource, url: "https://depressionresource.org/", label: "Depression education at DepressionResource" }
   - { site: shrinkmd, url: "https://shrinkmd.com/", label: "Get care at shrinkMD" }

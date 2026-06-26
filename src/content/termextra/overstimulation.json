@@ -1,0 +1,10 @@
+{
+  "slug": "overstimulation",
+  "when_it_matters": "It matters when overstimulation happens often, hits hard, or starts shrinking the places a person can comfortably go, especially if it interferes with work, relationships, or daily life. The occasional flooded feeling is part of being human; a frequent pattern is worth understanding.",
+  "confused_with": [
+    {"label": "Sensory overload", "slug": "sensory-overload"},
+    {"label": "Hyperarousal", "slug": "hyperarousal"},
+    {"label": "Emotional dysregulation", "slug": "emotional-dysregulation"},
+    {"label": "Anxiety", "slug": "anxiety"}
+  ]
+}

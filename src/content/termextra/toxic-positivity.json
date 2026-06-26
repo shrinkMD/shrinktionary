@@ -1,0 +1,11 @@
+{
+  "slug": "toxic-positivity",
+  "when_it_matters": "It matters when the push to stay upbeat starts silencing real emotions, because buried feelings tend to be harder to process and people can end up feeling dismissed or alone. The dismissal, not the optimism, is the issue.",
+  "confused_with": [
+    {"label": "Healthy optimism"},
+    {"label": "Gratitude"},
+    {"label": "Validation", "slug": "validation"},
+    {"label": "Encouragement"},
+    {"label": "Emotional suppression", "slug": "emotional-dysregulation"}
+  ]
+}

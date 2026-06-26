@@ -3,7 +3,7 @@ title: "Medication language"
 slug: medication-language
 problem: "The words you'll hear about psychiatric medications: the classes, how they work, and the safety terms that come up with a prescriber."
 intro: "Psychiatric medication has a vocabulary that's easy to get lost in. These are the words for the main classes and the concepts that shape how a prescriber chooses and adjusts them. For side-by-side drug comparisons, that's the job of PsychiatryRx."
-terms: [ssri, snri, antidepressant, antipsychotic, mood-stabilizer, stimulant, benzodiazepine, lithium, tricyclic-antidepressant, maoi, serotonin, dopamine, half-life, titration, discontinuation-syndrome, serotonin-syndrome, augmentation, black-box-warning, off-label]
+terms: [ssri, snri, antidepressant, antipsychotic, mood-stabilizer, stimulant, benzodiazepine, lithium, tricyclic-antidepressant, maoi, serotonin, dopamine, half-life, titration, discontinuation-syndrome, serotonin-syndrome, augmentation, black-box-warning, off-label, reuptake]
 network_links:
   - { site: psychiatryrx, url: "https://psychiatryrx.org/", label: "Full medication guides on PsychiatryRx" }
   - { site: shrinkmd, url: "https://shrinkmd.com/", label: "Medication management at shrinkMD" }

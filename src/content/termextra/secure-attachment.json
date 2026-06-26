@@ -1,0 +1,10 @@
+{
+  "slug": "secure-attachment",
+  "when_it_matters": "It matters as a reference point rather than a scorecard. Knowing what a steady relationship pattern looks like can help a person notice what they're reaching for and tell the difference between a passing rough patch and a deeper insecurity worth support.",
+  "confused_with": [
+    {"label": "Anxious attachment", "slug": "anxious-attachment"},
+    {"label": "Avoidant attachment", "slug": "avoidant-attachment"},
+    {"label": "Attachment", "slug": "attachment"},
+    {"label": "Resilience", "slug": "resilience"}
+  ]
+}

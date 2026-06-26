@@ -1,0 +1,8 @@
+{
+  "slug": "electroconvulsive-therapy",
+  "faqs": [
+    {"q": "What is electroconvulsive therapy?", "a": "ECT is a medical procedure that uses a brief, controlled electrical current to trigger a short seizure in the brain while a person is under general anesthesia and given a muscle relaxant. It's used mainly for severe depression, and also for some cases of bipolar disorder, severe mania, and catatonia."},
+    {"q": "Is ECT safe?", "a": "Modern ECT is done with anesthesia, muscle relaxants, medical monitoring, and informed consent, and it's one of the more carefully studied treatments in psychiatry. It carries real risks and side effects, most commonly memory trouble, so the decision is made carefully with a psychiatrist."},
+    {"q": "Does ECT cause memory loss?", "a": "Memory trouble is the most common side effect. People often have confusion right after a session and some gaps in memory around the treatment period. This usually improves over time. A psychiatrist can explain the benefits and risks so the choice is made with real information."}
+  ]
+}

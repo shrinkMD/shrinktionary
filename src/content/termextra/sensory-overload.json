@@ -1,0 +1,11 @@
+{
+  "slug": "sensory-overload",
+  "when_it_matters": "It matters when overload happens often, interferes with work, school, relationships, or daily life, or comes with other signs that point toward an underlying condition such as autism, ADHD, or an anxiety disorder. A clinician can help identify what's driving it and suggest accommodations and coping strategies.",
+  "confused_with": [
+    {"label": "Overstimulation", "slug": "overstimulation"},
+    {"label": "Hyperarousal", "slug": "hyperarousal"},
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Just disliking noise or crowds"}
+  ]
+}

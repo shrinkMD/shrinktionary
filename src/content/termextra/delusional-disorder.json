@@ -1,0 +1,10 @@
+{
+  "slug": "delusional-disorder",
+  "when_it_matters": "It matters when a fixed false belief lasts at least a month and shapes someone's life, while the rest of their functioning stays relatively intact. That combination is what separates delusional disorder from schizophrenia and from ordinary strong belief.",
+  "confused_with": [
+    {"label": "Schizophrenia", "slug": "schizophrenia"},
+    {"label": "Schizotypal personality disorder", "slug": "schizotypal-personality-disorder"},
+    {"label": "Paranoia", "slug": "paranoia"},
+    {"label": "Delusion", "slug": "delusion"}
+  ]
+}

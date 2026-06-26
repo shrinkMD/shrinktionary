@@ -1,0 +1,10 @@
+{
+  "slug": "depersonalization-derealization-disorder",
+  "when_it_matters": "It matters when feelings of detachment from yourself or the world are persistent and distressing rather than a brief, passing moment of spaciness that most people have under stress. The persistence and the impact on daily life are what make it a disorder.",
+  "confused_with": [
+    {"label": "Depersonalization", "slug": "depersonalization"},
+    {"label": "Derealization", "slug": "derealization"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Panic disorder", "slug": "panic-disorder"}
+  ]
+}

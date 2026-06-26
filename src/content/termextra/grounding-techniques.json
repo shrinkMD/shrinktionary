@@ -1,0 +1,11 @@
+{
+  "slug": "grounding-techniques",
+  "when_it_matters": "It matters when anxiety, panic, a flashback, or dissociation threatens to take over and a person needs an immediate way to anchor in the present. Grounding gives a concrete, portable first response, though it manages symptoms in the moment rather than replacing treatment for the underlying cause.",
+  "confused_with": [
+    {"label": "Distress tolerance", "slug": "distress-tolerance"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Flashback", "slug": "flashback"},
+    {"label": "Coping", "slug": "coping"},
+    {"label": "Just distracting yourself"}
+  ]
+}

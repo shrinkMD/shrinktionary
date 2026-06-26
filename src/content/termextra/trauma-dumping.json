@@ -1,0 +1,11 @@
+{
+  "slug": "trauma-dumping",
+  "when_it_matters": "It matters when sharing becomes one-sided and consistently overwhelms the listener, because that imbalance can strain relationships and signal that distress needs a more supportive outlet. The pattern, not the act of sharing itself, is what is worth noticing.",
+  "confused_with": [
+    {"label": "Venting", "slug": "coping"},
+    {"label": "Healthy vulnerability", "slug": "boundaries"},
+    {"label": "Asking for support", "slug": "validation"},
+    {"label": "Oversharing"},
+    {"label": "Codependency", "slug": "codependency"}
+  ]
+}

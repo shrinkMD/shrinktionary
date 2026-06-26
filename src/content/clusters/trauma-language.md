@@ -3,7 +3,7 @@ title: "Trauma language"
 slug: trauma-language
 problem: "The words for how the mind and body hold onto overwhelming events: the alarm that won't reset, the memories that intrude, and the disconnection that follows."
 intro: "Trauma has a distinct vocabulary, much of it about a nervous system stuck on alert. These words describe how trauma shows up and the approaches that help."
-terms: [ptsd, complex-ptsd, acute-stress-disorder, flashback, hypervigilance, dissociation, derealization, depersonalization, emdr, avoidance, fight-or-flight]
+terms: [ptsd, complex-ptsd, acute-stress-disorder, flashback, hypervigilance, dissociation, derealization, depersonalization, emdr, avoidance, fight-or-flight, intergenerational-trauma, window-of-tolerance, hyperarousal, depersonalization-derealization-disorder, grounding-techniques]
 network_links:
   - { site: shrinkopedia, url: "https://shrinkopedia.com/", label: "Encyclopedia depth on Shrinkopedia" }
   - { site: shrinkmd, url: "https://shrinkmd.com/", label: "Get care at shrinkMD" }

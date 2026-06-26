@@ -1,0 +1,10 @@
+{
+  "slug": "self-sabotage",
+  "when_it_matters": "It matters when the same self-defeating moves keep blocking things a person genuinely wants across work, health, and relationships, especially if they come with low mood, anxiety, or hopelessness. A one-off setback is ordinary; a steady pattern is worth understanding.",
+  "confused_with": [
+    {"label": "Perfectionism", "slug": "perfectionism"},
+    {"label": "Procrastination or overthinking", "slug": "overthinking"},
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Just being lazy"}
+  ]
+}

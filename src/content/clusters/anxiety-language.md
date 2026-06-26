@@ -3,7 +3,7 @@ title: "Anxiety language"
 slug: anxiety-language
 problem: "The words that show up when fear, worry, and the body's alarm system take over. If you're trying to understand anxiety, this is the vocabulary you'll meet first."
 intro: "Anxiety has a vocabulary of its own, and the words tend to travel together. Learning them as a set, instead of one at a time, makes the whole experience easier to recognize and describe."
-terms: [anxiety, panic-attack, panic-disorder, generalized-anxiety-disorder, social-anxiety-disorder, agoraphobia, specific-phobia, avoidance, hypervigilance, fight-or-flight, hyperventilation, catastrophizing, exposure-therapy, cbt, ssri]
+terms: [anxiety, panic-attack, panic-disorder, generalized-anxiety-disorder, social-anxiety-disorder, agoraphobia, specific-phobia, avoidance, hypervigilance, fight-or-flight, hyperventilation, catastrophizing, exposure-therapy, cbt, ssri, high-functioning-anxiety, grounding-techniques]
 network_links:
   - { site: anxietyresource, url: "https://anxietyresource.org/", label: "Go deep on anxiety at AnxietyResource" }
   - { site: shrinkopedia, url: "https://shrinkopedia.com/", label: "Encyclopedia depth on Shrinkopedia" }

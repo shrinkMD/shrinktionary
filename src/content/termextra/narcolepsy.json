@@ -1,0 +1,10 @@
+{
+  "slug": "narcolepsy",
+  "when_it_matters": "It matters when severe daytime sleepiness keeps interfering with work, school, driving, or daily safety, and a full night of sleep doesn't fix it. Narcolepsy is often missed for years and mistaken for depression or simple tiredness, so an accurate diagnosis by a sleep specialist opens the door to real management of alertness and safety.",
+  "confused_with": [
+    {"label": "Hypersomnia", "slug": "hypersomnia"},
+    {"label": "Insomnia", "slug": "insomnia"},
+    {"label": "Fatigue", "slug": "fatigue"},
+    {"label": "Just not getting enough sleep"}
+  ]
+}

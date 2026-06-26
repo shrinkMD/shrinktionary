@@ -1,0 +1,10 @@
+{
+  "slug": "intermittent-explosive-disorder",
+  "when_it_matters": "It matters when anger turns into repeated, impulsive outbursts that are clearly out of proportion to the trigger and cause real harm or distress, not just an occasional bad temper. The recurring, disproportionate pattern is what defines the disorder.",
+  "confused_with": [
+    {"label": "Oppositional defiant disorder", "slug": "oppositional-defiant-disorder"},
+    {"label": "Antisocial personality disorder", "slug": "antisocial-personality-disorder"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Agitation", "slug": "agitation"}
+  ]
+}

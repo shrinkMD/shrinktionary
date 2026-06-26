@@ -1,0 +1,10 @@
+{
+  "slug": "transcranial-magnetic-stimulation",
+  "when_it_matters": "It matters as an option when antidepressants and therapy haven't been enough, or when someone can't tolerate medication side effects. Because TMS is noninvasive, needs no anesthesia, and generally has mild side effects, it can be worth discussing with a psychiatrist who can weigh a person's history, other conditions, and goals.",
+  "confused_with": [
+    {"label": "Electroconvulsive therapy", "slug": "electroconvulsive-therapy"},
+    {"label": "Treatment-resistant depression", "slug": "treatment-resistant-depression"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "Brain surgery or an implant"}
+  ]
+}

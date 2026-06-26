@@ -1,0 +1,10 @@
+{
+  "slug": "schizoid-personality-disorder",
+  "when_it_matters": "It matters when detachment from relationships and limited emotional expression form a pervasive, long-standing pattern, not just a preference for some alone time. The key feature is genuinely not wanting close connection, which sets it apart from patterns driven by fear or anxiety.",
+  "confused_with": [
+    {"label": "Avoidant personality disorder", "slug": "avoidant-personality-disorder"},
+    {"label": "Schizotypal personality disorder", "slug": "schizotypal-personality-disorder"},
+    {"label": "Autism spectrum disorder", "slug": "autism-spectrum-disorder"},
+    {"label": "Social withdrawal", "slug": "social-withdrawal"}
+  ]
+}

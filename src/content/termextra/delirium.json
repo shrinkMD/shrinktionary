@@ -1,0 +1,11 @@
+{
+  "slug": "delirium",
+  "when_it_matters": "It matters immediately, because delirium is a medical emergency. A sudden change in attention, alertness, or behavior, especially in an older adult or someone who's ill or recently had surgery, signals that something is wrong in the body. The underlying cause needs urgent evaluation, since finding and treating it is what resolves delirium.",
+  "confused_with": [
+    {"label": "Dementia"},
+    {"label": "Paranoia", "slug": "paranoia"},
+    {"label": "Hallucination", "slug": "hallucination"},
+    {"label": "Brain fog", "slug": "brain-fog"},
+    {"label": "Just being confused or stubborn"}
+  ]
+}

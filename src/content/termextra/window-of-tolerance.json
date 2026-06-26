@@ -1,0 +1,10 @@
+{
+  "slug": "window-of-tolerance",
+  "when_it_matters": "It matters as a map for noticing where your arousal is before things spiral, which makes it easier to use a coping skill at the right moment. It's especially useful in trauma and regulation work, where a narrowed window can mean smaller triggers push someone into hyperarousal or shutdown.",
+  "confused_with": [
+    {"label": "Hyperarousal", "slug": "hyperarousal"},
+    {"label": "Emotional dysregulation", "slug": "emotional-dysregulation"},
+    {"label": "Distress tolerance", "slug": "distress-tolerance"},
+    {"label": "Grounding techniques", "slug": "grounding-techniques"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "rejection-sensitive-dysphoria",
+  "when_it_matters": "It matters when reactions to perceived rejection or criticism are intense, fast, and out of proportion to what happened, and when they start shaping behavior through people-pleasing or avoiding risks. Because it's a described pattern rather than a diagnosis, naming it helps point toward support for the conditions it often sits inside, such as ADHD and anxiety.",
+  "confused_with": [
+    {"label": "Emotional dysregulation", "slug": "emotional-dysregulation"},
+    {"label": "Anxious attachment", "slug": "anxious-attachment"},
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"}
+  ]
+}

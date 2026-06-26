@@ -1,0 +1,10 @@
+{
+  "slug": "prolonged-grief-disorder",
+  "when_it_matters": "It matters when intense grief lasts well past a year and keeps interfering with work, relationships, and basic daily functioning, rather than softening over time. The persistence and impairment are what separate prolonged grief disorder from the normal, lasting ache of mourning.",
+  "confused_with": [
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Adjustment disorder", "slug": "adjustment-disorder"},
+    {"label": "PTSD", "slug": "ptsd"}
+  ]
+}

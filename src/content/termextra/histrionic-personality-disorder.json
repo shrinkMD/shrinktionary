@@ -1,0 +1,11 @@
+{
+  "slug": "histrionic-personality-disorder",
+  "when_it_matters": "It matters when attention-seeking, rapidly shifting emotions, or unstable relationships form a rigid, long-standing pattern that causes real distress or gets in the way of work, friendships, and family life. The pattern, not any single dramatic moment, is what separates a personality disorder from ordinary expressiveness, and it's diagnosed only by a qualified clinician.",
+  "confused_with": [
+    {"label": "Narcissistic personality disorder", "slug": "narcissistic-personality-disorder"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "People-pleasing", "slug": "people-pleasing"},
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Just being outgoing or dramatic"}
+  ]
+}

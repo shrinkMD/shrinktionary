@@ -1,0 +1,11 @@
+{
+  "slug": "doomscrolling",
+  "when_it_matters": "It matters when compulsive scrolling of distressing content is hard to stop and starts affecting sleep, mood, or daily life, because the loop tends to deepen anxiety rather than resolve it. Staying informed is fine; the compulsive loop is the issue.",
+  "confused_with": [
+    {"label": "Staying informed"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Rumination", "slug": "rumination"},
+    {"label": "Overstimulation", "slug": "overstimulation"},
+    {"label": "Phone or screen overuse"}
+  ]
+}

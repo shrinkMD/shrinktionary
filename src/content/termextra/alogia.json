@@ -1,0 +1,11 @@
+{
+  "slug": "alogia",
+  "when_it_matters": "It matters when a person's speech has clearly thinned out compared to how they used to communicate, especially alongside reduced expression, low motivation, or social withdrawal. As a negative symptom of schizophrenia, alogia can be an early clue that points toward a serious condition, and catching it early helps.",
+  "confused_with": [
+    {"label": "Flat affect", "slug": "flat-affect"},
+    {"label": "Avolition", "slug": "avolition"},
+    {"label": "Social withdrawal", "slug": "social-withdrawal"},
+    {"label": "Emotional blunting", "slug": "emotional-blunting"},
+    {"label": "Just being a quiet person"}
+  ]
+}

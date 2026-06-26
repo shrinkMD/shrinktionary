@@ -1,0 +1,11 @@
+{
+  "slug": "psychomotor-agitation",
+  "when_it_matters": "It matters when restless, purposeless movement is new or worsening and comes with changes in mood, sleep, or thinking. If it appears suddenly along with confusion, fever, or disorientation, that can signal a medical emergency such as delirium and warrants urgent care.",
+  "confused_with": [
+    {"label": "Agitation", "slug": "agitation"},
+    {"label": "Psychomotor retardation", "slug": "psychomotor-retardation"},
+    {"label": "Akathisia", "slug": "akathisia"},
+    {"label": "Mania", "slug": "mania"},
+    {"label": "Just having a lot of nervous energy"}
+  ]
+}
