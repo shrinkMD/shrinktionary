@@ -1,0 +1,8 @@
+{
+  "slug": "psychoeducation",
+  "faqs": [
+    {"q": "What is psychoeducation?", "a": "Psychoeducation is the part of treatment where a clinician explains a condition in plain terms, including what it is, what causes it, what the symptoms mean, and what treatment options exist. It's usually given to the person being treated and often to their family or close supports too."},
+    {"q": "Does psychoeducation replace therapy or medication?", "a": "No. Psychoeducation isn't a standalone cure. It's a foundation that helps the rest of treatment work better, and for some conditions structured psychoeducation has been shown to lower the chance of relapse."},
+    {"q": "Is psychoeducation the same as searching symptoms online?", "a": "No. Good psychoeducation comes from a trained clinician who tailors the information to the person in front of them and corrects the misunderstandings that unfiltered internet reading tends to create."}
+  ]
+}

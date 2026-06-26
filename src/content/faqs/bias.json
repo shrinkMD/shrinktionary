@@ -1,0 +1,8 @@
+{
+  "slug": "bias",
+  "faqs": [
+    {"q": "What does bias mean in research?", "a": "In research, bias is a systematic error in how a study is designed, run, or analyzed that pushes results away from the truth in a consistent direction. It's not random noise, it's a tilt baked into the process."},
+    {"q": "What is the difference between bias and random chance?", "a": "Random error scatters results in all directions and tends to average out across a large enough study, while bias nudges every measurement the same way and doesn't average out. A p-value addresses chance, not bias, so a study can be statistically significant and still be badly biased."},
+    {"q": "Does bias mean the researchers were dishonest?", "a": "No. Most bias is unintentional and happens despite everyone's good intentions, which is exactly why careful methods like randomization and blinding matter more than good intentions do."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "prn-as-needed",
+  "faqs": [
+    {"q": "What does PRN mean on a prescription?", "a": "PRN means a medication is meant to be taken only when it's needed, in response to a symptom, rather than at the same time every day. The term comes from a Latin phrase meaning as the situation requires, and in everyday practice people just say as needed."},
+    {"q": "Does as needed mean I can take it whenever I want?", "a": "No. A PRN label still spells out limits, including the most you can take in a day and the minimum time to wait between doses. As needed has a ceiling, and going past it can be dangerous, so check the label and ask your prescriber if it's unclear."},
+    {"q": "Are PRN medications safe or non-addictive?", "a": "PRN status doesn't mean a medication is harmless. Some PRN medications, especially benzodiazepines, carry a risk of dependence with frequent use, which is exactly why clinicians set firm limits. If you find yourself reaching for a PRN medication more and more often, that's worth raising with the prescriber."}
+  ]
+}

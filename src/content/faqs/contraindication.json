@@ -1,0 +1,8 @@
+{
+  "slug": "contraindication",
+  "faqs": [
+    {"q": "What does contraindication mean in medicine?", "a": "A contraindication is a specific situation in which a medication, procedure, or treatment shouldn't be used because the risk of harm is too high. It's based on things like a person's health conditions, other medications, age, pregnancy status, or allergies."},
+    {"q": "What's the difference between an absolute and a relative contraindication?", "a": "An absolute contraindication means the treatment should never be used in that situation. A relative contraindication means it can be used, but only with extra caution, closer monitoring, or a clear reason that the benefit outweighs the risk."},
+    {"q": "Is a contraindication the same as a side effect?", "a": "No. A side effect is an unwanted result that can happen during normal use, while a contraindication is a reason not to start the treatment at all. They're also different from a black box warning, which flags serious risks but doesn't necessarily forbid use."}
+  ]
+}

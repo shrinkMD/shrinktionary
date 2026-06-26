@@ -1,0 +1,8 @@
+{
+  "slug": "mental-status-exam",
+  "faqs": [
+    {"q": "What is a mental status exam?", "a": "It's a clinician's structured observation of how a person is presenting at a single point in time, covering mood, thinking, speech, and behavior. It's often described as the mental health version of a physical exam."},
+    {"q": "What does a mental status exam cover?", "a": "It looks at appearance and behavior, speech, mood and affect, thought process and content, perception, cognition such as attention and memory, and insight and judgment. Much of it happens through ordinary conversation."},
+    {"q": "Is the mental status exam a diagnosis?", "a": "No. It's one source of information that a clinician combines with history, symptoms, and sometimes lab work to reach a conclusion. It describes the present moment, not who a person is."}
+  ]
+}

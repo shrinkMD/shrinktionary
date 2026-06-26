@@ -1,0 +1,8 @@
+{
+  "slug": "systematic-review",
+  "faqs": [
+    {"q": "What is a systematic review?", "a": "A systematic review is an attempt to answer a single, focused question by finding and evaluating every relevant study, not just the ones that are easy to find or happen to agree. It's a structured, repeatable process for pulling the whole body of evidence together."},
+    {"q": "What is the difference between a systematic review and a meta-analysis?", "a": "A systematic review is the structured process of finding and appraising all the relevant studies. A meta-analysis is the statistical method for combining their results into a single estimate, and it's often part of a systematic review though the two aren't the same thing."},
+    {"q": "Does a systematic review guarantee the truth?", "a": "No. A systematic review is only as good as the studies it includes and the care of the people who did it. A careful review of weak studies still rests on weak ground, though it remains one of the strongest forms of evidence available."}
+  ]
+}

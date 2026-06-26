@@ -1,0 +1,8 @@
+{
+  "slug": "p-value",
+  "faqs": [
+    {"q": "What does a p-value actually tell you?", "a": "A p-value estimates how likely you'd see results at least as extreme as the ones you got if there were really no effect at all. A small p-value flags that the result would be uncommon under that no-effect assumption, and that's the whole job it does."},
+    {"q": "Does a low p-value mean a result is true or important?", "a": "No. A low p-value isn't the probability that a finding is true, and it doesn't tell you how big or meaningful an effect is. For the size of an effect you need to look at the effect size, and for confidence you need to see whether other studies found the same thing."},
+    {"q": "What does statistically significant really mean?", "a": "It usually just means the p-value fell below a chosen cutoff, often 0.05, so the result is probably not pure chance. It does not mean the effect is large, meaningful, or proven, which is why the word significant is easy to over-read."}
+  ]
+}

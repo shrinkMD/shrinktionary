@@ -1,0 +1,8 @@
+{
+  "slug": "correlation-and-causation",
+  "faqs": [
+    {"q": "What's the difference between correlation and causation?", "a": "Correlation means two things tend to rise and fall together, while causation means one thing actually produces the other. A correlation by itself can't tell you whether there's a cause behind the pattern."},
+    {"q": "Why doesn't correlation prove causation?", "a": "Two things can move together for several reasons. One might cause the other, the relationship might run the opposite way, a hidden third factor might drive both, or the pattern might just be coincidence."},
+    {"q": "How do researchers test whether something actually causes an outcome?", "a": "A randomized controlled trial is the most powerful tool, because randomly assigning people to groups breaks the link to hidden third factors. When that isn't possible, researchers use careful designs and statistics to rule out alternatives, though those are harder to trust than a clean experiment."}
+  ]
+}

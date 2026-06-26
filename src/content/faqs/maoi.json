@@ -1,0 +1,8 @@
+{
+  "slug": "maoi",
+  "faqs": [
+    {"q": "What does MAOI stand for?", "a": "MAOI stands for monoamine oxidase inhibitor, one of the oldest classes of antidepressant dating back to the 1950s. It blocks an enzyme that breaks down chemical messengers in the brain, which leaves more of them available."},
+    {"q": "Why do MAOIs require diet restrictions?", "a": "The same enzyme that MAOIs block also helps break down tyramine, found in foods like aged cheeses and cured meats. With the enzyme blocked, tyramine can build up and push blood pressure dangerously high, which is why prescribers give specific diet guidance."},
+    {"q": "Why aren't MAOIs prescribed as often anymore?", "a": "They interact with many foods and other medications, so they're usually reserved for when several other antidepressants haven't worked. The strict diet and interaction rules belong with the prescriber and pharmacist, and any decision to start, change, or stop one should be made with them."}
+  ]
+}

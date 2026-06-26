@@ -1,0 +1,8 @@
+{
+  "slug": "gaba",
+  "faqs": [
+    {"q": "What does GABA do in the brain?", "a": "GABA is the brain's main inhibitory neurotransmitter, which means its job is to quiet things down. It acts like a brake pedal for the nervous system, making nerve cells less likely to fire and helping keep brain activity balanced."},
+    {"q": "How do benzodiazepines relate to GABA?", "a": "Benzodiazepines enhance how GABA acts at its receptors, which is why they can ease anxiety and help with sleep. That same mechanism explains why they can cause drowsiness and carry real risks of dependence when used long term."},
+    {"q": "Do GABA supplements boost GABA in the brain?", "a": "Taking a GABA supplement isn't the same as boosting GABA in the brain. There's limited evidence that GABA from supplements crosses easily into the brain, so swallowing it is not the same as the brain producing and using its own."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "operant-conditioning",
+  "faqs": [
+    {"q": "What is operant conditioning?", "a": "It's a kind of learning in which the consequences of a behavior shape how often that behavior happens again. Actions that lead to good outcomes get repeated, and actions that lead to bad outcomes tend to fade out."},
+    {"q": "What is the difference between reinforcement and punishment?", "a": "Reinforcement makes a behavior more likely and punishment makes it less likely. Each can be positive, meaning something is added, or negative, meaning something is removed, and what matters is the effect on future behavior, not whether it feels good."},
+    {"q": "How is operant conditioning different from classical conditioning?", "a": "Classical conditioning is about learning to associate two things, like a sound with a feeling, while operant conditioning is about learning from the results of your own actions. The two often work together but describe different mechanisms."}
+  ]
+}

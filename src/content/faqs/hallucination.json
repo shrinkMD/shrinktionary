@@ -1,0 +1,8 @@
+{
+  "slug": "hallucination",
+  "faqs": [
+    {"q": "What is a hallucination?", "a": "A hallucination is a sensory experience that feels real but isn't actually happening in the outside world. The brain produces a sight, sound, smell, taste, or physical sensation without any matching source, and hearing voices when no one is speaking is the most common type."},
+    {"q": "What can cause hallucinations?", "a": "They can be a symptom of conditions like schizophrenia or bipolar disorder, but they can also come from sleep deprivation, high fever, certain medications, substance use, or some medical conditions. Because there are many possible causes, a professional evaluation matters, since the right treatment depends on what's behind them."},
+    {"q": "What's the difference between a hallucination and a delusion?", "a": "A hallucination is a false perception, something a person senses, while a delusion is a false belief, something a person thinks is true. The two can occur together, but they're different symptoms."}
+  ]
+}

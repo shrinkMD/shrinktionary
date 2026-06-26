@@ -1,0 +1,8 @@
+{
+  "slug": "hpa-axis",
+  "faqs": [
+    {"q": "What is the HPA axis?", "a": "The HPA axis is the body's main stress response system, and the letters stand for the hypothalamus, pituitary gland, and adrenal glands. These three structures talk to each other in a chain, which is why it's called an axis."},
+    {"q": "How does the HPA axis respond to stress?", "a": "When the brain perceives stress, the hypothalamus signals the pituitary, the pituitary signals the adrenal glands, and the adrenal glands release cortisol into the bloodstream. The system is also built to switch off, winding the response back down once the stress passes."},
+    {"q": "What's the difference between the HPA axis and fight-or-flight?", "a": "The fast, immediate fight-or-flight reaction is largely the work of the autonomic nervous system. The HPA axis is the slower, hormone-driven arm of the stress response that builds and lasts longer."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "hippocampus",
+  "faqs": [
+    {"q": "What does the hippocampus do?", "a": "The hippocampus is best known as a hub for memory. It helps turn short-term experiences into longer-term memories and is important for navigation and for placing memories in their context of time and place."},
+    {"q": "How does stress affect the hippocampus?", "a": "The hippocampus is sensitive to stress hormones like cortisol, and prolonged, heavy stress appears to affect its structure and function. That's part of why it draws so much research attention in depression, PTSD, and chronic stress."},
+    {"q": "Does the hippocampus cause depression or PTSD?", "a": "It isn't accurate to say that changes in the hippocampus alone cause these conditions. They involve many brain regions and factors, and the hippocampus is one important player in a complex network, not a single cause."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "stress",
+  "faqs": [
+    {"q": "What is stress?", "a": "Stress is what happens when life makes a demand and your body gears up to meet it, like a deadline or a hard conversation. The brain reads the situation as something to handle, and the body responds with alertness, a faster heart rate, and a release of hormones that get you ready to act."},
+    {"q": "Is all stress bad for you?", "a": "No. Short bursts of stress are normal and built in, and a manageable amount can sharpen focus and motivate action. What wears people down is chronic stress, the kind that hangs around for weeks or months with no off switch."},
+    {"q": "What is the difference between stress and anxiety?", "a": "Stress is the response to a real, present demand and usually clears once the situation passes. Anxiety can show up without a clear cause and linger after the demand is gone, even though the two overlap."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "effect-size",
+  "faqs": [
+    {"q": "What is effect size in research?", "a": "Effect size is a number that answers the question of how much. If a study finds a therapy reduces symptoms, the effect size tells you how big that reduction really is, separating whether something worked from how well it worked."},
+    {"q": "What's the difference between effect size and a p-value?", "a": "A p-value speaks to whether an effect is likely real rather than chance, while effect size speaks to how large that effect is. A result can be statistically detectable yet trivially small, so a low p-value alone doesn't mean a finding is important."},
+    {"q": "Does a large effect size mean a treatment will work for me?", "a": "Not necessarily. Effect sizes describe averages across groups, not guarantees for any individual person."}
+  ]
+}

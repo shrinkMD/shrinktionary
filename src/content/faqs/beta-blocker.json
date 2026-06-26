@@ -1,0 +1,8 @@
+{
+  "slug": "beta-blocker",
+  "faqs": [
+    {"q": "How do beta-blockers help with anxiety?", "a": "When you're anxious, your body releases adrenaline that speeds up the heart and makes hands tremble. A beta-blocker sits on the receptors adrenaline would normally trigger, so the physical reaction is dampened. It doesn't directly change worried thoughts, so it's mostly useful for situations driven by physical symptoms, like performance anxiety."},
+    {"q": "Are beta-blockers addictive?", "a": "No. Beta-blockers aren't addictive and aren't controlled substances. They're also not a substitute for treatments that address the thinking side of anxiety, like therapy."},
+    {"q": "Are beta-blockers safe for everyone?", "a": "Not necessarily. Because they slow the heart and lower blood pressure, people with asthma, certain heart rhythm issues, or low blood pressure may need to avoid them. Whether one is safe for you is a clinical decision, and they shouldn't be started, borrowed, or stopped without medical guidance."}
+  ]
+}

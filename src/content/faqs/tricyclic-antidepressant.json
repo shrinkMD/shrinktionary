@@ -1,0 +1,8 @@
+{
+  "slug": "tricyclic-antidepressant",
+  "faqs": [
+    {"q": "What is a tricyclic antidepressant?", "a": "Tricyclic antidepressants, usually shortened to TCAs, are one of the oldest classes of antidepressant, named for a chemical structure with three rings of atoms. Doctors started using them in the late 1950s, decades before newer antidepressants existed."},
+    {"q": "Why are TCAs used less often today?", "a": "It isn't because they stopped working. Newer classes tend to cause fewer side effects and are safer if someone takes too much, so the higher side effect burden of TCAs usually moves them to a second-line or later choice."},
+    {"q": "How do tricyclic antidepressants work?", "a": "TCAs slow the reabsorption of chemical messengers like serotonin and norepinephrine, leaving more available between nerve cells. They also act on several other chemical systems not tied to mood, which is what drives many of the side effects associated with this class."}
+  ]
+}

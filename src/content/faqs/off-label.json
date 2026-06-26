@@ -1,0 +1,8 @@
+{
+  "slug": "off-label",
+  "faqs": [
+    {"q": "What does off-label prescribing mean?", "a": "It means a doctor prescribes an approved medication in a way that isn't listed in its official FDA approval, such as for a different condition, age group, or purpose. It's a normal and accepted part of medicine."},
+    {"q": "Is off-label use legal and safe?", "a": "Off-label use is legal and routine, and the best off-label use rests on published evidence and established practice. It doesn't mean experimental or reckless, but like any prescribing decision it should be made by a qualified prescriber who knows your history."},
+    {"q": "Can I ask whether my medication is being used off-label?", "a": "Yes, that's a reasonable and normal conversation, not a confrontation. You can ask your prescriber to walk you through the reasoning and the evidence behind the choice."}
+  ]
+}

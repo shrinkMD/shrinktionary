@@ -1,0 +1,8 @@
+{
+  "slug": "black-box-warning",
+  "faqs": [
+    {"q": "What is a black box warning?", "a": "A black box warning, also called a boxed warning, is the strongest safety warning the FDA can put on a medication. It gets its name from the black border around the text on the drug's labeling, and it flags a serious possible risk."},
+    {"q": "Does a black box warning mean a drug is banned or unsafe?", "a": "No. A boxed warning is a flag, not a ban. The medication is still approved and still prescribed, and many widely used, helpful drugs carry one. It doesn't mean the risk is common or that it will happen to you."},
+    {"q": "Why do antidepressants have a black box warning?", "a": "They carry a boxed warning about an increased risk of suicidal thoughts in children, teens, and young adults, especially early in treatment or after a dose change. It doesn't mean antidepressants cause suicide, since untreated depression itself carries serious risk. It's a reminder to monitor closely and stay in contact with the prescriber."}
+  ]
+}
