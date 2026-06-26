@@ -1,0 +1,8 @@
+{
+  "slug": "classical-conditioning",
+  "faqs": [
+    {"q": "What is the difference between classical conditioning and reinforcement?", "a": "Classical conditioning works on automatic responses like fear or salivation that happen without a decision. Reinforcement works on behaviors a person chooses to do, using rewards and consequences."},
+    {"q": "Can classical conditioning be reversed?", "a": "Yes. When the learned cue keeps appearing without the outcome it was paired with, the learned response can fade over time. That fading is called extinction, and it's the principle behind exposure therapy."},
+    {"q": "Does classical conditioning explain all phobias?", "a": "No. Learning by association is one piece of the picture, but many phobias also have roots in genetics, temperament, and other experiences. It helps explain why fear can attach to ordinary things and feel automatic."}
+  ]
+}

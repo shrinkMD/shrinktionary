@@ -1,0 +1,8 @@
+{
+  "slug": "double-blind",
+  "faqs": [
+    {"q": "What is the difference between single-blind and double-blind?", "a": "In a single-blind study, only the participants don't know who is getting what. In a double-blind study, both the participants and the researchers measuring results are kept unaware, which is why it's considered a stronger design."},
+    {"q": "Why does double-blinding matter?", "a": "It reduces bias, the small ways expectations can shape results. If participants or researchers knew the assignments, they might report or look for improvement more readily, and double-blinding keeps these influences from favoring one group."},
+    {"q": "Is a study worthless if it isn't double-blind?", "a": "No. Some treatments, like surgery or talk therapy, are hard to disguise, so researchers use other methods to limit bias. The absence of blinding doesn't make a study worthless, but its results deserve a closer look."}
+  ]
+}

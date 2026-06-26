@@ -1,0 +1,8 @@
+{
+  "slug": "titration",
+  "faqs": [
+    {"q": "What does titrating a medication mean?", "a": "Titration is adjusting a medication dose in steps to reach the right amount for a given person. A prescriber often begins low and raises the dose gradually, and lowers it in steps when it's time to stop or reduce."},
+    {"q": "Why do doctors start medications at a low dose?", "a": "Starting low and going slow often reduces side effects that are most likely early on, and it lets the prescriber see how a person responds before moving higher. It's a standard, careful approach, not a sign the medication is dangerous."},
+    {"q": "Can I adjust my own medication dose?", "a": "No. Titration is a prescriber-managed process, and changing a dose on your own by raising it, lowering it, or stopping can cause side effects or other problems. If side effects are hard to tolerate or the medication doesn't seem to help, that's information for the prescriber."}
+  ]
+}

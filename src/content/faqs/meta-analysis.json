@@ -1,0 +1,8 @@
+{
+  "slug": "meta-analysis",
+  "faqs": [
+    {"q": "What does a meta-analysis mean in a study?", "a": "It means researchers statistically combined the results of many separate studies that asked the same question into one more precise estimate. Pooling far more participants can reveal an effect that individual small studies were too limited to show clearly."},
+    {"q": "Is a meta-analysis better evidence than a single study?", "a": "Usually yes, because it reflects a wider body of evidence, especially when it pulls together well-run randomized controlled trials. Still, its quality depends entirely on the studies that go into it, so flawed inputs produce a more confident-looking version of the same flaws."},
+    {"q": "What's the difference between a meta-analysis and a systematic review?", "a": "A systematic review thoroughly searches for and summarizes all relevant studies on a question, while a meta-analysis adds a statistical step that combines their numbers into a single summary estimate. Many systematic reviews, like those from Cochrane, include a meta-analysis."}
+  ]
+}

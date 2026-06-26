@@ -15,6 +15,22 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
+
+const faqEntries = await getCollection("faqs");
+const faqEntry = faqEntries.find((e) => e.data.slug === entry.data.slug);
+const faqs = faqEntry?.data.faqs ?? [];
+const faqSchema =
+  faqs.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((fq) => ({
+          "@type": "Question",
+          name: fq.q,
+          acceptedAnswer: { "@type": "Answer", text: fq.a },
+        })),
+      }
+    : null;
 const d = entry.data;
 
 const site = "https://shrinktionary.com";
@@ -98,7 +114,7 @@ const breadcrumbs = [
   description={d.short_definition}
   canonicalPath={`/terms/${d.slug}/`}
   ogType="article"
-  jsonld={[medicalWebPageSchema]}
+  jsonld={faqSchema ? [medicalWebPageSchema, faqSchema] : [medicalWebPageSchema]}
   breadcrumbs={breadcrumbs}
   published={d.published}
   modified={d.last_reviewed}
@@ -127,6 +143,23 @@ const breadcrumbs = [
       <div class="prose-body term-body max-w-none">
         <Content />
       </div>
+
+      {faqs.length > 0 ? (
+        <section class="mt-12">
+          <h2 class="font-display text-xl font-semibold text-ink mb-4">Frequently asked questions</h2>
+          <div class="space-y-3">
+            {faqs.map((fq) => (
+              <details class="group rounded-lg bg-neutral border border-[#e2e2e2] p-5">
+                <summary class="flex items-center justify-between cursor-pointer font-semibold text-ink list-none gap-4">
+                  {fq.q}
+                  <span class="text-watermelon text-2xl leading-none group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+                </summary>
+                <p class="text-[#1F2937] mt-3">{fq.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {relatedExisting.length > 0 ? (
         <section class="mt-12">

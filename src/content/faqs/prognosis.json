@@ -1,0 +1,8 @@
+{
+  "slug": "prognosis",
+  "faqs": [
+    {"q": "What does prognosis mean?", "a": "Prognosis is a clinician's best estimate of how a condition is likely to unfold over time, covering questions like how long symptoms might last and how fully a person is likely to recover. It's an informed forecast built from patterns seen across many people, not a guarantee."},
+    {"q": "What's the difference between a diagnosis and a prognosis?", "a": "A diagnosis names what the condition is right now, while a prognosis is about where things are likely headed. The two are related but answer different questions."},
+    {"q": "Can a prognosis change?", "a": "Yes. A prognosis is a working estimate that can be revised as new information comes in, and it isn't a fixed sentence. Factors like catching a condition early, sticking with treatment, and building support often shift the outlook."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "mood-stabilizer",
+  "faqs": [
+    {"q": "What is a mood stabilizer used for?", "a": "It's mainly used in bipolar disorder to keep mood from swinging too high or too low. The goal isn't to flatten emotion, it's to smooth out the extremes so daily life becomes steadier."},
+    {"q": "Is lithium a mood stabilizer?", "a": "Yes, lithium is the classic example and one of the oldest mood stabilizers. Some anti-seizure medications also work in this role, and certain antipsychotics are used similarly."},
+    {"q": "Why does lithium require regular blood tests?", "a": "Lithium needs monitoring to keep the level in a safe and effective range and to check on the kidneys and thyroid. People shouldn't start, adjust, or stop a mood stabilizer on their own, since stopping suddenly can trigger a relapse, so every change goes through the prescriber."}
+  ]
+}

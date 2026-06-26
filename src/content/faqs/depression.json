@@ -1,0 +1,8 @@
+{
+  "slug": "depression",
+  "faqs": [
+    {"q": "What is the difference between depression and sadness?", "a": "Depression is more than feeling sad. It's a persistent state where mood is low, interest fades, energy drops, and sleep and appetite shift for most of the day, nearly every day, for at least two weeks, in a way that interferes with function."},
+    {"q": "Can depression go away on its own?", "a": "Some episodes ease over time, but effective treatments exist, and most people who get evaluated and treated do get better. If low mood, low interest, or low function have lasted more than two weeks, it's worth talking to a clinician."},
+    {"q": "Is depression always caused by something?", "a": "No. Some depressions follow a clear loss or stressor, while others arrive without one. It's a recognized medical condition, not laziness, weakness, or a phase to snap out of."}
+  ]
+}

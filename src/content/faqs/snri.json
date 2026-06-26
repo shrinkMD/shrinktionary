@@ -1,0 +1,8 @@
+{
+  "slug": "snri",
+  "faqs": [
+    {"q": "What is the difference between an SNRI and an SSRI?", "a": "SSRIs act mainly on serotonin alone, while SNRIs also work on norepinephrine, a chemical involved in alertness, energy, and the stress response. The right choice depends on the person, their symptoms, and how they respond."},
+    {"q": "How long does an SNRI take to work?", "a": "Like other antidepressants, SNRIs usually take a few weeks before their full effect on mood becomes clear, even though some changes may show up sooner. They're taken regularly rather than only when symptoms flare."},
+    {"q": "Are SNRIs addictive?", "a": "SNRIs aren't addictive in the way some controlled substances are. Still, stopping suddenly can cause uncomfortable discontinuation symptoms, so they should be tapered gradually under medical guidance rather than stopped abruptly."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "fight-or-flight",
+  "faqs": [
+    {"q": "What happens in the body during fight-or-flight?", "a": "The amygdala signals the release of stress hormones like adrenaline and cortisol. These speed up the heart, quicken breathing, tense the muscles, and sharpen the senses to get the body ready to confront or escape a threat."},
+    {"q": "Is the fight-or-flight response dangerous?", "a": "The response itself isn't a sign of weakness or a malfunction, it's a protective survival mechanism. The physical symptoms it produces, while intense, aren't usually dangerous in themselves."},
+    {"q": "Is fight-or-flight the same as anxiety?", "a": "No. Fight-or-flight is the underlying physical response. Anxiety disorders involve this response firing too often, too strongly, or at the wrong times, such as during a safe but stressful situation."}
+  ]
+}

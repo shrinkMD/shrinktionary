@@ -1,0 +1,8 @@
+{
+  "slug": "hyperventilation",
+  "faqs": [
+    {"q": "Why does hyperventilation make you feel like you can't breathe?", "a": "Breathing too fast or deeply blows off more carbon dioxide than usual, and the drop in blood CO2 produces lightheadedness, tingling, and the paradoxical sense that you can't get enough air even though you're breathing plenty."},
+    {"q": "Is hyperventilation dangerous?", "a": "In a healthy person during anxiety or panic, it isn't dangerous and usually isn't a lung or heart problem. The breathing pattern itself produces the symptoms, not a lack of oxygen. A first episode should still be checked by a clinician to rule out medical causes."},
+    {"q": "How is hyperventilation linked to panic attacks?", "a": "It can become a loop, where the feeling of not getting a satisfying breath drives harder breathing, which lowers CO2 further and worsens symptoms. That's a big part of why a panic attack escalates so fast."}
+  ]
+}

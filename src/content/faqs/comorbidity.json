@@ -1,0 +1,8 @@
+{
+  "slug": "comorbidity",
+  "faqs": [
+    {"q": "Is comorbidity common in mental health?", "a": "Yes, it's common rather than rare. Many people who meet criteria for one disorder also meet criteria for another, since conditions may share risk factors or overlap in their symptoms."},
+    {"q": "How does comorbidity affect treatment?", "a": "It can affect which medication is chosen, change the order of care so the most disabling condition is addressed first, and lengthen recovery. Clinicians try to see the whole picture instead of treating each piece in isolation."},
+    {"q": "Does having comorbid conditions mean I'm sicker?", "a": "Not by itself. Comorbidity isn't an automatic judgment about severity, but it does mean care needs to account for more than one moving part."}
+  ]
+}

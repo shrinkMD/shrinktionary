@@ -118,8 +118,22 @@ const comparisonsCollection = defineCollection({
   }),
 });
 
+const faqsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/faqs" }),
+  schema: z.object({
+    slug: z.string(),
+    faqs: z.array(
+      z.object({
+        q: z.string(),
+        a: z.string(),
+      })
+    ),
+  }),
+});
+
 export const collections = {
   terms: termsCollection,
   categories: categoriesCollection,
   comparisons: comparisonsCollection,
+  faqs: faqsCollection,
 };

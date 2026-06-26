@@ -1,0 +1,8 @@
+{
+  "slug": "randomized-controlled-trial",
+  "faqs": [
+    {"q": "What is a randomized controlled trial?", "a": "It's a study that randomly assigns each participant to either receive a treatment or be in a comparison group that might get a placebo, no treatment, or usual care. The random assignment is what makes it the strongest design for showing whether a treatment actually causes an effect."},
+    {"q": "Why is randomization important in a trial?", "a": "Because people are sorted by chance rather than by choice, the groups tend to be similar in every other way, including factors no one can measure. So if the groups end up different at the end, the treatment is the most likely reason, which is why RCTs are called the gold standard for cause and effect."},
+    {"q": "What's the difference between an RCT and an observational study?", "a": "In an observational study researchers simply watch what happens without assigning treatments, so it can show that two things go together but can't rule out other explanations. Randomization in an RCT can, though a single trial isn't the final word and strong conclusions usually rest on several trials that agree."}
+  ]
+}

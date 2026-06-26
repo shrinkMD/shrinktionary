@@ -1,0 +1,8 @@
+{
+  "slug": "adhd",
+  "faqs": [
+    {"q": "Is ADHD a real mental health condition?", "a": "Yes. ADHD is a neurodevelopmental condition that shapes how the brain develops and works from early on, marked by ongoing inattention, hyperactivity, or impulsivity that interferes with daily life. It isn't laziness or a lack of discipline."},
+    {"q": "Does ADHD go away in adulthood?", "a": "ADHD doesn't simply end at childhood. Symptoms often change shape over time, with visible hyperactivity fading while inattention, restlessness, and trouble with organization continue into adulthood for many people."},
+    {"q": "Is ADHD caused by too much screen time or bad parenting?", "a": "No. ADHD is a difference in how the brain's regulation systems work, not something caused by parenting or screens, even though those myths are common."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "ssri",
+  "faqs": [
+    {"q": "How long does an SSRI take to work?", "a": "Most people don't notice mood change in the first week, and benefits typically build over four to six weeks, sometimes longer. Side effects, when they happen, often arrive first and many early ones fade after the first couple of weeks."},
+    {"q": "Are SSRIs addictive?", "a": "SSRIs are not controlled substances and don't cause the kind of dependence associated with benzodiazepines or opioids. They do require a gradual taper if you and your prescriber decide to stop, because stopping suddenly can cause discontinuation symptoms."},
+    {"q": "What conditions do SSRIs treat?", "a": "Large studies show SSRIs help many people with depression, generalized anxiety, social anxiety, panic disorder, OCD, and PTSD. The decision to start one is clinical and should be made with a licensed clinician who's evaluated you."}
+  ]
+}

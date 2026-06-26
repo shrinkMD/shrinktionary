@@ -1,0 +1,8 @@
+{
+  "slug": "serotonin",
+  "faqs": [
+    {"q": "Is serotonin really the happiness chemical?", "a": "No, that label is catchy but misleading. Mood depends on many neurotransmitters, brain circuits, and life circumstances, not on serotonin alone."},
+    {"q": "Does low serotonin cause depression?", "a": "It isn't proven that depression is simply caused by a serotonin deficiency. That older chemical imbalance idea is now seen as an oversimplification, and the picture is far more complicated than one chemical being too high or too low."},
+    {"q": "How do antidepressants affect serotonin?", "a": "SSRIs slow the reabsorption of serotonin between nerve cells, leaving more of it available, while SNRIs act on serotonin along with norepinephrine. These medications help many people, even though the exact reason they work isn't fully mapped out, and the effect usually builds over weeks."}
+  ]
+}

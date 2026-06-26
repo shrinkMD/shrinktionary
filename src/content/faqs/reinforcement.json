@@ -1,0 +1,8 @@
+{
+  "slug": "reinforcement",
+  "faqs": [
+    {"q": "What is the difference between positive and negative reinforcement?", "a": "Positive reinforcement adds something a person wants after a behavior, like praise or relief, while negative reinforcement takes away something unpleasant, like turning off a loud alarm. Both make the behavior more likely, and the word negative just means something is subtracted, not that it's bad."},
+    {"q": "Is reinforcement the same as punishment?", "a": "No. Reinforcement makes a behavior more likely to happen again, while punishment is meant to make a behavior less likely. People often mix up negative reinforcement with punishment, but they work in opposite directions."},
+    {"q": "How is reinforcement used in therapy?", "a": "A lot of therapy works by changing what gets reinforced. Behavioral activation helps people do small rewarding activities so action feels worthwhile again, and exposure work helps break cycles where avoidance gets reinforced by short-term relief."}
+  ]
+}

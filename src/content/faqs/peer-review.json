@@ -1,0 +1,8 @@
+{
+  "slug": "peer-review",
+  "faqs": [
+    {"q": "What does peer-reviewed mean?", "a": "It means a study was evaluated by independent experts in the same field before a journal published it. Those reviewers, who weren't involved in the work, judge whether the methods are sound, the analysis holds up, and the conclusions follow from the results."},
+    {"q": "Does peer review guarantee a study is correct?", "a": "No. Reviewers usually work from what the authors report and can't redo the experiments or detect deliberate fraud, so flawed studies have passed review and good ones have been wrongly rejected. It raises the average quality of published work but doesn't make any single paper the final truth."},
+    {"q": "Why is peer review important when judging health claims?", "a": "It acts as a filter that catches many errors and pushes authors to support their claims, so a study in a reputable peer-reviewed journal has cleared a bar a blog post or press release hasn't. Confidence still grows most when several independent studies point the same way, not from a single paper."}
+  ]
+}

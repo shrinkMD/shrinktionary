@@ -1,0 +1,8 @@
+{
+  "slug": "placebo",
+  "faqs": [
+    {"q": "What is a placebo in a clinical trial?", "a": "A placebo is a treatment with no active ingredient, made to look just like the real one, such as a pill with no medicine or a sham procedure. Researchers use it as a comparison group so they can separate the treatment's effect from everything else that can change how people feel."},
+    {"q": "Is the placebo effect real?", "a": "Yes, it's a real and well documented response. People can improve after getting a placebo because they expect to feel better, get attention and care, or because the condition would have improved on its own, and the improvement they feel is genuine even though the pill is inactive."},
+    {"q": "What does it mean when a treatment beats placebo?", "a": "It means the treatment group did better than the placebo group, which estimates the treatment's true added benefit. A result only slightly better than placebo is weaker evidence than one with a clear gap, though a treatment that barely beats placebo may still help some people."}
+  ]
+}

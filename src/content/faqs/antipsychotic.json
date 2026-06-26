@@ -1,0 +1,8 @@
+{
+  "slug": "antipsychotic",
+  "faqs": [
+    {"q": "Are antipsychotics only for schizophrenia?", "a": "No. Prescribers also use antipsychotics in bipolar disorder, both for manic episodes and sometimes for maintenance, and they're often added alongside an antidepressant when depression hasn't responded on its own. Being prescribed one doesn't mean a person has lost touch with reality."},
+    {"q": "What's the difference between typical and atypical antipsychotics?", "a": "Typical or first-generation antipsychotics are the older ones, while atypical or second-generation antipsychotics are newer and the more common starting choice today. The two groups differ mostly in their side effect profiles rather than in whether they work."},
+    {"q": "Can you stop taking an antipsychotic suddenly?", "a": "No. Stopping suddenly can trigger a return of symptoms, so people shouldn't start, switch, or stop on their own. Any change goes through the prescriber, who can also monitor things like weight, blood sugar, and movement."}
+  ]
+}

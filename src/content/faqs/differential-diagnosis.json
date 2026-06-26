@@ -1,0 +1,8 @@
+{
+  "slug": "differential-diagnosis",
+  "faqs": [
+    {"q": "What is the difference between a differential diagnosis and a diagnosis?", "a": "The differential is the working list of possible conditions a clinician is weighing. The diagnosis is the conclusion they reach after gathering history, timing, severity, and other evidence to rule conditions in or out."},
+    {"q": "Why does differential diagnosis matter?", "a": "The right diagnosis points to the right treatment. Treating bipolar depression as if it were ordinary depression, for example, can make things worse, so sorting out the differential carefully matters."},
+    {"q": "Can a diagnosis change over time?", "a": "Yes. A differential isn't permanent. As new information appears or symptoms change, a clinician may revisit the list and revise the diagnosis."}
+  ]
+}

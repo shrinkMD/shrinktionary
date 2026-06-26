@@ -1,0 +1,8 @@
+{
+  "slug": "remission",
+  "faqs": [
+    {"q": "Is remission the same as being cured?", "a": "No. A cure means the condition is gone for good, while remission means it's controlled right now with the possibility that symptoms could return. That's why care often continues even when someone feels well."},
+    {"q": "What is the difference between partial and full remission?", "a": "Partial remission means symptoms have improved a lot but some are still present, while full remission means symptoms are gone or nearly gone for a sustained stretch of time. Reaching full remission tends to lower the chance that symptoms come back."},
+    {"q": "Should I stop treatment once I reach remission?", "a": "Not on your own. Many conditions are treated for a while even after symptoms fade, because stopping too soon raises the risk of return, so it's worth asking your prescriber how long to continue and what the plan is for tapering."}
+  ]
+}
