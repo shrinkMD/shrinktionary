@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Corrections", path: "/corrections/" },
+];
+---
+<BaseLayout
+  title="Corrections and updates | Shrinktionary"
+  description="How Shrinktionary corrects errors, updates entries as evidence moves, and what to do if you spot something wrong, out of date, or unclear."
+  canonicalPath="/corrections/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Corrections and updates</h1>
+    <p class="caption text-carbon mt-2">Last updated: June 25, 2026</p>
+    <div class="prose-body mt-6 max-w-none">
+      <p>Shrinktionary will sometimes get something wrong, or fall behind the evidence. When that happens, we want to fix it openly. This page explains how.</p>
+
+      <h2>Corrections</h2>
+      <p>If a Shrinktionary entry contains a factual error, we correct it. When a correction changes the meaning of an entry, we treat it as a real update: the page is revised, it's medically reviewed again, and the "Last reviewed" date on the page moves forward to reflect that. We don't quietly edit a page and act as though the earlier version never existed.</p>
+
+      <h2>Updates</h2>
+      <p>Mental health language and evidence move. The DSM gets revised, new medications enter the market, and clinical understanding shifts. Every Shrinktionary entry shows when it was published and last reviewed, so you can see how current it is. Entries are revisited when the evidence behind them changes.</p>
+
+      <h2>Reporting an error</h2>
+      <p>If you spot something on Shrinktionary that looks wrong, out of date, or unclear, please tell us. Email <a href="mailto:support@shrinktionary.com">support@shrinktionary.com</a> with the page and what you noticed. We check every report against the sources, correct the page if it's wrong, and update the date so the change is visible. You don't need to be a clinician to report something. A confusing or possibly inaccurate page is worth flagging either way.</p>
+    </div>
+  </article>
+</BaseLayout>

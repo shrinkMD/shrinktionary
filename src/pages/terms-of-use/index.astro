@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Terms of use", path: "/terms-of-use/" },
+];
+---
+<BaseLayout
+  title="Terms of use | Shrinktionary"
+  description="The terms for using Shrinktionary, in plain language: educational use only, intellectual property, no warranties, limitation of liability, and how to reach us."
+  canonicalPath="/terms-of-use/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Terms of use</h1>
+    <p class="caption text-carbon mt-2">Last updated: June 25, 2026</p>
+    <div class="prose-body mt-6 max-w-none">
+      <p>These are the terms for using Shrinktionary. We've written them in plain language so they're actually readable.</p>
+
+      <h2>Using the site means accepting these terms</h2>
+      <p>By visiting and using Shrinktionary, you agree to these terms. If you don't agree with them, please don't use the site.</p>
+
+      <h2>Who Shrinktionary is for</h2>
+      <p>Shrinktionary is written for a general adult audience. If you're under 18, please use the site together with a parent or guardian. The site isn't directed at children.</p>
+
+      <h2>The content is for education only</h2>
+      <p>Shrinktionary is a mental health dictionary. Everything on it is for general education. It isn't medical advice, it can't diagnose you, and it isn't a substitute for care from a licensed clinician. Reading Shrinktionary, including pages reviewed by a psychiatrist, doesn't create a clinician-patient relationship. Decisions about your own care, and especially about treatment and medication, belong with a clinician who knows your situation. Please read the full <a href="/disclaimer/">medical disclaimer</a>; it's part of these terms.</p>
+
+      <h2>Intellectual property</h2>
+      <p>The content on Shrinktionary, including the writing, the page structure, and the design, belongs to Shrinktionary and The Shrink Network, except where something is clearly credited to someone else. You're welcome to use Shrinktionary for your own personal, non-commercial use. Read the entries, and share a link with a friend, a family member, or a clinician. That's what the site is for.</p>
+      <p>What you may not do is take the content for your own purposes. That means no scraping, no bulk copying, no automated harvesting, and no republishing of Shrinktionary content, in whole or in part, on another site or in another product, without our written permission. You also may not use Shrinktionary's content to train, fine-tune, or develop machine-learning or AI systems without our written permission. The "shrink" family of names, including Shrinktionary and The Shrink Network, belongs to the network and may not be used in a way that suggests an affiliation that doesn't exist.</p>
+
+      <h2>No warranties</h2>
+      <p>Shrinktionary is researched carefully and medically reviewed, and we work to keep it accurate and current. Even so, the site is provided "as is." We don't promise that it's complete, error-free, or up to date at every moment, and we don't promise that it fits your particular situation. Medicine changes, and a page that was accurate when reviewed may need updating.</p>
+
+      <h2>Limitation of liability</h2>
+      <p>To the extent the law allows, Shrinktionary, The Shrink Network, shrinkMD Publishing, Shariq Refai, MD, MBA, and any contributors aren't liable for any loss or harm that results from using the site or relying on its content. Shrinktionary is a starting point for understanding a word. It isn't a clinician, and it can't take the place of one.</p>
+
+      <h2>Links to other sites</h2>
+      <p>Shrinktionary links to other websites, including other sites in The Shrink Network and outside sources. A link is there to be useful. It isn't an endorsement, and we don't control or take responsibility for the content of sites we link to. Once you leave Shrinktionary, that site's own terms and privacy practices apply.</p>
+
+      <h2>Governing law</h2>
+      <p>These terms are governed by the laws of the State of Florida, without regard to its conflict-of-law rules. Any dispute relating to these terms, or to your use of Shrinktionary, will be handled in the courts located in Florida.</p>
+
+      <h2>Changes to these terms</h2>
+      <p>We may update these terms as the site changes. When we do, we'll update the date at the top of the page. Continuing to use Shrinktionary after a change means you accept the updated terms.</p>
+
+      <h2>Getting in touch</h2>
+      <p>If you have a question about these terms, email <a href="mailto:support@shrinktionary.com">support@shrinktionary.com</a>.</p>
+    </div>
+  </article>
+</BaseLayout>

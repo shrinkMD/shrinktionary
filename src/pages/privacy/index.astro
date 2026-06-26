@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Privacy policy", path: "/privacy/" },
+];
+---
+<BaseLayout
+  title="Privacy policy | Shrinktionary"
+  description="How Shrinktionary handles your information. Plain-language privacy practices: what we collect, what we don't, and how to reach us."
+  canonicalPath="/privacy/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Privacy policy</h1>
+    <p class="caption text-carbon mt-2">Last updated: June 25, 2026</p>
+    <div class="prose-body mt-6 max-w-none">
+      <p>This page explains, in plain language, how Shrinktionary handles information when you visit the site. We've kept it short and honest.</p>
+
+      <h2>The short version</h2>
+      <p>Shrinktionary is a place to read. It isn't built to collect information about you. We don't run advertising trackers, we don't sell personal data, and you don't need an account to use the site.</p>
+
+      <h2>A note on health information</h2>
+      <p>Shrinktionary is an educational publisher, not a healthcare provider. We aren't a clinic, and we aren't a HIPAA-covered entity. Reading the site doesn't create a clinician-patient relationship. We don't ask for, want, or knowingly collect personal health information about you, such as your diagnoses, symptoms, or treatment. Please don't send us that kind of detail. If you email us, share only what you'd be comfortable putting in an ordinary email.</p>
+
+      <h2>What we collect</h2>
+      <p>Shrinktionary doesn't require an account, and there's no login. Search runs entirely in your browser, so what you type into the search box isn't sent to us. Like nearly all websites, our host keeps basic server logs for security and reliability. These typically include the IP address that made a request, the time, the URL requested, and the browser type. These logs aren't used to build a profile of you and are kept only as long as needed for those operational purposes. If we ever add a privacy-respecting analytics service, we'll update this page to name it and describe what it measures.</p>
+
+      <h2>What we don't collect</h2>
+      <p>We don't require personal information to read the site. We don't run advertising networks or cross-site behavioral trackers. We don't sell, rent, or trade personal data. If you choose to email us, we'll have whatever you put in that message, and nothing more.</p>
+
+      <h2>Cookies</h2>
+      <p>Shrinktionary uses cookies and similar local storage only for things that keep the site working. We don't use cookies for advertising or to track you across other websites. Most browsers let you block or clear cookies in their settings if you'd prefer.</p>
+
+      <h2>Third-party services</h2>
+      <p>Running a website means relying on a few outside services, such as web hosting and a content delivery network. These providers handle some technical data, like the request details in their server logs, as part of doing their job. If Shrinktionary links out to another site, including other sites in The Shrink Network, that site has its own privacy practices, and this policy doesn't cover it.</p>
+
+      <h2>Children's privacy</h2>
+      <p>Shrinktionary is written for a general adult audience and isn't directed at children. We don't knowingly collect personal information from children. If you believe a child has sent us personal information, contact us and we'll delete it.</p>
+
+      <h2>Your privacy choices and rights</h2>
+      <p>You can read Shrinktionary without giving us any personal information, and you can block or clear cookies in your browser at any time. Depending on where you live, you may have specific rights over personal information, including the right to know what's collected, to request a copy, and to ask for deletion. Because Shrinktionary is built to be read without accounts, and because we don't sell or share personal information, there's usually very little personal information tied to any one visitor. If you have a request, email <a href="mailto:support@shrinktionary.com">support@shrinktionary.com</a> and we'll do our best to help.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy as the site changes. When we do, we'll update the date at the top of the page.</p>
+
+      <h2>Getting in touch</h2>
+      <p>If you have a question about privacy, or you'd like us to delete something you sent us, email <a href="mailto:support@shrinktionary.com">support@shrinktionary.com</a>.</p>
+    </div>
+  </article>
+</BaseLayout>

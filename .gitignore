@@ -18,3 +18,5 @@ npm-debug.log*
 
 # leftover sandbox phantom dir (delete in Windows)
 .trash-delete-me-in-windows/
+
+.local-package-lock.json

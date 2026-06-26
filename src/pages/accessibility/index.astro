@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Accessibility", path: "/accessibility/" },
+];
+---
+<BaseLayout
+  title="Accessibility | Shrinktionary"
+  description="Shrinktionary's accessibility commitment, where we fall short, and how to reach us if something on the site doesn't work with your assistive technology."
+  canonicalPath="/accessibility/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Accessibility</h1>
+    <p class="caption text-carbon mt-2">Last updated: June 25, 2026</p>
+    <div class="prose-body mt-6 max-w-none">
+      <p>Shrinktionary should be usable by everyone, including people who use screen readers, keyboard navigation, or other assistive technology.</p>
+
+      <h2>Our commitment</h2>
+      <p>We aim to meet the Web Content Accessibility Guidelines, known as WCAG, version 2.2, at Level AA. In practice that means we work to keep text readable and high in contrast, to make the whole site navigable by keyboard, to give images meaningful descriptions, to keep headings and page structure clear, to keep focus indicators visible, to make interactive controls a comfortable size, and to make sure the site works across a range of screen sizes and with reduced motion.</p>
+
+      <h2>Ongoing improvements</h2>
+      <p>Accessibility is treated as continuous work, not a one-time audit. We review color contrast, semantic landmarks, focus management, mobile menu behavior, and keyboard support as we add new pages and components, and we welcome reports that point us at anything we've missed.</p>
+
+      <h2>Where we fall short</h2>
+      <p>Parts of the site may not yet fully meet WCAG 2.2 AA. If you find something on Shrinktionary that's hard to read, hard to navigate, or doesn't work with your assistive technology, we want to hear about it.</p>
+
+      <h2>Getting in touch</h2>
+      <p>Email <a href="mailto:support@shrinktionary.com">support@shrinktionary.com</a>. Tell us what happened and which page you were on, and we'll do our best to fix it and to help you reach the information you were looking for.</p>
+    </div>
+  </article>
+</BaseLayout>

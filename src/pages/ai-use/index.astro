@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "AI use", path: "/ai-use/" },
+];
+---
+<BaseLayout
+  title="AI use and editorial assistance | Shrinktionary"
+  description="How Shrinktionary uses editorial tools, what those tools don't do, and the human authorship and medical review that govern every entry."
+  canonicalPath="/ai-use/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">AI use and editorial assistance</h1>
+    <p class="caption text-carbon mt-2">Last updated: June 25, 2026</p>
+    <div class="prose-body mt-6 max-w-none">
+      <p>This page explains how Shrinktionary uses editorial tools, and the limits on that use. The short version: every definition is written for people, researched from primary sources, and medically reviewed by a board certified psychiatrist before it's published. No entry is published automatically.</p>
+
+      <h2>What governs every entry</h2>
+      <p>Shrinktionary's definitions are written in the voice of Shariq Refai, MD, MBA, FAPA, and reviewed by him for clinical accuracy before publication. The reviewer, the sources, and the review date are part of each entry. Editorial tools may support the workflow, for example by organizing research, checking grammar and consistency, or formatting citations. Those tools assist the work. They don't replace the judgment behind it.</p>
+
+      <h2>What automated tools don't do</h2>
+      <p>Automated tools don't independently publish anything on Shrinktionary. They don't make medical or clinical decisions, and they don't stand in for the editorial and medical review process. Every entry is researched from primary, authoritative sources, such as the DSM-5-TR, the National Institute of Mental Health, the FDA, MedlinePlus, the Mayo Clinic, the American Psychiatric Association, and peer-reviewed literature, and every entry is reviewed for accuracy by Dr. Refai before it goes live.</p>
+
+      <h2>Human and medical oversight</h2>
+      <p>The quality control on Shrinktionary is human. A board certified psychiatrist checks each entry against current evidence, revises or removes anything inaccurate or oversimplified, and signs off before publication. The "Last reviewed" date on every entry reflects that review.</p>
+
+      <h2>Why we tell you this</h2>
+      <p>You should know how the content you're reading is made. Being clear about how entries are written and reviewed is part of how Shrinktionary tries to earn your trust.</p>
+    </div>
+  </article>
+</BaseLayout>

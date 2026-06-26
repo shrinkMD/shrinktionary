@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+import MedicalReviewByline from "../../components/MedicalReviewByline.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Crisis resources", path: "/crisis-resources/" },
+];
+const lines = [
+  { name: "988 Suicide and Crisis Lifeline", detail: "Call or text 988, free and confidential, 24 hours a day.", href: "tel:988" },
+  { name: "Crisis Text Line", detail: "Text HOME to 741741.", href: "sms:741741" },
+  { name: "Veterans Crisis Line", detail: "Call 988, then press 1.", href: "tel:988" },
+  { name: "The Trevor Project (LGBTQ+ youth)", detail: "1-866-488-7386.", href: "tel:1-866-488-7386" },
+  { name: "Trans Lifeline", detail: "1-877-565-8860.", href: "tel:1-877-565-8860" },
+  { name: "Postpartum Support International", detail: "1-800-944-4773.", href: "tel:1-800-944-4773" },
+  { name: "National Domestic Violence Hotline", detail: "1-800-799-7233.", href: "tel:1-800-799-7233" },
+  { name: "SAMHSA FindTreatment.gov", detail: "findtreatment.gov", href: "https://findtreatment.gov" },
+];
+const warning = [
+  "Thoughts of suicide or self-harm",
+  "A plan, intent, or access to means",
+  "An inability to care for yourself, eat, drink, or stay safe",
+  "Hallucinations, delusions, or a break from reality",
+  "A sudden, severe change in mood, judgment, or behavior",
+  "Substance use that has escalated past a point that feels controllable",
+];
+---
+<BaseLayout
+  title="Crisis resources | Shrinktionary"
+  description="If you're in a mental health crisis, call or text 988. What to expect when you call, what an emergency department visit looks like, how to help someone you care about, and a directory of crisis lines."
+  canonicalPath="/crisis-resources/"
+  breadcrumbs={breadcrumbs}
+>
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-14">
+      <p class="caption text-watermelon font-semibold uppercase tracking-widest text-xs">Crisis resources</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">Call or text 988 for the Suicide and Crisis Lifeline.</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">It's free. It's confidential. It's available 24 hours a day in the United States. You don't have to be in immediate danger to call.</p>
+      <div class="flex flex-wrap gap-4 mt-6">
+        <a href="tel:988" class="inline-flex items-center rounded-md bg-watermelon text-white font-medium px-6 py-3 hover:opacity-90">Call 988</a>
+        <a href="sms:988" class="inline-flex items-center rounded-md bg-white text-ink font-medium px-6 py-3 border border-ink hover:text-watermelon hover:border-watermelon">Text 988</a>
+      </div>
+      <p class="text-[#1F2937] mt-6 font-medium">If you may hurt yourself or someone else, call <a href="tel:911" class="text-watermelon underline underline-offset-2">911</a> or go to the nearest emergency department.</p>
+    </div>
+  </section>
+
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <div class="pb-5 border-b border-neutral">
+      <MedicalReviewByline lastReviewed="2026-06-25" />
+    </div>
+
+    <div class="prose-body mt-8 max-w-none">
+      <p>This routing is here when you need it. If you're reading it for yourself, you can stop reading at any point and make the call. If you're reading it for someone you care about, the same is true. Help isn't something you have to earn. It's something to use.</p>
+
+      <h2>Seek help today if any of these are happening</h2>
+      <ul>
+        {warning.map((w) => (<li>{w}</li>))}
+      </ul>
+
+      <h2>What 988 is</h2>
+      <p>988 is the national three-digit number in the United States for any mental health crisis, including thoughts of suicide. It's free, confidential, and answered 24 hours a day. You can call for yourself, or for someone you're worried about. The line has specialized routing for veterans (press 1), Spanish speakers (press 2), and LGBTQ+ youth and young adults (press 3). Text and chat options are available for people who can't or won't speak on the phone. 988 is coordinated by SAMHSA and operated by a national network of local crisis centers.</p>
+
+      <h2>What happens when you call</h2>
+      <p>A trained counselor answers, usually within seconds. They'll ask for a first name, which can be any name, and a few questions about what's going on. They listen without judgment. They don't involve emergency services unless there's an immediate threat to life that can't be addressed any other way, and most calls are handled entirely on the line. There's no time limit. If the call ends and warning signs come back later, you can call again.</p>
+
+      <h2>For someone helping a person in crisis</h2>
+      <p>If you're worried about someone, the most useful single thing you can do is ask directly. The research is consistent: asking someone whether they're thinking about suicide doesn't put the thought in their head. It opens a door. If they say yes, take it seriously. Don't try to talk them out of it, and don't promise to keep it secret. Stay with them, help them call 988, or take them to the emergency department. If lethal means are accessible, limit access if you can do so safely.</p>
+
+      <h2>Crisis lines and support</h2>
+      <ul>
+        {lines.map((l) => (
+          <li><a href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}>{l.name}</a>: {l.detail}</li>
+        ))}
+      </ul>
+
+      <p class="caption text-carbon">Shrinktionary is for general education, not medical advice, and isn't a crisis service itself. The resources above are operated by the named organizations.</p>
+    </div>
+  </article>
+</BaseLayout>

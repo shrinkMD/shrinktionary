@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Disclosures", path: "/disclosures/" },
+];
+---
+<BaseLayout
+  title="Relationships and financial disclosure | Shrinktionary"
+  description="Who publishes Shrinktionary, how it relates to The Shrink Network, and how those relationships affect what you read. Plain-language financial disclosure."
+  canonicalPath="/disclosures/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Relationships and financial disclosure</h1>
+    <p class="caption text-carbon mt-2">Last updated: June 25, 2026</p>
+    <div class="prose-body mt-6 max-w-none">
+      <p>Shrinktionary is part of a connected family of mental health resources, and you should know how they relate.</p>
+
+      <h2>Who's behind Shrinktionary</h2>
+      <p>Shrinktionary is published by shrinkMD Publishing and medically reviewed by Shariq Refai, MD, MBA, FAPA, a board certified psychiatrist. Dr. Refai founded or created several connected mental health properties, together known as The Shrink Network. He's the founder and medical director of shrinkMD, a psychiatric practice, along with educational and publishing properties in the network. Shrinktionary and the other Shrink Network sites are part of that group.</p>
+
+      <h2>How that affects what you read</h2>
+      <p>We disclose these relationships plainly because Shrinktionary links to some of these properties as related resources, and you deserve to know the connection exists. We want to be equally clear about this: the clinical content on Shrinktionary is decided by the evidence and by medical review, not by whether it benefits another part of the network. When an entry points to a sister site, it's because that site is genuinely relevant to the word being explained. Shrinktionary carries no advertising, takes no affiliate or referral commissions, and doesn't sell your data.</p>
+
+      <h2>Editorial independence</h2>
+      <p>The medical review process is the same regardless of any commercial consideration. What an entry says, and what it suggests, is decided by the evidence, not by the network's business interests. If a page ever reads to you like a sales pitch rather than a fair, evidence-based explanation, we want to know. Email <a href="mailto:support@shrinktionary.com">support@shrinktionary.com</a>.</p>
+    </div>
+  </article>
+</BaseLayout>

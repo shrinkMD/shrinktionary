@@ -1,14 +1,21 @@
 ---
 const links = [
+  { label: "Start Here", href: "/start-here/" },
   { label: "Terms", href: "/terms/" },
   { label: "Categories", href: "/categories/" },
   { label: "Term Web", href: "/term-web/" },
-  { label: "Start Here", href: "/start-here/" },
   { label: "Editorial Standards", href: "/editorial-standards/" },
   { label: "The Shrink Network", href: "https://shrinknetwork.com/", external: true },
 ];
 const path = Astro.url.pathname;
 ---
+
+<!-- Crisis bar: present on every page for safety and routing -->
+<div class="bg-ink text-white text-[13px]">
+  <div class="mx-auto max-w-content px-5 py-2 text-center">
+    In crisis or thinking about suicide? Call or text <a href="tel:988" class="font-semibold underline underline-offset-2 hover:text-watermelon">988</a> in the US, available 24 hours a day. If someone is in immediate danger, call <a href="tel:911" class="font-semibold underline underline-offset-2 hover:text-watermelon">911</a>. <a href="/crisis-resources/" class="font-semibold underline underline-offset-2 hover:text-watermelon">Crisis resources</a>
+  </div>
+</div>
 
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral">
   <div class="mx-auto max-w-content px-5 flex items-center justify-between h-16">
