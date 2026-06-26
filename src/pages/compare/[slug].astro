@@ -1,0 +1,133 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import MedicalReviewByline from "../../components/MedicalReviewByline.astro";
+import Disclaimer from "../../components/Disclaimer.astro";
+import NetworkStrip from "../../components/NetworkStrip.astro";
+
+export async function getStaticPaths() {
+  const comparisons = await getCollection("comparisons");
+  return comparisons.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const site = "https://shrinktionary.com";
+
+const allTerms = await getCollection("terms");
+const bySlug = new Map(allTerms.map((t) => [t.data.slug, t.data.term]));
+const relatedExisting = (d.related_terms ?? []).filter((s) => bySlug.has(s));
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: d.title,
+  description: d.short_answer,
+  url: `${site}/compare/${d.slug}/`,
+  inLanguage: "en-US",
+  datePublished: d.published,
+  dateModified: d.last_reviewed,
+  lastReviewed: d.last_reviewed,
+  isPartOf: { "@type": "WebSite", name: "Shrinktionary", url: site },
+  reviewedBy: {
+    "@type": "Person",
+    name: "Shariq Refai, MD, MBA, FAPA",
+    sameAs: ["https://shariqrefai.com", "https://orcid.org/0009-0009-1090-4373"],
+  },
+  author: { "@type": "Person", name: "Shariq Refai, MD, MBA, FAPA", url: "https://shariqrefai.com" },
+  publisher: { "@type": "Organization", name: "shrinkMD Publishing", logo: { "@type": "ImageObject", url: `${site}/favicon-512.png` } },
+  about: d.terms.map((t) => ({ "@type": "DefinedTerm", name: t.name })),
+  citation: d.sources.map((s) => ({ "@type": "CreativeWork", name: s.title, publisher: s.publisher, url: s.url })),
+};
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Compare", path: "/compare/" },
+  { name: d.title, path: `/compare/${d.slug}/` },
+];
+---
+<BaseLayout
+  title={`${d.title}: what's the difference? | Shrinktionary`}
+  description={d.short_answer}
+  canonicalPath={`/compare/${d.slug}/`}
+  ogType="article"
+  jsonld={[schema]}
+  breadcrumbs={breadcrumbs}
+  published={d.published}
+  modified={d.last_reviewed}
+  keywords={[d.title, `${d.title} difference`, ...d.terms.map((t) => t.name)]}
+>
+  <div class="mx-auto max-w-content px-5 pt-10">
+    <nav aria-label="Breadcrumb" class="text-sm text-carbon mb-5">
+      <a href="/" class="hover:text-watermelon">Home</a> <span aria-hidden="true">/</span>
+      <a href="/compare/" class="hover:text-watermelon">Compare</a>
+    </nav>
+    <p class="text-watermelon font-semibold uppercase tracking-widest text-xs">Compare</p>
+    <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">{d.title}</h1>
+    <div class="mt-5 pb-6 border-b border-neutral"><MedicalReviewByline lastReviewed={d.last_reviewed} /></div>
+  </div>
+
+  <article class="mx-auto max-w-prose px-5 py-10">
+    <div class="rounded-lg bg-sky/60 border border-neutral p-5 md:p-6">
+      <p class="text-xs uppercase tracking-widest text-carbon font-semibold mb-2">The short answer</p>
+      <p class="text-lg text-ink">{d.short_answer}</p>
+    </div>
+
+    <p class="text-[#1F2937] mt-6">{d.intro}</p>
+
+    <h2 class="font-display text-2xl font-semibold text-ink mt-12 mb-4">At a glance</h2>
+    <div class="overflow-x-auto rounded-lg border border-neutral">
+      <table class="w-full text-left text-[15px] border-collapse">
+        <thead>
+          <tr class="bg-neutral">
+            <th class="p-3 font-semibold text-ink align-bottom"></th>
+            {d.terms.map((t) => (
+              <th class="p-3 font-display font-semibold text-ink">
+                {t.slug ? <a href={`/terms/${t.slug}/`} class="hover:text-watermelon underline underline-offset-2">{t.name}</a> : t.name}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {d.table.map((row, ri) => (
+            <tr class={ri % 2 ? "bg-white" : "bg-neutral/40"}>
+              <th scope="row" class="p-3 font-semibold text-ink align-top">{row.dimension}</th>
+              {row.values.map((v) => (<td class="p-3 text-[#1F2937] align-top">{v}</td>))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prose-body term-body max-w-none mt-12">
+      <Content />
+    </div>
+
+    {relatedExisting.length > 0 ? (
+      <section class="mt-12">
+        <h2 class="font-display text-xl font-semibold text-ink mb-3">Look up the terms</h2>
+        <div class="flex flex-wrap gap-2">
+          {relatedExisting.map((s) => (
+            <a href={`/terms/${s}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{bySlug.get(s)}</a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
+    <section class="mt-12">
+      <h2 class="font-display text-xl font-semibold text-ink mb-3">Sources</h2>
+      <ol class="space-y-2 list-decimal pl-5">
+        {d.sources.map((s) => (
+          <li class="text-[15px]"><a href={s.url} target="_blank" rel="noopener noreferrer" class="text-watermelon underline underline-offset-2">{s.title}</a><span class="text-[#4B5563]">, {s.publisher}</span></li>
+        ))}
+      </ol>
+    </section>
+
+    <div class="mt-12"><NetworkStrip links={d.network_links} /></div>
+    <div class="mt-10"><Disclaimer /></div>
+  </article>
+</BaseLayout>

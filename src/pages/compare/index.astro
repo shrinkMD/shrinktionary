@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+
+const comparisons = (await getCollection("comparisons")).sort(
+  (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99) || a.data.title.localeCompare(b.data.title)
+);
+const site = "https://shrinktionary.com";
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Compare mental health terms | Shrinktionary",
+  description: "Side-by-side guides to the mental health words people mix up, with the plain-English difference and when each one applies.",
+  url: `${site}/compare/`,
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", name: "Shrinktionary", url: site },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: comparisons.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${site}/compare/${c.data.slug}/`,
+      name: c.data.title,
+    })),
+  },
+};
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Compare", path: "/compare/" },
+];
+---
+<BaseLayout
+  title="Compare mental health terms | Shrinktionary"
+  description="Side-by-side guides to the mental health words people mix up, like panic attack vs anxiety attack and sadness vs depression. The plain-English difference, and when each one applies."
+  canonicalPath="/compare/"
+  jsonld={[itemListSchema]}
+  breadcrumbs={breadcrumbs}
+  keywords={["compare mental health terms","difference between","panic attack vs anxiety attack","sadness vs depression"]}
+>
+  <section class="bg-gradient-to-b from-sky to-white">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <p class="text-watermelon-bright font-semibold uppercase tracking-widest text-xs">Compare</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">What's the difference?</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">Some mental health words get used as if they mean the same thing, and the gap between them changes what you'd do next. These side-by-side guides lay out how two terms are similar, how they genuinely differ, and when each one applies, in plain English.</p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {comparisons.map((c) => (
+        <a href={`/compare/${c.data.slug}/`} class="block rounded-lg bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5 h-full">
+          <p class="text-xs uppercase tracking-widest text-carbon font-semibold mb-1">Comparison</p>
+          <h2 class="font-display text-lg font-semibold text-ink">{c.data.title}</h2>
+          <p class="text-[15px] text-[#4B5563] mt-2 line-clamp-3">{c.data.short_answer}</p>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-12 rounded-lg bg-neutral border border-[#e2e2e2] p-6 md:p-8 max-w-3xl">
+      <h2 class="font-display text-xl font-semibold text-ink">Comparing two medications?</h2>
+      <p class="text-[#1F2937] mt-2">Shrinktionary compares the words. For side-by-side guides to specific psychiatric medications, like one antidepressant versus another, that's the job of our sister site.</p>
+      <a href="https://psychiatryrx.org/compare/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-md bg-watermelon text-white font-medium px-6 py-3 mt-4 hover:opacity-90">Medication comparisons on PsychiatryRx &rarr;</a>
+    </div>
+  </div>
+</BaseLayout>
