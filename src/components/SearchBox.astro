@@ -3,7 +3,7 @@ export interface Props {
   placeholder?: string;
   id?: string;
 }
-const { placeholder = "Search 75+ terms", id = "search" } = Astro.props;
+const { placeholder = "Search the dictionary", id = "search" } = Astro.props;
 ---
 <div class="pagefind-search" id={id} data-placeholder={placeholder}></div>
 

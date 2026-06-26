@@ -1,7 +1,65 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../../components/BaseLayout.astro";
 
-// Each node: label + optional href (term page, category, or external network property)
+const site = "https://shrinktionary.com";
+const termList = await getCollection("terms");
+const categoryList = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
+const termSlugs = new Set(termList.map((t) => t.data.slug));
+const usedCats = new Set(termList.map((t) => t.data.category));
+
+const catColors: Record<string, string> = {
+  symptoms: "#2563EB",
+  conditions: "#7C3AED",
+  medications: "#059669",
+  "therapy-terms": "#D97706",
+  "psychiatry-terms": "#0891B2",
+  "psychology-terms": "#DB2777",
+  "brain-body-terms": "#B45309",
+  "everyday-language": "#4F46E5",
+  "research-terms": "#65A30D",
+};
+
+const netMeta: Record<string, { label: string; url: string }> = {
+  shrinkopedia: { label: "Shrinkopedia", url: "https://shrinkopedia.com/" },
+  anxietyresource: { label: "AnxietyResource", url: "https://anxietyresource.org/" },
+  depressionresource: { label: "DepressionResource", url: "https://depressionresource.org/" },
+  psychiatryrx: { label: "PsychiatryRx", url: "https://psychiatryrx.org/" },
+  anxietyresearch: { label: "AnxietyResearch", url: "https://anxietyresearch.org/" },
+  shrinq: { label: "shrinQ", url: "https://shrinq.com/" },
+  unstuck: { label: "Unstuck", url: "https://beunstuck.app/" },
+  shrinkmd: { label: "shrinkMD", url: "https://shrinkmd.com/" },
+};
+
+type Node = { id: string; label: string; type: "term" | "category" | "network"; category?: string; url: string };
+const nodes: Node[] = [];
+const seen = new Set<string>();
+const addNode = (n: Node) => { if (!seen.has(n.id)) { seen.add(n.id); nodes.push(n); } };
+const rawLinks: { source: string; target: string }[] = [];
+
+for (const c of categoryList) {
+  if (usedCats.has(c.data.slug)) {
+    addNode({ id: `cat:${c.data.slug}`, label: c.data.name, type: "category", category: c.data.slug, url: `/categories/${c.data.slug}/` });
+  }
+}
+for (const t of termList) {
+  const d = t.data;
+  addNode({ id: d.slug, label: d.term, type: "term", category: d.category, url: `/terms/${d.slug}/` });
+  rawLinks.push({ source: d.slug, target: `cat:${d.category}` });
+  for (const r of d.related_terms ?? []) if (termSlugs.has(r)) rawLinks.push({ source: d.slug, target: r });
+  for (const nl of d.network_links ?? []) {
+    const m = netMeta[nl.site];
+    if (m) { addNode({ id: `net:${nl.site}`, label: m.label, type: "network", url: m.url }); rawLinks.push({ source: d.slug, target: `net:${nl.site}` }); }
+  }
+}
+const linkSet = new Set<string>();
+const links: { source: string; target: string }[] = [];
+for (const l of rawLinks) {
+  const k = [l.source, l.target].sort().join("|");
+  if (!linkSet.has(k) && l.source !== l.target) { linkSet.add(k); links.push(l); }
+}
+const graph = { nodes, links, colors: catColors };
+
 const pathways = [
   [
     { label: "Panic", href: "/categories/symptoms/" },
@@ -15,7 +73,6 @@ const pathways = [
   [
     { label: "Depression", href: "/terms/depression/" },
     { label: "Anhedonia", href: "/terms/anhedonia/" },
-    { label: "Motivation", href: "/categories/psychology-terms/" },
     { label: "Behavioral activation", href: "/categories/therapy-terms/" },
     { label: "DepressionResource", href: "https://depressionresource.org/", external: true },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
@@ -25,13 +82,11 @@ const pathways = [
     { label: "Serotonin", href: "/categories/brain-body-terms/" },
     { label: "Side effects", href: "/categories/medications/" },
     { label: "PsychiatryRx", href: "https://psychiatryrx.org/", external: true },
-    { label: "Prescriber questions", href: "/categories/medications/" },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
   ],
   [
     { label: "Rumination", href: "/terms/rumination/" },
     { label: "Overthinking", href: "/categories/everyday-language/" },
-    { label: "Thought loop", href: "/categories/symptoms/" },
     { label: "shrinQ", href: "https://shrinq.com/", external: true },
     { label: "Unstuck", href: "https://beunstuck.app/", external: true },
   ],
@@ -39,7 +94,6 @@ const pathways = [
     { label: "Trauma", href: "/categories/conditions/" },
     { label: "Hypervigilance", href: "/terms/hypervigilance/" },
     { label: "Dissociation", href: "/categories/brain-body-terms/" },
-    { label: "Grounding", href: "/categories/therapy-terms/" },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
   ],
 ];
@@ -50,46 +104,140 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout
-  title="The Term Web | Shrinktionary"
-  description="Words connect. The Term Web maps how the language of mental health is wired together, so you can walk the connections instead of looking up one word at a time."
+  title="The Term Web: how mental health terms connect | Shrinktionary"
+  description="An interactive map of how mental health terms connect. Walk from a symptom to a diagnosis to a treatment to care, instead of looking up one word at a time."
   canonicalPath="/term-web/"
   breadcrumbs={breadcrumbs}
+  keywords={["term web","mental health concept map","how mental health terms connect","mental health knowledge graph"]}
 >
-  <section class="bg-sky">
+  <section class="bg-gradient-to-b from-sky to-white">
     <div class="mx-auto max-w-content px-5 py-16">
-      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink">The Term Web</h1>
-      <p class="max-w-prose text-lg text-[#1F2937] mt-4">Words connect. Walk the connections instead of looking up one word at a time.</p>
+      <p class="text-watermelon font-semibold uppercase tracking-widest text-xs">Shrinktionary Term Web</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">The language of mental health, mapped.</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">Words don't exist alone. A symptom connects to a diagnosis. A diagnosis connects to a treatment. A treatment connects to medications, and on to the questions you'd ask a prescriber. The Term Web shows those connections so you can walk them, instead of looking up one word at a time.</p>
     </div>
   </section>
 
-  <div class="mx-auto max-w-content px-5 py-14">
-    <div class="prose-body max-w-prose">
-      <p>A symptom leads to a diagnosis. A diagnosis leads to a treatment. A treatment leads to medications. Medications lead to questions you'd ask a prescriber. Questions lead to care. Each link is intentional. The Term Web is how Shrinktionary maps those connections.</p>
-      <p>This is the foundation. A fully interactive visualization is coming.</p>
+  <div class="mx-auto max-w-content px-5 py-12">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-5">
+      <div>
+        <h2 class="font-display text-2xl font-semibold text-ink">Explore the map</h2>
+        <p class="text-[#4B5563] text-sm mt-1">Hover a node to light up its connections. Click to open it. Drag to rearrange, scroll or pinch to zoom.</p>
+      </div>
+      <ul class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#4B5563]">
+        {categoryList.filter((c) => usedCats.has(c.data.slug)).map((c) => (
+          <li class="inline-flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-full" style={`background:${catColors[c.data.slug]}`}></span>{c.data.name}</li>
+        ))}
+        <li class="inline-flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-full" style="background:#FF3B3F"></span>Category hub</li>
+        <li class="inline-flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-full" style="background:#111111"></span>Network site</li>
+      </ul>
     </div>
 
-    <div class="mt-12 space-y-6">
-      {pathways.map((chain) => (
-        <div class="rounded-lg bg-neutral p-5 overflow-x-auto">
-          <div class="flex items-center gap-2 min-w-max">
-            {chain.map((node, i) => (
-              <>
-                <a
-                  href={node.href}
-                  target={node.external ? "_blank" : undefined}
-                  rel={node.external ? "noopener noreferrer" : undefined}
-                  class="inline-block rounded-md bg-white px-3 py-2 text-sm font-medium shadow-sm hover:text-watermelon whitespace-nowrap"
-                >{node.label}</a>
-                {i < chain.length - 1 ? <span class="text-watermelon font-bold">→</span> : null}
-              </>
-            ))}
-          </div>
-        </div>
-      ))}
+    <div id="termweb" class="w-full rounded-xl border border-neutral bg-white overflow-hidden" style="height:620px; touch-action:none;">
+      <noscript>
+        <div class="p-6 text-[#4B5563]">The interactive map needs JavaScript. The guided pathways below show the same connections, and every term links to its full entry.</div>
+      </noscript>
     </div>
-
-    <p class="caption text-carbon mt-10 max-w-prose">
-      The interactive Term Web is in development. For now, each pathway above shows a real connection between terms, and you can click any node to read its entry.
-    </p>
+    <script type="application/json" id="tw-data" set:html={JSON.stringify(graph)}></script>
   </div>
+
+  <section class="bg-neutral">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <h2 class="font-display text-3xl font-semibold text-ink">Guided pathways</h2>
+      <p class="max-w-prose text-[#1F2937] mt-3">Each chain is a real route through the network: a symptom leads to a diagnosis, a treatment, a medication, and on to care. Click any step to read it.</p>
+      <div class="mt-8 space-y-5">
+        {pathways.map((chain) => (
+          <div class="rounded-lg bg-white border border-[#e2e2e2] p-5 overflow-x-auto">
+            <div class="flex items-center gap-2 min-w-max">
+              {chain.map((node, i) => (
+                <>
+                  <a href={node.href} target={node.external ? "_blank" : undefined} rel={node.external ? "noopener noreferrer" : undefined} class="inline-block rounded-md bg-neutral px-3 py-2 text-sm font-medium hover:text-watermelon whitespace-nowrap">{node.label}</a>
+                  {i < chain.length - 1 ? <span class="text-watermelon font-bold" aria-hidden="true">&rarr;</span> : null}
+                </>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-prose px-5 py-16">
+    <h2 class="font-display text-2xl font-semibold text-ink">Why a web, not a list</h2>
+    <div class="prose-body mt-4 max-w-none">
+      <p>Mental health rarely shows up one word at a time. Someone searching "panic attack" usually needs "fight-or-flight," "avoidance," and "exposure therapy" too, because those are the next questions. A list can't show that. A web can.</p>
+      <p>The Term Web is built from the same reviewed entries you'll find in the dictionary, wired together by the relationships a clinician would actually draw between them. It's how Shrinktionary turns a pile of definitions into a map you can navigate.</p>
+    </div>
+    <div class="flex flex-wrap gap-4 mt-8">
+      <a href="/terms/" class="inline-flex items-center rounded-md bg-watermelon text-white font-medium px-6 py-3 hover:opacity-90">Browse all terms</a>
+      <a href="/start-here/" class="text-[15px] font-medium text-watermelon">Not sure where to start? &rarr;</a>
+    </div>
+  </section>
 </BaseLayout>
+
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script is:inline>
+  (function () {
+    function init() {
+      if (typeof d3 === "undefined") { return setTimeout(init, 120); }
+      var el = document.getElementById("tw-data");
+      var container = document.getElementById("termweb");
+      if (!el || !container) return;
+      var graph = JSON.parse(el.textContent);
+      var width = 900, height = 620;
+      var colors = graph.colors || {};
+      function colorFor(n) { if (n.type === "network") return "#111111"; if (n.type === "category") return "#FF3B3F"; return colors[n.category] || "#2563EB"; }
+      function radius(n) { if (n.type === "category") return 13; if (n.type === "network") return 10; return 9; }
+
+      var svg = d3.select(container).append("svg")
+        .attr("viewBox", "0 0 " + width + " " + height)
+        .attr("width", "100%").attr("height", "100%")
+        .attr("role", "img").attr("aria-label", "Interactive map of how Shrinktionary terms connect");
+      var g = svg.append("g");
+      svg.call(d3.zoom().scaleExtent([0.4, 3]).on("zoom", function (e) { g.attr("transform", e.transform); }));
+
+      var link = g.append("g").attr("stroke", "#cbd5e1").attr("stroke-width", 1.2)
+        .selectAll("line").data(graph.links).join("line");
+
+      var node = g.append("g").selectAll("g").data(graph.nodes).join("g")
+        .style("cursor", "pointer").attr("tabindex", 0).attr("role", "link")
+        .attr("aria-label", function (d) { return d.label; });
+      node.append("circle").attr("r", radius).attr("fill", colorFor).attr("stroke", "#fff").attr("stroke-width", 2);
+      node.append("text").text(function (d) { return d.label; })
+        .attr("x", function (d) { return radius(d) + 5; }).attr("y", 4)
+        .attr("font-size", "12px").attr("font-family", "Inter, system-ui, sans-serif").attr("fill", "#1F2937")
+        .attr("paint-order", "stroke").attr("stroke", "#fff").attr("stroke-width", 3).attr("stroke-linejoin", "round");
+
+      var adj = {};
+      graph.links.forEach(function (l) { var s = l.source.id || l.source, t = l.target.id || l.target; (adj[s] = adj[s] || {})[t] = 1; (adj[t] = adj[t] || {})[s] = 1; });
+      function conn(a, b) { return a === b || (adj[a] && adj[a][b]); }
+      function highlight(id) {
+        node.style("opacity", function (n) { return conn(id, n.id) ? 1 : 0.14; });
+        link.style("opacity", function (l) { var s = l.source.id || l.source, t = l.target.id || l.target; return (s === id || t === id) ? 1 : 0.06; })
+          .attr("stroke", function (l) { var s = l.source.id || l.source, t = l.target.id || l.target; return (s === id || t === id) ? "#FF3B3F" : "#cbd5e1"; });
+      }
+      function clear() { node.style("opacity", 1); link.style("opacity", 1).attr("stroke", "#cbd5e1"); }
+      function go(d) { if (!d.url) return; if (d.url.indexOf("http") === 0) { window.open(d.url, "_blank", "noopener"); } else { window.location.href = d.url; } }
+      node.on("mouseover", function (e, d) { highlight(d.id); }).on("mouseout", clear)
+        .on("focus", function (e, d) { highlight(d.id); }).on("blur", clear)
+        .on("click", function (e, d) { go(d); })
+        .on("keydown", function (e, d) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(d); } });
+
+      var sim = d3.forceSimulation(graph.nodes)
+        .force("link", d3.forceLink(graph.links).id(function (d) { return d.id; }).distance(82).strength(0.45))
+        .force("charge", d3.forceManyBody().strength(-270))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collide", d3.forceCollide().radius(function (d) { return radius(d) + 16; }))
+        .on("tick", function () {
+          link.attr("x1", function (d) { return d.source.x; }).attr("y1", function (d) { return d.source.y; })
+            .attr("x2", function (d) { return d.target.x; }).attr("y2", function (d) { return d.target.y; });
+          node.attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
+        });
+      node.call(d3.drag()
+        .on("start", function (e, d) { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+        .on("drag", function (e, d) { d.fx = e.x; d.fy = e.y; })
+        .on("end", function (e, d) { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+    }
+    if (document.readyState !== "loading") init(); else document.addEventListener("DOMContentLoaded", init);
+  })();
+</script>
