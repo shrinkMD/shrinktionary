@@ -61,82 +61,148 @@ for (const l of rawLinks) {
 const graph = { nodes, links, colors: catColors };
 
 const pathways = [
-  [
+  { label: "Anxiety", steps: [
     { label: "Anxiety", href: "/terms/anxiety/" },
     { label: "Hypervigilance", href: "/terms/hypervigilance/" },
-    { label: "Fight-or-flight", href: "/terms/fight-or-flight/" },
+    { label: "Avoidance", href: "/terms/avoidance/" },
     { label: "Exposure therapy", href: "/terms/exposure-therapy/" },
     { label: "AnxietyResource", href: "https://anxietyresource.org/", external: true },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
-  [
+  ]},
+  { label: "Panic", steps: [
     { label: "Panic attack", href: "/terms/panic-attack/" },
     { label: "Hyperventilation", href: "/terms/hyperventilation/" },
     { label: "Panic disorder", href: "/terms/panic-disorder/" },
     { label: "CBT", href: "/terms/cbt/" },
-    { label: "AnxietyResource", href: "https://anxietyresource.org/", external: true },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
-  [
+  ]},
+  { label: "Health anxiety", steps: [
+    { label: "Illness anxiety disorder", href: "/terms/illness-anxiety-disorder/" },
+    { label: "Catastrophizing", href: "/terms/catastrophizing/" },
+    { label: "Rumination", href: "/terms/rumination/" },
+    { label: "CBT", href: "/terms/cbt/" },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ]},
+  { label: "Depression", steps: [
     { label: "Depression", href: "/terms/depression/" },
     { label: "Anhedonia", href: "/terms/anhedonia/" },
+    { label: "Psychomotor retardation", href: "/terms/psychomotor-retardation/" },
     { label: "Behavioral activation", href: "/terms/behavioral-activation/" },
     { label: "SSRI", href: "/terms/ssri/" },
     { label: "DepressionResource", href: "https://depressionresource.org/", external: true },
+  ]},
+  { label: "Bipolar", steps: [
+    { label: "Mania", href: "/terms/mania/" },
+    { label: "Hypomania", href: "/terms/hypomania/" },
+    { label: "Bipolar disorder", href: "/terms/bipolar-disorder/" },
+    { label: "Mood stabilizer", href: "/terms/mood-stabilizer/" },
+    { label: "Lithium", href: "/terms/lithium/" },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
-  [
+  ]},
+  { label: "OCD", steps: [
     { label: "Intrusive thought", href: "/terms/intrusive-thought/" },
+    { label: "Compulsion", href: "/terms/compulsion/" },
     { label: "OCD", href: "/terms/ocd/" },
-    { label: "Exposure therapy", href: "/terms/exposure-therapy/" },
-    { label: "SSRI", href: "/terms/ssri/" },
-    { label: "PsychiatryRx", href: "https://psychiatryrx.org/", external: true },
+    { label: "Exposure and response prevention", href: "/terms/exposure-and-response-prevention/" },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
-  [
+  ]},
+  { label: "Trauma", steps: [
     { label: "PTSD", href: "/terms/ptsd/" },
+    { label: "Flashback", href: "/terms/flashback/" },
     { label: "Hypervigilance", href: "/terms/hypervigilance/" },
-    { label: "Dissociation", href: "/terms/dissociation/" },
-    { label: "DBT", href: "/terms/dbt/" },
+    { label: "Complex PTSD", href: "/terms/complex-ptsd/" },
+    { label: "EMDR", href: "/terms/emdr/" },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
-  [
-    { label: "SSRI", href: "/terms/ssri/" },
-    { label: "Serotonin", href: "/terms/serotonin/" },
-    { label: "SNRI", href: "/terms/snri/" },
-    { label: "Discontinuation syndrome", href: "/terms/discontinuation-syndrome/" },
-    { label: "PsychiatryRx", href: "https://psychiatryrx.org/", external: true },
-  ],
-  [
-    { label: "Rumination", href: "/terms/rumination/" },
-    { label: "Overthinking", href: "/terms/overthinking/" },
-    { label: "Catastrophizing", href: "/terms/catastrophizing/" },
-    { label: "Cognitive distortion", href: "/terms/cognitive-distortion/" },
-    { label: "CBT", href: "/terms/cbt/" },
-    { label: "shrinQ", href: "https://shrinq.com/", external: true },
-    { label: "Unstuck", href: "https://beunstuck.app/", external: true },
-  ],
-  [
+  ]},
+  { label: "Dissociation", steps: [
+    { label: "Dissociation", href: "/terms/dissociation/" },
+    { label: "Derealization", href: "/terms/derealization/" },
+    { label: "Depersonalization", href: "/terms/depersonalization/" },
+    { label: "Dissociative identity disorder", href: "/terms/dissociative-identity-disorder/" },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ]},
+  { label: "Psychosis", steps: [
+    { label: "Hallucination", href: "/terms/hallucination/" },
+    { label: "Delusion", href: "/terms/delusion/" },
+    { label: "Paranoia", href: "/terms/paranoia/" },
+    { label: "Schizophrenia", href: "/terms/schizophrenia/" },
+    { label: "Antipsychotic", href: "/terms/antipsychotic/" },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ]},
+  { label: "ADHD", steps: [
     { label: "ADHD", href: "/terms/adhd/" },
     { label: "Executive function", href: "/terms/executive-function/" },
     { label: "Working memory", href: "/terms/working-memory/" },
     { label: "Inhibition", href: "/terms/inhibition/" },
+    { label: "Stimulant", href: "/terms/stimulant/" },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
-  [
-    { label: "Social anxiety disorder", href: "/terms/social-anxiety-disorder/" },
-    { label: "Generalized anxiety disorder", href: "/terms/generalized-anxiety-disorder/" },
+  ]},
+  { label: "Eating disorders", steps: [
+    { label: "Anorexia nervosa", href: "/terms/anorexia-nervosa/" },
+    { label: "Bulimia nervosa", href: "/terms/bulimia-nervosa/" },
+    { label: "Binge eating disorder", href: "/terms/binge-eating-disorder/" },
+    { label: "Body dysmorphic disorder", href: "/terms/body-dysmorphic-disorder/" },
     { label: "CBT", href: "/terms/cbt/" },
-    { label: "AnxietyResearch", href: "https://anxietyresearch.org/", external: true },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
-  [
+  ]},
+  { label: "Substance use", steps: [
+    { label: "Substance use disorder", href: "/terms/substance-use-disorder/" },
+    { label: "Alcohol use disorder", href: "/terms/alcohol-use-disorder/" },
+    { label: "Opioid use disorder", href: "/terms/opioid-use-disorder/" },
+    { label: "Motivational interviewing", href: "/terms/motivational-interviewing/" },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ]},
+  { label: "Borderline personality", steps: [
+    { label: "Borderline personality disorder", href: "/terms/borderline-personality-disorder/" },
+    { label: "Emotional regulation", href: "/terms/emotional-regulation/" },
+    { label: "DBT", href: "/terms/dbt/" },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ]},
+  { label: "Sleep", steps: [
     { label: "Insomnia", href: "/terms/insomnia/" },
-    { label: "Depression", href: "/terms/depression/" },
-    { label: "Bipolar disorder", href: "/terms/bipolar-disorder/" },
-    { label: "Differential diagnosis", href: "/terms/differential-diagnosis/" },
+    { label: "Hypersomnia", href: "/terms/hypersomnia/" },
+    { label: "Circadian rhythm", href: "/terms/circadian-rhythm/" },
+    { label: "CBT", href: "/terms/cbt/" },
     { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
-  ],
+  ]},
+  { label: "Stress and the body", steps: [
+    { label: "Stress", href: "/terms/stress/" },
+    { label: "Cortisol", href: "/terms/cortisol/" },
+    { label: "HPA axis", href: "/terms/hpa-axis/" },
+    { label: "Fight-or-flight", href: "/terms/fight-or-flight/" },
+    { label: "Amygdala", href: "/terms/amygdala/" },
+  ]},
+  { label: "Brain chemistry", steps: [
+    { label: "Neurotransmitter", href: "/terms/neurotransmitter/" },
+    { label: "Serotonin", href: "/terms/serotonin/" },
+    { label: "Dopamine", href: "/terms/dopamine/" },
+    { label: "GABA", href: "/terms/gaba/" },
+    { label: "SSRI", href: "/terms/ssri/" },
+    { label: "PsychiatryRx", href: "https://psychiatryrx.org/", external: true },
+  ]},
+  { label: "Starting a medication", steps: [
+    { label: "Antidepressant", href: "/terms/antidepressant/" },
+    { label: "Titration", href: "/terms/titration/" },
+    { label: "Half-life", href: "/terms/half-life/" },
+    { label: "Discontinuation syndrome", href: "/terms/discontinuation-syndrome/" },
+    { label: "PsychiatryRx", href: "https://psychiatryrx.org/", external: true },
+  ]},
+  { label: "Reading the evidence", steps: [
+    { label: "Randomized controlled trial", href: "/terms/randomized-controlled-trial/" },
+    { label: "Double-blind", href: "/terms/double-blind/" },
+    { label: "Placebo", href: "/terms/placebo/" },
+    { label: "Effect size", href: "/terms/effect-size/" },
+    { label: "Meta-analysis", href: "/terms/meta-analysis/" },
+    { label: "AnxietyResearch", href: "https://anxietyresearch.org/", external: true },
+  ]},
+  { label: "Overthinking", steps: [
+    { label: "Rumination", href: "/terms/rumination/" },
+    { label: "Overthinking", href: "/terms/overthinking/" },
+    { label: "Cognitive distortion", href: "/terms/cognitive-distortion/" },
+    { label: "Cognitive restructuring", href: "/terms/cognitive-restructuring/" },
+    { label: "shrinQ", href: "https://shrinq.com/", external: true },
+    { label: "Unstuck", href: "https://beunstuck.app/", external: true },
+  ]},
 ];
 
 const breadcrumbs = [
@@ -186,16 +252,19 @@ const breadcrumbs = [
     <div class="mx-auto max-w-content px-5 py-16">
       <h2 class="font-display text-3xl font-semibold text-ink">Guided pathways</h2>
       <p class="max-w-prose text-[#1F2937] mt-3">Each chain is a real route through the network: a symptom leads to a diagnosis, a treatment, a medication, and on to care. Click any step to read it.</p>
-      <div class="mt-8 space-y-5">
-        {pathways.map((chain) => (
-          <div class="rounded-lg bg-white border border-[#e2e2e2] p-5 overflow-x-auto">
-            <div class="flex items-center gap-2 min-w-max">
-              {chain.map((node, i) => (
-                <>
-                  <a href={node.href} target={node.external ? "_blank" : undefined} rel={node.external ? "noopener noreferrer" : undefined} class="inline-block rounded-md bg-neutral px-3 py-2 text-sm font-medium hover:text-watermelon whitespace-nowrap">{node.label}</a>
-                  {i < chain.length - 1 ? <span class="text-watermelon font-bold" aria-hidden="true">&rarr;</span> : null}
-                </>
-              ))}
+      <div class="mt-8 grid md:grid-cols-2 gap-4">
+        {pathways.map((p) => (
+          <div class="rounded-lg bg-white border border-[#e2e2e2] p-5">
+            <p class="flex items-center gap-2 text-xs uppercase tracking-widest text-carbon font-semibold mb-3"><span class="inline-block w-3 h-[2px] bg-watermelon-bright"></span>{p.label}</p>
+            <div class="overflow-x-auto">
+              <div class="flex items-center gap-2 min-w-max">
+                {p.steps.map((node, i) => (
+                  <>
+                    <a href={node.href} target={node.external ? "_blank" : undefined} rel={node.external ? "noopener noreferrer" : undefined} class="inline-block rounded-md bg-neutral px-3 py-2 text-sm font-medium hover:text-watermelon whitespace-nowrap">{node.label}</a>
+                    {i < p.steps.length - 1 ? <span class="text-watermelon font-bold" aria-hidden="true">&rarr;</span> : null}
+                  </>
+                ))}
+              </div>
             </div>
           </div>
         ))}
