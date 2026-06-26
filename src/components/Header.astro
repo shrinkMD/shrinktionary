@@ -13,16 +13,19 @@ const path = Astro.url.pathname;
 <!-- Crisis bar: present on every page for safety and routing -->
 <div class="bg-ink text-white text-[13px]">
   <div class="mx-auto max-w-content px-5 py-2 text-center">
-    In crisis or thinking about suicide? Call or text <a href="tel:988" class="font-semibold underline underline-offset-2 hover:text-watermelon">988</a> in the US, available 24 hours a day. If someone is in immediate danger, call <a href="tel:911" class="font-semibold underline underline-offset-2 hover:text-watermelon">911</a>. <a href="/crisis-resources/" class="font-semibold underline underline-offset-2 hover:text-watermelon">Crisis resources</a>
+    In crisis or thinking about suicide? Call or text <a href="tel:988" class="font-semibold underline underline-offset-2 hover:text-watermelon-bright">988</a> in the US, available 24 hours a day. If someone is in immediate danger, call <a href="tel:911" class="font-semibold underline underline-offset-2 hover:text-watermelon-bright">911</a>. <a href="/crisis-resources/" class="font-semibold underline underline-offset-2 hover:text-watermelon-bright">Crisis resources</a>
   </div>
 </div>
 
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral">
-  <div class="mx-auto max-w-content px-5 flex items-center justify-between h-16">
-    <a href="/" class="group inline-flex flex-col leading-none">
-      <span class="font-display text-2xl font-semibold text-ink">Shrinktionary</span>
-      <span class="h-[3px] w-10 bg-watermelon mt-1 rounded-full group-hover:w-full transition-all duration-300"></span>
-    </a>
+  <div class="mx-auto max-w-content px-5 flex items-center justify-between h-20">
+    <div class="flex flex-col leading-none">
+      <a href="/" class="group inline-flex flex-col leading-none">
+        <span class="font-display text-2xl font-semibold text-ink">Shrinktionary</span>
+        <span class="h-[3px] w-10 bg-watermelon-bright mt-1 rounded-full group-hover:w-full transition-all duration-300"></span>
+      </a>
+      <a href="https://shrinknetwork.com/" target="_blank" rel="noopener noreferrer" class="text-[11px] uppercase tracking-widest text-carbon hover:text-watermelon mt-1.5">Part of The Shrink Network</a>
+    </div>
 
     <nav aria-label="Primary" class="hidden md:flex items-center gap-6">
       {
@@ -31,8 +34,9 @@ const path = Astro.url.pathname;
             href={l.href}
             target={l.external ? "_blank" : undefined}
             rel={l.external ? "noopener noreferrer" : undefined}
+            aria-current={path === l.href ? "page" : undefined}
             class={`text-[15px] font-medium hover:text-watermelon transition-colors ${
-              path === l.href ? "text-watermelon" : "text-ink"
+              path === l.href ? "text-watermelon underline underline-offset-4" : "text-ink"
             }`}
           >
             {l.label}
@@ -43,11 +47,12 @@ const path = Astro.url.pathname;
 
     <button
       id="menu-toggle"
-      class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-neutral"
+      class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-md border border-neutral"
       aria-label="Open menu"
       aria-expanded="false"
+      aria-controls="mobile-menu"
     >
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
       </svg>
     </button>

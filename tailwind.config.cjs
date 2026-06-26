@@ -4,8 +4,10 @@ module.exports = {
     extend: {
       colors: {
         sky: "#CAEBF2",
-        carbon: "#A9A9A9",
-        watermelon: "#FF3B3F",
+        carbon: "#6B6B6B",
+        "carbon-soft": "#A9A9A9",
+        watermelon: "#C81E2D",
+        "watermelon-bright": "#FF3B3F",
         neutral: "#EFEFEF",
         ink: "#111111",
       },

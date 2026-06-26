@@ -42,16 +42,16 @@ function ext(href: string) {
 
 <footer class="bg-ink text-white mt-24">
   <div class="mx-auto max-w-content px-5 py-14">
-    <p class="caption text-watermelon font-semibold tracking-widest text-xs uppercase">Part of the Shrink Network</p>
+    <p class="text-watermelon-bright font-semibold tracking-widest text-xs uppercase">Part of the Shrink Network</p>
     <p class="font-display text-xl mt-2 text-white">Shrinktionary is the language layer of The Shrink Network.</p>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
       <div>
-        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Understand</h3>
+        <h3 class="text-white/60 text-xs uppercase tracking-widest mb-3">Understand</h3>
         <ul class="space-y-2">
           {understand.map((l) => (
             <li>
-              <a href={l.href} target={ext(l.href) ? "_blank" : undefined} rel={ext(l.href) ? "noopener noreferrer" : undefined} class="text-sm text-white/85 hover:text-watermelon">
+              <a href={l.href} target={ext(l.href) ? "_blank" : undefined} rel={ext(l.href) ? "noopener noreferrer" : undefined} class="text-sm text-white/85 hover:text-watermelon-bright">
                 {l.label}{l.current ? " (current)" : ""}
               </a>
             </li>
@@ -59,26 +59,26 @@ function ext(href: string) {
         </ul>
       </div>
       <div>
-        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Apply</h3>
+        <h3 class="text-white/60 text-xs uppercase tracking-widest mb-3">Apply</h3>
         <ul class="space-y-2">
           {apply.map((l) => (
-            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon-bright">{l.label}</a></li>
           ))}
         </ul>
       </div>
       <div>
-        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Care</h3>
+        <h3 class="text-white/60 text-xs uppercase tracking-widest mb-3">Care</h3>
         <ul class="space-y-2">
           {care.map((l) => (
-            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon-bright">{l.label}</a></li>
           ))}
         </ul>
       </div>
       <div>
-        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Profession</h3>
+        <h3 class="text-white/60 text-xs uppercase tracking-widest mb-3">Profession</h3>
         <ul class="space-y-2">
           {profession.map((l) => (
-            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon-bright">{l.label}</a></li>
           ))}
         </ul>
       </div>
@@ -86,30 +86,30 @@ function ext(href: string) {
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 pt-10 border-t border-white/15">
       <div>
-        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Editorial</h3>
+        <h3 class="text-white/60 text-xs uppercase tracking-widest mb-3">Editorial</h3>
         <ul class="space-y-2">
           {editorial.map((l) => (
-            <li><a href={l.href} class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+            <li><a href={l.href} class="text-sm text-white/85 hover:text-watermelon-bright">{l.label}</a></li>
           ))}
         </ul>
       </div>
       <div>
-        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Legal</h3>
+        <h3 class="text-white/60 text-xs uppercase tracking-widest mb-3">Legal</h3>
         <ul class="space-y-2">
           {legal.map((l) => (
-            <li><a href={l.href} class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+            <li><a href={l.href} class="text-sm text-white/85 hover:text-watermelon-bright">{l.label}</a></li>
           ))}
         </ul>
       </div>
     </div>
 
-    <p class="text-carbon text-sm mt-12 max-w-3xl">
+    <p class="text-white/60 text-sm mt-12 max-w-3xl">
       Shrinktionary is the language layer of The Shrink Network, a family of independent mental health properties founded and medically reviewed by Shariq Refai, MD, MBA. Clinical care, education, wellness, and publishing are kept operationally separate, and none of these properties run advertising or earn referral revenue.
     </p>
 
     <div class="border-t border-white/15 mt-10 pt-6 space-y-2">
-      <p class="text-sm text-white/85">Shrinktionary is for general education, not medical advice. If you're in crisis or feel unsafe, call or text <a href="tel:988" class="font-semibold underline underline-offset-2 hover:text-watermelon">988</a>, call <a href="tel:911" class="font-semibold underline underline-offset-2 hover:text-watermelon">911</a>, or go to the nearest emergency room.</p>
-      <p class="caption text-carbon">© 2026 Shrinktionary. The language layer of The Shrink Network.</p>
+      <p class="text-sm text-white/85">Shrinktionary is for general education, not medical advice. If you're in crisis or feel unsafe, call or text <a href="tel:988" class="font-semibold underline underline-offset-2 hover:text-watermelon-bright">988</a>, call <a href="tel:911" class="font-semibold underline underline-offset-2 hover:text-watermelon-bright">911</a>, or go to the nearest emergency room.</p>
+      <p class="text-white/55 text-sm">© 2026 Shrinktionary. The language layer of The Shrink Network.</p>
     </div>
   </div>
 </footer>

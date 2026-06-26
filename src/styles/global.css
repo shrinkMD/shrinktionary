@@ -4,8 +4,10 @@
 
 :root {
   --color-sky: #CAEBF2;
-  --color-carbon: #A9A9A9;
-  --color-watermelon: #FF3B3F;
+  --color-carbon: #6B6B6B;        /* accessible secondary text on light (AA) */
+  --color-carbon-soft: #A9A9A9;   /* decorative only */
+  --color-watermelon: #C81E2D;    /* accessible accent for text/buttons (AA) */
+  --color-watermelon-bright: #FF3B3F; /* decorative / on dark backgrounds */
   --color-neutral: #EFEFEF;
   --color-ink: #111111;
   --color-text: #1F2937;
@@ -69,6 +71,39 @@ a:hover {
   font-size: 14px;
 }
 
+/* Visible keyboard focus for accessibility (WCAG 2.4.7) */
+:focus-visible {
+  outline: 3px solid var(--color-watermelon);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip link: hidden until focused */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--color-ink);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  left: 0;
+  color: #fff;
+}
+
+/* Respect reduced-motion preference (WCAG 2.3.3 / 2.2.2) */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
 /* Prose styling for term bodies and standing pages */
 .prose-body {
   max-width: var(--max-prose);
@@ -114,10 +149,10 @@ a:hover {
 
 /* Pagefind UI tuning */
 :root {
-  --pagefind-ui-primary: #FF3B3F;
+  --pagefind-ui-primary: #C81E2D;
   --pagefind-ui-text: #1F2937;
   --pagefind-ui-background: #FFFFFF;
-  --pagefind-ui-border: #A9A9A9;
+  --pagefind-ui-border: #6B6B6B;
   --pagefind-ui-tag: #EFEFEF;
   --pagefind-ui-border-radius: 12px;
   --pagefind-ui-font: var(--font-body);
