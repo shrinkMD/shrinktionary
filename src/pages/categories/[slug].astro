@@ -18,6 +18,27 @@ const terms = allTerms
   .filter((t) => t.data.category === c.slug)
   .sort((a, b) => a.data.term.localeCompare(b.data.term));
 
+
+const site = "https://shrinktionary.com";
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `${c.name} | Shrinktionary`,
+  description: c.description,
+  url: `${site}/categories/${c.slug}/`,
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", name: "Shrinktionary", url: site },
+  about: { "@type": "Thing", name: c.name },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: terms.map((t, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${site}/terms/${t.data.slug}/`,
+      name: t.data.term,
+    })),
+  },
+};
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Categories", path: "/categories/" },
@@ -25,10 +46,12 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout
-  title={`${c.name} | Shrinktionary`}
+  title={`${c.name}: mental health terms | Shrinktionary`}
   description={c.description}
   canonicalPath={`/categories/${c.slug}/`}
   breadcrumbs={breadcrumbs}
+  jsonld={[collectionSchema]}
+  keywords={[c.name, `${c.name} terms`, "mental health dictionary", "mental health definitions"]}
 >
   <section class="bg-sky">
     <div class="mx-auto max-w-content px-5 py-14">

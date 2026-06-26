@@ -37,16 +37,33 @@ const websiteSchema = {
     "query-input": "required name=search_term_string",
   },
 };
+
+const faqs = [
+  { q: "Is Shrinktionary medical advice?", a: "No. Shrinktionary is education, not medical advice. It explains what mental health words mean, but it can't diagnose you and it doesn't replace a clinician. Decisions about your care belong with a licensed professional who knows your situation." },
+  { q: "Who writes and reviews Shrinktionary?", a: "Every entry is written and medically reviewed by Shariq Refai, MD, MBA, FAPA, a board certified psychiatrist. The reviewer, the sources, and the review date appear on each entry." },
+  { q: "How is Shrinktionary different from a regular dictionary?", a: "A regular dictionary gives you a one-line gloss. Shrinktionary gives you the plain-English meaning, the clinical context behind it, what the term isn't, and the related terms you'd want next, all connected through the Term Web." },
+  { q: "Is Shrinktionary free, and does it run ads?", a: "It's free, and it runs no advertising. Shrinktionary doesn't take payment for placement, doesn't accept pharmaceutical funding, and doesn't earn referral fees. The point is good information, freely available." },
+  { q: "Where do the definitions come from?", a: "Definitions reflect current consensus from sources we trust, including the DSM-5-TR, the National Institute of Mental Health, the FDA, MedlinePlus, the Mayo Clinic, the American Psychiatric Association, and peer-reviewed literature. Every entry lists its sources." },
+];
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 ---
 
 <BaseLayout
   title="Shrinktionary | The Language of the Mind. Understood."
   description="Shrinktionary explains mental health terms in plain English. Symptoms, diagnoses, medications, therapy concepts, and the words people hear without ever getting a clear definition."
   canonicalPath="/"
-  jsonld={[websiteSchema]}
+  jsonld={[websiteSchema, faqSchema]}
 >
   <!-- Hero -->
-  <section class="bg-sky">
+  <section class="bg-gradient-to-b from-sky to-white">
     <div class="mx-auto max-w-content px-5 py-20 md:py-28 text-center">
       <p class="text-watermelon-bright font-semibold tracking-widest text-xs uppercase">Part of the Shrink Network</p>
       <h1 class="font-display text-4xl md:text-6xl font-semibold text-ink mt-3 leading-tight">The language of the mind. Understood.</h1>
@@ -127,6 +144,25 @@ const websiteSchema = {
       <div class="flex flex-wrap gap-3 mt-6">
         {networkPills.map((p) => (
           <a href={p.href} target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-white text-[#4B5563] hover:text-watermelon px-4 py-2 text-sm font-medium shadow-sm">{p.label}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-neutral">
+    <div class="mx-auto max-w-prose px-5 py-16">
+      <p class="text-watermelon font-semibold uppercase tracking-widest text-xs">Common questions</p>
+      <h2 class="font-display text-3xl font-semibold text-ink mt-2 mb-8">What people ask about Shrinktionary</h2>
+      <div class="space-y-3">
+        {faqs.map((f) => (
+          <details class="group rounded-lg bg-white border border-[#e2e2e2] p-5">
+            <summary class="flex items-center justify-between cursor-pointer font-semibold text-ink list-none gap-4">
+              {f.q}
+              <span class="text-watermelon text-2xl leading-none group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+            </summary>
+            <p class="text-[#1F2937] mt-3">{f.a}</p>
+          </details>
         ))}
       </div>
     </div>

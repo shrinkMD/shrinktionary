@@ -14,9 +14,10 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { Content, headings } = await render(entry);
 const d = entry.data;
 
+const site = "https://shrinktionary.com";
 const categories = await getCollection("categories");
 const category = categories.find((c) => c.data.slug === d.category);
 const categoryName = category?.data.name ?? d.category;
@@ -25,28 +26,61 @@ const terms = await getCollection("terms");
 const bySlug = new Map(terms.map((t) => [t.data.slug, t.data.term]));
 const relatedExisting = (d.related_terms ?? []).filter((s) => bySlug.has(s));
 
+const toc = headings.filter((h) => h.depth === 2);
+
+const keywords = [
+  d.term,
+  ...(d.also_known_as ?? []),
+  `${d.term} definition`,
+  `${d.term} meaning`,
+  "mental health",
+  categoryName,
+];
+
 const medicalWebPageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   name: d.term,
   description: d.short_definition,
-  url: `https://shrinktionary.com/terms/${d.slug}/`,
-  mainContentOfPage: { "@type": "WebPageElement", cssSelector: ".term-body" },
+  url: `${site}/terms/${d.slug}/`,
+  inLanguage: "en-US",
+  datePublished: d.published,
+  dateModified: d.last_reviewed,
   lastReviewed: d.last_reviewed,
+  mainContentOfPage: { "@type": "WebPageElement", cssSelector: ".term-body" },
+  isPartOf: { "@type": "WebSite", name: "Shrinktionary", url: site },
   reviewedBy: {
     "@type": "Person",
     name: "Shariq Refai, MD, MBA, FAPA",
+    honorificSuffix: "MD, MBA, FAPA",
+    jobTitle: "Board Certified Psychiatrist",
     sameAs: [
       "https://www.wikidata.org/wiki/Q139822307",
       "https://orcid.org/0009-0009-1090-4373",
       "https://shariqrefai.com",
     ],
   },
+  author: {
+    "@type": "Person",
+    name: "Shariq Refai, MD, MBA, FAPA",
+    url: "https://shariqrefai.com",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "shrinkMD Publishing",
+    logo: { "@type": "ImageObject", url: `${site}/favicon-512.png` },
+  },
+  citation: d.sources.map((s) => ({
+    "@type": "CreativeWork",
+    name: s.title,
+    publisher: s.publisher,
+    url: s.url,
+  })),
   about: {
     "@type": "DefinedTerm",
     name: d.term,
     description: d.short_definition,
-    inDefinedTermSet: "https://shrinktionary.com/",
+    inDefinedTermSet: `${site}/terms/`,
     termCode: d.slug,
   },
 };
@@ -54,70 +88,116 @@ const medicalWebPageSchema = {
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Terms", path: "/terms/" },
+  { name: categoryName, path: `/categories/${d.category}/` },
   { name: d.term, path: `/terms/${d.slug}/` },
 ];
 ---
 
 <BaseLayout
-  title={`${d.term} | Shrinktionary`}
+  title={`${d.term}: definition and meaning | Shrinktionary`}
   description={d.short_definition}
   canonicalPath={`/terms/${d.slug}/`}
   ogType="article"
   jsonld={[medicalWebPageSchema]}
   breadcrumbs={breadcrumbs}
+  published={d.published}
+  modified={d.last_reviewed}
+  keywords={keywords}
 >
-  <article class="mx-auto max-w-prose px-5 py-12">
-    <nav aria-label="Breadcrumb" class="caption text-carbon mb-6">
-      <a href="/" class="hover:text-watermelon">Home</a> ·
-      <a href="/terms/" class="hover:text-watermelon">Terms</a> ·
+  <div class="mx-auto max-w-content px-5 pt-10">
+    <nav aria-label="Breadcrumb" class="caption text-carbon mb-5 text-sm">
+      <a href="/" class="hover:text-watermelon">Home</a> <span aria-hidden="true">/</span>
+      <a href="/terms/" class="hover:text-watermelon">Terms</a> <span aria-hidden="true">/</span>
       <a href={`/categories/${d.category}/`} class="hover:text-watermelon">{categoryName}</a>
     </nav>
 
-    <p class="caption text-carbon uppercase tracking-widest text-xs">{categoryName}</p>
-    <h1 class="font-display text-4xl font-semibold text-ink mt-2">{d.term}</h1>
-    <p class="text-lg text-[#1F2937] mt-4">{d.short_definition}</p>
-
+    <p class="text-watermelon font-semibold uppercase tracking-widest text-xs">{categoryName}</p>
+    <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">{d.term}</h1>
+    <p class="text-lg md:text-xl text-[#1F2937] mt-4 max-w-prose">{d.short_definition}</p>
     {d.also_known_as && d.also_known_as.length > 0 ? (
-      <p class="caption text-carbon mt-3">Also known as: {d.also_known_as.join(", ")}</p>
+      <p class="text-sm text-carbon mt-3">Also known as: {d.also_known_as.join(", ")}</p>
     ) : null}
-
-    <div class="mt-5 pb-5 border-b border-neutral">
+    <div class="mt-5 pb-6 border-b border-neutral">
       <MedicalReviewByline lastReviewed={d.last_reviewed} />
     </div>
+  </div>
 
-    <div class="prose-body term-body mt-8 max-w-none">
-      <Content />
-    </div>
+  <div class="mx-auto max-w-content px-5 py-10 grid lg:grid-cols-[minmax(0,1fr)_17rem] gap-10 lg:gap-14 items-start">
+    <article class="min-w-0">
+      <div class="prose-body term-body max-w-none">
+        <Content />
+      </div>
 
-    {relatedExisting.length > 0 ? (
+      {relatedExisting.length > 0 ? (
+        <section class="mt-12">
+          <h2 class="font-display text-xl font-semibold text-ink mb-3">Related terms</h2>
+          <div class="flex flex-wrap gap-2">
+            {relatedExisting.map((s) => (
+              <a href={`/terms/${s}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{bySlug.get(s)}</a>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <section class="mt-12">
-        <h2 class="font-display text-xl font-semibold text-ink mb-3">Related terms</h2>
-        <div class="flex flex-wrap gap-2">
-          {relatedExisting.map((s) => (
-            <a href={`/terms/${s}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{bySlug.get(s)}</a>
+        <h2 class="font-display text-xl font-semibold text-ink mb-3">Sources</h2>
+        <ol class="space-y-2 list-decimal pl-5">
+          {d.sources.map((s) => (
+            <li class="text-[15px]">
+              <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-watermelon underline underline-offset-2">{s.title}</a>
+              <span class="text-[#4B5563]">, {s.publisher}</span>
+            </li>
           ))}
-        </div>
+        </ol>
       </section>
-    ) : null}
 
-    <section class="mt-12">
-      <h2 class="font-display text-xl font-semibold text-ink mb-3">Sources</h2>
-      <ol class="space-y-2 list-decimal pl-5">
-        {d.sources.map((s) => (
-          <li class="text-[15px]">
-            <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-watermelon underline underline-offset-2">{s.title}</a>
-            <span class="text-[#4B5563]">, {s.publisher}</span>
-          </li>
-        ))}
-      </ol>
-    </section>
+      <div class="mt-12">
+        <NetworkStrip links={d.network_links} />
+      </div>
+      <div class="mt-10">
+        <Disclaimer />
+      </div>
+    </article>
 
-    <div class="mt-12">
-      <NetworkStrip links={d.network_links} />
-    </div>
+    <aside class="hidden lg:block sticky top-28 self-start">
+      {toc.length > 0 ? (
+        <nav aria-label="On this page" class="mb-8">
+          <p class="text-xs uppercase tracking-widest text-carbon font-semibold mb-3 flex items-center gap-2"><span class="inline-block w-3 h-[2px] bg-watermelon"></span>On this page</p>
+          <ul class="space-y-2 border-l border-neutral">
+            {toc.map((h) => (
+              <li><a href={`#${h.slug}`} class="block pl-4 -ml-px border-l-2 border-transparent hover:border-watermelon text-sm text-[#4B5563] hover:text-watermelon">{h.text}</a></li>
+            ))}
+          </ul>
+        </nav>
+      ) : null}
 
-    <div class="mt-10">
-      <Disclaimer />
-    </div>
-  </article>
+      <div class="rounded-lg bg-neutral p-5">
+        <p class="text-xs uppercase tracking-widest text-carbon font-semibold mb-3">Key facts</p>
+        <dl class="space-y-3 text-sm">
+          <div>
+            <dt class="text-carbon">Category</dt>
+            <dd><a href={`/categories/${d.category}/`} class="font-medium text-ink hover:text-watermelon">{categoryName}</a></dd>
+          </div>
+          {d.also_known_as && d.also_known_as.length > 0 ? (
+            <div>
+              <dt class="text-carbon">Also known as</dt>
+              <dd class="font-medium text-ink">{d.also_known_as.join(", ")}</dd>
+            </div>
+          ) : null}
+          <div>
+            <dt class="text-carbon">Medically reviewed by</dt>
+            <dd><a href="/medical-review/" class="font-medium text-ink hover:text-watermelon">Shariq Refai, MD, MBA, FAPA</a></dd>
+          </div>
+          <div>
+            <dt class="text-carbon">Last reviewed</dt>
+            <dd class="font-medium text-ink">{d.last_reviewed}</dd>
+          </div>
+          <div>
+            <dt class="text-carbon">Sources</dt>
+            <dd class="font-medium text-ink">{d.sources.length} cited</dd>
+          </div>
+        </dl>
+      </div>
+    </aside>
+  </div>
 </BaseLayout>

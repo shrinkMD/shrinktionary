@@ -7,21 +7,40 @@ const terms = (await getCollection("terms")).sort((a, b) => a.data.term.localeCo
 const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
 const catName = new Map(categories.map((c) => [c.data.slug, c.data.name]));
 
+
+const definedTermSetSchema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://shrinktionary.com/terms/",
+  name: "Shrinktionary",
+  description: "A plain-English mental health dictionary of symptoms, conditions, medications, and therapy terms, medically reviewed by a board certified psychiatrist.",
+  url: "https://shrinktionary.com/terms/",
+  inLanguage: "en-US",
+  hasDefinedTerm: terms.map((t) => ({
+    "@type": "DefinedTerm",
+    name: t.data.term,
+    description: t.data.short_definition,
+    url: `https://shrinktionary.com/terms/${t.data.slug}/`,
+    termCode: t.data.slug,
+  })),
+};
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Terms", path: "/terms/" },
 ];
 ---
 <BaseLayout
-  title="All terms | Shrinktionary"
-  description="Browse every term in Shrinktionary A to Z. Plain-English definitions of symptoms, conditions, medications, and therapy concepts, medically reviewed by a board certified psychiatrist."
+  title="Mental health terms, A to Z | Shrinktionary Dictionary"
+  description="Browse every term in the Shrinktionary mental health dictionary, A to Z. Plain-English definitions of symptoms, conditions, medications, and therapy concepts, medically reviewed by a board certified psychiatrist."
   canonicalPath="/terms/"
   breadcrumbs={breadcrumbs}
+  jsonld={[definedTermSetSchema]}
+  keywords={["mental health dictionary","mental health terms","psychiatry glossary","mental health definitions"]}
 >
   <section class="bg-sky">
     <div class="mx-auto max-w-content px-5 py-14">
       <p class="caption text-[#4B5563] uppercase tracking-widest text-xs">Dictionary</p>
-      <h1 class="font-display text-4xl font-semibold text-ink mt-2">All terms</h1>
+      <h1 class="font-display text-4xl font-semibold text-ink mt-2">Mental health terms, A to Z</h1>
       <p class="max-w-prose text-[#1F2937] mt-3">Every term, A to Z. Filter by category or search.</p>
       <div class="max-w-xl mt-6"><SearchBox id="terms-search" placeholder="Search terms" /></div>
     </div>
