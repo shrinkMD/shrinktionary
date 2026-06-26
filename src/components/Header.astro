@@ -18,7 +18,7 @@ const path = Astro.url.pathname;
   </div>
 </div>
 
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral">
+<header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral">
   <div class="mx-auto max-w-content px-5 flex items-center justify-between h-20">
     <div class="flex flex-col leading-none">
       <a href="/" class="group inline-flex flex-col leading-none">
@@ -84,4 +84,9 @@ const path = Astro.url.pathname;
     const open = menu?.classList.toggle("hidden");
     toggle.setAttribute("aria-expanded", String(open === false));
   });
+
+  const header = document.getElementById("site-header");
+  const onScroll = () => header?.classList.toggle("is-scrolled", window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
 </script>

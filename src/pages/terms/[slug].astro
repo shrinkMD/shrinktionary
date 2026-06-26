@@ -120,6 +120,7 @@ const breadcrumbs = [
   modified={d.last_reviewed}
   keywords={keywords}
 >
+  <div class="reading-progress" id="reading-progress"></div>
   <div class="mx-auto max-w-content px-5 pt-10">
     <nav aria-label="Breadcrumb" class="caption text-carbon mb-5 text-sm">
       <a href="/" class="hover:text-watermelon">Home</a> <span aria-hidden="true">/</span>
@@ -198,7 +199,7 @@ const breadcrumbs = [
           <p class="text-xs uppercase tracking-widest text-carbon font-semibold mb-3 flex items-center gap-2"><span class="inline-block w-3 h-[2px] bg-watermelon"></span>On this page</p>
           <ul class="space-y-2 border-l border-neutral">
             {toc.map((h) => (
-              <li><a href={`#${h.slug}`} class="block pl-4 -ml-px border-l-2 border-transparent hover:border-watermelon text-sm text-[#4B5563] hover:text-watermelon">{h.text}</a></li>
+              <li><a href={`#${h.slug}`} class="toc-link block pl-4 -ml-px border-l-2 border-transparent hover:border-watermelon text-sm text-[#4B5563] hover:text-watermelon">{h.text}</a></li>
             ))}
           </ul>
         </nav>
@@ -233,4 +234,40 @@ const breadcrumbs = [
       </div>
     </aside>
   </div>
+
+<script is:inline>
+  (function () {
+    var bar = document.getElementById("reading-progress");
+    function prog() {
+      if (!bar) return;
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+    }
+    prog();
+    window.addEventListener("scroll", prog, { passive: true });
+    window.addEventListener("resize", prog);
+    var links = [].slice.call(document.querySelectorAll(".toc-link"));
+    if (links.length && "IntersectionObserver" in window) {
+      var map = {};
+      links.forEach(function (a) {
+        var id = (a.getAttribute("href") || "").slice(1);
+        var el = id && document.getElementById(id);
+        if (el) map[id] = a;
+      });
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            links.forEach(function (l) { l.classList.remove("is-active"); });
+            if (map[e.target.id]) map[e.target.id].classList.add("is-active");
+          }
+        });
+      }, { rootMargin: "-20% 0px -70% 0px", threshold: 0 });
+      Object.keys(map).forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) obs.observe(el);
+      });
+    }
+  })();
+</script>
 </BaseLayout>

@@ -157,3 +157,119 @@ a:hover {
   --pagefind-ui-border-radius: 12px;
   --pagefind-ui-font: var(--font-body);
 }
+
+/* ============================================================
+   Craft polish: typography finishing, interactions, details
+   ============================================================ */
+
+/* Tasteful text selection */
+::selection {
+  background: rgba(255, 59, 63, 0.16);
+  color: var(--color-ink);
+}
+
+/* Typographic finishing */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+h1, h2, h3 {
+  text-wrap: balance;
+  letter-spacing: -0.011em;
+}
+.prose-body :where(p), .max-w-prose p {
+  text-wrap: pretty;
+}
+
+/* Tabular numbers for stats and counts */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Anchor jump offset so headings clear the sticky header */
+.term-body :where(h2, h3),
+.prose-body :where(h2, h3),
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* Prose list markers in brand accent */
+.prose-body :where(ul) ::marker {
+  color: var(--color-watermelon);
+}
+
+/* Smooth, consistent link and control transitions */
+a,
+button,
+summary,
+.card-lift {
+  transition: color 0.18s ease, background-color 0.18s ease,
+    border-color 0.18s ease, box-shadow 0.2s ease, transform 0.2s ease,
+    opacity 0.18s ease;
+}
+
+/* Reusable lift for cards (apply via class where wanted) */
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.08);
+}
+
+/* Refined prose link underline */
+.prose-body :where(a) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Sticky header gains a soft shadow once the page is scrolled */
+#site-header {
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+#site-header.is-scrolled {
+  box-shadow: 0 6px 24px -12px rgba(17, 17, 17, 0.25);
+}
+
+/* Reading progress bar for long articles */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--color-watermelon-bright);
+  z-index: 60;
+  transition: width 0.08s linear;
+  pointer-events: none;
+}
+
+/* Active item in the on-this-page table of contents */
+.toc-link.is-active {
+  color: var(--color-watermelon);
+  border-color: var(--color-watermelon) !important;
+  font-weight: 600;
+}
+
+/* Details/summary marker cleanup (accordions) */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Decorative soft accent used behind heroes */
+.hero-accent {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress { transition: none; }
+  .card-lift:hover { transform: none; }
+}

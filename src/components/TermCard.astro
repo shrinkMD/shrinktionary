@@ -8,7 +8,7 @@ export interface Props {
 }
 const { term, slug, short_definition, category, categoryName } = Astro.props;
 ---
-<a href={`/terms/${slug}/`} class="block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5 h-full">
+<a href={`/terms/${slug}/`} class="card-lift block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm p-5 h-full">
   <div class="flex items-center justify-between mb-1">
     <h3 class="font-display text-lg font-semibold text-ink">{term}</h3>
     <span class="caption text-carbon">{categoryName ?? category}</span>
