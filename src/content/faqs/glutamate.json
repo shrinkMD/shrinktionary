@@ -1,0 +1,8 @@
+{
+  "slug": "glutamate",
+  "faqs": [
+    {"q": "What does glutamate do in the brain?", "a": "Glutamate is the brain's main excitatory neurotransmitter, which means its usual job is to make the next nerve cell more likely to fire. It's central to fast signaling and to learning and memory."},
+    {"q": "How are glutamate and GABA related?", "a": "They work in a kind of balance, with glutamate speeding activity up and GABA, the main calming messenger, slowing it down. Healthy brain activity depends on the two staying roughly in step."},
+    {"q": "Is brain glutamate the same as the food additive MSG?", "a": "Not in the way that matters here. The brain makes and manages its own glutamate, and dietary glutamate doesn't simply flood into the brain."}
+  ]
+}

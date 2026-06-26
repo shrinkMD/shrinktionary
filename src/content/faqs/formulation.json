@@ -1,0 +1,8 @@
+{
+  "slug": "formulation",
+  "faqs": [
+    {"q": "How is a formulation different from a diagnosis?", "a": "A diagnosis names a pattern of symptoms, while a formulation tries to explain how those symptoms came to be for a particular person. A diagnosis classifies, and a formulation explains and guides what to do next."},
+    {"q": "What goes into a clinical formulation?", "a": "It pulls together biology and family history, early experiences, current stressors, beliefs and habits of thinking, and the relationships and circumstances around the person. A common shorthand groups these into biological, psychological, and social factors."},
+    {"q": "Does a formulation ever change?", "a": "Yes. A good formulation is a hypothesis that gets revised as the clinician learns more or as the person's situation changes. It isn't meant to be the final word."}
+  ]
+}

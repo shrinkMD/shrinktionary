@@ -1,0 +1,8 @@
+{
+  "slug": "fatigue",
+  "faqs": [
+    {"q": "How is fatigue different from normal tiredness?", "a": "Ordinary tiredness after a busy day usually eases with rest, while fatigue is persistent and out of proportion to activity. The defining difference is that it lingers and isn't fully relieved by sleep."},
+    {"q": "Can fatigue be a sign of depression?", "a": "Yes. Fatigue is a common feature of depression and anxiety, and it can also follow ongoing stress, poor sleep, or burnout. Fatigue alongside low mood or loss of interest may point to depression."},
+    {"q": "Does fatigue always come from a mental health condition?", "a": "No. It has many medical causes too, including anemia, thyroid problems, infections, chronic illnesses, and medication effects. Because the list is long, clinicians often look at the whole picture rather than assuming a single cause."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "neurotransmitter",
+  "faqs": [
+    {"q": "What is a neurotransmitter?", "a": "A neurotransmitter is a chemical the brain uses to pass messages from one nerve cell to the next across a tiny gap called a synapse. Examples include serotonin, dopamine, norepinephrine, glutamate, and GABA."},
+    {"q": "How do neurotransmitters relate to psychiatric medications?", "a": "After a message is delivered, the body clears the neurotransmitter away, and many medications act on this step. Some antidepressants, for example, slow the reabsorption of serotonin so it stays active in the synapse longer."},
+    {"q": "Is mental health just a chemical imbalance?", "a": "That phrase is an oversimplification. Brain chemistry involves many messengers, receptor types, and circuits influencing one another, along with genetics, life experience, and the body as a whole."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "limbic-system",
+  "faqs": [
+    {"q": "What does the limbic system do?", "a": "The limbic system helps tag experiences with emotional meaning and connect them to memory, with the amygdala involved in detecting threats and the hippocampus central to forming new memories. It also helps drive motivation by linking up with reward-related circuits."},
+    {"q": "Is the limbic system the brain's emotional center?", "a": "It's sometimes called the emotional brain, but emotion isn't produced by the limbic system alone. Feelings emerge from networks spread across the brain, and these regions work alongside the prefrontal cortex, which handles planning and reasoning."},
+    {"q": "Why does the limbic system matter for mental health?", "a": "Many mental health conditions involve circuits the limbic system is part of. In anxiety and trauma-related conditions, for example, the threat-detection system can become overactive, leaving a person feeling on edge even when they're safe."}
+  ]
+}

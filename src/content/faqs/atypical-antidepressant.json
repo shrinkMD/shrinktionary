@@ -1,0 +1,8 @@
+{
+  "slug": "atypical-antidepressant",
+  "faqs": [
+    {"q": "What is an atypical antidepressant?", "a": "It's a catch-all label for antidepressants that don't share the same mechanism as more familiar classes like SSRIs or tricyclics. They're grouped together more for what they aren't than for a single shared trait."},
+    {"q": "Does atypical mean the medication is weaker or rarely used?", "a": "No. The word atypical describes chemistry, not strength or quality, and several of these drugs are prescribed often. It just means they sit outside the older categories."},
+    {"q": "Is an atypical antidepressant the same as an atypical antipsychotic?", "a": "No. An atypical antipsychotic is a separate class used for different conditions. The shared word can cause confusion, but the two groups are not related."}
+  ]
+}

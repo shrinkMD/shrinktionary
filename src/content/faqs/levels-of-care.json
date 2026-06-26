@@ -1,0 +1,8 @@
+{
+  "slug": "levels-of-care",
+  "faqs": [
+    {"q": "What are the main levels of mental health care?", "a": "Common levels include standard outpatient care with regular appointments, intensive outpatient programs that meet several hours a few days a week, partial hospitalization that runs most of the day without an overnight stay, residential programs that offer a live-in setting, and inpatient hospitalization for acute crises."},
+    {"q": "How does a clinician decide which level of care someone needs?", "a": "A clinician looks at how severe the symptoms are, whether the person is safe, how much daily functioning has slipped, and what kind of structure would help, then recommends a setting that matches the amount of support to the need."},
+    {"q": "Does needing a higher level of care mean someone has failed?", "a": "No, levels of care isn't a ranking of how serious a person is, and a higher level doesn't mean someone has failed. It's a tool for matching support to need, and people move up or down as their situation changes."}
+  ]
+}

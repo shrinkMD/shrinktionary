@@ -1,0 +1,8 @@
+{
+  "slug": "statistical-significance",
+  "faqs": [
+    {"q": "Does statistical significance mean a result is large or important?", "a": "No. Statistical significance only means a result is unlikely to be due to chance alone. It says nothing about how big or how useful the effect is, which is why effect size and confidence intervals matter too."},
+    {"q": "What does a p-value below 0.05 mean?", "a": "It means there's less than a 5 percent chance of seeing a result this big if there were really no effect at all. The 0.05 cutoff is a common convention, not a law of nature, and some fields use stricter thresholds."},
+    {"q": "Can a statistically significant finding still be wrong?", "a": "Yes. A significant result isn't proof and can still be a false alarm, especially in small studies or when many comparisons are run at once."}
+  ]
+}

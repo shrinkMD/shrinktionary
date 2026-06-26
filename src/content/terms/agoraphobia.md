@@ -59,7 +59,7 @@ The anticipation can be as hard as the situation itself. Just thinking about an 
 
 Agoraphobia isn't simply disliking crowds or preferring to stay home. It's a clinical level of fear that drives avoidance and interferes with the things a person wants or needs to do.
 
-It also isn't the same as a panic attack, though the two often travel together. A panic attack is a sudden surge of intense fear and physical symptoms, while agoraphobia is the broader fear and avoidance of situations where such symptoms might feel trapped or unmanageable.
+It also isn't the same as a panic attack, though the two often travel together. A panic attack is a sudden surge of intense fear and physical symptoms, while agoraphobia is the broader fear and avoidance of situations where a person might feel trapped or unable to get help if such symptoms struck.
 
 ## Related terms you'll see next
 

@@ -20,7 +20,7 @@ related_treatments:
   - antidepressant
 network_links:
   - site: depressionresource
-    url: "https://depressionresource.com/"
+    url: "https://depressionresource.org/"
     label: "More on depression"
   - site: shrinkmd
     url: "https://shrinkmd.com/"

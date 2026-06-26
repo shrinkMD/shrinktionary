@@ -1,0 +1,8 @@
+{
+  "slug": "mood",
+  "faqs": [
+    {"q": "What is the difference between mood and emotion?", "a": "Emotions tend to be brief, intense, and tied to a specific trigger, like fear at a loud noise. Mood is longer-lasting, more diffuse, and often harder to trace to one event."},
+    {"q": "Is mood the same as a mood disorder?", "a": "No, everyone's mood rises and falls, and that's normal. A mood disorder involves lasting, significant changes in mood that interfere with daily life, which is a clinical issue rather than an ordinary fluctuation."},
+    {"q": "Why do clinicians ask about mood?", "a": "Lasting shifts in mood are at the heart of conditions like depression and bipolar disorder. Tracking mood over time is one practical way clinicians and patients spot patterns that point toward these conditions."}
+  ]
+}

@@ -19,7 +19,7 @@ related_treatments:
   - exposure-therapy
 network_links:
   - site: anxietyresource
-    url: "https://anxietyresource.com/"
+    url: "https://anxietyresource.org/"
     label: "More on anxiety"
   - site: shrinkmd
     url: "https://shrinkmd.com/"

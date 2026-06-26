@@ -1,0 +1,8 @@
+{
+  "slug": "polypharmacy",
+  "faqs": [
+    {"q": "What does polypharmacy mean?", "a": "Polypharmacy means taking several medications at the same time. In psychiatry it often describes someone taking more than one mental health medication, sometimes alongside medications for physical conditions."},
+    {"q": "Is polypharmacy always a bad thing?", "a": "No, it isn't automatically bad. A thoughtful combination can be exactly the right plan for someone with more than one condition, and the concern is usually unplanned or unreviewed stacking rather than the simple fact of taking more than one drug."},
+    {"q": "Why does taking several medications need careful oversight?", "a": "Every added medication raises the chance of interactions, side effects, and confusion about what each one is doing. That's why a careful prescriber periodically reviews the whole list, including over-the-counter products and supplements."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "informed-consent",
+  "faqs": [
+    {"q": "What does informed consent involve?", "a": "It usually covers the recommended treatment, the main risks and benefits, the likely alternatives including doing nothing, and a chance to ask questions. It applies to medications, therapy approaches, and procedures alike."},
+    {"q": "Is informed consent just signing a form?", "a": "No. The form documents the conversation, but the real consent is the understanding and agreement behind it. A clinician is meant to explain the plan in language you can follow, not just medical terms."},
+    {"q": "Can I change my mind after giving consent?", "a": "Yes. Consent is ongoing, so you can ask more questions later, revisit a choice, or withdraw consent as things unfold. Agreeing today doesn't lock you in forever."}
+  ]
+}

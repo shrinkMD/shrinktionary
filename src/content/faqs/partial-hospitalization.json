@@ -1,0 +1,8 @@
+{
+  "slug": "partial-hospitalization",
+  "faqs": [
+    {"q": "What is partial hospitalization?", "a": "Partial hospitalization, often shortened to PHP, is a treatment program that runs for several hours a day, usually five days a week, but lets the person sleep at home. It sits between standard outpatient appointments and a full inpatient stay."},
+    {"q": "What happens during a partial hospitalization program?", "a": "A typical day includes a mix of group therapy, individual sessions, medication management, and skills training, with staff keeping a close eye on symptoms and safety. Programs usually last a few weeks, with the plan adjusted as the person improves."},
+    {"q": "How is PHP different from inpatient or intensive outpatient care?", "a": "Unlike inpatient care, the person goes home each night, so they need a safe and stable place to return to. It also differs from an intensive outpatient program, which meets fewer hours per week."}
+  ]
+}

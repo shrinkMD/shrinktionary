@@ -1,0 +1,8 @@
+{
+  "slug": "circadian-rhythm",
+  "faqs": [
+    {"q": "What is the circadian rhythm?", "a": "It's the body's internal clock that runs on a cycle of about 24 hours, guiding the sleep-wake cycle along with daily shifts in alertness, hormones, and body temperature. A small region deep in the brain acts as the master timekeeper."},
+    {"q": "What controls the circadian rhythm?", "a": "The body's master clock takes its main cue from light. Morning light signals the brain that it's daytime, while darkness prompts the body to ramp up melatonin to help signal that it's time to wind down for sleep."},
+    {"q": "Why does the circadian rhythm matter for mental health?", "a": "Sleep and mood are tightly linked, and the body clock sits at the center of that link. When it's disrupted, people often notice their mood, focus, and stress levels suffer, and conditions like depression and seasonal affective disorder connect to circadian patterns."}
+  ]
+}

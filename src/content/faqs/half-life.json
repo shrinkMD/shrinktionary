@@ -1,0 +1,8 @@
+{
+  "slug": "half-life",
+  "faqs": [
+    {"q": "What does a drug's half-life mean?", "a": "Half-life is the time it takes for the amount of a drug in your body to drop by half. If a medication has a half-life of twelve hours, roughly half of a dose is gone twelve hours later."},
+    {"q": "How does half-life affect how often a medication is taken?", "a": "A drug with a short half-life leaves the body quickly and usually has to be taken more often, while a drug with a long half-life sticks around and might be taken once a day or less. Half-life also shapes what happens when someone stops."},
+    {"q": "Does half-life tell you how long a drug works?", "a": "No. Half-life isn't how long a drug works or how long you feel it, since a medication's effect can outlast or fall short of its measured half-life depending on how it acts in the body."}
+  ]
+}

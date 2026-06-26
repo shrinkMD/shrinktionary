@@ -1,0 +1,8 @@
+{
+  "slug": "confidence-interval",
+  "faqs": [
+    {"q": "What is a confidence interval?", "a": "A confidence interval is a range of plausible values around a study's result, showing where the true value probably falls. It might appear as a 7-point drop with a 95% CI of 4 to 10."},
+    {"q": "What does a wide confidence interval mean?", "a": "The width tells you how precise the estimate is. A narrow interval means the study pinned the result down tightly, while a wide one means there's a lot of uncertainty, often because the study was small or the data were noisy."},
+    {"q": "What does the 95% in a confidence interval mean?", "a": "The 95% refers to the method's reliability over many studies, not the odds for one result. If researchers repeated the study many times, about 95% of the intervals they calculated would capture the true value."}
+  ]
+}

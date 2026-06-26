@@ -21,7 +21,7 @@ related_treatments:
   - ssri
 network_links:
   - site: anxietyresource
-    url: "https://anxietyresource.com/"
+    url: "https://anxietyresource.org/"
     label: "More on anxiety"
   - site: shrinkmd
     url: "https://shrinkmd.com/"
