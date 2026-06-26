@@ -10,12 +10,25 @@ const groups = [
   ["Major medical centers.", "The Mayo Clinic, Johns Hopkins, and Cleveland Clinic for accessible, clinician-reviewed explanations of conditions and treatments."],
   ["Peer-reviewed literature.", "Papers indexed in PubMed, prioritizing meta-analyses, systematic reviews, and large studies published in respected journals."],
 ];
+const authorities = [
+  ["National Institute of Mental Health (NIMH)", "https://www.nimh.nih.gov/health/topics"],
+  ["MedlinePlus, U.S. National Library of Medicine", "https://medlineplus.gov/mentalhealthandbehavior.html"],
+  ["American Psychiatric Association (APA)", "https://www.psychiatry.org/patients-families"],
+  ["U.S. Food and Drug Administration (FDA)", "https://www.fda.gov/drugs"],
+  ["Centers for Disease Control and Prevention (CDC)", "https://www.cdc.gov/mental-health/"],
+  ["Mayo Clinic", "https://www.mayoclinic.org/diseases-conditions"],
+  ["Cleveland Clinic", "https://my.clevelandclinic.org/health"],
+  ["PubMed, National Library of Medicine", "https://pubmed.ncbi.nlm.nih.gov/"],
+  ["Cochrane Library", "https://www.cochranelibrary.com/"],
+  ["988 Suicide and Crisis Lifeline (SAMHSA)", "https://988lifeline.org/"],
+];
 ---
 <BaseLayout
   title="Sources we cite | Shrinktionary"
   description="The categories of sources Shrinktionary treats as reliable: primary clinical references, federal and academic health authorities, major medical centers, and peer-reviewed literature."
   canonicalPath="/sources/"
   breadcrumbs={breadcrumbs}
+  keywords={["mental health sources","evidence-based","DSM-5-TR","NIMH","peer-reviewed"]}
 >
   <article class="mx-auto max-w-prose px-5 py-14">
     <h1 class="font-display text-4xl font-semibold text-ink">Sources we cite</h1>
@@ -28,6 +41,17 @@ const groups = [
         </div>
       ))}
     </dl>
-    <p class="text-[#1F2937] mt-8">We don't cite blog posts, social media, or commercial health sites as primary sources. We don't cite ourselves. Each citation includes the title, publisher, and a direct link.</p>
+
+    <h2 class="font-display text-2xl font-semibold text-ink mt-12">The organizations we rely on</h2>
+    <p class="text-[#1F2937] mt-2">These are the primary, authoritative bodies behind our entries. Each link opens the organization's own site.</p>
+    <ul class="mt-5 grid sm:grid-cols-2 gap-x-8 gap-y-3">
+      {authorities.map(([name, url]) => (
+        <li>
+          <a href={url} target="_blank" rel="noopener noreferrer" class="text-watermelon underline underline-offset-2 hover:text-ink">{name}</a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="text-[#1F2937] mt-12">We don't cite blog posts, social media, or commercial health sites as primary sources. We don't cite ourselves. Each citation includes the title, publisher, and a direct link, and you'll find them at the bottom of every term.</p>
   </article>
 </BaseLayout>

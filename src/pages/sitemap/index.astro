@@ -1,0 +1,83 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+
+const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
+const terms = (await getCollection("terms")).sort((a, b) => a.data.term.localeCompare(b.data.term));
+const termsByCat = (slug: string) => terms.filter((t) => t.data.category === slug);
+
+const mainPages = [
+  ["Home", "/"],
+  ["Start Here", "/start-here/"],
+  ["All terms (A to Z)", "/terms/"],
+  ["Categories", "/categories/"],
+  ["The Term Web", "/term-web/"],
+];
+const editorialPages = [
+  ["About", "/about/"],
+  ["Editorial standards", "/editorial-standards/"],
+  ["Medical review", "/medical-review/"],
+  ["Sources we cite", "/sources/"],
+  ["Corrections", "/corrections/"],
+];
+const legalPages = [
+  ["Medical disclaimer", "/disclaimer/"],
+  ["Privacy policy", "/privacy/"],
+  ["Terms of use", "/terms-of-use/"],
+  ["Accessibility", "/accessibility/"],
+  ["AI use", "/ai-use/"],
+  ["Disclosures", "/disclosures/"],
+  ["Crisis resources", "/crisis-resources/"],
+];
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Sitemap", path: "/sitemap/" },
+];
+---
+<BaseLayout
+  title="Sitemap | Shrinktionary"
+  description="Every page on Shrinktionary in one place: the full dictionary by category, plus our editorial, legal, and crisis pages."
+  canonicalPath="/sitemap/"
+  breadcrumbs={breadcrumbs}
+>
+  <section class="bg-gradient-to-b from-sky to-white">
+    <div class="mx-auto max-w-content px-5 py-14">
+      <p class="text-watermelon-bright font-semibold uppercase tracking-widest text-xs">Sitemap</p>
+      <h1 class="font-display text-4xl font-semibold text-ink mt-2">Everything on Shrinktionary</h1>
+      <p class="max-w-prose text-[#1F2937] mt-3">{terms.length} terms across {categories.length} categories, plus our editorial and legal pages. The machine-readable sitemap lives at <a href="/sitemap-index.xml" class="text-watermelon underline underline-offset-2">/sitemap-index.xml</a>.</p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-12 grid md:grid-cols-3 gap-8">
+    <div>
+      <h2 class="font-display text-xl font-semibold text-ink mb-3">Main pages</h2>
+      <ul class="space-y-2">{mainPages.map(([n, u]) => (<li><a href={u} class="text-[15px] text-watermelon hover:text-ink underline underline-offset-2">{n}</a></li>))}</ul>
+    </div>
+    <div>
+      <h2 class="font-display text-xl font-semibold text-ink mb-3">Editorial</h2>
+      <ul class="space-y-2">{editorialPages.map(([n, u]) => (<li><a href={u} class="text-[15px] text-watermelon hover:text-ink underline underline-offset-2">{n}</a></li>))}</ul>
+    </div>
+    <div>
+      <h2 class="font-display text-xl font-semibold text-ink mb-3">Legal</h2>
+      <ul class="space-y-2">{legalPages.map(([n, u]) => (<li><a href={u} class="text-[15px] text-watermelon hover:text-ink underline underline-offset-2">{n}</a></li>))}</ul>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-content px-5 pb-16">
+    <h2 class="font-display text-2xl font-semibold text-ink mb-6">The dictionary</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {categories.map((c) => (
+        <div>
+          <h3 class="font-display text-lg font-semibold text-ink mb-1"><a href={`/categories/${c.data.slug}/`} class="hover:text-watermelon">{c.data.name}</a></h3>
+          <p class="text-xs text-carbon mb-2">{termsByCat(c.data.slug).length} {termsByCat(c.data.slug).length === 1 ? "term" : "terms"}</p>
+          <ul class="space-y-1.5">
+            {termsByCat(c.data.slug).map((t) => (
+              <li><a href={`/terms/${t.data.slug}/`} class="text-[15px] text-[#4B5563] hover:text-watermelon">{t.data.term}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -20,6 +20,19 @@ const terms = allTerms
   .filter((t) => t.data.category === c.slug)
   .sort((a, b) => a.data.term.localeCompare(b.data.term));
 
+const netResources: Record<string, [string, string][]> = {
+  symptoms: [["AnxietyResource", "https://anxietyresource.org/"], ["DepressionResource", "https://depressionresource.org/"], ["Shrinkopedia", "https://shrinkopedia.com/"]],
+  conditions: [["AnxietyResource", "https://anxietyresource.org/"], ["DepressionResource", "https://depressionresource.org/"], ["Shrinkopedia", "https://shrinkopedia.com/"], ["shrinkMD", "https://shrinkmd.com/"]],
+  medications: [["PsychiatryRx", "https://psychiatryrx.org/"], ["Shrinkopedia", "https://shrinkopedia.com/"], ["shrinkMD", "https://shrinkmd.com/"]],
+  "therapy-terms": [["Shrinkopedia", "https://shrinkopedia.com/"], ["shrinkMD", "https://shrinkmd.com/"]],
+  "psychiatry-terms": [["Shrinkopedia", "https://shrinkopedia.com/"], ["shrinkMD", "https://shrinkmd.com/"]],
+  "psychology-terms": [["Shrinkopedia", "https://shrinkopedia.com/"], ["AnxietyResearch", "https://anxietyresearch.org/"]],
+  "brain-body-terms": [["Shrinkopedia", "https://shrinkopedia.com/"], ["AnxietyResearch", "https://anxietyresearch.org/"]],
+  "everyday-language": [["Shrinkopedia", "https://shrinkopedia.com/"], ["shrinQ", "https://shrinq.com/"]],
+  "research-terms": [["AnxietyResearch", "https://anxietyresearch.org/"], ["Shrinkopedia", "https://shrinkopedia.com/"]],
+};
+const catNet = netResources[c.slug] || [["Shrinkopedia", "https://shrinkopedia.com/"], ["shrinkMD", "https://shrinkmd.com/"]];
+
 
 const site = "https://shrinktionary.com";
 const collectionSchema = {
@@ -124,4 +137,16 @@ const breadcrumbs = [
       </div>
     )}
   </div>
+  <section class="mx-auto max-w-content px-5 pb-16">
+    <div class="rounded-lg bg-sky/60 border border-neutral p-6 md:p-8">
+      <p class="text-watermelon font-semibold uppercase tracking-widest text-xs">Across the network</p>
+      <h2 class="font-display text-2xl font-semibold text-ink mt-2">Go deeper on {c.name.toLowerCase()}</h2>
+      <p class="text-[#1F2937] mt-2 max-w-prose">Shrinktionary explains the words. These independent properties in The Shrink Network go deeper on the conditions, medications, and evidence behind them.</p>
+      <div class="flex flex-wrap gap-3 mt-5">
+        {catNet.map(([label, url]) => (
+          <a href={url} target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-medium hover:text-watermelon shadow-sm">{label} &rarr;</a>
+        ))}
+      </div>
+    </div>
+  </section>
 </BaseLayout>
