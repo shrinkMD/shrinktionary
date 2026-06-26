@@ -1,0 +1,143 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../components/BaseLayout.astro";
+import SearchBox from "../components/SearchBox.astro";
+import CategoryCard from "../components/CategoryCard.astro";
+
+const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
+const terms = await getCollection("terms");
+const countFor = (slug: string) => terms.filter((t) => t.data.category === slug).length;
+
+const startHere = [
+  { title: "I heard a diagnosis", sub: "Find the clinical condition by name.", href: "/categories/conditions/" },
+  { title: "I heard a medication name", sub: "Find what a drug is and what it treats.", href: "/categories/medications/" },
+  { title: "I'm trying to describe a symptom", sub: "Start from what you feel, not what it's called.", href: "/categories/symptoms/" },
+  { title: "I'm reading a therapy term", sub: "Decode what a clinician or workbook is saying.", href: "/categories/therapy-terms/" },
+  { title: "I want the broader explanation", sub: "Go to Shrinkopedia for the full encyclopedia entry.", href: "https://shrinkopedia.com/", external: true },
+  { title: "I need care", sub: "Start with shrinkMD.", href: "https://shrinkmd.com/start-care/", external: true },
+];
+
+const networkPills = [
+  { label: "Shrinkopedia", href: "https://shrinkopedia.com/" },
+  { label: "AnxietyResource", href: "https://anxietyresource.org/" },
+  { label: "DepressionResource", href: "https://depressionresource.org/" },
+  { label: "shrinkMD", href: "https://shrinkmd.com/" },
+];
+
+const webExample = ["Rumination", "Overthinking", "Anxiety", "Depression", "CBT", "shrinQ", "shrinkMD"];
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Shrinktionary",
+  url: "https://shrinktionary.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://shrinktionary.com/terms/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+---
+
+<BaseLayout
+  title="Shrinktionary | The Language of the Mind. Understood."
+  description="Shrinktionary explains mental health terms in plain English. Symptoms, diagnoses, medications, therapy concepts, and the words people hear without ever getting a clear definition."
+  canonicalPath="/"
+  jsonld={[websiteSchema]}
+>
+  <!-- Hero -->
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-20 md:py-28 text-center">
+      <p class="caption text-[#4B5563] tracking-widest text-xs uppercase">Part of the Shrink Network</p>
+      <h1 class="font-display text-4xl md:text-6xl font-semibold text-ink mt-3 leading-tight">The language of the mind. Understood.</h1>
+      <p class="mx-auto max-w-2xl text-lg text-[#1F2937] mt-5">
+        Shrinktionary explains mental health terms in plain English. Symptoms, diagnoses, medications, therapy concepts, and the words people hear without ever getting a clear definition.
+      </p>
+      <div class="mx-auto max-w-xl mt-8">
+        <SearchBox id="hero-search" placeholder="Search 75+ terms" />
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
+        <a href="/terms/" class="inline-flex items-center rounded-md bg-watermelon text-white font-medium px-6 py-3 hover:opacity-90 transition">Search terms</a>
+        <a href="/categories/" class="text-[15px] font-medium text-ink hover:text-watermelon">Explore categories →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Shrinktionary exists -->
+  <section class="mx-auto max-w-prose px-5 py-16">
+    <h2 class="font-display text-3xl font-semibold text-ink">Mental health language shouldn't be confusing.</h2>
+    <div class="prose-body mt-4 max-w-none">
+      <p>People hear panic attack, rumination, SSRI, bipolar disorder, intrusive thought, dissociation, executive function in clinics, in articles, and in their own heads. Most never get the actual definition. Shrinktionary fixes that. Each term gets a plain English explanation, the clinical context behind it, what it isn't, and the related concepts you'd want to know next.</p>
+      <p>This is education. It isn't medical advice. It doesn't replace a clinician. It exists so the words make sense the next time you encounter them.</p>
+    </div>
+  </section>
+
+  <!-- Explore by category -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-content px-5 py-12">
+      <h2 class="font-display text-3xl font-semibold text-ink mb-8">Explore by category</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {categories.map((c) => (
+          <CategoryCard name={c.data.name} slug={c.data.slug} description={c.data.description} count={countFor(c.data.slug)} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Term Web teaser -->
+  <section class="bg-neutral">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <h2 class="font-display text-3xl font-semibold text-ink">The Term Web</h2>
+      <p class="max-w-prose text-[#1F2937] mt-4">
+        Words don't exist alone. A symptom connects to a diagnosis. A diagnosis connects to a treatment. A treatment connects to medications. Medications connect to the questions you'd ask a prescriber. The Term Web shows how the language of mental health is wired together, so you can walk the connections instead of looking up one word at a time.
+      </p>
+      <div class="flex flex-wrap items-center gap-2 mt-8">
+        {webExample.map((node, i) => (
+          <>
+            <span class="inline-block rounded-md bg-white px-3 py-2 text-sm font-medium shadow-sm">{node}</span>
+            {i < webExample.length - 1 ? <span class="text-watermelon font-bold">→</span> : null}
+          </>
+        ))}
+      </div>
+      <a href="/term-web/" class="inline-block mt-8 text-[15px] font-medium text-watermelon">Explore the Term Web →</a>
+    </div>
+  </section>
+
+  <!-- Start Here -->
+  <section class="mx-auto max-w-content px-5 py-16">
+    <h2 class="font-display text-3xl font-semibold text-ink mb-8">Not sure what word you're looking for?</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {startHere.map((c) => (
+        <a href={c.href} target={c.external ? "_blank" : undefined} rel={c.external ? "noopener noreferrer" : undefined}
+           class="block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5">
+          <h3 class="font-semibold text-ink">{c.title}</h3>
+          <p class="text-[15px] text-[#4B5563] mt-1">{c.sub}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Where Shrinktionary fits -->
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <h2 class="font-display text-3xl font-semibold text-ink">Where Shrinktionary fits in The Shrink Network</h2>
+      <p class="max-w-prose text-[#1F2937] mt-4">
+        Shrinktionary explains the words. Shrinkopedia explains the concepts. AnxietyResource and DepressionResource explain specific conditions. PsychiatryRx explains medications. AnxietyResearch translates the evidence. shrinQ helps you see patterns in how you think. shrinkMD is where clinical care happens. Each property has its own role, and the links between them are intentional.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-6">
+        {networkPills.map((p) => (
+          <a href={p.href} target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-white text-[#4B5563] hover:text-watermelon px-4 py-2 text-sm font-medium shadow-sm">{p.label}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="mx-auto max-w-content px-5 py-16 text-center">
+    <h2 class="font-display text-3xl font-semibold text-ink">Look up a term, then keep walking the network.</h2>
+    <div class="mx-auto max-w-xl mt-8">
+      <SearchBox id="final-search" placeholder="Search 75+ terms" />
+    </div>
+    <a href="/categories/" class="inline-block mt-6 text-[15px] font-medium text-watermelon">Or explore by category →</a>
+  </section>
+</BaseLayout>

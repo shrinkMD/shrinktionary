@@ -1,0 +1,27 @@
+---
+export interface Props {
+  placeholder?: string;
+  id?: string;
+}
+const { placeholder = "Search 75+ terms", id = "search" } = Astro.props;
+---
+<div class="pagefind-search" id={id} data-placeholder={placeholder}></div>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script type="module" define:vars={{ id, placeholder }}>
+  function init() {
+    if (typeof PagefindUI === "undefined") {
+      window.addEventListener("load", init, { once: true });
+      return;
+    }
+    new PagefindUI({
+      element: "#" + id,
+      showSubResults: true,
+      showImages: false,
+      placeholderText: placeholder,
+      resetStyles: false,
+    });
+  }
+  init();
+</script>

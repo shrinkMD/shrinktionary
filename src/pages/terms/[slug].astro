@@ -1,0 +1,123 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import MedicalReviewByline from "../../components/MedicalReviewByline.astro";
+import Disclaimer from "../../components/Disclaimer.astro";
+import NetworkStrip from "../../components/NetworkStrip.astro";
+
+export async function getStaticPaths() {
+  const terms = await getCollection("terms");
+  return terms.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const categories = await getCollection("categories");
+const category = categories.find((c) => c.data.slug === d.category);
+const categoryName = category?.data.name ?? d.category;
+
+const terms = await getCollection("terms");
+const bySlug = new Map(terms.map((t) => [t.data.slug, t.data.term]));
+const relatedExisting = (d.related_terms ?? []).filter((s) => bySlug.has(s));
+
+const medicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: d.term,
+  description: d.short_definition,
+  url: `https://shrinktionary.com/terms/${d.slug}/`,
+  mainContentOfPage: { "@type": "WebPageElement", cssSelector: ".term-body" },
+  lastReviewed: d.last_reviewed,
+  reviewedBy: {
+    "@type": "Person",
+    name: "Shariq Refai, MD, MBA, FAPA",
+    sameAs: [
+      "https://www.wikidata.org/wiki/Q139822307",
+      "https://orcid.org/0009-0009-1090-4373",
+      "https://shariqrefai.com",
+    ],
+  },
+  about: {
+    "@type": "DefinedTerm",
+    name: d.term,
+    description: d.short_definition,
+    inDefinedTermSet: "https://shrinktionary.com/",
+    termCode: d.slug,
+  },
+};
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Terms", path: "/terms/" },
+  { name: d.term, path: `/terms/${d.slug}/` },
+];
+---
+
+<BaseLayout
+  title={`${d.term} | Shrinktionary`}
+  description={d.short_definition}
+  canonicalPath={`/terms/${d.slug}/`}
+  ogType="article"
+  jsonld={[medicalWebPageSchema]}
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-12">
+    <nav aria-label="Breadcrumb" class="caption text-carbon mb-6">
+      <a href="/" class="hover:text-watermelon">Home</a> ·
+      <a href="/terms/" class="hover:text-watermelon">Terms</a> ·
+      <a href={`/categories/${d.category}/`} class="hover:text-watermelon">{categoryName}</a>
+    </nav>
+
+    <p class="caption text-carbon uppercase tracking-widest text-xs">{categoryName}</p>
+    <h1 class="font-display text-4xl font-semibold text-ink mt-2">{d.term}</h1>
+    <p class="text-lg text-[#1F2937] mt-4">{d.short_definition}</p>
+
+    {d.also_known_as && d.also_known_as.length > 0 ? (
+      <p class="caption text-carbon mt-3">Also known as: {d.also_known_as.join(", ")}</p>
+    ) : null}
+
+    <div class="mt-5 pb-5 border-b border-neutral">
+      <MedicalReviewByline lastReviewed={d.last_reviewed} />
+    </div>
+
+    <div class="prose-body term-body mt-8 max-w-none">
+      <Content />
+    </div>
+
+    {relatedExisting.length > 0 ? (
+      <section class="mt-12">
+        <h2 class="font-display text-xl font-semibold text-ink mb-3">Related terms</h2>
+        <div class="flex flex-wrap gap-2">
+          {relatedExisting.map((s) => (
+            <a href={`/terms/${s}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{bySlug.get(s)}</a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
+    <section class="mt-12">
+      <h2 class="font-display text-xl font-semibold text-ink mb-3">Sources</h2>
+      <ol class="space-y-2 list-decimal pl-5">
+        {d.sources.map((s) => (
+          <li class="text-[15px]">
+            <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-watermelon underline underline-offset-2">{s.title}</a>
+            <span class="text-[#4B5563]">, {s.publisher}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <div class="mt-12">
+      <NetworkStrip links={d.network_links} />
+    </div>
+
+    <div class="mt-10">
+      <Disclaimer />
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,16 @@
+---
+export interface Props {
+  name: string;
+  slug: string;
+  description: string;
+  count?: number;
+}
+const { name, slug, description, count } = Astro.props;
+---
+<a href={`/categories/${slug}/`} class="block rounded-md bg-neutral hover:bg-sky border border-transparent hover:border-watermelon transition p-5 h-full">
+  <div class="flex items-center justify-between mb-1">
+    <h3 class="font-display text-lg font-semibold text-ink">{name}</h3>
+    {count !== undefined ? <span class="caption text-carbon">{count} {count === 1 ? "term" : "terms"}</span> : null}
+  </div>
+  <p class="text-[15px] text-[#4B5563]">{description}</p>
+</a>

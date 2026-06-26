@@ -1,0 +1,74 @@
+---
+const links = [
+  { label: "Terms", href: "/terms/" },
+  { label: "Categories", href: "/categories/" },
+  { label: "Term Web", href: "/term-web/" },
+  { label: "Start Here", href: "/start-here/" },
+  { label: "Editorial Standards", href: "/editorial-standards/" },
+  { label: "The Shrink Network", href: "https://shrinknetwork.com/", external: true },
+];
+const path = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral">
+  <div class="mx-auto max-w-content px-5 flex items-center justify-between h-16">
+    <a href="/" class="group inline-flex flex-col leading-none">
+      <span class="font-display text-2xl font-semibold text-ink">Shrinktionary</span>
+      <span class="h-[3px] w-10 bg-watermelon mt-1 rounded-full group-hover:w-full transition-all duration-300"></span>
+    </a>
+
+    <nav aria-label="Primary" class="hidden md:flex items-center gap-6">
+      {
+        links.map((l) => (
+          <a
+            href={l.href}
+            target={l.external ? "_blank" : undefined}
+            rel={l.external ? "noopener noreferrer" : undefined}
+            class={`text-[15px] font-medium hover:text-watermelon transition-colors ${
+              path === l.href ? "text-watermelon" : "text-ink"
+            }`}
+          >
+            {l.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <button
+      id="menu-toggle"
+      class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-neutral"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+  </div>
+
+  <nav id="mobile-menu" aria-label="Mobile" class="md:hidden hidden border-t border-neutral bg-white">
+    <div class="mx-auto max-w-content px-5 py-3 flex flex-col gap-3">
+      {
+        links.map((l) => (
+          <a
+            href={l.href}
+            target={l.external ? "_blank" : undefined}
+            rel={l.external ? "noopener noreferrer" : undefined}
+            class="text-[15px] font-medium text-ink hover:text-watermelon py-1"
+          >
+            {l.label}
+          </a>
+        ))
+      }
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+  toggle?.addEventListener("click", () => {
+    const open = menu?.classList.toggle("hidden");
+    toggle.setAttribute("aria-expanded", String(open === false));
+  });
+</script>

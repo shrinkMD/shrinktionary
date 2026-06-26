@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const categories = await getCollection("categories");
+  return categories.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const c = entry.data;
+
+const allTerms = await getCollection("terms");
+const terms = allTerms
+  .filter((t) => t.data.category === c.slug)
+  .sort((a, b) => a.data.term.localeCompare(b.data.term));
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Categories", path: "/categories/" },
+  { name: c.name, path: `/categories/${c.slug}/` },
+];
+---
+<BaseLayout
+  title={`${c.name} | Shrinktionary`}
+  description={c.description}
+  canonicalPath={`/categories/${c.slug}/`}
+  breadcrumbs={breadcrumbs}
+>
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-14">
+      <nav aria-label="Breadcrumb" class="caption text-[#4B5563] mb-4">
+        <a href="/" class="hover:text-watermelon">Home</a> · <a href="/categories/" class="hover:text-watermelon">Categories</a>
+      </nav>
+      <h1 class="font-display text-4xl font-semibold text-ink">{c.name}</h1>
+      <p class="max-w-prose text-[#1F2937] mt-3">{c.long_description}</p>
+      <p class="caption text-[#4B5563] mt-3">{terms.length} {terms.length === 1 ? "term" : "terms"}</p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-12">
+    {terms.length > 0 ? (
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {terms.map((t) => (
+          <li>
+            <a href={`/terms/${t.data.slug}/`} class="block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5 h-full">
+              <h2 class="font-display text-lg font-semibold text-ink mb-1">{t.data.term}</h2>
+              <p class="text-[15px] text-[#4B5563] line-clamp-3">{t.data.short_definition}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="text-[#4B5563]">Terms in this category are on the way. In the meantime, browse <a href="/terms/" class="text-watermelon underline underline-offset-2">all terms</a>.</p>
+    )}
+  </div>
+</BaseLayout>

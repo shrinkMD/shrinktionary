@@ -1,0 +1,73 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import SearchBox from "../../components/SearchBox.astro";
+
+const terms = (await getCollection("terms")).sort((a, b) => a.data.term.localeCompare(b.data.term));
+const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
+const catName = new Map(categories.map((c) => [c.data.slug, c.data.name]));
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Terms", path: "/terms/" },
+];
+---
+<BaseLayout
+  title="All terms | Shrinktionary"
+  description="Browse every term in Shrinktionary A to Z. Plain-English definitions of symptoms, conditions, medications, and therapy concepts, medically reviewed by a board certified psychiatrist."
+  canonicalPath="/terms/"
+  breadcrumbs={breadcrumbs}
+>
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-14">
+      <p class="caption text-[#4B5563] uppercase tracking-widest text-xs">Dictionary</p>
+      <h1 class="font-display text-4xl font-semibold text-ink mt-2">All terms</h1>
+      <p class="max-w-prose text-[#1F2937] mt-3">Every term, A to Z. Filter by category or search.</p>
+      <div class="max-w-xl mt-6"><SearchBox id="terms-search" placeholder="Search terms" /></div>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-10">
+    <div class="flex flex-wrap gap-2 mb-8" data-filters>
+      <button class="chip rounded-full border border-carbon px-4 py-1.5 text-sm font-medium hover:border-watermelon hover:text-watermelon" data-cat="all" aria-pressed="true">All</button>
+      {categories.map((c) => (
+        <button class="chip rounded-full border border-carbon px-4 py-1.5 text-sm font-medium hover:border-watermelon hover:text-watermelon" data-cat={c.data.slug} aria-pressed="false">{c.data.name}</button>
+      ))}
+    </div>
+
+    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" data-term-list>
+      {terms.map((t) => (
+        <li data-category={t.data.category}>
+          <a href={`/terms/${t.data.slug}/`} class="block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5 h-full">
+            <div class="flex items-center justify-between mb-1">
+              <h2 class="font-display text-lg font-semibold text-ink">{t.data.term}</h2>
+              <span class="caption text-carbon">{catName.get(t.data.category)}</span>
+            </div>
+            <p class="text-[15px] text-[#4B5563] line-clamp-3">{t.data.short_definition}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-cat]");
+    const items = document.querySelectorAll("[data-term-list] li");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const cat = btn.getAttribute("data-cat");
+        buttons.forEach((b) => {
+          const active = b === btn;
+          b.setAttribute("aria-pressed", String(active));
+          b.classList.toggle("bg-watermelon", active);
+          b.classList.toggle("text-white", active);
+          b.classList.toggle("border-watermelon", active);
+        });
+        items.forEach((li) => {
+          const show = cat === "all" || li.getAttribute("data-category") === cat;
+          (li as HTMLElement).style.display = show ? "" : "none";
+        });
+      });
+    });
+  </script>
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+export interface Props {
+  links?: { site: string; url: string; label: string }[];
+}
+const { links = [] } = Astro.props;
+const fallback = [
+  { site: "shrinkopedia", url: "https://shrinkopedia.com/", label: "Read the full encyclopedia entry on Shrinkopedia" },
+  { site: "shrinkmd", url: "https://shrinkmd.com/", label: "Get care at shrinkMD" },
+];
+const items = links.length > 0 ? links : fallback;
+---
+<section class="rounded-lg bg-sky p-6 md:p-8">
+  <p class="caption text-[#4B5563] tracking-widest text-xs uppercase">Continue learning across the network</p>
+  <h2 class="font-display text-xl font-semibold text-ink mt-1 mb-4">Keep walking the connections</h2>
+  <ul class="grid sm:grid-cols-2 gap-3">
+    {items.map((l) => (
+      <li>
+        <a href={l.url} target="_blank" rel="noopener noreferrer" class="flex items-center justify-between rounded-md bg-white px-4 py-3 hover:text-watermelon shadow-sm">
+          <span class="text-[15px] font-medium">{l.label}</span>
+          <span class="text-watermelon">→</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>

@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import CategoryCard from "../../components/CategoryCard.astro";
+
+const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
+const terms = await getCollection("terms");
+const countFor = (slug: string) => terms.filter((t) => t.data.category === slug).length;
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Categories", path: "/categories/" },
+];
+---
+<BaseLayout
+  title="Categories | Shrinktionary"
+  description="The nine categories of Shrinktionary: symptoms, conditions, medications, therapy terms, psychiatry terms, psychology terms, brain and body terms, everyday language, and research terms."
+  canonicalPath="/categories/"
+  breadcrumbs={breadcrumbs}
+>
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-14">
+      <p class="caption text-[#4B5563] uppercase tracking-widest text-xs">Browse</p>
+      <h1 class="font-display text-4xl font-semibold text-ink mt-2">Categories</h1>
+      <p class="max-w-prose text-[#1F2937] mt-3">Nine ways into the language of mental health. Pick the one that matches where you're starting.</p>
+    </div>
+  </section>
+  <div class="mx-auto max-w-content px-5 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {categories.map((c) => (
+        <CategoryCard name={c.data.name} slug={c.data.slug} description={c.data.description} count={countFor(c.data.slug)} />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

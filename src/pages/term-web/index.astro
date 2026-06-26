@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+
+// Each node: label + optional href (term page, category, or external network property)
+const pathways = [
+  [
+    { label: "Panic", href: "/categories/symptoms/" },
+    { label: "Panic attack", href: "/terms/panic-attack/" },
+    { label: "Fight-or-flight", href: "/categories/brain-body-terms/" },
+    { label: "Avoidance", href: "/categories/symptoms/" },
+    { label: "Exposure therapy", href: "/categories/therapy-terms/" },
+    { label: "AnxietyResource", href: "https://anxietyresource.org/", external: true },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ],
+  [
+    { label: "Depression", href: "/terms/depression/" },
+    { label: "Anhedonia", href: "/terms/anhedonia/" },
+    { label: "Motivation", href: "/categories/psychology-terms/" },
+    { label: "Behavioral activation", href: "/categories/therapy-terms/" },
+    { label: "DepressionResource", href: "https://depressionresource.org/", external: true },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ],
+  [
+    { label: "SSRI", href: "/terms/ssri/" },
+    { label: "Serotonin", href: "/categories/brain-body-terms/" },
+    { label: "Side effects", href: "/categories/medications/" },
+    { label: "PsychiatryRx", href: "https://psychiatryrx.org/", external: true },
+    { label: "Prescriber questions", href: "/categories/medications/" },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ],
+  [
+    { label: "Rumination", href: "/terms/rumination/" },
+    { label: "Overthinking", href: "/categories/everyday-language/" },
+    { label: "Thought loop", href: "/categories/symptoms/" },
+    { label: "shrinQ", href: "https://shrinq.com/", external: true },
+    { label: "Unstuck", href: "https://beunstuck.app/", external: true },
+  ],
+  [
+    { label: "Trauma", href: "/categories/conditions/" },
+    { label: "Hypervigilance", href: "/terms/hypervigilance/" },
+    { label: "Dissociation", href: "/categories/brain-body-terms/" },
+    { label: "Grounding", href: "/categories/therapy-terms/" },
+    { label: "shrinkMD", href: "https://shrinkmd.com/", external: true },
+  ],
+];
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Term Web", path: "/term-web/" },
+];
+---
+<BaseLayout
+  title="The Term Web | Shrinktionary"
+  description="Words connect. The Term Web maps how the language of mental health is wired together, so you can walk the connections instead of looking up one word at a time."
+  canonicalPath="/term-web/"
+  breadcrumbs={breadcrumbs}
+>
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink">The Term Web</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">Words connect. Walk the connections instead of looking up one word at a time.</p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-14">
+    <div class="prose-body max-w-prose">
+      <p>A symptom leads to a diagnosis. A diagnosis leads to a treatment. A treatment leads to medications. Medications lead to questions you'd ask a prescriber. Questions lead to care. Each link is intentional. The Term Web is how Shrinktionary maps those connections.</p>
+      <p>This is the foundation. A fully interactive visualization is coming.</p>
+    </div>
+
+    <div class="mt-12 space-y-6">
+      {pathways.map((chain) => (
+        <div class="rounded-lg bg-neutral p-5 overflow-x-auto">
+          <div class="flex items-center gap-2 min-w-max">
+            {chain.map((node, i) => (
+              <>
+                <a
+                  href={node.href}
+                  target={node.external ? "_blank" : undefined}
+                  rel={node.external ? "noopener noreferrer" : undefined}
+                  class="inline-block rounded-md bg-white px-3 py-2 text-sm font-medium shadow-sm hover:text-watermelon whitespace-nowrap"
+                >{node.label}</a>
+                {i < chain.length - 1 ? <span class="text-watermelon font-bold">→</span> : null}
+              </>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="caption text-carbon mt-10 max-w-prose">
+      The interactive Term Web is in development. For now, each pathway above shows a real connection between terms, and you can click any node to read its entry.
+    </p>
+  </div>
+</BaseLayout>

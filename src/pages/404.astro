@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../components/BaseLayout.astro";
+import SearchBox from "../components/SearchBox.astro";
+---
+<BaseLayout
+  title="Page not found | Shrinktionary"
+  description="That page doesn't exist. Search the dictionary or browse by category to find the term you're looking for."
+  canonicalPath="/404/"
+>
+  <section class="mx-auto max-w-prose px-5 py-20 text-center">
+    <p class="caption text-carbon uppercase tracking-widest text-xs">404</p>
+    <h1 class="font-display text-4xl font-semibold text-ink mt-2">We couldn't find that page.</h1>
+    <p class="text-lg text-[#1F2937] mt-4">The word you're after might be spelled differently, or it might live under another entry. Search the dictionary or browse by category.</p>
+    <div class="max-w-xl mx-auto mt-8"><SearchBox id="nf-search" placeholder="Search terms" /></div>
+    <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
+      <a href="/terms/" class="inline-flex items-center rounded-md bg-watermelon text-white font-medium px-6 py-3 hover:opacity-90">All terms</a>
+      <a href="/categories/" class="text-[15px] font-medium text-ink hover:text-watermelon">Browse categories →</a>
+    </div>
+  </section>
+</BaseLayout>

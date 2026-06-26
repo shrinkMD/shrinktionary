@@ -1,0 +1,96 @@
+---
+const understand = [
+  { label: "Shrinkopedia", href: "https://shrinkopedia.com/" },
+  { label: "Shrinktionary", href: "/", current: true },
+  { label: "AnxietyResource", href: "https://anxietyresource.org/" },
+  { label: "DepressionResource", href: "https://depressionresource.org/" },
+  { label: "AnxietyResearch", href: "https://anxietyresearch.org/" },
+  { label: "PsychiatryRx", href: "https://psychiatryrx.org/" },
+];
+const apply = [
+  { label: "shrinQ", href: "https://shrinq.com/" },
+  { label: "Unstuck", href: "https://beunstuck.app/" },
+  { label: "QuitScrolling", href: "https://quitscrolling.app/" },
+];
+const care = [{ label: "shrinkMD", href: "https://shrinkmd.com/" }];
+const profession = [
+  { label: "shrinkiatry", href: "https://shrinkiatry.com/" },
+  { label: "Shariq Refai", href: "https://shariqrefai.com/" },
+];
+const inline = [
+  { label: "Editorial standards", href: "/editorial-standards/" },
+  { label: "Medical review", href: "/medical-review/" },
+  { label: "Sources", href: "/sources/" },
+  { label: "Disclaimer", href: "/disclaimer/" },
+  { label: "About", href: "/about/" },
+  { label: "The Shrink Network", href: "https://shrinknetwork.com/", external: true },
+];
+
+function ext(href: string) {
+  return href.startsWith("http");
+}
+---
+
+<footer class="bg-ink text-white mt-24">
+  <div class="mx-auto max-w-content px-5 py-14">
+    <p class="caption text-carbon tracking-widest text-xs uppercase">Part of the Shrink Network</p>
+    <p class="font-display text-xl mt-2 text-white">Shrinktionary is the language layer of The Shrink Network.</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+      <div>
+        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Understand</h3>
+        <ul class="space-y-2">
+          {understand.map((l) => (
+            <li>
+              <a href={l.href} target={ext(l.href) ? "_blank" : undefined} rel={ext(l.href) ? "noopener noreferrer" : undefined} class="text-sm text-white/85 hover:text-watermelon">
+                {l.label}{l.current ? " (current)" : ""}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Apply</h3>
+        <ul class="space-y-2">
+          {apply.map((l) => (
+            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Care</h3>
+        <ul class="space-y-2">
+          {care.map((l) => (
+            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-carbon text-xs uppercase tracking-widest mb-3">Profession</h3>
+        <ul class="space-y-2">
+          {profession.map((l) => (
+            <li><a href={l.href} target="_blank" rel="noopener noreferrer" class="text-sm text-white/85 hover:text-watermelon">{l.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-carbon text-sm mt-10 max-w-3xl">
+      Shrinktionary is the language layer of The Shrink Network, a family of independent mental health properties founded and medically reviewed by Shariq Refai, MD, MBA. Clinical care, education, wellness, and publishing are kept operationally separate, and none of these properties run advertising or earn referral revenue.
+    </p>
+
+    <p class="text-sm mt-6 text-white/85">
+      {inline.map((l, i) => (
+        <>
+          <a href={l.href} target={l.external ? "_blank" : undefined} rel={l.external ? "noopener noreferrer" : undefined} class="hover:text-watermelon">{l.label}</a>
+          {i < inline.length - 1 ? <span class="text-carbon"> · </span> : null}
+        </>
+      ))}
+    </p>
+
+    <div class="border-t border-white/15 mt-10 pt-6 space-y-2">
+      <p class="text-sm text-white/85">If you're in crisis or feel unsafe, call or text 988, call 911, or go to the nearest emergency room.</p>
+      <p class="caption text-carbon">© 2026 Shrinktionary. The language layer of The Shrink Network.</p>
+    </div>
+  </div>
+</footer>

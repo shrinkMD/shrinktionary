@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Disclaimer", path: "/disclaimer/" },
+];
+---
+<BaseLayout
+  title="Medical disclaimer | Shrinktionary"
+  description="Shrinktionary is for general informational and educational purposes only. It is not medical advice and is not a substitute for individualized psychiatric or medical care."
+  canonicalPath="/disclaimer/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Medical disclaimer</h1>
+    <div class="prose-body mt-6 max-w-none">
+      <p>Shrinktionary is provided for general informational and educational purposes only. It is not medical advice. It is not a substitute for individualized psychiatric or medical care.</p>
+      <p>Reading content on Shrinktionary, including any entry, category page, or linked resource, does not establish a physician-patient or clinician-patient relationship with Shariq Refai, MD, MBA, FAPA, with shrinkMD, or with any other clinician or entity in The Shrink Network.</p>
+      <p>Decisions about mental health treatment should be made in consultation with a licensed mental health professional who has evaluated your individual situation.</p>
+      <p>If you're in crisis or feel unsafe, call or text 988 (the Suicide and Crisis Lifeline in the United States), call 911, or go to the nearest emergency department. Shrinktionary is not for emergencies.</p>
+      <p>If you have questions about a medication, dosage, or interaction, consult your prescriber or pharmacist directly. Information on this site reflects current general understanding and may not apply to your specific clinical situation.</p>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+import SearchBox from "../../components/SearchBox.astro";
+
+const cards = [
+  { title: "I have a symptom", sub: "Start from what you feel, not what it's called.", href: "/categories/symptoms/" },
+  { title: "I heard a diagnosis", sub: "Find the clinical condition by name.", href: "/categories/conditions/" },
+  { title: "I was prescribed a medication", sub: "Find what a drug is and what it treats.", href: "/categories/medications/" },
+  { title: "I'm reading about therapy", sub: "Decode what a clinician or workbook is saying.", href: "/categories/therapy-terms/" },
+  { title: "I want a plain English explanation", sub: "Go to Shrinkopedia for the full encyclopedia entry.", href: "https://shrinkopedia.com/", external: true },
+  { title: "I need professional care", sub: "Start with shrinkMD.", href: "https://shrinkmd.com/start-care/", external: true },
+];
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Start Here", path: "/start-here/" },
+];
+---
+<BaseLayout
+  title="Start Here | Shrinktionary"
+  description="There's more than one way into the language of mental health. Pick the path that matches where you're starting: a symptom, a diagnosis, a medication, or a therapy term."
+  canonicalPath="/start-here/"
+  breadcrumbs={breadcrumbs}
+>
+  <section class="bg-sky">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink">Find the word you're trying to understand.</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">There's more than one way in. Pick the path that matches where you're starting.</p>
+      <div class="max-w-xl mt-8"><SearchBox id="start-search" placeholder="Search terms" /></div>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-14">
+    <div class="grid sm:grid-cols-2 gap-5">
+      {cards.map((c) => (
+        <a href={c.href} target={c.external ? "_blank" : undefined} rel={c.external ? "noopener noreferrer" : undefined}
+           class="block rounded-lg bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-6">
+          <h2 class="font-display text-xl font-semibold text-ink">{c.title}</h2>
+          <p class="text-[#4B5563] mt-2">{c.sub}</p>
+          <span class="inline-block mt-4 text-sm font-medium text-watermelon">Go →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,18 @@
+---
+export interface Props {
+  term: string;
+  slug: string;
+  short_definition: string;
+  category: string;
+  categoryName?: string;
+}
+const { term, slug, short_definition, category, categoryName } = Astro.props;
+---
+<a href={`/terms/${slug}/`} class="block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm hover:shadow-md transition p-5 h-full">
+  <div class="flex items-center justify-between mb-1">
+    <h3 class="font-display text-lg font-semibold text-ink">{term}</h3>
+    <span class="caption text-carbon">{categoryName ?? category}</span>
+  </div>
+  <p class="text-[15px] text-[#4B5563] line-clamp-3">{short_definition}</p>
+  <span class="inline-block mt-3 text-sm font-medium text-watermelon">Read the definition →</span>
+</a>

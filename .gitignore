@@ -1,0 +1,20 @@
+# build output
+dist/
+# generated types
+.astro/
+# dependencies
+node_modules/
+# pagefind
+pagefind/
+# logs
+npm-debug.log*
+# environment
+.env
+.env.production
+# os
+.DS_Store
+
+.npm-cache/
+
+# leftover sandbox phantom dir (delete in Windows)
+.trash-delete-me-in-windows/

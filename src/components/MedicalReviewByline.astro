@@ -1,0 +1,11 @@
+---
+export interface Props {
+  lastReviewed?: string;
+}
+const { lastReviewed } = Astro.props;
+---
+<div class="byline flex flex-wrap items-center gap-x-2 gap-y-1">
+  <span>Medically reviewed by</span>
+  <a href="/medical-review/" class="font-medium text-ink hover:text-watermelon underline underline-offset-2">Shariq Refai, MD, MBA, FAPA, board certified psychiatrist</a>
+  {lastReviewed ? <span class="text-carbon">· Last reviewed {lastReviewed}</span> : null}
+</div>

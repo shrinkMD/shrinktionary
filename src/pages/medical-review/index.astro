@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Shariq Refai",
+  honorificSuffix: "MD, MBA, FAPA",
+  jobTitle: "Board Certified Psychiatrist, Founder and Medical Director of shrinkMD",
+  medicalSpecialty: "Psychiatric",
+  sameAs: [
+    "https://www.wikidata.org/wiki/Q139822307",
+    "https://orcid.org/0009-0009-1090-4373",
+    "https://npiregistry.cms.hhs.gov/provider-view/1467680660",
+    "https://shariqrefai.com",
+    "https://shrinkmd.com/shariq-refai/",
+  ],
+};
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Medical review", path: "/medical-review/" },
+];
+---
+<BaseLayout
+  title="Medical review | Shrinktionary"
+  description="Content on Shrinktionary is reviewed by Shariq Refai, MD, MBA, FAPA, a board certified psychiatrist and the founder and medical director of shrinkMD."
+  canonicalPath="/medical-review/"
+  jsonld={[personSchema]}
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Medical review</h1>
+
+    <div class="flex items-center gap-4 mt-6 mb-8">
+      <img src="/shariq-refai.jpg" alt="Shariq Refai, MD, MBA, FAPA" width="88" height="88" class="rounded-full object-cover w-22 h-22 border border-neutral" style="width:88px;height:88px;" />
+      <div>
+        <p class="font-display text-lg font-semibold text-ink">Shariq Refai, MD, MBA, FAPA</p>
+        <p class="caption text-carbon">Board certified psychiatrist · Founder and medical director of shrinkMD</p>
+      </div>
+    </div>
+
+    <div class="prose-body max-w-none">
+      <p>Content on Shrinktionary is reviewed by Shariq Refai, MD, MBA, FAPA, a board certified psychiatrist licensed in multiple states. Dr. Refai is a Diplomate of the American Board of Psychiatry and Neurology and Board Certified by the American Board of Sports and Performance Psychiatry. He is a Fellow of the American Psychiatric Association. He is the founder and medical director of shrinkMD, the clinical practice in The Shrink Network.</p>
+      <p>Review confirms each entry is accurate, current, and clinically appropriate before publication. Review does not create a doctor-patient relationship with any reader.</p>
+      <p>Read more about Dr. Refai's background on <a href="https://shariqrefai.com" target="_blank" rel="noopener noreferrer">shariqrefai.com</a> or <a href="https://shrinkmd.com" target="_blank" rel="noopener noreferrer">shrinkMD.com</a>.</p>
+      <p><strong>Conflict of interest statement.</strong> Dr. Refai founded and operates shrinkMD, a private psychiatric practice in The Shrink Network. He doesn't accept funding from pharmaceutical companies, doesn't sell ad placements on Shrinktionary, and doesn't earn referral fees from any external service mentioned on this site. Shrinktionary is editorial.</p>
+    </div>
+  </article>
+</BaseLayout>

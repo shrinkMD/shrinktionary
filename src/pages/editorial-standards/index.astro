@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../components/BaseLayout.astro";
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Editorial standards", path: "/editorial-standards/" },
+];
+const items = [
+  ["Plain English first.", "Definitions read for an adult who isn't a clinician. The technical version comes second, and is labeled."],
+  ["Evidence-based.", "Definitions reflect current consensus from sources we trust: the DSM-5-TR, the National Institute of Mental Health, the FDA, MedlinePlus, the Mayo Clinic, the American Psychiatric Association, peer-reviewed literature, and official medication labels."],
+  ["Medically reviewed.", "Each entry is reviewed by Shariq Refai, MD, MBA, FAPA, a board certified psychiatrist, before it's published. Review confirms the entry is accurate, current, and clinically appropriate. Review does not create a doctor-patient relationship."],
+  ["Sourced.", "Every entry lists the specific sources that support the definition. Citations are auditable. If a source changes its guidance, the entry is updated and the \"Last reviewed\" date is moved forward."],
+  ["Independent.", "Shrinktionary doesn't run advertising. It doesn't take payment for placement. It doesn't accept funding from pharmaceutical companies. Decisions about what to include are editorial."],
+  ["Updated.", "Mental health language evolves. The DSM gets revised. New medications enter the market. Old definitions get refined. Every entry shows its \"Last reviewed\" date so readers know how current it is."],
+  ["Not medical advice.", "Shrinktionary explains words. It doesn't diagnose. It doesn't treat. It doesn't replace a clinician. If you're trying to figure out what's happening with your mental health, the right next step is a conversation with a licensed professional."],
+];
+---
+<BaseLayout
+  title="Editorial standards | Shrinktionary"
+  description="How Shrinktionary content is written, reviewed, sourced, and updated. Plain English first, evidence-based, medically reviewed by a board certified psychiatrist, and independent."
+  canonicalPath="/editorial-standards/"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="mx-auto max-w-prose px-5 py-14">
+    <h1 class="font-display text-4xl font-semibold text-ink">Editorial standards</h1>
+    <p class="text-lg text-[#1F2937] mt-5">Every term on Shrinktionary is written to a defined standard.</p>
+    <dl class="mt-8 space-y-6">
+      {items.map(([term, desc]) => (
+        <div>
+          <dt class="font-semibold text-ink">{term}</dt>
+          <dd class="text-[#1F2937] mt-1">{desc}</dd>
+        </div>
+      ))}
+    </dl>
+  </article>
+</BaseLayout>
