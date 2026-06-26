@@ -1,0 +1,11 @@
+{
+  "slug": "motivation",
+  "when_it_matters": "Low motivation matters clinically when it's persistent and paired with other changes like loss of pleasure or low energy, since that pattern can point to depression rather than ordinary lack of drive.",
+  "confused_with": [
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Willpower"},
+    {"label": "Discipline"},
+    {"label": "Self-efficacy", "slug": "self-efficacy"},
+    {"label": "Apathy"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "intrusive-thought",
+  "when_it_matters": "A stray intrusive thought is normal and extremely common, but it becomes a clinical concern when thoughts are frequent and intense and drive compulsions or avoidance that eat up time and distress. That pattern is often connected to OCD or anxiety.",
+  "confused_with": [
+    {"label": "Rumination", "slug": "rumination"},
+    {"label": "A hidden wish or intent"},
+    {"label": "Compulsion", "slug": "compulsion"},
+    {"label": "Hallucination", "slug": "hallucination"},
+    {"label": "Overthinking", "slug": "overthinking"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "agoraphobia",
+  "when_it_matters": "It matters when fear of places where escape feels hard or help unavailable leads someone to avoid those situations, and that avoidance starts shrinking their world. It often travels with panic disorder and can be missed when avoidance is mistaken for simple preference.",
+  "confused_with": [
+    {"label": "Panic disorder", "slug": "panic-disorder"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "Specific phobia", "slug": "specific-phobia"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Being a homebody or introverted"}
+  ]
+}

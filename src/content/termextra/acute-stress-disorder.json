@@ -1,0 +1,10 @@
+{
+  "slug": "acute-stress-disorder",
+  "when_it_matters": "It matters in the first days to about a month after a traumatic event, when an intense stress reaction gets in the way of functioning rather than easing on its own. The timing is what separates it from PTSD, which is diagnosed when symptoms last longer than a month.",
+  "confused_with": [
+    {"label": "PTSD", "slug": "ptsd"},
+    {"label": "Adjustment disorder", "slug": "adjustment-disorder"},
+    {"label": "Panic disorder", "slug": "panic-disorder"},
+    {"label": "Normal grief or distress after a hard event"}
+  ]
+}

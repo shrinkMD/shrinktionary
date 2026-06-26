@@ -1,0 +1,11 @@
+{
+  "slug": "stress",
+  "when_it_matters": "Short bursts of stress are normal and even useful, but stress matters clinically when it never lets up and starts to disrupt sleep, mood, concentration, or physical health, or tips into an anxiety, depressive, or adjustment disorder. Notice when pressure stops easing once the demand passes.",
+  "confused_with": [
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Burnout", "slug": "burnout"},
+    {"label": "Adjustment disorder", "slug": "adjustment-disorder"},
+    {"label": "Fight-or-flight", "slug": "fight-or-flight"},
+    {"label": "Being busy"}
+  ]
+}

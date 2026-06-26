@@ -1,0 +1,11 @@
+{
+  "slug": "statistical-significance",
+  "when_it_matters": "The distinction matters when reading study results, because a statistically significant finding only means chance is an unlikely explanation, not that the effect is large or meaningful for real life. Look at the effect size and confidence interval alongside it to judge whether a result actually matters.",
+  "confused_with": [
+    {"label": "P-value", "slug": "p-value"},
+    {"label": "Effect size", "slug": "effect-size"},
+    {"label": "Clinical importance"},
+    {"label": "Confidence interval", "slug": "confidence-interval"},
+    {"label": "Proof or certainty"}
+  ]
+}

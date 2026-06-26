@@ -1,0 +1,11 @@
+{
+  "slug": "persistent-depressive-disorder",
+  "when_it_matters": "The distinction matters because PDD is a chronic, lower-intensity low mood lasting at least two years, which is different from major depression's more intense but often shorter episodes, and the two can overlap.",
+  "confused_with": [
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Dysthymia"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Cyclothymia", "slug": "cyclothymia"},
+    {"label": "Adjustment disorder", "slug": "adjustment-disorder"}
+  ]
+}

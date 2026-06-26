@@ -1,0 +1,11 @@
+{
+  "slug": "motivational-interviewing",
+  "when_it_matters": "Knowing the difference helps when someone feels torn about changing a behavior, because motivational interviewing is a specific counseling style for working through that ambivalence rather than a full course of therapy like CBT.",
+  "confused_with": [
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Coaching"},
+    {"label": "Supportive therapy", "slug": "supportive-therapy"},
+    {"label": "Psychoeducation", "slug": "psychoeducation"},
+    {"label": "Persuasion or advice-giving"}
+  ]
+}

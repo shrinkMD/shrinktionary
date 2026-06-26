@@ -1,0 +1,11 @@
+{
+  "slug": "off-label",
+  "when_it_matters": "The distinction matters when a medication is prescribed for something other than its FDA-approved use, which is legal and common but worth understanding so patients know what the evidence behind their prescription looks like.",
+  "confused_with": [
+    {"label": "Experimental or investigational drug"},
+    {"label": "Unapproved or illegal use"},
+    {"label": "Black box warning", "slug": "black-box-warning"},
+    {"label": "Contraindication", "slug": "contraindication"},
+    {"label": "Generic medication"}
+  ]
+}

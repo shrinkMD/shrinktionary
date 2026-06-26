@@ -1,0 +1,11 @@
+{
+  "slug": "correlation-and-causation",
+  "when_it_matters": "The distinction matters when reading research or headlines, since two things moving together doesn't prove one causes the other. It's the difference between a study that can show cause, like a randomized controlled trial, and one that can only show a link.",
+  "confused_with": [
+    {"label": "Confounding or bias", "slug": "bias"},
+    {"label": "Statistical significance", "slug": "statistical-significance"},
+    {"label": "Randomized controlled trial", "slug": "randomized-controlled-trial"},
+    {"label": "Coincidence"},
+    {"label": "Risk factor"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "fight-or-flight",
+  "when_it_matters": "Fight-or-flight matters when the alarm fires without a real threat, producing intense physical symptoms in anxiety and panic, or staying overly sensitive in PTSD. The symptoms are the body working as designed, not a sign something is wrong with it.",
+  "confused_with": [
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Freeze response"},
+    {"label": "Sympathetic nervous system", "slug": "sympathetic-nervous-system"},
+    {"label": "Cortisol", "slug": "cortisol"}
+  ]
+}

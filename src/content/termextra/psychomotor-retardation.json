@@ -1,0 +1,11 @@
+{
+  "slug": "psychomotor-retardation",
+  "when_it_matters": "It becomes clinically meaningful when the slowing of movement, speech, and thinking is visible to others and interferes with basic tasks, which clinicians look for during an evaluation. It shows up most in major depression and bipolar depression and is one sign that a depressive episode may be severe.",
+  "confused_with": [
+    {"label": "Fatigue", "slug": "fatigue"},
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Catatonia"},
+    {"label": "Psychomotor agitation", "slug": "agitation"},
+    {"label": "Brain fog", "slug": "brain-fog"}
+  ]
+}

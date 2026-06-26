@@ -1,0 +1,11 @@
+{
+  "slug": "tricyclic-antidepressant",
+  "when_it_matters": "Tricyclics work but tend to cause more side effects than newer antidepressants, so the distinction matters because they're often tried after other options, sometimes for depression that hasn't responded or for certain pain or sleep problems. They can be riskier in overdose, which is part of why a prescriber monitors them closely.",
+  "confused_with": [
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "SNRI", "slug": "snri"},
+    {"label": "MAOI", "slug": "maoi"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "Antipsychotic", "slug": "antipsychotic"}
+  ]
+}

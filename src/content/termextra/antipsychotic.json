@@ -1,0 +1,11 @@
+{
+  "slug": "antipsychotic",
+  "when_it_matters": "The distinction matters because antipsychotics treat psychosis and bipolar disorder but are also added to other treatments to boost their effect, so the same drug can be used for very different reasons. It also matters for side effects to watch, like akathisia and tardive dyskinesia.",
+  "confused_with": [
+    {"label": "Mood stabilizer", "slug": "mood-stabilizer"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "Benzodiazepine", "slug": "benzodiazepine"},
+    {"label": "Sedatives or tranquilizers"},
+    {"label": "Augmentation", "slug": "augmentation"}
+  ]
+}

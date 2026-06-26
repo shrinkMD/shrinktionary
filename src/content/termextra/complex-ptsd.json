@@ -1,0 +1,11 @@
+{
+  "slug": "complex-ptsd",
+  "when_it_matters": "It becomes relevant after repeated or prolonged trauma, often in relationships a person couldn't escape, when the lasting effects go beyond PTSD to include deep struggles with emotions, self-worth, and connection. Telling it apart from PTSD and borderline personality disorder shapes the focus of treatment.",
+  "confused_with": [
+    {"label": "PTSD", "slug": "ptsd"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Dissociative identity disorder", "slug": "dissociative-identity-disorder"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Attachment difficulties", "slug": "attachment"}
+  ]
+}

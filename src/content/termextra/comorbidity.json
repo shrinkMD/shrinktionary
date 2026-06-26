@@ -1,0 +1,11 @@
+{
+  "slug": "comorbidity",
+  "when_it_matters": "It matters when two or more conditions occur in the same person at once, since that often changes how treatment is planned, sequenced, and prioritized. In mental health, comorbidity is common, like depression alongside anxiety or a substance use disorder.",
+  "confused_with": [
+    {"label": "Differential diagnosis", "slug": "differential-diagnosis"},
+    {"label": "Dual diagnosis"},
+    {"label": "Complication"},
+    {"label": "Symptom overlap"},
+    {"label": "Polypharmacy", "slug": "polypharmacy"}
+  ]
+}

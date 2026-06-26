@@ -1,0 +1,11 @@
+{
+  "slug": "habituation",
+  "when_it_matters": "Habituation matters because it's the basic learning that lets fear responses fade with repeated, consistent exposure, which is part of how exposure therapy works. It isn't forcing yourself to push through or going numb, it's a genuine drop in the body's automatic response, and it can return if the stimulus changes or pauses.",
+  "confused_with": [
+    {"label": "Sensitization"},
+    {"label": "Exposure therapy", "slug": "exposure-therapy"},
+    {"label": "Tolerance"},
+    {"label": "Classical conditioning", "slug": "classical-conditioning"},
+    {"label": "Numbing"}
+  ]
+}

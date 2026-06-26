@@ -1,0 +1,11 @@
+{
+  "slug": "binge-eating-disorder",
+  "when_it_matters": "It matters when episodes of eating large amounts with a sense of loss of control and real distress recur, since it's the most common eating disorder and it's treatable. The absence of regular purging is part of what separates it from bulimia.",
+  "confused_with": [
+    {"label": "Bulimia nervosa", "slug": "bulimia-nervosa"},
+    {"label": "Anorexia nervosa", "slug": "anorexia-nervosa"},
+    {"label": "Emotional or stress eating"},
+    {"label": "Overeating or large meals"},
+    {"label": "Lack of willpower"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "separation-anxiety-disorder",
+  "when_it_matters": "It crosses into a clinical condition when fear about being apart from attachment figures is more intense than fits the person's age, lasts a meaningful stretch, and causes real distress or trouble functioning. It can begin or continue in adulthood, not just childhood, and shows up in school refusal or difficulty being alone.",
+  "confused_with": [
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Agoraphobia", "slug": "agoraphobia"},
+    {"label": "Attachment style", "slug": "attachment"},
+    {"label": "Panic disorder", "slug": "panic-disorder"},
+    {"label": "School refusal"}
+  ]
+}

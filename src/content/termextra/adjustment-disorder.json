@@ -1,0 +1,11 @@
+{
+  "slug": "adjustment-disorder",
+  "when_it_matters": "It matters when the emotional reaction to a specific stressor like a job loss or breakup is clearly stronger than expected and disrupts daily life, yet doesn't meet the full criteria for depression or an anxiety disorder. It usually eases once the person adapts or the stressor passes.",
+  "confused_with": [
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Acute stress disorder", "slug": "acute-stress-disorder"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Normal stress from life changes"}
+  ]
+}

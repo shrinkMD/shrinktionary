@@ -1,0 +1,11 @@
+{
+  "slug": "benzodiazepine",
+  "when_it_matters": "These matter because they work fast to ease anxiety, panic, and insomnia but carry a real risk of dependence, so they're usually meant for short-term use. The distinction from daily antidepressants matters, since benzodiazepines act quickly and aren't typically a long-term solution.",
+  "confused_with": [
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "Beta-blocker", "slug": "beta-blocker"},
+    {"label": "Sleeping pills"},
+    {"label": "Opioids or other sedatives"}
+  ]
+}

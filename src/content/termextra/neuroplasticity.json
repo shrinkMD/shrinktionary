@@ -1,0 +1,11 @@
+{
+  "slug": "neuroplasticity",
+  "when_it_matters": "The concept matters when explaining why therapy, practice, and new habits can produce lasting change, since it describes the brain reshaping itself with experience rather than being fixed for life.",
+  "confused_with": [
+    {"label": "Neurogenesis"},
+    {"label": "Brain development"},
+    {"label": "Learning"},
+    {"label": "Cognitive flexibility", "slug": "cognitive-flexibility"},
+    {"label": "Recovery after injury"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "autonomic-nervous-system",
+  "when_it_matters": "It matters for understanding why anxiety and stress produce physical symptoms like a racing heart or shallow breathing, since this system runs the body automatically through its sympathetic and parasympathetic branches. It's a framework for the stress response, not something a person gets diagnosed with.",
+  "confused_with": [
+    {"label": "Sympathetic nervous system", "slug": "sympathetic-nervous-system"},
+    {"label": "Fight-or-flight response", "slug": "fight-or-flight"},
+    {"label": "Vagus nerve", "slug": "vagus-nerve"},
+    {"label": "Central nervous system"},
+    {"label": "Adrenaline rush"}
+  ]
+}

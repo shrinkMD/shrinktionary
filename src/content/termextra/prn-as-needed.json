@@ -1,0 +1,11 @@
+{
+  "slug": "prn-as-needed",
+  "when_it_matters": "The distinction matters because PRN means take it only when a symptom flares, within set limits, which is the opposite of a scheduled medication taken daily to keep a steady level. Mixing the two up can lead to overuse, and some PRN medications carry a real risk of dependence with frequent use.",
+  "confused_with": [
+    {"label": "Scheduled or standing dose"},
+    {"label": "Titration", "slug": "titration"},
+    {"label": "Benzodiazepine", "slug": "benzodiazepine"},
+    {"label": "Off-label use", "slug": "off-label"},
+    {"label": "Dose tapering"}
+  ]
+}

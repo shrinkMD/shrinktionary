@@ -1,0 +1,11 @@
+{
+  "slug": "vagus-nerve",
+  "when_it_matters": "The vagus nerve is a key part of the body's calming, rest-and-digest system, so it matters when understanding why slow breathing and similar practices can help dial down a stress response. It's the focus of a lot of popular wellness claims, so it helps to separate what's well established from what isn't.",
+  "confused_with": [
+    {"label": "Parasympathetic nervous system"},
+    {"label": "Sympathetic nervous system", "slug": "sympathetic-nervous-system"},
+    {"label": "Autonomic nervous system", "slug": "autonomic-nervous-system"},
+    {"label": "Spinal cord"},
+    {"label": "Vagal tone"}
+  ]
+}

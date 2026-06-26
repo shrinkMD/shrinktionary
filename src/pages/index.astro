@@ -6,6 +6,7 @@ import CategoryCard from "../components/CategoryCard.astro";
 
 const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
 const terms = await getCollection("terms");
+const clusters = (await getCollection("clusters")).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 const countFor = (slug: string) => terms.filter((t) => t.data.category === slug).length;
 
 const startHere = [
@@ -120,6 +121,20 @@ const faqSchema = {
       </div>
       <a href="/term-web/" class="inline-block mt-8 text-[15px] font-medium text-watermelon">Explore the Term Web →</a>
     </div>
+  </section>
+
+  <!-- Language clusters -->
+  <section class="mx-auto max-w-content px-5 py-16">
+    <h2 class="font-display text-3xl font-semibold text-ink">Learn the words in context</h2>
+    <p class="max-w-prose text-[#1F2937] mt-4">
+      A dictionary gives you one word at a time. A cluster gives you the whole vocabulary around a real problem, the way it actually shows up, so the words make sense together.
+    </p>
+    <div class="flex flex-wrap gap-2 mt-8">
+      {clusters.map((c) => (
+        <a href={`/clusters/${c.data.slug}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{c.data.title}</a>
+      ))}
+    </div>
+    <a href="/clusters/" class="inline-block mt-8 text-[15px] font-medium text-watermelon">Browse all language clusters →</a>
   </section>
 
   <!-- Start Here -->

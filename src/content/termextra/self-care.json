@@ -1,0 +1,11 @@
+{
+  "slug": "self-care",
+  "when_it_matters": "The distinction matters because self-care is ordinary maintenance like sleep, food, movement, and connection that supports treatment, not a substitute for it. It's worth separating from the marketed idea of treating yourself, and from the expectation that it can fix a clinical condition on its own.",
+  "confused_with": [
+    {"label": "Self-indulgence"},
+    {"label": "Coping", "slug": "coping"},
+    {"label": "Boundaries", "slug": "boundaries"},
+    {"label": "Self-soothing"},
+    {"label": "Treatment"}
+  ]
+}

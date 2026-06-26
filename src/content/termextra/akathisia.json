@@ -1,0 +1,11 @@
+{
+  "slug": "akathisia",
+  "when_it_matters": "Akathisia matters because it's a distressing medication side effect, often from antipsychotics, that can be mistaken for worsening anxiety or agitation and warrants prompt attention. Telling it apart matters since the response is to address the medication, not to assume the underlying illness is getting worse.",
+  "confused_with": [
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Agitation", "slug": "agitation"},
+    {"label": "Tardive dyskinesia", "slug": "tardive-dyskinesia"},
+    {"label": "Restless legs at night"},
+    {"label": "Worsening of the original condition"}
+  ]
+}

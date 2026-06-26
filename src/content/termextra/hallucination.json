@@ -1,0 +1,11 @@
+{
+  "slug": "hallucination",
+  "when_it_matters": "A hallucination becomes clinically meaningful when it's new, persistent, or distressing, since it can signal conditions like schizophrenia or bipolar disorder, or causes like sleep deprivation, fever, or substance use. Any voices commanding harm are an emergency.",
+  "confused_with": [
+    {"label": "Delusion", "slug": "delusion"},
+    {"label": "Illusion"},
+    {"label": "Vivid imagination or daydream"},
+    {"label": "Flashback", "slug": "flashback"},
+    {"label": "Intrusive thought", "slug": "intrusive-thought"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "trichotillomania",
+  "when_it_matters": "Occasional hair twisting is common, but it points toward trichotillomania when someone repeatedly pulls out their own hair enough to cause noticeable loss, tries to stop, and finds the urge hard to resist. It's one of the body-focused repetitive behaviors and is treatable, often with a specific behavioral approach.",
+  "confused_with": [
+    {"label": "OCD", "slug": "ocd"},
+    {"label": "Skin picking"},
+    {"label": "A bad habit"},
+    {"label": "Compulsion", "slug": "compulsion"},
+    {"label": "Self-harm", "slug": "self-harm"}
+  ]
+}

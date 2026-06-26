@@ -7,27 +7,30 @@ const breadcrumbs = [
 ---
 <BaseLayout
   title="Accessibility | Shrinktionary"
-  description="Shrinktionary's accessibility commitment, where we fall short, and how to reach us if something on the site doesn't work with your assistive technology."
+  description="How Shrinktionary is built to be usable by everyone, our WCAG 2.1 AA commitment, the steps we take, and how to report a barrier."
   canonicalPath="/accessibility/"
   breadcrumbs={breadcrumbs}
+  keywords={["accessibility","WCAG","screen reader","mental health"]}
 >
   <article class="mx-auto max-w-prose px-5 py-14">
     <h1 class="font-display text-4xl font-semibold text-ink">Accessibility</h1>
-    <p class="caption text-carbon mt-2">Last updated: June 25, 2026</p>
-    <div class="prose-body mt-6 max-w-none">
-      <p>Shrinktionary should be usable by everyone, including people who use screen readers, keyboard navigation, or other assistive technology.</p>
+    <div class="prose-body max-w-none mt-6">
+      <p>Mental health information should reach everyone who needs it, including people who use screen readers, navigate by keyboard, rely on captions, or need larger text and higher contrast. We build Shrinktionary with that in mind, and we treat accessibility as part of the work, not an afterthought.</p>
 
-      <h2>Our commitment</h2>
-      <p>We aim to meet the Web Content Accessibility Guidelines, known as WCAG, version 2.2, at Level AA. In practice that means we work to keep text readable and high in contrast, to make the whole site navigable by keyboard, to give images meaningful descriptions, to keep headings and page structure clear, to keep focus indicators visible, to make interactive controls a comfortable size, and to make sure the site works across a range of screen sizes and with reduced motion.</p>
+      <h2>Our standard</h2>
+      <p>We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. That standard covers four principles: content should be perceivable, operable, understandable, and robust. We use it as our baseline for every page, and we check new templates against it before they ship.</p>
 
-      <h2>Ongoing improvements</h2>
-      <p>Accessibility is treated as continuous work, not a one-time audit. We review color contrast, semantic landmarks, focus management, mobile menu behavior, and keyboard support as we add new pages and components, and we welcome reports that point us at anything we've missed.</p>
+      <h2>What we do</h2>
+      <p>Every page uses a single, descriptive H1 and a logical heading order, so screen reader users can move through the structure quickly. Color is never the only way we convey meaning, and we hold body text to a contrast ratio of at least 4.5 to 1 against its background. Interactive elements, including the search box, the menu, and the term web, are reachable and operable with a keyboard alone, and a visible focus outline shows where you are. There's a skip-to-content link at the top of every page. Images that carry meaning have descriptive alternative text, and decorative images are hidden from assistive technology. We use real, semantic HTML for links, buttons, and lists rather than styled stand-ins, which is what robust support for assistive technology depends on.</p>
 
-      <h2>Where we fall short</h2>
-      <p>Parts of the site may not yet fully meet WCAG 2.2 AA. If you find something on Shrinktionary that's hard to read, hard to navigate, or doesn't work with your assistive technology, we want to hear about it.</p>
+      <h2>Plain language as accessibility</h2>
+      <p>Accessibility isn't only technical. The entire point of Shrinktionary is to put mental health language into plain English, which is itself an accessibility measure for the many people that dense clinical writing leaves behind. We write short sentences, define terms as we go, and avoid jargon wherever a simpler word works.</p>
 
-      <h2>Getting in touch</h2>
-      <p>Email <a href="mailto:support@shrinktionary.com">support@shrinktionary.com</a>. Tell us what happened and which page you were on, and we'll do our best to fix it and to help you reach the information you were looking for.</p>
+      <h2>Where we're still improving</h2>
+      <p>No site is ever perfectly accessible, and ours is no exception. The interactive term web, which is a visual graph, is the hardest piece to make fully equivalent for non-visual users, so we also provide the same connections as plain text links and guided pathways you can read in order. We keep working on it.</p>
+
+      <h2>Tell us about a barrier</h2>
+      <p>If something on Shrinktionary is hard to use with your tools, we want to know, and we'll treat it as a real bug. Reach us through our <a href="/contact/">contact</a> page and describe the page, the device or assistive technology you were using, and what went wrong. We'll respond and fix what we can.</p>
     </div>
   </article>
 </BaseLayout>

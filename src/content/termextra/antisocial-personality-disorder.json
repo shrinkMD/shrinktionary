@@ -1,0 +1,11 @@
+{
+  "slug": "antisocial-personality-disorder",
+  "when_it_matters": "It matters when there's an ongoing pattern of disregard for others' rights, often with impulsivity, deceit, and little guilt, present since at least the mid-teens rather than a one-off act. The term is clinical and is not the same as the everyday words sociopath or psychopath.",
+  "confused_with": [
+    {"label": "Narcissistic personality disorder", "slug": "narcissistic-personality-disorder"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Psychopathy or sociopathy"},
+    {"label": "Conduct disorder in youth"},
+    {"label": "Being introverted or asocial"}
+  ]
+}

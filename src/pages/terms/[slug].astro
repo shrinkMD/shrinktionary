@@ -42,6 +42,26 @@ const terms = await getCollection("terms");
 const bySlug = new Map(terms.map((t) => [t.data.slug, t.data.term]));
 const relatedExisting = (d.related_terms ?? []).filter((s) => bySlug.has(s));
 
+const truncate = (str, n) => {
+  const v = (str || "").trim();
+  if (v.length <= n) return v;
+  const cut = v.slice(0, n - 1);
+  const i = cut.lastIndexOf(" ");
+  return (i > 80 ? cut.slice(0, i) : cut).replace(/[\s,;:.]+$/, "") + "\u2026";
+};
+const metaDescription = truncate(d.short_definition, 158);
+
+const comparisons = await getCollection("comparisons");
+const relatedComparisons = comparisons.filter(
+  (cmp) =>
+    (cmp.data.terms || []).some((tt) => tt.slug === d.slug) ||
+    (cmp.data.related_terms || []).includes(d.slug)
+);
+const extraEntries = await getCollection("termextra");
+const extra = extraEntries.find((e) => e.data.slug === d.slug)?.data;
+const confusedWith = extra?.confused_with ?? [];
+const whenItMatters = extra?.when_it_matters ?? "";
+
 const toc = headings.filter((h) => h.depth === 2);
 
 const keywords = [
@@ -110,8 +130,8 @@ const breadcrumbs = [
 ---
 
 <BaseLayout
-  title={`${d.term}: definition and meaning | Shrinktionary`}
-  description={d.short_definition}
+  title={`${d.term} | Shrinktionary`}
+  description={metaDescription}
   canonicalPath={`/terms/${d.slug}/`}
   ogType="article"
   jsonld={faqSchema ? [medicalWebPageSchema, faqSchema] : [medicalWebPageSchema]}
@@ -145,6 +165,26 @@ const breadcrumbs = [
         <Content />
       </div>
 
+      {whenItMatters ? (
+        <section class="mt-10 rounded-lg bg-sky/60 border border-neutral p-5 md:p-6">
+          <h2 class="font-display text-lg font-semibold text-ink mb-2">When this word matters</h2>
+          <p class="text-[#1F2937]">{whenItMatters}</p>
+        </section>
+      ) : null}
+
+      {confusedWith.length > 0 ? (
+        <section class="mt-10">
+          <h2 class="font-display text-xl font-semibold text-ink mb-3">Commonly confused with</h2>
+          <div class="flex flex-wrap gap-2">
+            {confusedWith.map((c) => (
+              c.slug && bySlug.has(c.slug)
+                ? <a href={`/terms/${c.slug}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{c.label}</a>
+                : <span class="inline-flex rounded-full bg-neutral px-4 py-2 text-sm font-medium text-[#4B5563]">{c.label}</span>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {faqs.length > 0 ? (
         <section class="mt-12">
           <h2 class="font-display text-xl font-semibold text-ink mb-4">Frequently asked questions</h2>
@@ -170,6 +210,22 @@ const breadcrumbs = [
               <a href={`/terms/${s}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{bySlug.get(s)}</a>
             ))}
           </div>
+        </section>
+      ) : null}
+
+      {relatedComparisons.length > 0 ? (
+        <section class="mt-12">
+          <h2 class="font-display text-xl font-semibold text-ink mb-3">Compare</h2>
+          <ul class="space-y-2">
+            {relatedComparisons.map((cmp) => (
+              <li>
+                <a href={`/compare/${cmp.data.slug}/`} class="inline-flex items-center gap-2 text-[15px] font-medium text-watermelon hover:text-ink">
+                  {cmp.data.title}
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
       ) : null}
 

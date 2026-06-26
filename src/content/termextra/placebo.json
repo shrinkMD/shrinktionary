@@ -1,0 +1,11 @@
+{
+  "slug": "placebo",
+  "when_it_matters": "The distinction matters when reading trial results, since comparing a treatment against a placebo helps show whether the treatment itself is doing the work rather than expectation, attention, or natural improvement.",
+  "confused_with": [
+    {"label": "Placebo effect"},
+    {"label": "Nocebo effect"},
+    {"label": "Double-blind", "slug": "double-blind"},
+    {"label": "Control group"},
+    {"label": "Sugar pill"}
+  ]
+}

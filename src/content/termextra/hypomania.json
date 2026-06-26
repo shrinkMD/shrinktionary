@@ -1,0 +1,10 @@
+{
+  "slug": "hypomania",
+  "when_it_matters": "Hypomania matters when an elevated, energized mood lasts at least four days and is a clear change from baseline that others notice, especially when it swings into depression, since that pattern is central to bipolar II disorder. It's milder than mania and doesn't involve psychosis.",
+  "confused_with": [
+    {"label": "Mania", "slug": "mania"},
+    {"label": "A normal good mood or burst of motivation"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Grandiosity", "slug": "grandiosity"}
+  ]
+}

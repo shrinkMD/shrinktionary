@@ -1,0 +1,11 @@
+{
+  "slug": "narcissistic-personality-disorder",
+  "when_it_matters": "Confidence or self-focus crosses into a clinical concern when it's a long-standing, inflexible pattern that strains relationships and rests on fragile self-worth, which is what defines the disorder rather than ordinary vanity.",
+  "confused_with": [
+    {"label": "Antisocial personality disorder", "slug": "antisocial-personality-disorder"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Healthy self-confidence"},
+    {"label": "Grandiosity", "slug": "grandiosity"},
+    {"label": "Narcissistic traits"}
+  ]
+}

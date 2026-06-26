@@ -1,0 +1,11 @@
+{
+  "slug": "mania",
+  "when_it_matters": "Mania is the defining feature of bipolar I disorder and needs medical attention when a high or irritable mood with surging energy lasts at least a week and disrupts work, relationships, or safety. Severe episodes can involve delusions or hallucinations.",
+  "confused_with": [
+    {"label": "Hypomania", "slug": "hypomania"},
+    {"label": "Being happy, excited, or productive"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Grandiosity", "slug": "grandiosity"},
+    {"label": "Psychosis"}
+  ]
+}

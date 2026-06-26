@@ -1,0 +1,11 @@
+{
+  "slug": "dopamine",
+  "when_it_matters": "The wanting-versus-liking distinction matters when reading popular claims, since dopamine drives the pursuit of a reward more than the pleasure of getting it, and ideas like a dopamine detox don't match how the brain works. It's involved in ADHD, schizophrenia, and motivation, but no single condition comes from dopamine alone.",
+  "confused_with": [
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "Pleasure or happiness"},
+    {"label": "Adrenaline"},
+    {"label": "Norepinephrine", "slug": "norepinephrine"},
+    {"label": "Endorphins"}
+  ]
+}

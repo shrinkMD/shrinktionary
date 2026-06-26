@@ -1,0 +1,11 @@
+{
+  "slug": "imposter-syndrome",
+  "when_it_matters": "Imposter feelings matter when they're persistent, weigh on your mood, fuel anxiety, or hold you back from opportunities. It's a relatable description of an experience, not a formal clinical diagnosis.",
+  "confused_with": [
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Humility or realistic self-assessment"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "Self-doubt"},
+    {"label": "Cognitive distortion", "slug": "cognitive-distortion"}
+  ]
+}

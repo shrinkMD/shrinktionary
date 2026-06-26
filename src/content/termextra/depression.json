@@ -1,0 +1,11 @@
+{
+  "slug": "depression",
+  "when_it_matters": "Low mood crosses into clinically meaningful depression when it lasts most of the day nearly every day for at least two weeks and interferes with function, which is the threshold for major depressive disorder. The distinction matters because conditions like bipolar disorder and adjustment disorder can look similar but need different treatment.",
+  "confused_with": [
+    {"label": "Sadness or grief"},
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Burnout", "slug": "burnout"},
+    {"label": "Persistent depressive disorder", "slug": "persistent-depressive-disorder"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "norepinephrine",
+  "when_it_matters": "Telling it apart from other chemicals matters when reading about alertness, attention, and the stress response, since some medications target norepinephrine specifically rather than serotonin or dopamine.",
+  "confused_with": [
+    {"label": "Adrenaline (epinephrine)"},
+    {"label": "Dopamine", "slug": "dopamine"},
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "Cortisol", "slug": "cortisol"},
+    {"label": "Noradrenaline"}
+  ]
+}

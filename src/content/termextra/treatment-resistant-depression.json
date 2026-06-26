@@ -1,0 +1,11 @@
+{
+  "slug": "treatment-resistant-depression",
+  "when_it_matters": "The label applies when depression hasn't improved enough after at least two adequate antidepressant trials, and it matters because it points toward a different plan, such as augmentation, a switch, or other treatments, rather than a hopeless situation. Worth checking first is whether earlier trials were at a full dose for a long enough time.",
+  "confused_with": [
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Untreated depression"},
+    {"label": "Persistent depressive disorder", "slug": "persistent-depressive-disorder"},
+    {"label": "Bipolar depression"},
+    {"label": "Relapse", "slug": "relapse"}
+  ]
+}

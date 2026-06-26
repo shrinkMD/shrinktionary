@@ -1,0 +1,11 @@
+{
+  "slug": "confidence-interval",
+  "when_it_matters": "It matters when reading a study, because the interval shows how precise an estimate is, where a wide range signals more uncertainty than a narrow one. It's worth distinguishing from a p-value, which answers a different question about chance.",
+  "confused_with": [
+    {"label": "P-value", "slug": "p-value"},
+    {"label": "Statistical significance", "slug": "statistical-significance"},
+    {"label": "Margin of error"},
+    {"label": "Effect size", "slug": "effect-size"},
+    {"label": "Standard deviation"}
+  ]
+}

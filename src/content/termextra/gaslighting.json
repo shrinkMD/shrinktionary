@@ -1,0 +1,11 @@
+{
+  "slug": "gaslighting",
+  "when_it_matters": "Gaslighting matters when it's a sustained, deliberate pattern that erodes a person's trust in their own reality, usually within a relationship that has a power imbalance, and it can fuel anxiety and trauma-related symptoms. It isn't the same as an honest disagreement, misremembering, or simply being wrong.",
+  "confused_with": [
+    {"label": "Disagreement or misremembering"},
+    {"label": "Manipulation"},
+    {"label": "Narcissistic personality disorder", "slug": "narcissistic-personality-disorder"},
+    {"label": "Emotional abuse"},
+    {"label": "Lying"}
+  ]
+}

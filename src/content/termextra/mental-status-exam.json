@@ -1,0 +1,10 @@
+{
+  "slug": "mental-status-exam",
+  "when_it_matters": "The mental status exam matters as a clinician's structured snapshot of how a person presents at one point in time, covering appearance, mood, thought, perception, and cognition to help narrow a diagnosis and gauge safety. It's one source of information, not a diagnosis by itself.",
+  "confused_with": [
+    {"label": "A written test or quiz"},
+    {"label": "Differential diagnosis", "slug": "differential-diagnosis"},
+    {"label": "An IQ or personality test"},
+    {"label": "Formulation", "slug": "formulation"}
+  ]
+}

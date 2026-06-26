@@ -1,0 +1,11 @@
+{
+  "slug": "augmentation",
+  "when_it_matters": "Augmentation matters when a medication is helping only partway and a second drug is added to boost it rather than switching off the first one. The distinction matters because it's different from simply taking many drugs, and different from swapping one medication for another.",
+  "confused_with": [
+    {"label": "Polypharmacy", "slug": "polypharmacy"},
+    {"label": "Switching medications"},
+    {"label": "Combination therapy"},
+    {"label": "Titration", "slug": "titration"},
+    {"label": "Treatment-resistant depression", "slug": "treatment-resistant-depression"}
+  ]
+}

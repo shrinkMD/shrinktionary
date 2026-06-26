@@ -1,0 +1,11 @@
+{
+  "slug": "compulsion",
+  "when_it_matters": "It becomes clinically meaningful when repetitive behaviors or mental acts feel driven, eat up time, and are done to ease distress or prevent a feared outcome, which sits at the heart of OCD. It's worth separating from a habit or an addiction, which work differently.",
+  "confused_with": [
+    {"label": "Obsession or intrusive thought", "slug": "intrusive-thought"},
+    {"label": "Addiction or craving"},
+    {"label": "Habit"},
+    {"label": "Impulse"},
+    {"label": "Ritual or routine"}
+  ]
+}

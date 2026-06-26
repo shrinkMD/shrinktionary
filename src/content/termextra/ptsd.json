@@ -1,0 +1,11 @@
+{
+  "slug": "ptsd",
+  "when_it_matters": "It crosses into a clinical diagnosis when trauma symptoms like intrusive memories, avoidance, negative shifts in mood, and a body stuck on high alert persist well beyond the event and disrupt daily life. It overlaps with depression and anxiety, and it's distinct from a normal stress reaction that fades on its own.",
+  "confused_with": [
+    {"label": "Acute stress disorder", "slug": "acute-stress-disorder"},
+    {"label": "Complex PTSD", "slug": "complex-ptsd"},
+    {"label": "Adjustment disorder", "slug": "adjustment-disorder"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Panic disorder", "slug": "panic-disorder"}
+  ]
+}

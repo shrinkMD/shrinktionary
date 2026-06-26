@@ -1,0 +1,11 @@
+{
+  "slug": "depersonalization",
+  "when_it_matters": "It's a common stress and anxiety reaction, but it becomes more relevant when the sense of detachment from yourself is frequent, distressing, or lasting. It's worth separating from derealization, which is detachment from your surroundings rather than yourself.",
+  "confused_with": [
+    {"label": "Derealization", "slug": "derealization"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Emotional numbness", "slug": "emotional-numbness"},
+    {"label": "Brain fog", "slug": "brain-fog"},
+    {"label": "Spacing out"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "catastrophizing",
+  "when_it_matters": "It matters when the jump to the worst case becomes a steady habit that fuels anxiety, panic, or low mood, since it's one of the cognitive distortions CBT works to reshape. It tends to get stronger under anxiety, depression, sleep loss, and pain.",
+  "confused_with": [
+    {"label": "Rumination", "slug": "rumination"},
+    {"label": "Overthinking", "slug": "overthinking"},
+    {"label": "Cognitive distortion", "slug": "cognitive-distortion"},
+    {"label": "Worry or anxiety", "slug": "anxiety"},
+    {"label": "Realistic planning"}
+  ]
+}

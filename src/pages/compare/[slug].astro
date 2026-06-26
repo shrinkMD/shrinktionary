@@ -17,6 +17,14 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
 const site = "https://shrinktionary.com";
+const truncate = (str, n) => {
+  const v = (str || "").trim();
+  if (v.length <= n) return v;
+  const cut = v.slice(0, n - 1);
+  const i = cut.lastIndexOf(" ");
+  return (i > 80 ? cut.slice(0, i) : cut).replace(/[\s,;:.]+$/, "") + "\u2026";
+};
+
 
 const allTerms = await getCollection("terms");
 const bySlug = new Map(allTerms.map((t) => [t.data.slug, t.data.term]));
@@ -51,8 +59,8 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout
-  title={`${d.title}: what's the difference? | Shrinktionary`}
-  description={d.short_answer}
+  title={`${d.title} | Shrinktionary`}
+  description={truncate(d.short_answer, 158)}
   canonicalPath={`/compare/${d.slug}/`}
   ogType="article"
   jsonld={[schema]}

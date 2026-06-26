@@ -1,0 +1,11 @@
+{
+  "slug": "discontinuation-syndrome",
+  "when_it_matters": "It matters most when an antidepressant is stopped suddenly or tapered too fast, especially with medications that leave the body quickly, and the timing helps tell it apart from the original condition returning. Telling discontinuation from relapse is the key distinction, and a prescriber can guide a slower taper.",
+  "confused_with": [
+    {"label": "Relapse", "slug": "relapse"},
+    {"label": "Addiction or dependence"},
+    {"label": "Withdrawal"},
+    {"label": "Half-life", "slug": "half-life"},
+    {"label": "Serotonin syndrome", "slug": "serotonin-syndrome"}
+  ]
+}

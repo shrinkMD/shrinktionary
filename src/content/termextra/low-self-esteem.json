@@ -1,0 +1,10 @@
+{
+  "slug": "low-self-esteem",
+  "when_it_matters": "Low self-esteem matters when it holds you back at work, in relationships, or in daily life, or comes with persistent sadness, anxiety, or feelings of worthlessness. It isn't a diagnosis on its own but often overlaps with anxiety and depression.",
+  "confused_with": [
+    {"label": "Self-esteem", "slug": "self-esteem"},
+    {"label": "Humility or realistic self-assessment"},
+    {"label": "Worthlessness", "slug": "worthlessness"},
+    {"label": "Imposter syndrome", "slug": "imposter-syndrome"}
+  ]
+}

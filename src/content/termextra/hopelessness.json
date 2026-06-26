@@ -1,0 +1,11 @@
+{
+  "slug": "hopelessness",
+  "when_it_matters": "Hopelessness matters most when it lasts more than a couple of weeks, affects daily life, or shows up with thoughts of death, since it's a common symptom of depression and a warning sign worth taking seriously. It's a symptom, not a fixed truth.",
+  "confused_with": [
+    {"label": "Sadness or low mood"},
+    {"label": "Worthlessness", "slug": "worthlessness"},
+    {"label": "Learned helplessness", "slug": "learned-helplessness"},
+    {"label": "Despair or grief"},
+    {"label": "Suicidal ideation", "slug": "suicidal-ideation"}
+  ]
+}

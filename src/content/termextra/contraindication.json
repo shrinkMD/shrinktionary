@@ -1,0 +1,11 @@
+{
+  "slug": "contraindication",
+  "when_it_matters": "It matters when a treatment shouldn't be used because it could cause harm, which can be absolute, meaning never use it, or relative, meaning use it only with extra caution. It often comes up around drug interactions, like the foods and medicines to avoid with an MAOI.",
+  "confused_with": [
+    {"label": "Side effect"},
+    {"label": "Black box warning", "slug": "black-box-warning"},
+    {"label": "Drug interaction"},
+    {"label": "Allergy"},
+    {"label": "Off-label use", "slug": "off-label"}
+  ]
+}

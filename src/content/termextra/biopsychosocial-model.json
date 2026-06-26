@@ -1,0 +1,11 @@
+{
+  "slug": "biopsychosocial-model",
+  "when_it_matters": "It matters as a framework that looks at biological, psychological, and social factors together rather than blaming one cause, which shapes how a full picture of someone is built. The distinction matters because it pushes back on the idea that mental health is purely a brain chemistry or purely a willpower problem.",
+  "confused_with": [
+    {"label": "Formulation", "slug": "formulation"},
+    {"label": "The medical or biological model"},
+    {"label": "Differential diagnosis", "slug": "differential-diagnosis"},
+    {"label": "Diagnosis itself"},
+    {"label": "A treatment plan"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "fatigue",
+  "when_it_matters": "Fatigue matters as a symptom rather than a diagnosis, common in depression, anxiety, and burnout but also in medical causes like anemia, thyroid problems, and infections, so clinicians look at the whole picture. It's defined by being persistent and out of proportion to activity, lingering even after enough rest.",
+  "confused_with": [
+    {"label": "Ordinary tiredness"},
+    {"label": "Burnout", "slug": "burnout"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Hypersomnia", "slug": "hypersomnia"}
+  ]
+}

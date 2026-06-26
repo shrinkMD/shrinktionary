@@ -1,0 +1,11 @@
+{
+  "slug": "randomized-controlled-trial",
+  "when_it_matters": "The distinction matters when judging evidence, because random assignment to treatment or comparison groups is what lets an RCT show a treatment actually caused an effect rather than just being linked to it. It's the single study design that supports cause-and-effect claims most strongly, which is why it's called the gold standard.",
+  "confused_with": [
+    {"label": "Observational study"},
+    {"label": "Meta-analysis", "slug": "meta-analysis"},
+    {"label": "Double-blind design", "slug": "double-blind"},
+    {"label": "Placebo", "slug": "placebo"},
+    {"label": "Systematic review", "slug": "systematic-review"}
+  ]
+}

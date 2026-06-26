@@ -1,0 +1,11 @@
+{
+  "slug": "cognitive-restructuring",
+  "when_it_matters": "It matters as a hands-on CBT skill for catching distorted or unhelpful thoughts and reshaping them into more balanced ones, which helps with anxiety and depression. It's worth distinguishing from the broader therapy that contains it and from simply thinking positive.",
+  "confused_with": [
+    {"label": "Cognitive distortion", "slug": "cognitive-distortion"},
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Reframing or positive thinking"},
+    {"label": "Mindfulness"},
+    {"label": "Rumination", "slug": "rumination"}
+  ]
+}

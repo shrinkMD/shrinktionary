@@ -1,0 +1,11 @@
+{
+  "slug": "exposure-therapy",
+  "when_it_matters": "Exposure therapy matters as a first-line, evidence-based treatment for anxiety disorders, with ERP as the gold-standard version for OCD. The distinction is that it's structured, gradual, and paced, not white-knuckling through terror or random stressful encounters that can reinforce avoidance.",
+  "confused_with": [
+    {"label": "Exposure and response prevention", "slug": "exposure-and-response-prevention"},
+    {"label": "Flooding"},
+    {"label": "Habituation", "slug": "habituation"},
+    {"label": "Avoidance", "slug": "avoidance"},
+    {"label": "EMDR", "slug": "emdr"}
+  ]
+}

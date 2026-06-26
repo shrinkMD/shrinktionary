@@ -1,0 +1,10 @@
+{
+  "slug": "internal-family-systems",
+  "when_it_matters": "IFS matters when you feel pulled in different directions inside or want a compassionate approach to trauma, anxiety, depression, and inner conflict. Having parts is described as a normal feature of every mind, not a sign of a dissociative disorder.",
+  "confused_with": [
+    {"label": "Dissociative identity disorder", "slug": "dissociative-identity-disorder"},
+    {"label": "Family therapy", "slug": "family-therapy"},
+    {"label": "Psychodynamic therapy", "slug": "psychodynamic-therapy"},
+    {"label": "Schema therapy", "slug": "schema-therapy"}
+  ]
+}

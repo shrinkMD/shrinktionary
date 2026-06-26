@@ -1,0 +1,11 @@
+{
+  "slug": "worthlessness",
+  "when_it_matters": "A passing sense of not being good enough is common, but worthlessness matters when it becomes a persistent belief of having little value or being a burden, since it's a core symptom of depression and can raise the risk of suicidal thoughts. If thoughts of suicide come up, they deserve attention now, and in the US you can call or text 988.",
+  "confused_with": [
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Guilt"},
+    {"label": "Hopelessness", "slug": "hopelessness"},
+    {"label": "Shame"},
+    {"label": "Depression", "slug": "depression"}
+  ]
+}

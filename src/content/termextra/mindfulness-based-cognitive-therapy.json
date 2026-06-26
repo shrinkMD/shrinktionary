@@ -1,0 +1,11 @@
+{
+  "slug": "mindfulness-based-cognitive-therapy",
+  "when_it_matters": "The distinction matters most when someone's had repeated depressive episodes, since MBCT is built specifically to lower the odds of depression coming back rather than to treat a first acute episode.",
+  "confused_with": [
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Mindfulness-based stress reduction (MBSR)"},
+    {"label": "Acceptance and commitment therapy", "slug": "acceptance-and-commitment-therapy"},
+    {"label": "Plain meditation"},
+    {"label": "DBT", "slug": "dbt"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "transference",
+  "when_it_matters": "Transference matters in therapy because old feelings and expectations from past relationships can quietly show up toward the therapist, and noticing them can become useful material to explore. It's a normal part of treatment, not a sign something has gone wrong.",
+  "confused_with": [
+    {"label": "Countertransference"},
+    {"label": "Therapeutic alliance", "slug": "therapeutic-alliance"},
+    {"label": "Projection"},
+    {"label": "Attachment", "slug": "attachment"},
+    {"label": "Having a crush on your therapist"}
+  ]
+}

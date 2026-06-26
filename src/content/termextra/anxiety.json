@@ -1,0 +1,11 @@
+{
+  "slug": "anxiety",
+  "when_it_matters": "Everyday anxiety is normal and even helpful, but it crosses into clinically meaningful when it's persistent, out of proportion to the situation, and gets in the way of daily life. It appears across many conditions, from generalized anxiety and panic disorder to social anxiety and phobias.",
+  "confused_with": [
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Stress", "slug": "stress"},
+    {"label": "Fear or the fight-or-flight response", "slug": "fight-or-flight"},
+    {"label": "Excitement or nerves"}
+  ]
+}

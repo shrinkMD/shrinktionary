@@ -1,0 +1,11 @@
+{
+  "slug": "formulation",
+  "when_it_matters": "A formulation matters because two people with the same diagnosis can have very different stories, and those stories point toward different treatment plans. It explains and guides where a diagnosis only classifies, and it's a working hypothesis that gets revised over time.",
+  "confused_with": [
+    {"label": "Diagnosis"},
+    {"label": "Differential diagnosis", "slug": "differential-diagnosis"},
+    {"label": "Biopsychosocial model", "slug": "biopsychosocial-model"},
+    {"label": "Prognosis", "slug": "prognosis"},
+    {"label": "Treatment plan"}
+  ]
+}

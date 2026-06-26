@@ -1,0 +1,11 @@
+{
+  "slug": "burnout",
+  "when_it_matters": "It matters when chronic, unmanaged stress at work builds into exhaustion, cynicism, and a sense of getting less done, which the ICD-11 treats as an occupational phenomenon rather than a mental illness. Telling it apart from depression matters because depression spreads beyond work and may need different care.",
+  "confused_with": [
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Stress", "slug": "stress"},
+    {"label": "Chronic fatigue", "slug": "fatigue"},
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Nervous breakdown", "slug": "nervous-breakdown"}
+  ]
+}

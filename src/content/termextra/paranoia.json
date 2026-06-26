@@ -1,0 +1,11 @@
+{
+  "slug": "paranoia",
+  "when_it_matters": "Suspicion crosses into clinically meaningful paranoia when distrust is intense, unfounded, and held despite evidence, which can appear in conditions like schizophrenia, severe mood episodes, or paranoid personality patterns.",
+  "confused_with": [
+    {"label": "Delusion", "slug": "delusion"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Hypervigilance", "slug": "hypervigilance"},
+    {"label": "Paranoid personality disorder"},
+    {"label": "Everyday distrust"}
+  ]
+}

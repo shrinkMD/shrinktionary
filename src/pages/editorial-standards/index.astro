@@ -23,6 +23,7 @@ const items = [
   <article class="mx-auto max-w-prose px-5 py-14">
     <h1 class="font-display text-4xl font-semibold text-ink">Editorial standards</h1>
     <p class="text-lg text-[#1F2937] mt-5">Every term on Shrinktionary is written to a defined standard.</p>
+    <p class="text-[#1F2937] mt-4">A dictionary of the mind only works if you can trust it. These are the rules every entry follows, written down so you can hold us to them. They're the difference between a definition you can act on and one you have to second-guess.</p>
     <dl class="mt-8 space-y-6">
       {items.map(([term, desc]) => (
         <div>
@@ -31,5 +32,11 @@ const items = [
         </div>
       ))}
     </dl>
+
+    <h2 class="font-display text-2xl font-semibold text-ink mt-12">How an entry comes together</h2>
+    <p class="text-[#1F2937] mt-2">An entry starts with research from primary sources, not from other glossaries. We write the plain-English meaning first, then the clinical detail, then the things the word is commonly confused with and when it actually matters. We add the connections to related terms and to the right resources in the network, list the sources, and send it for medical review. Only after a board certified psychiatrist signs off does it publish. When sources change or we find an error, the entry is revised, reviewed again, and re-dated.</p>
+
+    <h2 class="font-display text-2xl font-semibold text-ink mt-10">Holding the line</h2>
+    <p class="text-[#1F2937] mt-2">We'd rather leave a word out than define it badly. We don't pad entries to look authoritative, we don't fabricate citations, and we don't promise outcomes. If we can't source a claim, it doesn't go in. You can read who reviews the content on our <a href="/medical-review/" class="text-watermelon underline underline-offset-2 hover:text-ink">medical review</a> page, the sources we rely on on our <a href="/sources/" class="text-watermelon underline underline-offset-2 hover:text-ink">sources</a> page, and how we handle mistakes on our <a href="/corrections/" class="text-watermelon underline underline-offset-2 hover:text-ink">corrections</a> page.</p>
   </article>
 </BaseLayout>

@@ -1,0 +1,11 @@
+{
+  "slug": "self-efficacy",
+  "when_it_matters": "The distinction matters because self-efficacy is belief in your ability to handle a specific task, which shapes effort and persistence, and it's usually task-specific rather than a single overall trait. It's easy to confuse with self-esteem, which is about overall worth, and with confidence in general.",
+  "confused_with": [
+    {"label": "Self-esteem", "slug": "self-esteem"},
+    {"label": "Confidence"},
+    {"label": "Locus of control", "slug": "locus-of-control"},
+    {"label": "Learned helplessness", "slug": "learned-helplessness"},
+    {"label": "Motivation", "slug": "motivation"}
+  ]
+}

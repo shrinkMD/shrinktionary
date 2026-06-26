@@ -1,0 +1,11 @@
+{
+  "slug": "prognosis",
+  "when_it_matters": "The distinction matters during evaluation and treatment planning, since a prognosis describes where things are likely headed, not what's guaranteed, and it can shift as new information comes in. It's easy to mistake it for a fixed sentence or to confuse it with the diagnosis, which names the condition right now.",
+  "confused_with": [
+    {"label": "Diagnosis"},
+    {"label": "Remission", "slug": "remission"},
+    {"label": "Relapse", "slug": "relapse"},
+    {"label": "Differential diagnosis", "slug": "differential-diagnosis"},
+    {"label": "Formulation", "slug": "formulation"}
+  ]
+}

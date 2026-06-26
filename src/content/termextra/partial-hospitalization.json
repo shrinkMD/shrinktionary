@@ -1,0 +1,11 @@
+{
+  "slug": "partial-hospitalization",
+  "when_it_matters": "The level of care matters when weekly therapy isn't enough but a full hospital stay isn't needed, since partial hospitalization offers most-of-the-day structured treatment while the person still goes home at night.",
+  "confused_with": [
+    {"label": "Inpatient hospitalization"},
+    {"label": "Intensive outpatient program (IOP)"},
+    {"label": "Residential treatment"},
+    {"label": "Levels of care", "slug": "levels-of-care"},
+    {"label": "Outpatient therapy"}
+  ]
+}

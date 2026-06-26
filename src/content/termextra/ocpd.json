@@ -1,0 +1,11 @@
+{
+  "slug": "ocpd",
+  "when_it_matters": "Perfectionism becomes OCPD when it's a pervasive, long-standing pattern of rigidity and control that the person sees as reasonable, which separates it from OCD, where the rituals feel unwanted and distressing.",
+  "confused_with": [
+    {"label": "OCD", "slug": "ocd"},
+    {"label": "Perfectionism"},
+    {"label": "Narcissistic personality disorder", "slug": "narcissistic-personality-disorder"},
+    {"label": "Type A personality"},
+    {"label": "Conscientiousness"}
+  ]
+}

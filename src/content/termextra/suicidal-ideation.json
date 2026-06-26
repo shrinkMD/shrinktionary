@@ -1,0 +1,11 @@
+{
+  "slug": "suicidal-ideation",
+  "when_it_matters": "Any thoughts of suicide deserve attention now, whether they're passive wishes to not wake up or active thoughts with a plan, and reaching out is a sign of strength, not weakness. In the US you can call or text 988 anytime to talk with someone, and these thoughts are common and treatable.",
+  "confused_with": [
+    {"label": "Self-harm", "slug": "self-harm"},
+    {"label": "Hopelessness", "slug": "hopelessness"},
+    {"label": "Intrusive thought", "slug": "intrusive-thought"},
+    {"label": "Worthlessness", "slug": "worthlessness"},
+    {"label": "Wanting the pain to stop"}
+  ]
+}

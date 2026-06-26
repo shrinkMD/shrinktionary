@@ -1,0 +1,11 @@
+{
+  "slug": "half-life",
+  "when_it_matters": "Half-life matters because it shapes how often a medication is taken and what happens when someone stops, since a drug that clears fast can drop off quickly while a long half-life tapers itself more gently. It isn't how long a drug works or how long you feel it, which can outlast or fall short of the measured half-life.",
+  "confused_with": [
+    {"label": "Duration of effect"},
+    {"label": "Discontinuation syndrome", "slug": "discontinuation-syndrome"},
+    {"label": "Titration", "slug": "titration"},
+    {"label": "Onset of action"},
+    {"label": "Steady state"}
+  ]
+}

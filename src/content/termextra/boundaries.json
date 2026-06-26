@@ -1,0 +1,11 @@
+{
+  "slug": "boundaries",
+  "when_it_matters": "The idea matters most when someone feels drained, resentful, or taken advantage of, since naming and communicating limits is a key part of self-care and protecting relationships. It comes up a lot in talk about burnout, people-pleasing, and difficult family or work dynamics.",
+  "confused_with": [
+    {"label": "Self-care", "slug": "self-care"},
+    {"label": "People-pleasing", "slug": "people-pleasing"},
+    {"label": "Being controlling or cutting people off"},
+    {"label": "Ultimatums"},
+    {"label": "Gaslighting", "slug": "gaslighting"}
+  ]
+}

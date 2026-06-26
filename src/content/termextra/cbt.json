@@ -1,0 +1,11 @@
+{
+  "slug": "cbt",
+  "when_it_matters": "The label matters when comparing therapy types, since CBT is a structured, evidence-based approach focused on changing unhelpful thoughts and behaviors, which differs from insight-focused or skills-focused methods. It comes up a lot alongside DBT and exposure therapy, which build on or branch from it.",
+  "confused_with": [
+    {"label": "DBT", "slug": "dbt"},
+    {"label": "Psychodynamic therapy", "slug": "psychodynamic-therapy"},
+    {"label": "Cognitive restructuring", "slug": "cognitive-restructuring"},
+    {"label": "Exposure therapy", "slug": "exposure-therapy"},
+    {"label": "Counseling in general"}
+  ]
+}

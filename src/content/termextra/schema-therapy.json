@@ -1,0 +1,11 @@
+{
+  "slug": "schema-therapy",
+  "when_it_matters": "The distinction matters when difficulties run deep and keep repeating, since schema therapy targets long-standing self-defeating patterns formed early in life rather than a single current symptom. It grew out of CBT but adds emotion-focused and relationship-based work, which is why it tends to be longer-term.",
+  "confused_with": [
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Cognitive restructuring", "slug": "cognitive-restructuring"},
+    {"label": "Psychodynamic therapy", "slug": "psychodynamic-therapy"},
+    {"label": "DBT", "slug": "dbt"},
+    {"label": "Internal family systems", "slug": "internal-family-systems"}
+  ]
+}

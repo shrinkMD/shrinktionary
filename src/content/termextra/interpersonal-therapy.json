@@ -1,0 +1,10 @@
+{
+  "slug": "interpersonal-therapy",
+  "when_it_matters": "IPT matters when low mood seems tied to a loss, a relationship conflict, or a major life change, since it works on that link in a time-limited, focused way. It has strong evidence for depression, including depression after childbirth.",
+  "confused_with": [
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Couples therapy", "slug": "couples-therapy"},
+    {"label": "Psychodynamic therapy", "slug": "psychodynamic-therapy"},
+    {"label": "Family therapy", "slug": "family-therapy"}
+  ]
+}

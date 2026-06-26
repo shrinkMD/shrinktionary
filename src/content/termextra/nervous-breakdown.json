@@ -1,0 +1,11 @@
+{
+  "slug": "nervous-breakdown",
+  "when_it_matters": "Because it isn't a real diagnosis, the phrase matters mainly as a signal that someone is overwhelmed and unable to function, which can reflect conditions like a depressive episode, severe anxiety, or burnout that deserve a closer look.",
+  "confused_with": [
+    {"label": "Burnout", "slug": "burnout"},
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Major depressive episode", "slug": "major-depressive-disorder"},
+    {"label": "Acute stress disorder", "slug": "acute-stress-disorder"},
+    {"label": "Mental health crisis"}
+  ]
+}

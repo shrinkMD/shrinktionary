@@ -1,0 +1,11 @@
+{
+  "slug": "cyclothymia",
+  "when_it_matters": "It becomes a diagnosis when many ups and downs persist over a long stretch but never reach the full intensity of mania or major depression. Telling it apart from bipolar disorder matters because the shifts are real and lasting, just less severe.",
+  "confused_with": [
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Hypomania", "slug": "hypomania"},
+    {"label": "Persistent depressive disorder", "slug": "persistent-depressive-disorder"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Ordinary mood swings"}
+  ]
+}

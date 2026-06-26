@@ -1,0 +1,11 @@
+{
+  "slug": "anorexia-nervosa",
+  "when_it_matters": "It matters when fear of weight gain and a distorted body image drive food restriction that harms physical and mental health, and it can become medically serious quickly, so early help matters. It can occur across body sizes, which is why it's sometimes missed in people who aren't visibly underweight.",
+  "confused_with": [
+    {"label": "Bulimia nervosa", "slug": "bulimia-nervosa"},
+    {"label": "Binge eating disorder", "slug": "binge-eating-disorder"},
+    {"label": "Body dysmorphic disorder", "slug": "body-dysmorphic-disorder"},
+    {"label": "Dieting or picky eating"},
+    {"label": "A lifestyle or vanity choice"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "hoarding-disorder",
+  "when_it_matters": "Saving things crosses into hoarding disorder when difficulty discarding is persistent, tied to real distress, and clutter fills living spaces so rooms can't be used or safety is at risk. It can overlap with OCD, anxiety, and depression.",
+  "confused_with": [
+    {"label": "Collecting"},
+    {"label": "Being messy or cluttered"},
+    {"label": "OCD", "slug": "ocd"},
+    {"label": "Compulsion", "slug": "compulsion"}
+  ]
+}

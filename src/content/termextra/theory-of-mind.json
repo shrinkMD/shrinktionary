@@ -1,0 +1,11 @@
+{
+  "slug": "theory-of-mind",
+  "when_it_matters": "Theory of mind is a normal developmental skill, and differences in it become clinically relevant in conditions like autism, where reading others' unspoken thoughts and feelings can take more effort. The point isn't to label someone as lacking empathy, since these are separate things.",
+  "confused_with": [
+    {"label": "Empathy"},
+    {"label": "Autism spectrum disorder", "slug": "autism-spectrum-disorder"},
+    {"label": "Emotional intelligence"},
+    {"label": "Metacognition", "slug": "metacognition"},
+    {"label": "Mind reading"}
+  ]
+}

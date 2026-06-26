@@ -1,0 +1,11 @@
+{
+  "slug": "prodrome",
+  "when_it_matters": "It matters most for conditions that come in episodes, like bipolar disorder and schizophrenia, where spotting the early warning signs creates a window to act before a full episode takes hold. Naming a personal prodrome ahead of time with a clinician is a core part of relapse prevention.",
+  "confused_with": [
+    {"label": "Relapse", "slug": "relapse"},
+    {"label": "Early warning signs"},
+    {"label": "Trigger", "slug": "triggered"},
+    {"label": "Acute episode"},
+    {"label": "Residual symptoms"}
+  ]
+}

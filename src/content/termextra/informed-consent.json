@@ -1,0 +1,10 @@
+{
+  "slug": "informed-consent",
+  "when_it_matters": "Informed consent matters whenever you're deciding on a medication, therapy, or procedure, because it means understanding the risks, benefits, and alternatives before agreeing. It's an ongoing process you can revisit or withdraw, not just a signature on a form.",
+  "confused_with": [
+    {"label": "Signing a consent form"},
+    {"label": "Confidentiality"},
+    {"label": "Psychoeducation", "slug": "psychoeducation"},
+    {"label": "A waiver of liability"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "coping",
+  "when_it_matters": "It matters when sorting strategies that help over the long run from those that bring short-term relief at a longer-term cost, like avoidance or substance use. The distinction comes up across stress, anxiety, and recovery from most conditions.",
+  "confused_with": [
+    {"label": "Emotional regulation", "slug": "emotional-regulation"},
+    {"label": "Avoidance", "slug": "avoidance"},
+    {"label": "Defense mechanism", "slug": "defense-mechanism"},
+    {"label": "Self-care", "slug": "self-care"},
+    {"label": "Resilience", "slug": "resilience"}
+  ]
+}

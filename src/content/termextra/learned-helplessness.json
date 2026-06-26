@@ -1,0 +1,10 @@
+{
+  "slug": "learned-helplessness",
+  "when_it_matters": "Learned helplessness matters when explaining why people stop trying even when help is available, after repeated stress they couldn't control. It's an influential model for understanding depression, not a formal diagnosis, and it can be unlearned.",
+  "confused_with": [
+    {"label": "Laziness or lack of willpower"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Hopelessness", "slug": "hopelessness"},
+    {"label": "Self-efficacy", "slug": "self-efficacy"}
+  ]
+}

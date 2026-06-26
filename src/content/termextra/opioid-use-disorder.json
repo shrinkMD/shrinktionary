@@ -1,0 +1,11 @@
+{
+  "slug": "opioid-use-disorder",
+  "when_it_matters": "Opioid use becomes a disorder when someone keeps using despite harm and loses control over it, which is a treatable medical condition rather than a lack of willpower, and it ranges from mild to severe.",
+  "confused_with": [
+    {"label": "Physical dependence"},
+    {"label": "Tolerance"},
+    {"label": "Substance use disorder", "slug": "substance-use-disorder"},
+    {"label": "Addiction"},
+    {"label": "Withdrawal"}
+  ]
+}

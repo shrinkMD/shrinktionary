@@ -1,0 +1,11 @@
+{
+  "slug": "gaba",
+  "when_it_matters": "GABA matters as the brain's main calming messenger and the target of benzodiazepines, which enhance its effect to ease anxiety and help with sleep, and that same mechanism explains the risk of dependence with long-term use. Low GABA isn't a complete explanation for anxiety, which involves many systems at once.",
+  "confused_with": [
+    {"label": "Glutamate", "slug": "glutamate"},
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "Benzodiazepine", "slug": "benzodiazepine"},
+    {"label": "GABA supplements"},
+    {"label": "Dopamine", "slug": "dopamine"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "derealization",
+  "when_it_matters": "Brief derealization during stress or panic is common, but it becomes a clinical concern when it's frequent, lasting, or disruptive, especially in panic disorder, anxiety, and PTSD. Knowing it's a dissociation symptom and not psychosis helps tell it apart from losing touch with reality.",
+  "confused_with": [
+    {"label": "Depersonalization", "slug": "depersonalization"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Psychosis"},
+    {"label": "Brain fog", "slug": "brain-fog"},
+    {"label": "Panic attack", "slug": "panic-attack"}
+  ]
+}

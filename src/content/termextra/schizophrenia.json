@@ -1,0 +1,11 @@
+{
+  "slug": "schizophrenia",
+  "when_it_matters": "It's a serious condition affecting thought, perception, and functioning, and it responds best to early, ongoing treatment, so recognizing the difference between it and similar conditions guides care. People often confuse it with split or multiple personalities, which it is not.",
+  "confused_with": [
+    {"label": "Dissociative identity disorder", "slug": "dissociative-identity-disorder"},
+    {"label": "Schizoaffective disorder", "slug": "schizoaffective-disorder"},
+    {"label": "Bipolar disorder with psychosis", "slug": "bipolar-disorder"},
+    {"label": "Delusional disorder", "slug": "delusion"},
+    {"label": "Psychosis"}
+  ]
+}

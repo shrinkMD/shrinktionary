@@ -1,0 +1,11 @@
+{
+  "slug": "operant-conditioning",
+  "when_it_matters": "The distinction matters when explaining how behaviors are shaped by their consequences, which is the engine behind many behavioral therapies and is different from classical conditioning, where learning links two stimuli.",
+  "confused_with": [
+    {"label": "Classical conditioning", "slug": "classical-conditioning"},
+    {"label": "Reinforcement", "slug": "reinforcement"},
+    {"label": "Punishment"},
+    {"label": "Habituation", "slug": "habituation"},
+    {"label": "Behaviorism"}
+  ]
+}

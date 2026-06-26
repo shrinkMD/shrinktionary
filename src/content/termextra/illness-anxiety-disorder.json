@@ -1,0 +1,10 @@
+{
+  "slug": "illness-anxiety-disorder",
+  "when_it_matters": "Health worry crosses into illness anxiety disorder when it's constant, hard to turn off, and sticks around after reassuring checkups, taking over time and straining daily life. It overlaps with anxiety, generalized anxiety disorder, and OCD.",
+  "confused_with": [
+    {"label": "Somatic symptom disorder", "slug": "somatic-symptom-disorder"},
+    {"label": "Normal concern about a real symptom"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "OCD", "slug": "ocd"}
+  ]
+}

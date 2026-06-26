@@ -1,0 +1,11 @@
+{
+  "slug": "body-dysmorphic-disorder",
+  "when_it_matters": "It crosses into a diagnosis when preoccupation with a perceived appearance flaw causes real distress or eats up large parts of the day through checking, grooming, or avoiding being seen. It's most relevant when telling it apart from an eating disorder, ordinary self-consciousness, or OCD.",
+  "confused_with": [
+    {"label": "Eating disorders like anorexia", "slug": "anorexia-nervosa"},
+    {"label": "OCD", "slug": "ocd"},
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "Normal appearance concerns"}
+  ]
+}

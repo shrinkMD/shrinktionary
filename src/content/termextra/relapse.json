@@ -1,0 +1,11 @@
+{
+  "slug": "relapse",
+  "when_it_matters": "It matters because a relapse is the return of symptoms after improvement, and catching it early through personal warning signs usually makes it easier to manage. It's best treated as a setback to handle with a clinician, not a personal failure, and recognizing the difference from a brief slip can change how care is adjusted.",
+  "confused_with": [
+    {"label": "Remission", "slug": "remission"},
+    {"label": "Prodrome", "slug": "prodrome"},
+    {"label": "Discontinuation syndrome", "slug": "discontinuation-syndrome"},
+    {"label": "Recurrence"},
+    {"label": "Treatment resistance", "slug": "treatment-resistant-depression"}
+  ]
+}

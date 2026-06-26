@@ -1,0 +1,11 @@
+{
+  "slug": "dissociation",
+  "when_it_matters": "Brief dissociation like zoning out is a normal human experience, but it becomes a clinical concern when it's frequent, intense, or disrupts memory, identity, or daily function, as in PTSD and dissociative disorders. Preserved awareness that the feeling comes from inside is what separates it from psychosis.",
+  "confused_with": [
+    {"label": "Derealization", "slug": "derealization"},
+    {"label": "Depersonalization", "slug": "depersonalization"},
+    {"label": "Psychosis"},
+    {"label": "Dissociative identity disorder", "slug": "dissociative-identity-disorder"},
+    {"label": "Emotional numbness", "slug": "emotional-numbness"}
+  ]
+}

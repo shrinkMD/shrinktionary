@@ -1,0 +1,11 @@
+{
+  "slug": "self-esteem",
+  "when_it_matters": "The distinction matters because self-esteem is your overall sense of worth, while self-efficacy is belief in handling a specific task, and the two often get blurred. Low self-esteem can feed and be fed by conditions like depression, which is when it becomes worth addressing in care.",
+  "confused_with": [
+    {"label": "Self-efficacy", "slug": "self-efficacy"},
+    {"label": "Self-confidence"},
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Imposter syndrome", "slug": "imposter-syndrome"},
+    {"label": "Narcissism", "slug": "narcissistic-personality-disorder"}
+  ]
+}

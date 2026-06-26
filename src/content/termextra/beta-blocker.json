@@ -1,0 +1,11 @@
+{
+  "slug": "beta-blocker",
+  "when_it_matters": "In mental health they matter as an off-label option to blunt the physical signs of anxiety like a racing heart or shaky hands, often before a performance, rather than to treat the underlying anxiety disorder. The distinction matters because they calm the body, not the worried thoughts themselves.",
+  "confused_with": [
+    {"label": "Benzodiazepine", "slug": "benzodiazepine"},
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "Anti-anxiety medication"},
+    {"label": "Blood pressure pills"},
+    {"label": "Stimulant", "slug": "stimulant"}
+  ]
+}

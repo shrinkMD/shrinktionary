@@ -131,9 +131,54 @@ const faqsCollection = defineCollection({
   }),
 });
 
+const termExtraCollection = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/termextra" }),
+  schema: z.object({
+    slug: z.string(),
+    when_it_matters: z.string().optional(),
+    confused_with: z
+      .array(z.object({ label: z.string(), slug: z.string().optional() }))
+      .optional(),
+  }),
+});
+
+const clustersCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/clusters" }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    problem: z.string(),
+    intro: z.string(),
+    terms: z.array(z.string()),
+    network_links: z
+      .array(
+        z.object({
+          site: z.enum([
+            "shrinkopedia",
+            "anxietyresource",
+            "depressionresource",
+            "psychiatryrx",
+            "anxietyresearch",
+            "shrinq",
+            "unstuck",
+            "shrinkmd",
+          ]),
+          url: z.string().url(),
+          label: z.string(),
+        })
+      )
+      .optional(),
+    published: z.string(),
+    last_reviewed: z.string(),
+    order: z.number().optional(),
+  }),
+});
+
 export const collections = {
   terms: termsCollection,
   categories: categoriesCollection,
   comparisons: comparisonsCollection,
   faqs: faqsCollection,
+  termextra: termExtraCollection,
+  clusters: clustersCollection,
 };

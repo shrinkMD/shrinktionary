@@ -1,0 +1,11 @@
+{
+  "slug": "premenstrual-dysphoric-disorder",
+  "when_it_matters": "It becomes clinically meaningful when mood and physical symptoms in the days before a period are severe enough to disrupt relationships, work, or daily life, then reliably lift once the period starts. Tracking the pattern across a couple of cycles is what separates it from ordinary PMS or constant depression.",
+  "confused_with": [
+    {"label": "PMS (premenstrual syndrome)"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"}
+  ]
+}

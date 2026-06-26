@@ -1,0 +1,10 @@
+{
+  "slug": "hippocampus",
+  "when_it_matters": "The hippocampus matters most when discussing memory, chronic stress, and research on depression and PTSD, since it's sensitive to stress hormones. It's one player in a network, not a single cause of any condition.",
+  "confused_with": [
+    {"label": "Amygdala", "slug": "amygdala"},
+    {"label": "Hypothalamus"},
+    {"label": "Limbic system", "slug": "limbic-system"},
+    {"label": "Prefrontal cortex", "slug": "prefrontal-cortex"}
+  ]
+}

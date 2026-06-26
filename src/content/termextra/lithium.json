@@ -1,0 +1,10 @@
+{
+  "slug": "lithium",
+  "when_it_matters": "Lithium matters as a mood stabilizer for bipolar disorder, treating mania, helping with bipolar depression, and lowering the chance of future episodes and suicide risk over time. It needs regular blood tests because the helpful and unsafe ranges sit close together.",
+  "confused_with": [
+    {"label": "Mood stabilizer", "slug": "mood-stabilizer"},
+    {"label": "Antipsychotic", "slug": "antipsychotic"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "A sedative"}
+  ]
+}

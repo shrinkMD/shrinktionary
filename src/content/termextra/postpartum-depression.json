@@ -1,0 +1,11 @@
+{
+  "slug": "postpartum-depression",
+  "when_it_matters": "It crosses from the brief baby blues into clinically meaningful territory when low mood, anxiety, or feeling disconnected from the baby lasts beyond the first couple of weeks or shows up during pregnancy and starts interfering with daily life. It's the diagnosis to take seriously around childbirth, and it often overlaps with major depression and anxiety.",
+  "confused_with": [
+    {"label": "Baby blues"},
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Postpartum psychosis"},
+    {"label": "Adjustment disorder", "slug": "adjustment-disorder"}
+  ]
+}

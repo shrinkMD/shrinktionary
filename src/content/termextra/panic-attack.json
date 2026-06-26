@@ -1,0 +1,11 @@
+{
+  "slug": "panic-attack",
+  "when_it_matters": "A single panic attack is common and not dangerous, but it matters clinically when attacks recur and lead to ongoing fear or avoidance, which can point to panic disorder or another anxiety condition.",
+  "confused_with": [
+    {"label": "Panic disorder", "slug": "panic-disorder"},
+    {"label": "Anxiety attack"},
+    {"label": "Heart attack"},
+    {"label": "Hyperventilation", "slug": "hyperventilation"},
+    {"label": "Acute stress reaction"}
+  ]
+}

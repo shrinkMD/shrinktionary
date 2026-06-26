@@ -1,0 +1,11 @@
+{
+  "slug": "panic-disorder",
+  "when_it_matters": "Having panic attacks isn't the same as panic disorder, which is diagnosed when the attacks are recurrent and unexpected and the worry about future attacks or avoidance becomes a problem in its own right.",
+  "confused_with": [
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Agoraphobia", "slug": "agoraphobia"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "Health anxiety", "slug": "illness-anxiety-disorder"}
+  ]
+}

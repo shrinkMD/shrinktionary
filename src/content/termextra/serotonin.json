@@ -1,0 +1,11 @@
+{
+  "slug": "serotonin",
+  "when_it_matters": "The distinction matters because serotonin is a chemical messenger involved in mood, sleep, appetite, and digestion, not simply a happiness chemical, and mood depends on many interacting systems. The oversimplified low serotonin causes depression story is more catchy than accurate.",
+  "confused_with": [
+    {"label": "Dopamine", "slug": "dopamine"},
+    {"label": "Norepinephrine", "slug": "norepinephrine"},
+    {"label": "Endorphins"},
+    {"label": "SSRIs", "slug": "ssri"},
+    {"label": "Serotonin syndrome", "slug": "serotonin-syndrome"}
+  ]
+}

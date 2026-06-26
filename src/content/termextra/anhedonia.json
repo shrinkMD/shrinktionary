@@ -1,0 +1,11 @@
+{
+  "slug": "anhedonia",
+  "when_it_matters": "It matters when the loss of pleasure or interest is persistent rather than a passing flat day, because it's a core symptom of depression and also shows up in schizophrenia, bipolar disorder, and PTSD. Its presence and duration help separate clinical depression from ordinary low mood.",
+  "confused_with": [
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Emotional numbness", "slug": "emotional-numbness"},
+    {"label": "Low motivation", "slug": "motivation"},
+    {"label": "Apathy or burnout", "slug": "burnout"},
+    {"label": "Just being tired or bored"}
+  ]
+}

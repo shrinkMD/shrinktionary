@@ -1,0 +1,10 @@
+{
+  "slug": "hpa-axis",
+  "when_it_matters": "The HPA axis matters when distinguishing the slow, hormone-driven arm of the stress response from the fast fight-or-flight reaction. Chronic overactivation, which keeps cortisol elevated, has been linked to depression and anxiety.",
+  "confused_with": [
+    {"label": "Cortisol", "slug": "cortisol"},
+    {"label": "Fight-or-flight", "slug": "fight-or-flight"},
+    {"label": "Autonomic nervous system", "slug": "autonomic-nervous-system"},
+    {"label": "Sympathetic nervous system", "slug": "sympathetic-nervous-system"}
+  ]
+}

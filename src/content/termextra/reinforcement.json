@@ -1,0 +1,11 @@
+{
+  "slug": "reinforcement",
+  "when_it_matters": "The distinction matters because reinforcement always makes a behavior more likely, whether it adds something wanted (positive) or removes something unpleasant (negative), and negative here means subtracted, not bad. People most often mix it up with punishment, which is meant to reduce a behavior.",
+  "confused_with": [
+    {"label": "Punishment"},
+    {"label": "Negative reinforcement"},
+    {"label": "Operant conditioning", "slug": "operant-conditioning"},
+    {"label": "Classical conditioning", "slug": "classical-conditioning"},
+    {"label": "Reward"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "bulimia-nervosa",
+  "when_it_matters": "It becomes a diagnosis when cycles of eating that feels out of control are followed by attempts to undo it, like purging or fasting, and the pattern repeats over time with deep distress. It's most relevant when separating it from anorexia or binge eating disorder, which differ in behavior and weight.",
+  "confused_with": [
+    {"label": "Anorexia nervosa", "slug": "anorexia-nervosa"},
+    {"label": "Binge eating disorder", "slug": "binge-eating-disorder"},
+    {"label": "Body dysmorphic disorder", "slug": "body-dysmorphic-disorder"},
+    {"label": "Occasional overeating"},
+    {"label": "Dieting"}
+  ]
+}

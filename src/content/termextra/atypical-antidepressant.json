@@ -1,0 +1,11 @@
+{
+  "slug": "atypical-antidepressant",
+  "when_it_matters": "The label matters because these drugs treat depression but don't fit the older classes, so they work through different pathways and have their own side effect and interaction profiles. The distinction comes up when a standard SSRI isn't a good fit or its side effects are a problem.",
+  "confused_with": [
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "SNRI", "slug": "snri"},
+    {"label": "Tricyclic antidepressant", "slug": "tricyclic-antidepressant"},
+    {"label": "Antidepressant in general", "slug": "antidepressant"},
+    {"label": "Atypical antipsychotics"}
+  ]
+}

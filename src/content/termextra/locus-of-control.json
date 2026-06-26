@@ -1,0 +1,10 @@
+{
+  "slug": "locus-of-control",
+  "when_it_matters": "Locus of control matters in research on stress, depression, and motivation, since people who feel they have some say over their lives often cope better and take more active steps. It's about who you believe causes outcomes, not how much control you actually have.",
+  "confused_with": [
+    {"label": "Self-efficacy", "slug": "self-efficacy"},
+    {"label": "Optimism or confidence"},
+    {"label": "Learned helplessness", "slug": "learned-helplessness"},
+    {"label": "Resilience", "slug": "resilience"}
+  ]
+}

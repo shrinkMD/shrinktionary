@@ -1,0 +1,11 @@
+{
+  "slug": "gambling-disorder",
+  "when_it_matters": "Gambling crosses into a disorder when it keeps going despite serious harm to finances, relationships, or well-being, with features like chasing losses, needing larger bets, and failed attempts to stop. It's recognized as a behavioral addiction and a treatable health condition, not a weak character or bad luck.",
+  "confused_with": [
+    {"label": "Recreational gambling"},
+    {"label": "Substance use disorder", "slug": "substance-use-disorder"},
+    {"label": "Impulsivity"},
+    {"label": "Compulsion", "slug": "compulsion"},
+    {"label": "Mania", "slug": "mania"}
+  ]
+}

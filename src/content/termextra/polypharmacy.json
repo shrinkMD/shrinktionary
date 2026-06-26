@@ -1,0 +1,11 @@
+{
+  "slug": "polypharmacy",
+  "when_it_matters": "The distinction matters when someone takes several medications at once, since combining drugs can be appropriate and helpful but raises the chance of interactions and side effects, so it needs careful oversight.",
+  "confused_with": [
+    {"label": "Drug interaction"},
+    {"label": "Augmentation", "slug": "augmentation"},
+    {"label": "Combination therapy"},
+    {"label": "Overmedication"},
+    {"label": "Off-label prescribing", "slug": "off-label"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "alcohol-use-disorder",
+  "when_it_matters": "It matters when drinking continues despite clear harm to health, relationships, or daily life, or when a person can't cut back even when they want to. Severity ranges from mild to severe, and it commonly overlaps with depression and anxiety.",
+  "confused_with": [
+    {"label": "Substance use disorder", "slug": "substance-use-disorder"},
+    {"label": "Social or heavy drinking"},
+    {"label": "A bad habit or willpower problem"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "A moral failing"}
+  ]
+}

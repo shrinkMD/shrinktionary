@@ -1,0 +1,11 @@
+{
+  "slug": "self-harm",
+  "when_it_matters": "Self-harm is often a way to cope with overwhelming emotional pain rather than an attempt to end life, but the two can overlap and both deserve support and care. If you're hurting yourself or thinking about it, you don't have to handle it alone, and you can call or text 988 in the US any time to talk with someone.",
+  "confused_with": [
+    {"label": "Suicidal ideation", "slug": "suicidal-ideation"},
+    {"label": "Non-suicidal self-injury"},
+    {"label": "Emotional dysregulation", "slug": "emotional-regulation"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Dissociation", "slug": "dissociation"}
+  ]
+}

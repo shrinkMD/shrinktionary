@@ -1,0 +1,11 @@
+{
+  "slug": "dissociative-identity-disorder",
+  "when_it_matters": "DID is strongly linked to severe, repeated trauma, often in early childhood, and it often goes unrecognized for years. The distinction from schizophrenia matters because DID involves identity and memory disruption, not the hallucinations and delusions of psychosis.",
+  "confused_with": [
+    {"label": "Schizophrenia", "slug": "schizophrenia"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Complex PTSD", "slug": "complex-ptsd"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"}
+  ]
+}

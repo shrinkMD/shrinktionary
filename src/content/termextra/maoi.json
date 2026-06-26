@@ -1,0 +1,10 @@
+{
+  "slug": "maoi",
+  "when_it_matters": "MAOIs matter when several other antidepressants haven't worked, since they can be effective but require strict diet and drug-interaction rules to avoid dangerous blood pressure spikes. Those rules belong to the prescriber and pharmacist, not guesswork.",
+  "confused_with": [
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "Tricyclic antidepressant", "slug": "tricyclic-antidepressant"},
+    {"label": "SNRI", "slug": "snri"},
+    {"label": "Antidepressant", "slug": "antidepressant"}
+  ]
+}

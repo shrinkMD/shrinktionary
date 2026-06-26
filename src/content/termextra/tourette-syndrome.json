@@ -1,0 +1,11 @@
+{
+  "slug": "tourette-syndrome",
+  "when_it_matters": "Tourette syndrome is defined by both multiple motor tics and at least one vocal tic lasting more than a year, usually starting in childhood, so the distinction matters when tics are brief or recent and may not meet that definition. It often occurs alongside ADHD and OCD, which can need attention in their own right.",
+  "confused_with": [
+    {"label": "Tics or transient tic disorder"},
+    {"label": "OCD", "slug": "ocd"},
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Habits or fidgeting"},
+    {"label": "Tardive dyskinesia", "slug": "tardive-dyskinesia"}
+  ]
+}

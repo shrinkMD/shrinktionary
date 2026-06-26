@@ -1,0 +1,10 @@
+{
+  "slug": "hypervigilance",
+  "when_it_matters": "Hypervigilance matters when the nervous system stays on alert in safe settings, disrupting sleep and leaving you unable to relax. It's a core feature of PTSD and shows up in generalized anxiety and panic disorder.",
+  "confused_with": [
+    {"label": "Paranoia", "slug": "paranoia"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Fight-or-flight", "slug": "fight-or-flight"},
+    {"label": "Being cautious or alert"}
+  ]
+}

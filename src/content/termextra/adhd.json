@@ -1,0 +1,11 @@
+{
+  "slug": "adhd",
+  "when_it_matters": "The pattern crosses into clinically meaningful when inattention, hyperactivity, or impulsivity is persistent, started in childhood, and clearly disrupts school, work, or relationships across more than one setting. It often appears alongside anxiety, depression, and learning differences.",
+  "confused_with": [
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Autism spectrum disorder", "slug": "autism-spectrum-disorder"},
+    {"label": "Working memory problems", "slug": "working-memory"},
+    {"label": "Laziness or lack of discipline"},
+    {"label": "Normal high energy in kids"}
+  ]
+}

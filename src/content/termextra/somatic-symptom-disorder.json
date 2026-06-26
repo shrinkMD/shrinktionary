@@ -1,0 +1,11 @@
+{
+  "slug": "somatic-symptom-disorder",
+  "when_it_matters": "Worrying about real physical symptoms is normal, but it points toward somatic symptom disorder when the thoughts, anxiety, and time spent on the symptoms are out of proportion and disrupt daily life, whether or not a medical cause is found. The focus is on the distress and behavior around the symptoms, not on proving the symptoms are imaginary.",
+  "confused_with": [
+    {"label": "Illness anxiety disorder", "slug": "illness-anxiety-disorder"},
+    {"label": "Hypochondria"},
+    {"label": "Health anxiety"},
+    {"label": "Faking symptoms"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"}
+  ]
+}

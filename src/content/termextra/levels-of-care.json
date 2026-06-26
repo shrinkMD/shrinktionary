@@ -1,0 +1,10 @@
+{
+  "slug": "levels-of-care",
+  "when_it_matters": "Levels of care matter when matching the intensity of treatment to current need, from weekly outpatient sessions up to inpatient hospitalization, with people stepping up or down as things change. A higher level isn't a ranking of how serious a patient is.",
+  "confused_with": [
+    {"label": "Partial hospitalization", "slug": "partial-hospitalization"},
+    {"label": "Inpatient vs outpatient"},
+    {"label": "Residential treatment"},
+    {"label": "Severity of diagnosis"}
+  ]
+}

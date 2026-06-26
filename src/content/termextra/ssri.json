@@ -1,0 +1,11 @@
+{
+  "slug": "ssri",
+  "when_it_matters": "SSRIs are often a first-line option for depression, anxiety disorders, OCD, and PTSD, and the distinction matters because they usually take several weeks to show full benefit and shouldn't be stopped abruptly. Pay attention to early side effects and how mood and anxiety shift over the first month or two.",
+  "confused_with": [
+    {"label": "SNRI", "slug": "snri"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "Benzodiazepine", "slug": "benzodiazepine"},
+    {"label": "Serotonin syndrome", "slug": "serotonin-syndrome"}
+  ]
+}

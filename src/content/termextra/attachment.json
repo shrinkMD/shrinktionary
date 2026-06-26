@@ -1,0 +1,11 @@
+{
+  "slug": "attachment",
+  "when_it_matters": "Attachment matters as a lens for understanding how early bonds with caregivers can shape later relationships, not as a diagnosis on its own. Attachment style is a pattern, distinct from a clinical condition, and the labels people use casually online often blur that line.",
+  "confused_with": [
+    {"label": "Attachment styles like anxious or avoidant"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Separation anxiety disorder", "slug": "separation-anxiety-disorder"},
+    {"label": "Reactive attachment disorder"},
+    {"label": "Codependency or people-pleasing", "slug": "people-pleasing"}
+  ]
+}

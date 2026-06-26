@@ -1,0 +1,11 @@
+{
+  "slug": "dbt",
+  "when_it_matters": "The label matters when comparing therapies, since DBT is a structured approach built around skills for managing intense emotions, tolerating distress, staying present, and improving relationships. It's often distinguished from CBT, which it grew out of but extends.",
+  "confused_with": [
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Mindfulness"},
+    {"label": "Schema therapy", "slug": "schema-therapy"},
+    {"label": "Group therapy", "slug": "group-therapy"},
+    {"label": "Emotional regulation skills", "slug": "emotional-regulation"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "double-blind",
+  "when_it_matters": "Double-blinding matters most for treatments judged by how people feel, where expectations can quietly shape results, which is why it's a hallmark of high-quality trials. It's separate from randomization, and some treatments like surgery or therapy can't be blinded.",
+  "confused_with": [
+    {"label": "Randomization"},
+    {"label": "Single-blind"},
+    {"label": "Placebo", "slug": "placebo"},
+    {"label": "Randomized controlled trial", "slug": "randomized-controlled-trial"},
+    {"label": "Peer review", "slug": "peer-review"}
+  ]
+}

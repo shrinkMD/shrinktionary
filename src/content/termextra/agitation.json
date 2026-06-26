@@ -1,0 +1,11 @@
+{
+  "slug": "agitation",
+  "when_it_matters": "Agitation matters as a signal rather than a diagnosis, and new or sudden agitation is a reason to look closely since it can come from anxiety, mania, psychosis, substance withdrawal, pain, infection, or medication effects. It crosses into clinically meaningful when the inner unrest is hard to settle and disrupts the person or those around them.",
+  "confused_with": [
+    {"label": "Irritability", "slug": "irritability"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Akathisia", "slug": "akathisia"},
+    {"label": "Mania", "slug": "mania"},
+    {"label": "Anger or being in a bad mood"}
+  ]
+}

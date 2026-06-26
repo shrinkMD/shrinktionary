@@ -1,0 +1,11 @@
+{
+  "slug": "behavioral-activation",
+  "when_it_matters": "It matters in depression, where withdrawal and inactivity feed low mood, and the approach gradually adds rewarding, meaningful activities to break that cycle. The distinction matters because it focuses on changing actions rather than directly challenging thoughts.",
+  "confused_with": [
+    {"label": "Cognitive behavioral therapy", "slug": "cbt"},
+    {"label": "Cognitive restructuring", "slug": "cognitive-restructuring"},
+    {"label": "Exposure therapy", "slug": "exposure-therapy"},
+    {"label": "Self-care", "slug": "self-care"},
+    {"label": "Just keeping busy"}
+  ]
+}

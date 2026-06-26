@@ -1,0 +1,11 @@
+{
+  "slug": "resilience",
+  "when_it_matters": "The distinction matters because resilience is a process you can build through relationships and skills, not a fixed trait you either have or lack, and it doesn't mean hardship doesn't hurt. It comes up most in discussions of coping with stress, loss, and trauma over time.",
+  "confused_with": [
+    {"label": "Toughness"},
+    {"label": "Coping", "slug": "coping"},
+    {"label": "Self-efficacy", "slug": "self-efficacy"},
+    {"label": "Grit"},
+    {"label": "Emotional suppression"}
+  ]
+}

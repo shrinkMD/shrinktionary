@@ -1,0 +1,11 @@
+{
+  "slug": "grandiosity",
+  "when_it_matters": "Grandiosity matters as a recognized symptom of the manic and hypomanic episodes of bipolar disorder, and in extreme forms it can become a fixed delusion in psychotic states. It differs from healthy confidence because it's out of proportion to reality and often comes with poor judgment or risky decisions.",
+  "confused_with": [
+    {"label": "Healthy self-confidence"},
+    {"label": "Mania", "slug": "mania"},
+    {"label": "Narcissistic personality disorder", "slug": "narcissistic-personality-disorder"},
+    {"label": "Delusion", "slug": "delusion"},
+    {"label": "Hypomania", "slug": "hypomania"}
+  ]
+}

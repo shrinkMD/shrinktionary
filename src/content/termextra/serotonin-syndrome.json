@@ -1,0 +1,11 @@
+{
+  "slug": "serotonin-syndrome",
+  "when_it_matters": "It matters because too much serotonin activity, often from combining medications or a quick dose increase, can range from mild to life-threatening and needs prompt medical attention. It's distinct from ordinary side effects, and the mental, body, and muscle symptoms usually appear within hours of a change.",
+  "confused_with": [
+    {"label": "Medication side effects"},
+    {"label": "Neuroleptic malignant syndrome"},
+    {"label": "Discontinuation syndrome", "slug": "discontinuation-syndrome"},
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Serotonin", "slug": "serotonin"}
+  ]
+}

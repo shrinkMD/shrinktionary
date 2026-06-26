@@ -1,0 +1,11 @@
+{
+  "slug": "couples-therapy",
+  "when_it_matters": "It matters when two partners want help understanding recurring conflicts, communicating better, or deciding how to move forward, with the relationship itself as the focus. It's distinct from family therapy and from individual therapy, which center on different people.",
+  "confused_with": [
+    {"label": "Family therapy", "slug": "family-therapy"},
+    {"label": "Individual therapy"},
+    {"label": "Group therapy", "slug": "group-therapy"},
+    {"label": "Mediation"},
+    {"label": "Marriage counseling"}
+  ]
+}

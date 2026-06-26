@@ -1,0 +1,11 @@
+{
+  "slug": "psychoeducation",
+  "when_it_matters": "It matters as a standard, active part of care rather than a nice extra, because understanding a condition and its treatment can lower fear, calm the home environment, and help people spot early warning signs. It's easy to confuse with general therapy, but its specific job is teaching about the illness and how to manage it.",
+  "confused_with": [
+    {"label": "Psychotherapy"},
+    {"label": "Cognitive restructuring", "slug": "cognitive-restructuring"},
+    {"label": "Group therapy", "slug": "group-therapy"},
+    {"label": "Informed consent", "slug": "informed-consent"},
+    {"label": "Coping skills", "slug": "coping"}
+  ]
+}

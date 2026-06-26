@@ -1,0 +1,10 @@
+{
+  "slug": "hypersomnia",
+  "when_it_matters": "Oversleeping crosses into hypersomnia when excessive sleepiness lasts for weeks, leaves a person unrefreshed, and interferes with daily life. It can be a symptom of depression, seasonal patterns, sleep disorders, or medical causes.",
+  "confused_with": [
+    {"label": "Insomnia", "slug": "insomnia"},
+    {"label": "Fatigue", "slug": "fatigue"},
+    {"label": "Being well-rested or liking sleep"},
+    {"label": "Anhedonia", "slug": "anhedonia"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "bipolar-disorder",
+  "when_it_matters": "It becomes clinically meaningful when mood swings into distinct episodes of mania or hypomania, not just everyday ups and downs, since that pattern changes treatment and rules out plain depression. It's most relevant when sorting bipolar from major depression, ADHD, or borderline personality disorder.",
+  "confused_with": [
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Borderline personality disorder", "slug": "borderline-personality-disorder"},
+    {"label": "Cyclothymia", "slug": "cyclothymia"},
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Everyday moodiness"}
+  ]
+}

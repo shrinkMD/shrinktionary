@@ -1,0 +1,11 @@
+{
+  "slug": "people-pleasing",
+  "when_it_matters": "People-pleasing isn't a diagnosis, but it matters when the habit becomes so automatic that someone ignores their own needs and burns out, which can overlap with anxiety, low self-esteem, or shaky boundaries.",
+  "confused_with": [
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Boundaries", "slug": "boundaries"},
+    {"label": "Kindness or agreeableness"},
+    {"label": "Codependency"},
+    {"label": "Fawning"}
+  ]
+}

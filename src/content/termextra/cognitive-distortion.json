@@ -1,0 +1,11 @@
+{
+  "slug": "cognitive-distortion",
+  "when_it_matters": "It matters when biased thinking patterns become habitual and make situations feel worse or more extreme than they are, which is a main target of cognitive behavioral therapy. Everyone has these at times; they're more relevant when they fuel anxiety or depression.",
+  "confused_with": [
+    {"label": "Catastrophizing", "slug": "catastrophizing"},
+    {"label": "Cognitive bias", "slug": "bias"},
+    {"label": "Delusion", "slug": "delusion"},
+    {"label": "Rumination", "slug": "rumination"},
+    {"label": "Negative thinking"}
+  ]
+}

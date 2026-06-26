@@ -1,0 +1,11 @@
+{
+  "slug": "stimulant",
+  "when_it_matters": "Stimulants are a first-line treatment for ADHD and often work within a day or two, so the distinction matters when weighing them against non-stimulant options. Because they're controlled substances, they're managed closely by a prescriber who watches for effects on sleep, appetite, heart rate, and mood.",
+  "confused_with": [
+    {"label": "Caffeine or energy drinks"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Recreational drugs"},
+    {"label": "Dopamine", "slug": "dopamine"}
+  ]
+}

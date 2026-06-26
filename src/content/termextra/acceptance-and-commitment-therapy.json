@@ -1,0 +1,11 @@
+{
+  "slug": "acceptance-and-commitment-therapy",
+  "when_it_matters": "ACT matters when someone has been fighting hard to control or get rid of painful thoughts and feelings without success, and that struggle itself is keeping them stuck. It's used for anxiety, depression, chronic pain, and many other conditions where acceptance plus values-based action can help.",
+  "confused_with": [
+    {"label": "Cognitive behavioral therapy", "slug": "cbt"},
+    {"label": "Dialectical behavior therapy", "slug": "dbt"},
+    {"label": "Mindfulness-based cognitive therapy", "slug": "mindfulness-based-cognitive-therapy"},
+    {"label": "Cognitive restructuring", "slug": "cognitive-restructuring"},
+    {"label": "Just giving up or being passive"}
+  ]
+}

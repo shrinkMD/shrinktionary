@@ -1,0 +1,11 @@
+{
+  "slug": "oxytocin",
+  "when_it_matters": "Telling it apart from other chemicals matters when reading about bonding and trust, since oxytocin's nickname as the love hormone often gets oversimplified and its effects are more complex than the headlines suggest.",
+  "confused_with": [
+    {"label": "Dopamine", "slug": "dopamine"},
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "Vasopressin"},
+    {"label": "Endorphins"},
+    {"label": "OxyContin"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "overthinking",
+  "when_it_matters": "Overthinking tips into a clinical concern when it becomes constant, hard to switch off, and starts disrupting sleep or daily life, which is when it may reflect anxiety or depression rather than an ordinary habit.",
+  "confused_with": [
+    {"label": "Rumination", "slug": "rumination"},
+    {"label": "Worry"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Intrusive thoughts", "slug": "intrusive-thought"},
+    {"label": "Racing thoughts", "slug": "racing-thoughts"}
+  ]
+}

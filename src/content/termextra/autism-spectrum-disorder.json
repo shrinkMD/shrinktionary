@@ -1,0 +1,11 @@
+{
+  "slug": "autism-spectrum-disorder",
+  "when_it_matters": "It matters as a developmental difference present from early childhood that shapes communication, social relating, and sensory processing, and it shows up in a wide range of ways from one person to the next. Recognizing it matters because traits can be masked, and it often overlaps with ADHD and anxiety.",
+  "confused_with": [
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "Avoidant personality disorder", "slug": "avoidant-personality-disorder"},
+    {"label": "Being shy or introverted"},
+    {"label": "Masking", "slug": "masking"}
+  ]
+}

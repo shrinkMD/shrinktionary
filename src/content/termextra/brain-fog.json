@@ -1,0 +1,11 @@
+{
+  "slug": "brain-fog",
+  "when_it_matters": "It's worth looking into when the cloudiness sticks around or interferes with work, study, or daily routines, since it's a symptom with many possible causes rather than a diagnosis on its own. Sleep loss, stress, depression, anxiety, medications, and physical illness can all feed it.",
+  "confused_with": [
+    {"label": "Fatigue", "slug": "fatigue"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Dementia or memory loss"},
+    {"label": "Dissociation", "slug": "dissociation"}
+  ]
+}

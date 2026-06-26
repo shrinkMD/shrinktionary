@@ -1,0 +1,11 @@
+{
+  "slug": "emdr",
+  "when_it_matters": "EMDR matters as an evidence-based, trauma-focused therapy, mainly for PTSD, and it differs from exposure therapy and CBT in that it doesn't require describing the trauma in detail or doing homework. It isn't hypnosis and it doesn't erase memories, it changes how much they hurt to recall.",
+  "confused_with": [
+    {"label": "Exposure therapy", "slug": "exposure-therapy"},
+    {"label": "Hypnosis"},
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Cognitive restructuring", "slug": "cognitive-restructuring"},
+    {"label": "Flashback", "slug": "flashback"}
+  ]
+}

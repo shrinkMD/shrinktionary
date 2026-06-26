@@ -1,0 +1,11 @@
+{
+  "slug": "seasonal-affective-disorder",
+  "when_it_matters": "It crosses from the winter blues into clinically meaningful territory when depression follows a clear seasonal pattern year after year, most often arriving in late fall or winter and easing in spring, and interferes with daily life. It's understood as a seasonal form of major depression rather than a separate mild mood dip.",
+  "confused_with": [
+    {"label": "Winter blues"},
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Persistent depressive disorder", "slug": "persistent-depressive-disorder"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Circadian rhythm disruption", "slug": "circadian-rhythm"}
+  ]
+}

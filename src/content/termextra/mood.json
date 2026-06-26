@@ -1,0 +1,11 @@
+{
+  "slug": "mood",
+  "when_it_matters": "Mood becomes clinically meaningful when a low, high, or irritable state lasts for weeks and starts affecting sleep, energy, or daily functioning, which is what separates everyday mood from conditions like depression or bipolar disorder.",
+  "confused_with": [
+    {"label": "Emotion"},
+    {"label": "Affect"},
+    {"label": "Temperament"},
+    {"label": "Mood disorder"},
+    {"label": "Feelings"}
+  ]
+}

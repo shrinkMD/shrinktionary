@@ -1,0 +1,11 @@
+{
+  "slug": "mood-stabilizer",
+  "when_it_matters": "The label matters because mood stabilizers are aimed at evening out both the highs and the lows of bipolar disorder, which is a different goal than lifting mood with an antidepressant or calming agitation with an antipsychotic.",
+  "confused_with": [
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "Antipsychotic", "slug": "antipsychotic"},
+    {"label": "Lithium", "slug": "lithium"},
+    {"label": "Benzodiazepine", "slug": "benzodiazepine"},
+    {"label": "Anticonvulsant"}
+  ]
+}

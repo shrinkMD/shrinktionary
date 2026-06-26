@@ -1,0 +1,10 @@
+{
+  "slug": "inhibition",
+  "when_it_matters": "Inhibition matters when distinguishing the brain's ability to stop an automatic reaction from willpower or shyness. It's a core part of executive function and is a central difference in ADHD, where holding back a response is genuinely harder.",
+  "confused_with": [
+    {"label": "Being shy or socially inhibited"},
+    {"label": "Willpower or self-control"},
+    {"label": "Executive function", "slug": "executive-function"},
+    {"label": "Impulsivity"}
+  ]
+}

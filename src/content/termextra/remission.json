@@ -1,0 +1,11 @@
+{
+  "slug": "remission",
+  "when_it_matters": "The distinction matters because remission means symptoms have dropped below the threshold for a diagnosis, often the goal of treatment, but it usually doesn't mean care can stop. Reaching full remission rather than stopping at partial tends to lower the chance symptoms come back.",
+  "confused_with": [
+    {"label": "Recovery"},
+    {"label": "Relapse", "slug": "relapse"},
+    {"label": "Cure"},
+    {"label": "Response to treatment"},
+    {"label": "Prognosis", "slug": "prognosis"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "emotional-regulation",
+  "when_it_matters": "Emotional regulation matters as a learnable skill and a major focus of dialectical behavior therapy, and difficulty with it shows up across many conditions. It isn't suppressing or hiding feelings, which tends to backfire, and it isn't a fixed trait you either have or don't.",
+  "confused_with": [
+    {"label": "Emotional suppression"},
+    {"label": "DBT", "slug": "dbt"},
+    {"label": "Coping", "slug": "coping"},
+    {"label": "Self-control"},
+    {"label": "Mindfulness"}
+  ]
+}

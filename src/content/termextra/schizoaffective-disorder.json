@@ -1,0 +1,11 @@
+{
+  "slug": "schizoaffective-disorder",
+  "when_it_matters": "The distinction matters because schizoaffective disorder requires psychotic symptoms even during stretches when mood is stable, which is what separates it from a mood disorder with psychosis. It sits between schizophrenia and the mood disorders and shares features of both, so the diagnosis often takes time to clarify.",
+  "confused_with": [
+    {"label": "Schizophrenia", "slug": "schizophrenia"},
+    {"label": "Bipolar disorder with psychosis", "slug": "bipolar-disorder"},
+    {"label": "Major depression with psychotic features", "slug": "major-depressive-disorder"},
+    {"label": "Delusional disorder", "slug": "delusion"},
+    {"label": "Brief psychotic disorder"}
+  ]
+}

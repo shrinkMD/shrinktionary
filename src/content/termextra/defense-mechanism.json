@@ -1,0 +1,11 @@
+{
+  "slug": "defense-mechanism",
+  "when_it_matters": "The concept matters in understanding how the mind protects itself from anxiety or conflict, often outside of awareness, through patterns like denial, projection, or rationalization. It's most relevant in psychodynamic therapy and in seeing how these differ from conscious coping.",
+  "confused_with": [
+    {"label": "Coping", "slug": "coping"},
+    {"label": "Avoidance", "slug": "avoidance"},
+    {"label": "Emotional regulation", "slug": "emotional-regulation"},
+    {"label": "Gaslighting", "slug": "gaslighting"},
+    {"label": "Self-sabotage"}
+  ]
+}

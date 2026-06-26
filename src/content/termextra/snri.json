@@ -1,0 +1,10 @@
+{
+  "slug": "snri",
+  "when_it_matters": "The SSRI versus SNRI distinction matters when a prescriber is choosing or switching medication, since SNRIs act on norepinephrine too and may be tried for depression or anxiety that hasn't responded to an SSRI, or when nerve pain is also part of the picture. Pay attention to how a new medicine affects your energy, blood pressure, and mood over the first weeks.",
+  "confused_with": [
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "Antidepressant", "slug": "antidepressant"},
+    {"label": "Tricyclic antidepressant", "slug": "tricyclic-antidepressant"},
+    {"label": "Stimulant", "slug": "stimulant"}
+  ]
+}

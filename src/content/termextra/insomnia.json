@@ -1,0 +1,10 @@
+{
+  "slug": "insomnia",
+  "when_it_matters": "Sleep trouble crosses into insomnia when it happens several nights a week despite the chance to sleep, lasts for weeks, and spills into daytime functioning. It's tightly linked with depression and anxiety, and CBT-I is the first-line treatment.",
+  "confused_with": [
+    {"label": "Hypersomnia", "slug": "hypersomnia"},
+    {"label": "Staying up late by choice"},
+    {"label": "Sleep deprivation"},
+    {"label": "Circadian rhythm", "slug": "circadian-rhythm"}
+  ]
+}

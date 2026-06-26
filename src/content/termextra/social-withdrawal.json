@@ -1,0 +1,11 @@
+{
+  "slug": "social-withdrawal",
+  "when_it_matters": "Wanting time alone is healthy, but withdrawal becomes worth attention when someone steadily pulls away from people they care about, drops activities they used to enjoy, and the isolation feeds low mood or fear. It appears across depression, social anxiety, trauma-related conditions, and psychosis.",
+  "confused_with": [
+    {"label": "Introversion"},
+    {"label": "Needing alone time"},
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Avoidance", "slug": "avoidance"},
+    {"label": "Depression", "slug": "depression"}
+  ]
+}

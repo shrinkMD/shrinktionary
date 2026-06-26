@@ -1,0 +1,10 @@
+{
+  "slug": "amygdala",
+  "when_it_matters": "The amygdala matters for understanding why fear and anxiety can feel automatic and fast, since it helps flag threat before the thinking brain catches up. It's a useful concept for explaining the stress response, not a structure people get diagnosed with a problem in.",
+  "confused_with": [
+    {"label": "Hippocampus", "slug": "hippocampus"},
+    {"label": "Prefrontal cortex", "slug": "prefrontal-cortex"},
+    {"label": "Limbic system", "slug": "limbic-system"},
+    {"label": "Hypothalamus or HPA axis", "slug": "hpa-axis"}
+  ]
+}

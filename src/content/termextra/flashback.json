@@ -1,0 +1,11 @@
+{
+  "slug": "flashback",
+  "when_it_matters": "Flashbacks matter as one of the core re-experiencing symptoms of PTSD, where a trauma memory feels like it's happening again in the present rather than belonging to the past. They aren't ordinary memories or a sign of losing your mind, and they tend to ease with effective treatment.",
+  "confused_with": [
+    {"label": "Intrusive thought", "slug": "intrusive-thought"},
+    {"label": "Ordinary memory"},
+    {"label": "Hallucination", "slug": "hallucination"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Rumination", "slug": "rumination"}
+  ]
+}

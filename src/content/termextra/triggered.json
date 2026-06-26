@@ -1,0 +1,11 @@
+{
+  "slug": "triggered",
+  "when_it_matters": "In its clinical sense, being triggered matters when a cue sets off a strong trauma or anxiety response that pulls someone back into past pain, which is central in PTSD and related conditions. Everyday use often means simply annoyed or offended, so it helps to notice which sense is meant.",
+  "confused_with": [
+    {"label": "Being annoyed or offended"},
+    {"label": "Flashback", "slug": "flashback"},
+    {"label": "PTSD", "slug": "ptsd"},
+    {"label": "Stress response"},
+    {"label": "Panic attack", "slug": "panic-attack"}
+  ]
+}

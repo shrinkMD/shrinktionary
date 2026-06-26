@@ -1,0 +1,11 @@
+{
+  "slug": "effect-size",
+  "when_it_matters": "Effect size matters when a result is called significant, since significance speaks to whether an effect is likely real while effect size tells you how big it is. A finding can be statistically detectable yet too small to notice in real life.",
+  "confused_with": [
+    {"label": "P-value", "slug": "p-value"},
+    {"label": "Statistical significance", "slug": "statistical-significance"},
+    {"label": "Correlation"},
+    {"label": "Confidence interval", "slug": "confidence-interval"},
+    {"label": "Sample size"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "titration",
+  "when_it_matters": "Titration matters because a prescriber often starts a medication low and raises it in steps to find the dose that balances benefit against side effects, and reductions are usually stepped down too. It's managed by the prescriber, not adjusted on your own, since changing doses suddenly can cause problems.",
+  "confused_with": [
+    {"label": "Tapering"},
+    {"label": "Augmentation", "slug": "augmentation"},
+    {"label": "Dosing"},
+    {"label": "Half-life", "slug": "half-life"},
+    {"label": "Discontinuation syndrome", "slug": "discontinuation-syndrome"}
+  ]
+}

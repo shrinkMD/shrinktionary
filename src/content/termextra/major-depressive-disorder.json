@@ -1,0 +1,11 @@
+{
+  "slug": "major-depressive-disorder",
+  "when_it_matters": "MDD is the diagnosis when low mood or loss of interest lasts at least two weeks, shows up most of the day nearly every day with several other symptoms, and clearly disrupts functioning. It's distinct from ordinary sadness and from bipolar disorder, a difference that matters for treatment.",
+  "confused_with": [
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Persistent depressive disorder", "slug": "persistent-depressive-disorder"},
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Ordinary sadness or grief"},
+    {"label": "Adjustment disorder", "slug": "adjustment-disorder"}
+  ]
+}

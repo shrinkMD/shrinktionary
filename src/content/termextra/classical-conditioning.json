@@ -1,0 +1,11 @@
+{
+  "slug": "classical-conditioning",
+  "when_it_matters": "The concept matters when explaining how some fears, phobias, and automatic reactions form through association, where a neutral cue gets paired with something meaningful. It's most useful to distinguish from operant conditioning, which is about consequences rather than pairing.",
+  "confused_with": [
+    {"label": "Operant conditioning", "slug": "operant-conditioning"},
+    {"label": "Reinforcement", "slug": "reinforcement"},
+    {"label": "Habituation", "slug": "habituation"},
+    {"label": "Learned helplessness", "slug": "learned-helplessness"},
+    {"label": "Conditioning in general"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "neurotransmitter",
+  "when_it_matters": "The distinction matters when reading about how psychiatric medications work, since many act on neurotransmitter systems, though a single chemical rarely explains a whole condition on its own.",
+  "confused_with": [
+    {"label": "Hormone"},
+    {"label": "Receptor"},
+    {"label": "Serotonin", "slug": "serotonin"},
+    {"label": "Dopamine", "slug": "dopamine"},
+    {"label": "Synapse"}
+  ]
+}

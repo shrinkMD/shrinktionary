@@ -1,0 +1,11 @@
+{
+  "slug": "executive-function",
+  "when_it_matters": "Executive function matters because it's part of the core of ADHD and dips during depression and anxiety episodes, then often improves as symptoms improve. It isn't intelligence, motivation, or character, so someone smart and high-effort can still struggle with it.",
+  "confused_with": [
+    {"label": "Intelligence or IQ"},
+    {"label": "Working memory", "slug": "working-memory"},
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Motivation", "slug": "motivation"},
+    {"label": "Cognitive flexibility", "slug": "cognitive-flexibility"}
+  ]
+}

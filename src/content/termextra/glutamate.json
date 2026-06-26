@@ -1,0 +1,11 @@
+{
+  "slug": "glutamate",
+  "when_it_matters": "Glutamate matters as the brain's main excitatory messenger, central to learning, memory, and neuroplasticity, and it works in balance with GABA, so the brain keeps its levels tightly controlled. It isn't the same as the food additive MSG, since dietary glutamate doesn't simply flood into the brain.",
+  "confused_with": [
+    {"label": "GABA", "slug": "gaba"},
+    {"label": "MSG"},
+    {"label": "Glutamine"},
+    {"label": "Dopamine", "slug": "dopamine"},
+    {"label": "Neuroplasticity", "slug": "neuroplasticity"}
+  ]
+}

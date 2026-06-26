@@ -1,0 +1,11 @@
+{
+  "slug": "generalized-anxiety-disorder",
+  "when_it_matters": "Everyday worry crosses into GAD when it's excessive, hard to control, spreads across many areas of life, and lasts most days for at least six months with symptoms like restlessness, fatigue, and muscle tension. It differs from panic disorder and ordinary stress because the worry itself, not any single situation, becomes the problem.",
+  "confused_with": [
+    {"label": "Everyday worry or stress"},
+    {"label": "Panic disorder", "slug": "panic-disorder"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "OCD", "slug": "ocd"},
+    {"label": "Overthinking", "slug": "overthinking"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "borderline-personality-disorder",
+  "when_it_matters": "It becomes clinically meaningful when intense emotions, fear of abandonment, unstable relationships, and a shifting sense of self form a lasting pattern that disrupts daily life. It's most relevant when distinguishing it from bipolar disorder, where mood shifts last days or weeks rather than minutes to hours.",
+  "confused_with": [
+    {"label": "Bipolar disorder", "slug": "bipolar-disorder"},
+    {"label": "Complex PTSD", "slug": "complex-ptsd"},
+    {"label": "Narcissistic personality disorder", "slug": "narcissistic-personality-disorder"},
+    {"label": "Major depressive disorder", "slug": "major-depressive-disorder"},
+    {"label": "Mood swings"}
+  ]
+}

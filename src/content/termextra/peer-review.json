@@ -1,0 +1,11 @@
+{
+  "slug": "peer-review",
+  "when_it_matters": "The distinction matters when judging how much to trust a study, since peer review is a quality check by independent experts before publication but doesn't guarantee the findings are correct or will hold up.",
+  "confused_with": [
+    {"label": "Replication"},
+    {"label": "Systematic review", "slug": "systematic-review"},
+    {"label": "Editorial review"},
+    {"label": "Fact-checking"},
+    {"label": "Preprint"}
+  ]
+}

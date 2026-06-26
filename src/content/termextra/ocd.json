@@ -1,0 +1,11 @@
+{
+  "slug": "ocd",
+  "when_it_matters": "Tidiness or double-checking crosses into OCD when obsessions and compulsions become time-consuming, distressing, and hard to resist, which sets the condition apart from everyday habits or the personality pattern OCPD.",
+  "confused_with": [
+    {"label": "OCPD", "slug": "ocpd"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Intrusive thoughts", "slug": "intrusive-thought"},
+    {"label": "Being a perfectionist"},
+    {"label": "Body dysmorphic disorder", "slug": "body-dysmorphic-disorder"}
+  ]
+}

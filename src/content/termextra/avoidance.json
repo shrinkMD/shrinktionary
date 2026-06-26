@@ -1,0 +1,11 @@
+{
+  "slug": "avoidance",
+  "when_it_matters": "Avoidance matters because it brings quick relief but keeps fear alive over time, which is why it sits at the center of anxiety disorders, phobias, and PTSD. It becomes clinically meaningful when steering clear of feared situations starts narrowing a person's life.",
+  "confused_with": [
+    {"label": "Social withdrawal", "slug": "social-withdrawal"},
+    {"label": "Procrastination"},
+    {"label": "Coping", "slug": "coping"},
+    {"label": "Setting boundaries", "slug": "boundaries"},
+    {"label": "Self-care or needing a break"}
+  ]
+}

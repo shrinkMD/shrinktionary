@@ -1,0 +1,11 @@
+{
+  "slug": "circadian-rhythm",
+  "when_it_matters": "It matters when the body's roughly 24-hour clock falls out of sync with daily life, which can disrupt sleep, mood, and energy. It comes up in talk about insomnia, shift work, jet lag, and seasonal affective disorder.",
+  "confused_with": [
+    {"label": "Sleep-wake cycle"},
+    {"label": "Insomnia", "slug": "insomnia"},
+    {"label": "Metabolism"},
+    {"label": "Seasonal affective disorder", "slug": "seasonal-affective-disorder"},
+    {"label": "Biological clock for aging"}
+  ]
+}

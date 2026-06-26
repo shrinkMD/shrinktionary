@@ -1,0 +1,10 @@
+{
+  "slug": "masking",
+  "when_it_matters": "Masking matters because someone can seem fine on the surface while struggling underneath, which is part of why autism and ADHD are sometimes missed in people who hide their difficulties well. Long-term masking is linked to stress, exhaustion, and burnout.",
+  "confused_with": [
+    {"label": "Lying or being fake"},
+    {"label": "Autism spectrum disorder", "slug": "autism-spectrum-disorder"},
+    {"label": "People-pleasing", "slug": "people-pleasing"},
+    {"label": "Coping", "slug": "coping"}
+  ]
+}

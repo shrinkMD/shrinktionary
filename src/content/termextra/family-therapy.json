@@ -1,0 +1,11 @@
+{
+  "slug": "family-therapy",
+  "when_it_matters": "Family therapy matters when problems live in patterns of interaction rather than inside one person, and it's used for transitions and communication, not just crises. It differs from individual therapy with relatives sitting in, because the relationships themselves are the focus.",
+  "confused_with": [
+    {"label": "Couples therapy", "slug": "couples-therapy"},
+    {"label": "Individual therapy"},
+    {"label": "Group therapy", "slug": "group-therapy"},
+    {"label": "Internal family systems", "slug": "internal-family-systems"},
+    {"label": "Marriage counseling"}
+  ]
+}

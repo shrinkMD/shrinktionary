@@ -1,0 +1,11 @@
+{
+  "slug": "specific-phobia",
+  "when_it_matters": "A normal dislike or fear becomes a specific phobia when it's intense, out of proportion to the real danger, and drives someone to avoid the object or situation in ways that limit their life. It can overlap with social anxiety, agoraphobia, and panic, and exposure-based treatment tends to help.",
+  "confused_with": [
+    {"label": "Ordinary fear"},
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "Agoraphobia", "slug": "agoraphobia"},
+    {"label": "Panic disorder", "slug": "panic-disorder"},
+    {"label": "Aversion or dislike"}
+  ]
+}

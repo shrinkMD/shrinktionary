@@ -1,0 +1,11 @@
+{
+  "slug": "antidepressant",
+  "when_it_matters": "Antidepressant is an umbrella term, so what matters is knowing which class is meant, since SSRIs, SNRIs, atypicals, tricyclics, and MAOIs differ in how they work and what to watch for. The distinction matters when discussing side effects, interactions, and how a drug should be started or stopped.",
+  "confused_with": [
+    {"label": "SSRI", "slug": "ssri"},
+    {"label": "SNRI", "slug": "snri"},
+    {"label": "Atypical antidepressant", "slug": "atypical-antidepressant"},
+    {"label": "Mood stabilizer", "slug": "mood-stabilizer"},
+    {"label": "Anti-anxiety pills or sedatives"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "delusion",
+  "when_it_matters": "It becomes clinically meaningful when a fixed false belief is held firmly despite clear evidence against it, which is a core feature of psychosis seen in schizophrenia and sometimes in severe mania or depression. It's distinct from a hallucination, which is a false perception rather than a belief.",
+  "confused_with": [
+    {"label": "Hallucination", "slug": "hallucination"},
+    {"label": "Paranoia", "slug": "paranoia"},
+    {"label": "Strong belief or conviction"},
+    {"label": "Cognitive distortion", "slug": "cognitive-distortion"},
+    {"label": "Obsession or intrusive thought", "slug": "intrusive-thought"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "cortisol",
+  "when_it_matters": "It matters when stress stays switched on, since cortisol released through the HPA axis is helpful in short bursts but can take a toll on sleep, mood, and health when it stays elevated too long. It comes up in talk about chronic stress and burnout.",
+  "confused_with": [
+    {"label": "Adrenaline"},
+    {"label": "Fight or flight response", "slug": "fight-or-flight"},
+    {"label": "HPA axis", "slug": "hpa-axis"},
+    {"label": "Stress itself", "slug": "stress"},
+    {"label": "Dopamine", "slug": "dopamine"}
+  ]
+}

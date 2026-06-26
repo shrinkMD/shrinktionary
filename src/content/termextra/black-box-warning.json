@@ -1,0 +1,11 @@
+{
+  "slug": "black-box-warning",
+  "when_it_matters": "The distinction matters when weighing a medication's risks against its benefits, since a boxed warning flags a serious possible risk but doesn't mean the drug is banned or that the risk happens to everyone. It often comes up with discussions of antidepressants and suicidal thoughts in young people.",
+  "confused_with": [
+    {"label": "Contraindication", "slug": "contraindication"},
+    {"label": "FDA recall or ban"},
+    {"label": "Off-label use", "slug": "off-label"},
+    {"label": "Side effect list"},
+    {"label": "Drug warning label"}
+  ]
+}

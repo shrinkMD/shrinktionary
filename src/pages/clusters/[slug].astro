@@ -1,0 +1,100 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import NetworkStrip from "../../components/NetworkStrip.astro";
+import Disclaimer from "../../components/Disclaimer.astro";
+
+export async function getStaticPaths() {
+  const clusters = await getCollection("clusters");
+  return clusters.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const site = "https://shrinktionary.com";
+
+const truncate = (str, n) => {
+  const v = (str || "").trim();
+  if (v.length <= n) return v;
+  const cut = v.slice(0, n - 1);
+  const i = cut.lastIndexOf(" ");
+  return (i > 80 ? cut.slice(0, i) : cut).replace(/[\s,;:.]+$/, "") + "…";
+};
+
+const allTerms = await getCollection("terms");
+const bySlug = new Map(allTerms.map((t) => [t.data.slug, t.data]));
+const clusterTerms = d.terms.map((s) => bySlug.get(s)).filter(Boolean);
+const allClusters = (await getCollection("clusters")).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `${d.title} | Shrinktionary`,
+  description: d.problem,
+  url: `${site}/clusters/${d.slug}/`,
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", name: "Shrinktionary", url: site },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: clusterTerms.map((t, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${site}/terms/${t.slug}/`,
+      name: t.term,
+    })),
+  },
+};
+
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Clusters", path: "/clusters/" },
+  { name: d.title, path: `/clusters/${d.slug}/` },
+];
+---
+<BaseLayout
+  title={`${d.title} | Shrinktionary`}
+  description={truncate(d.problem, 158)}
+  canonicalPath={`/clusters/${d.slug}/`}
+  jsonld={[schema]}
+  breadcrumbs={breadcrumbs}
+  keywords={[d.title, "mental health vocabulary", "mental health words", d.title.toLowerCase()]}
+>
+  <section class="bg-gradient-to-b from-sky to-white">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <p class="text-watermelon-bright font-semibold uppercase tracking-widest text-xs">Language cluster</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">{d.title}</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">{d.problem}</p>
+    </div>
+  </section>
+
+  <article class="mx-auto max-w-prose px-5 py-12">
+    <p class="text-[#1F2937]">{d.intro}</p>
+    <div class="prose-body max-w-none mt-6">
+      <Content />
+    </div>
+  </article>
+
+  <div class="mx-auto max-w-content px-5 pb-12">
+    <h2 class="font-display text-2xl font-semibold text-ink mb-6">The words in this cluster</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {clusterTerms.map((t) => (
+        <a href={`/terms/${t.slug}/`} class="card-lift block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm p-5 h-full">
+          <h3 class="font-display text-lg font-semibold text-ink mb-1">{t.term}</h3>
+          <p class="text-[15px] text-[#4B5563] line-clamp-3">{t.short_definition}</p>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-12"><NetworkStrip links={d.network_links} /></div>
+
+    <h2 class="font-display text-2xl font-semibold text-ink mt-14 mb-5">More language clusters</h2>
+    <div class="flex flex-wrap gap-2">
+      {allClusters.filter((c) => c.data.slug !== d.slug).map((c) => (
+        <a href={`/clusters/${c.data.slug}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{c.data.title}</a>
+      ))}
+    </div>
+
+    <div class="mt-12 max-w-prose"><Disclaimer /></div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,11 @@
+{
+  "slug": "cognitive-flexibility",
+  "when_it_matters": "It matters when someone struggles to shift gears, adapt to change, or switch between ideas and tasks, since it's a core part of executive function. Reduced flexibility shows up in conditions like ADHD, autism, OCD, and after brain injury.",
+  "confused_with": [
+    {"label": "Executive function", "slug": "executive-function"},
+    {"label": "Working memory", "slug": "working-memory"},
+    {"label": "Open-mindedness as a personality trait"},
+    {"label": "Cognitive restructuring", "slug": "cognitive-restructuring"},
+    {"label": "Adaptability"}
+  ]
+}

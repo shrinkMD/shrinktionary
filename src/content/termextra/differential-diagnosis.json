@@ -1,0 +1,11 @@
+{
+  "slug": "differential-diagnosis",
+  "when_it_matters": "The differential matters most when symptoms overlap across conditions, since treating bipolar depression as ordinary depression can make things worse. It's the working list of candidates a clinician weighs, not the final diagnosis.",
+  "confused_with": [
+    {"label": "Final diagnosis"},
+    {"label": "Comorbidity", "slug": "comorbidity"},
+    {"label": "Formulation", "slug": "formulation"},
+    {"label": "Prognosis", "slug": "prognosis"},
+    {"label": "Mental status exam", "slug": "mental-status-exam"}
+  ]
+}

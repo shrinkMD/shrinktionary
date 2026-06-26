@@ -1,0 +1,11 @@
+{
+  "slug": "systematic-review",
+  "when_it_matters": "The distinction matters when judging how much to trust a claim, because a systematic review gathers and appraises all the studies on a question using a repeatable method, unlike a casual review that may cherry-pick. It sits near the top of the evidence hierarchy, and many but not all include a statistical meta-analysis.",
+  "confused_with": [
+    {"label": "Meta-analysis", "slug": "meta-analysis"},
+    {"label": "Narrative review article"},
+    {"label": "Randomized controlled trial", "slug": "randomized-controlled-trial"},
+    {"label": "Peer review", "slug": "peer-review"},
+    {"label": "Literature search"}
+  ]
+}

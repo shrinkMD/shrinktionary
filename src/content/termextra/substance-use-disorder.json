@@ -1,0 +1,11 @@
+{
+  "slug": "substance-use-disorder",
+  "when_it_matters": "Use crosses into a disorder when someone keeps using alcohol or other drugs despite real harm to health, relationships, or work, struggles to cut down, and feels strong cravings. It ranges from mild to severe, often occurs alongside depression or anxiety, and is treatable.",
+  "confused_with": [
+    {"label": "Heavy or social use"},
+    {"label": "Alcohol use disorder", "slug": "alcohol-use-disorder"},
+    {"label": "Opioid use disorder", "slug": "opioid-use-disorder"},
+    {"label": "Lack of willpower"},
+    {"label": "Gambling disorder", "slug": "gambling-disorder"}
+  ]
+}

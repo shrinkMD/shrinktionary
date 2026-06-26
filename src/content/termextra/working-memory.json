@@ -1,0 +1,11 @@
+{
+  "slug": "working-memory",
+  "when_it_matters": "Working memory is the mental workspace for holding information just long enough to use it, and trouble with it becomes worth attention when it gets in the way of work, school, or following directions. Weak working memory shows up in ADHD, depression, anxiety, and brain fog, and it's a core part of executive function.",
+  "confused_with": [
+    {"label": "Short-term memory"},
+    {"label": "Long-term memory"},
+    {"label": "Executive function", "slug": "executive-function"},
+    {"label": "Attention or focus"},
+    {"label": "Brain fog", "slug": "brain-fog"}
+  ]
+}

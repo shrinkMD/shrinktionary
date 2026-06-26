@@ -1,0 +1,10 @@
+{
+  "slug": "metacognition",
+  "when_it_matters": "Metacognition matters in therapy like CBT, where learning to step back and observe your own thoughts instead of treating each as fact helps people handle setbacks and difficult emotions with more flexibility. It isn't the same as intelligence or endless second-guessing.",
+  "confused_with": [
+    {"label": "Intelligence"},
+    {"label": "Rumination", "slug": "rumination"},
+    {"label": "Overthinking", "slug": "overthinking"},
+    {"label": "Self-awareness"}
+  ]
+}

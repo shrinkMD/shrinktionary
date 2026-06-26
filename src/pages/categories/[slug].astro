@@ -35,6 +35,14 @@ const catNet = netResources[c.slug] || [["Shrinkopedia", "https://shrinkopedia.c
 
 
 const site = "https://shrinktionary.com";
+const truncate = (str, n) => {
+  const v = (str || "").trim();
+  if (v.length <= n) return v;
+  const cut = v.slice(0, n - 1);
+  const i = cut.lastIndexOf(" ");
+  return (i > 80 ? cut.slice(0, i) : cut).replace(/[\s,;:.]+$/, "") + "\u2026";
+};
+
 const collectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -61,8 +69,8 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout
-  title={`${c.name}: mental health terms | Shrinktionary`}
-  description={c.description}
+  title={`${c.name} | Shrinktionary`}
+  description={truncate(c.description, 158)}
   canonicalPath={`/categories/${c.slug}/`}
   breadcrumbs={breadcrumbs}
   jsonld={[collectionSchema]}

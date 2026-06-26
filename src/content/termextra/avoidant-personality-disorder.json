@@ -1,0 +1,11 @@
+{
+  "slug": "avoidant-personality-disorder",
+  "when_it_matters": "It matters when deep feelings of inadequacy and a strong fear of criticism lead someone to hold back from relationships they actually want, in a lasting pattern rather than situational shyness. The longing for closeness alongside the avoidance is what helps separate it from simply being a loner.",
+  "confused_with": [
+    {"label": "Social anxiety disorder", "slug": "social-anxiety-disorder"},
+    {"label": "Autism spectrum disorder", "slug": "autism-spectrum-disorder"},
+    {"label": "Avoidance", "slug": "avoidance"},
+    {"label": "Low self-esteem", "slug": "low-self-esteem"},
+    {"label": "Being shy or introverted"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "hyperventilation",
+  "when_it_matters": "Hyperventilation matters when it's part of recurring panic attacks or you start avoiding places where it happened, which points toward panic disorder. A first episode with breathing trouble should still be checked to rule out medical causes.",
+  "confused_with": [
+    {"label": "Panic attack", "slug": "panic-attack"},
+    {"label": "Shortness of breath from a medical cause"},
+    {"label": "Anxiety", "slug": "anxiety"},
+    {"label": "Asthma attack"}
+  ]
+}

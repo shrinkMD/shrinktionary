@@ -1,0 +1,11 @@
+{
+  "slug": "p-value",
+  "when_it_matters": "The distinction matters when reading research claims, since a p-value estimates how surprising a result would be if there were no real effect and doesn't measure how big, important, or certain the effect is.",
+  "confused_with": [
+    {"label": "Statistical significance", "slug": "statistical-significance"},
+    {"label": "Effect size", "slug": "effect-size"},
+    {"label": "Confidence interval", "slug": "confidence-interval"},
+    {"label": "Probability the result is true"},
+    {"label": "Clinical significance"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "tardive-dyskinesia",
+  "when_it_matters": "Tardive dyskinesia matters because it can develop after long-term use of certain medications, especially antipsychotics, and causes involuntary movements often in the face, mouth, or limbs that may not fully go away. New or worsening involuntary movements warrant prompt attention from a prescriber rather than stopping medication on your own.",
+  "confused_with": [
+    {"label": "Akathisia", "slug": "akathisia"},
+    {"label": "Tics"},
+    {"label": "Parkinsons-like side effects"},
+    {"label": "Tremor"},
+    {"label": "Antipsychotic", "slug": "antipsychotic"}
+  ]
+}

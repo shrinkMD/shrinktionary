@@ -1,0 +1,10 @@
+{
+  "slug": "irritability",
+  "when_it_matters": "Irritability matters when it's persistent, feels out of character, or strains relationships and daily life. It's a symptom that can point to depression, where it sometimes stands in for sadness in children and teens, as well as anxiety, bipolar disorder, sleep loss, or medical causes.",
+  "confused_with": [
+    {"label": "Agitation", "slug": "agitation"},
+    {"label": "Anger"},
+    {"label": "Being a mean or difficult person"},
+    {"label": "Mania", "slug": "mania"}
+  ]
+}

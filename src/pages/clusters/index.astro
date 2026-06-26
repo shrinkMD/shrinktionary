@@ -1,0 +1,55 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+
+const clusters = (await getCollection("clusters")).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99) || a.data.title.localeCompare(b.data.title));
+const allTerms = await getCollection("terms");
+const site = "https://shrinktionary.com";
+const countIn = (slugs) => slugs.filter((s) => allTerms.some((t) => t.data.slug === s)).length;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Language clusters | Shrinktionary",
+  description: "Mental health vocabulary grouped by the real problem it surrounds: anxiety, depression, medication, therapy, crisis, and more.",
+  url: `${site}/clusters/`,
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", name: "Shrinktionary", url: site },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: clusters.map((c, i) => ({ "@type": "ListItem", position: i + 1, url: `${site}/clusters/${c.data.slug}/`, name: c.data.title })),
+  },
+};
+const breadcrumbs = [
+  { name: "Home", path: "/" },
+  { name: "Clusters", path: "/clusters/" },
+];
+---
+<BaseLayout
+  title="Language clusters | Shrinktionary"
+  description="Mental health vocabulary grouped by the real problem it surrounds, so you learn the words in context: anxiety, depression, medication, therapy, crisis, and more."
+  canonicalPath="/clusters/"
+  jsonld={[schema]}
+  breadcrumbs={breadcrumbs}
+  keywords={["mental health vocabulary","anxiety language","depression language","medication language"]}
+>
+  <section class="bg-gradient-to-b from-sky to-white">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <p class="text-watermelon-bright font-semibold uppercase tracking-widest text-xs">Clusters</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mt-2">Learn the words in context</h1>
+      <p class="max-w-prose text-lg text-[#1F2937] mt-4">A dictionary gives you one word at a time. A cluster gives you the whole vocabulary around a real problem, the way it actually shows up, so the words make sense together.</p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-content px-5 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {clusters.map((c) => (
+        <a href={`/clusters/${c.data.slug}/`} class="card-lift block rounded-lg bg-white border border-neutral hover:border-watermelon shadow-sm p-6 h-full">
+          <p class="text-xs uppercase tracking-widest text-carbon font-semibold mb-1">{countIn(c.data.terms)} terms</p>
+          <h2 class="font-display text-xl font-semibold text-ink">{c.data.title}</h2>
+          <p class="text-[15px] text-[#4B5563] mt-2 line-clamp-3">{c.data.problem}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,11 @@
+{
+  "slug": "psychodynamic-therapy",
+  "when_it_matters": "The distinction matters when choosing a therapy, since psychodynamic work leans on insight and the therapy relationship while CBT is more structured and skills-focused. It tends to fit people who keep running into the same painful relationship or emotional patterns and want to understand why.",
+  "confused_with": [
+    {"label": "Psychoanalysis"},
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Interpersonal therapy", "slug": "interpersonal-therapy"},
+    {"label": "Supportive therapy", "slug": "supportive-therapy"},
+    {"label": "Schema therapy", "slug": "schema-therapy"}
+  ]
+}

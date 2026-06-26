@@ -1,0 +1,10 @@
+{
+  "slug": "limbic-system",
+  "when_it_matters": "The limbic system matters when discussing how the brain handles emotion, memory, and motivation, especially in anxiety and trauma, where its threat-detection circuits can become overactive. It's a team of regions working with the rest of the brain, not where a single emotion lives.",
+  "confused_with": [
+    {"label": "Amygdala", "slug": "amygdala"},
+    {"label": "Hippocampus", "slug": "hippocampus"},
+    {"label": "Prefrontal cortex", "slug": "prefrontal-cortex"},
+    {"label": "The emotional brain vs the logical brain"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "social-anxiety-disorder",
+  "when_it_matters": "Ordinary shyness or nerves before a presentation cross into social anxiety disorder when the fear of being judged is intense, lasts six months or more, and makes someone avoid school, work, or relationships. It often shows up alongside depression, panic disorder, and other anxiety conditions.",
+  "confused_with": [
+    {"label": "Shyness"},
+    {"label": "Introversion"},
+    {"label": "Generalized anxiety disorder", "slug": "generalized-anxiety-disorder"},
+    {"label": "Panic disorder", "slug": "panic-disorder"},
+    {"label": "Avoidant personality disorder", "slug": "avoidant-personality-disorder"}
+  ]
+}

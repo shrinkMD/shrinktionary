@@ -1,0 +1,11 @@
+{
+  "slug": "therapeutic-alliance",
+  "when_it_matters": "The therapeutic alliance matters because the trust and shared purpose between a person and their therapist is one of the strongest predictors of whether therapy helps, sometimes more than the specific method used. If the bond feels off, raising it with your therapist is a normal and useful part of the work.",
+  "confused_with": [
+    {"label": "Friendship"},
+    {"label": "Transference", "slug": "transference"},
+    {"label": "Rapport"},
+    {"label": "Therapy method or technique"},
+    {"label": "Liking your therapist"}
+  ]
+}

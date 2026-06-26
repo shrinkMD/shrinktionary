@@ -1,0 +1,11 @@
+{
+  "slug": "supportive-therapy",
+  "when_it_matters": "Supportive therapy matters when the goal is to stay steady and cope with current stress rather than to rework deep patterns, and it's often a good fit during a crisis, a medical illness, or when someone isn't ready for more intensive work. It strengthens what already works instead of digging into the past.",
+  "confused_with": [
+    {"label": "Psychodynamic therapy", "slug": "psychodynamic-therapy"},
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "Counseling"},
+    {"label": "Venting to a friend"},
+    {"label": "Coaching"}
+  ]
+}

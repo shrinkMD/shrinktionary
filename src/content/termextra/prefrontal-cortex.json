@@ -1,0 +1,11 @@
+{
+  "slug": "prefrontal-cortex",
+  "when_it_matters": "The distinction matters when people treat the prefrontal cortex as the single source of personality or willpower, since it's really one hub in a wider network and keeps maturing into the mid-twenties. It comes up most in discussions of ADHD, impulse control, and how stress weakens clear thinking.",
+  "confused_with": [
+    {"label": "Executive function", "slug": "executive-function"},
+    {"label": "Amygdala", "slug": "amygdala"},
+    {"label": "Frontal lobe"},
+    {"label": "Limbic system", "slug": "limbic-system"},
+    {"label": "Working memory", "slug": "working-memory"}
+  ]
+}

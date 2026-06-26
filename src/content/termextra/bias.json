@@ -1,0 +1,11 @@
+{
+  "slug": "bias",
+  "when_it_matters": "In research, bias matters because it's a systematic error that pushes results in one direction, unlike random chance, and it can make a study's findings misleading. Spotting it matters when judging how much to trust a claim, especially around how participants were chosen or measured.",
+  "confused_with": [
+    {"label": "Cognitive distortion", "slug": "cognitive-distortion"},
+    {"label": "Confounding or correlation versus causation", "slug": "correlation-and-causation"},
+    {"label": "Random error or chance"},
+    {"label": "Placebo effect", "slug": "placebo"},
+    {"label": "Prejudice in the everyday sense"}
+  ]
+}

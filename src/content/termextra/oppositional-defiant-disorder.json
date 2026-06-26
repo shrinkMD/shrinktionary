@@ -1,0 +1,11 @@
+{
+  "slug": "oppositional-defiant-disorder",
+  "when_it_matters": "Defiance crosses into ODD when an angry, argumentative, or vindictive pattern is frequent, lasting, and beyond typical childhood ups and downs, which sets it apart from ordinary stubbornness or the more serious rule-breaking of conduct disorder.",
+  "confused_with": [
+    {"label": "Conduct disorder"},
+    {"label": "ADHD", "slug": "adhd"},
+    {"label": "Normal childhood defiance"},
+    {"label": "Disruptive mood dysregulation disorder"},
+    {"label": "Intermittent explosive disorder"}
+  ]
+}

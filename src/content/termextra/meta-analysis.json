@@ -1,0 +1,10 @@
+{
+  "slug": "meta-analysis",
+  "when_it_matters": "A meta-analysis matters when weighing how strong the evidence is, since pooling many studies can reveal an effect single studies were too small to show. Its quality depends entirely on the studies it combines, so garbage in means garbage out.",
+  "confused_with": [
+    {"label": "Systematic review", "slug": "systematic-review"},
+    {"label": "Randomized controlled trial", "slug": "randomized-controlled-trial"},
+    {"label": "A single large study"},
+    {"label": "Peer review", "slug": "peer-review"}
+  ]
+}

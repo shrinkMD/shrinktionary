@@ -1,0 +1,11 @@
+{
+  "slug": "emotional-numbness",
+  "when_it_matters": "Numbness matters when it lingers or gets in the way of connection and daily life, since it's common in depression, trauma and PTSD, high ongoing stress, and as a medication side effect. It isn't calm or peace, it's the absence of feeling, and it usually doesn't bring comfort.",
+  "confused_with": [
+    {"label": "Anhedonia", "slug": "anhedonia"},
+    {"label": "Calm or relaxation"},
+    {"label": "Dissociation", "slug": "dissociation"},
+    {"label": "Depression", "slug": "depression"},
+    {"label": "Apathy"}
+  ]
+}

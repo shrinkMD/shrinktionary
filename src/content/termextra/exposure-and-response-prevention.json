@@ -1,0 +1,11 @@
+{
+  "slug": "exposure-and-response-prevention",
+  "when_it_matters": "ERP matters as the gold-standard treatment for OCD across its many forms, including intrusive thoughts, checking, and the need for symmetry. The distinction from plain reassurance is important, since reassurance can actually feed OCD.",
+  "confused_with": [
+    {"label": "Exposure therapy", "slug": "exposure-therapy"},
+    {"label": "CBT", "slug": "cbt"},
+    {"label": "OCD", "slug": "ocd"},
+    {"label": "Reassurance seeking"},
+    {"label": "Compulsion", "slug": "compulsion"}
+  ]
+}

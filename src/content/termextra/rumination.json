@@ -1,0 +1,11 @@
+{
+  "slug": "rumination",
+  "when_it_matters": "Rumination becomes clinically meaningful when the looping is repetitive, hard to stop, and feeds low mood or worry instead of leading anywhere. It's common in depression, generalized anxiety, and OCD, and it's worth distinguishing from genuine problem-solving, which actually reaches a conclusion.",
+  "confused_with": [
+    {"label": "Overthinking", "slug": "overthinking"},
+    {"label": "Worry", "slug": "anxiety"},
+    {"label": "Intrusive thoughts", "slug": "intrusive-thought"},
+    {"label": "Problem-solving"},
+    {"label": "Obsessions", "slug": "compulsion"}
+  ]
+}
