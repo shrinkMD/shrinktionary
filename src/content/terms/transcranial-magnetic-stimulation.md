@@ -3,7 +3,8 @@ term: Transcranial Magnetic Stimulation
 slug: transcranial-magnetic-stimulation
 short_definition: "Transcranial magnetic stimulation is a noninvasive treatment that uses magnetic pulses to stimulate nerve cells in the brain. It's used mainly for depression that hasn't responded to medication."
 category: psychiatry-terms
-also_known_as: TMS
+also_known_as:
+  - "TMS"
 related_terms:
   - electroconvulsive-therapy
   - treatment-resistant-depression

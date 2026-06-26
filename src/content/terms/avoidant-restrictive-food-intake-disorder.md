@@ -3,7 +3,8 @@ term: Avoidant/Restrictive Food Intake Disorder
 slug: avoidant-restrictive-food-intake-disorder
 short_definition: "Avoidant/restrictive food intake disorder is an eating disorder where someone limits how much or what kinds of food they eat, but not out of concern about weight or body shape."
 category: conditions
-also_known_as: ARFID
+also_known_as:
+  - "ARFID"
 related_terms:
   - anorexia-nervosa
   - sensory-overload

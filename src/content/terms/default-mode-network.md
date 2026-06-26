@@ -3,7 +3,8 @@ term: Default Mode Network
 slug: default-mode-network
 short_definition: "The default mode network is a set of connected brain regions that becomes active when your mind is at rest and turned inward, such as during daydreaming or self-reflection."
 category: brain-body-terms
-also_known_as: DMN
+also_known_as:
+  - "DMN"
 related_terms:
   - rumination
   - prefrontal-cortex

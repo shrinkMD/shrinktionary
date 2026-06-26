@@ -3,7 +3,8 @@ term: Histrionic Personality Disorder
 slug: histrionic-personality-disorder
 short_definition: "Histrionic personality disorder is a long-standing pattern of excessive emotionality and attention-seeking. People with it often feel uncomfortable when they aren't the center of attention."
 category: conditions
-also_known_as: HPD
+also_known_as:
+  - "HPD"
 related_terms:
   - narcissistic-personality-disorder
   - borderline-personality-disorder

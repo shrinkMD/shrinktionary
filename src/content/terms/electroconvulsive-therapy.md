@@ -3,7 +3,8 @@ term: Electroconvulsive Therapy
 slug: electroconvulsive-therapy
 short_definition: "Electroconvulsive therapy is a medical procedure that uses a brief electrical current to trigger a short, controlled seizure under anesthesia. It's used for severe depression and a few other serious conditions."
 category: psychiatry-terms
-also_known_as: ECT
+also_known_as:
+  - "ECT"
 related_terms:
   - transcranial-magnetic-stimulation
   - treatment-resistant-depression
