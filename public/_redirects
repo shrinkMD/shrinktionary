@@ -1,5 +1,8 @@
 https://www.shrinktionary.com/* https://shrinktionary.com/:splat 301
 
+# Conventional sitemap URL -> Astro's generated sitemap index
+/sitemap.xml /sitemap-index.xml 301
+
 # Glossary keyword aliases -> canonical A-Z glossary
 /glossary /terms/ 301
 /glossary/ /terms/ 301
