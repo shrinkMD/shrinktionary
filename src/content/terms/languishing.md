@@ -12,6 +12,9 @@ related_terms:
   - motivation
   - self-compassion
 network_links:
+  - site: unstuck
+    url: "https://beunstuck.app/"
+    label: "Get unstuck in the moment with Unstuck"
   - site: shrinkopedia
     url: "https://shrinkopedia.com/"
     label: "Encyclopedia entry on Shrinkopedia"

@@ -11,6 +11,9 @@ related_terms:
   - rumination
   - insomnia
 network_links:
+  - site: unstuck
+    url: "https://beunstuck.app/"
+    label: "Slow things down in the moment with Unstuck"
   - site: shrinq
     url: "https://shrinq.com/"
     label: "Explore thought patterns on shrinq"

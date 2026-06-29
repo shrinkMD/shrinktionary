@@ -16,6 +16,9 @@ related_treatments:
   - cbt
   - behavioral-activation
 network_links:
+  - site: unstuck
+    url: "https://beunstuck.app/"
+    label: "Work through the loop in the moment with Unstuck"
   - site: shrinq
     url: "https://shrinq.com/"
     label: "Spot rumination patterns with shrinQ"

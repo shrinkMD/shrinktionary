@@ -17,6 +17,9 @@ related_treatments:
   - cbt
   - exposure-therapy
 network_links:
+  - site: unstuck
+    url: "https://beunstuck.app/"
+    label: "Ride out the moment with Unstuck"
   - site: anxietyresource
     url: "https://anxietyresource.org/"
     label: "Go deep on anxiety at AnxietyResource"

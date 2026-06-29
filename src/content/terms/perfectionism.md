@@ -12,6 +12,9 @@ related_terms:
   - self-compassion
   - burnout
 network_links:
+  - site: unstuck
+    url: "https://beunstuck.app/"
+    label: "Move forward in the moment with Unstuck"
   - site: shrinkopedia
     url: "https://shrinkopedia.com/"
     label: "Explore the mind on Shrinkopedia"

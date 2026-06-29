@@ -11,6 +11,9 @@ related_terms:
   - anxiety
   - burnout
 network_links:
+  - site: unstuck
+    url: "https://beunstuck.app/"
+    label: "Hold your ground in the moment with Unstuck"
   - site: shrinq
     url: "https://shrinq.com/"
     label: "Explore relationship patterns on shrinq"

@@ -7,6 +7,8 @@ import CategoryCard from "../components/CategoryCard.astro";
 const categories = (await getCollection("categories")).sort((a, b) => a.data.order - b.data.order);
 const terms = await getCollection("terms");
 const clusters = (await getCollection("clusters")).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const comparisons = (await getCollection("comparisons")).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const topComparisons = comparisons.slice(0, 8);
 const countFor = (slug: string) => terms.filter((t) => t.data.category === slug).length;
 
 const startHere = [
@@ -135,6 +137,24 @@ const faqSchema = {
       ))}
     </div>
     <a href="/clusters/" class="inline-block mt-8 text-[15px] font-medium text-watermelon">Browse all language clusters →</a>
+  </section>
+
+  <!-- Common mix-ups (comparisons) -->
+  <section class="bg-neutral">
+    <div class="mx-auto max-w-content px-5 py-16">
+      <h2 class="font-display text-3xl font-semibold text-ink">Words people mix up</h2>
+      <p class="max-w-prose text-[#1F2937] mt-4">
+        Some mental health words sit right next to each other and get used as if they're the same. These side-by-side guides clear up the ones people ask about most.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-8">
+        {topComparisons.map((c) => (
+          <a href={`/compare/${c.data.slug}/`} class="card-lift block rounded-md bg-white border border-neutral hover:border-watermelon shadow-sm p-4">
+            <span class="font-display font-semibold text-ink">{c.data.title}</span>
+          </a>
+        ))}
+      </div>
+      <a href="/compare/" class="inline-block mt-8 text-[15px] font-medium text-watermelon">See all comparisons →</a>
+    </div>
   </section>
 
   <!-- Start Here -->

@@ -17,6 +17,9 @@ related_conditions:
 related_treatments:
   - cbt
 network_links:
+  - site: unstuck
+    url: "https://beunstuck.app/"
+    label: "Break the loop in the moment with Unstuck"
   - site: shrinq
     url: "https://shrinq.com/"
     label: "Explore thinking patterns at ShrinQ"

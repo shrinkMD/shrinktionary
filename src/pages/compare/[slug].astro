@@ -30,6 +30,27 @@ const allTerms = await getCollection("terms");
 const bySlug = new Map(allTerms.map((t) => [t.data.slug, t.data.term]));
 const relatedExisting = (d.related_terms ?? []).filter((s) => bySlug.has(s));
 
+const allComparisons = await getCollection("comparisons");
+const myUniverse = new Set([
+  ...(d.terms ?? []).map((t) => t.slug).filter(Boolean),
+  ...(d.related_terms ?? []),
+]);
+const relatedComparisons = allComparisons
+  .filter((c) => c.data.slug !== d.slug)
+  .map((c) => {
+    const u = new Set([
+      ...(c.data.terms ?? []).map((t) => t.slug).filter(Boolean),
+      ...(c.data.related_terms ?? []),
+    ]);
+    let overlap = 0;
+    for (const s of u) if (myUniverse.has(s)) overlap++;
+    return { c, overlap };
+  })
+  .filter((x) => x.overlap > 0)
+  .sort((a, b) => b.overlap - a.overlap || (a.c.data.order ?? 99) - (b.c.data.order ?? 99))
+  .slice(0, 5)
+  .map((x) => x.c);
+
 const schema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
@@ -123,6 +144,22 @@ const breadcrumbs = [
             <a href={`/terms/${s}/`} class="inline-flex rounded-full bg-neutral hover:bg-sky px-4 py-2 text-sm font-medium">{bySlug.get(s)}</a>
           ))}
         </div>
+      </section>
+    ) : null}
+
+    {relatedComparisons.length > 0 ? (
+      <section class="mt-12">
+        <h2 class="font-display text-xl font-semibold text-ink mb-3">Related comparisons</h2>
+        <ul class="space-y-2">
+          {relatedComparisons.map((c) => (
+            <li>
+              <a href={`/compare/${c.data.slug}/`} class="inline-flex items-center gap-2 text-[15px] font-medium text-watermelon hover:text-ink">
+                {c.data.title}
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
     ) : null}
 
